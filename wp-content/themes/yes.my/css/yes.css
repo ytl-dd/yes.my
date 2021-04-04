@@ -1,0 +1,39 @@
+/* 
+    CSS Name        : Yes.my
+    Created on      : March     30, 2021, 06:44:07 PM
+    Last edited on  : April     02, 2021, 02:43:23 AM
+    Author          : AL Latif Mohamad [YTL]
+    Description     : Inline Stylings & Extended styles
+*/
+
+
+/* From Main Site */
+.node__content { margin-top: 0 !important; }
+.block .content { margin-top: 0 !important; }
+
+@media (min-width: 1025px) {
+    .menus>span:not(:first-child),
+    .menus>a:not(:first-child) { margin-left: .5em !important; }
+    .menus>span:not(:last-child),
+    .menus>a:not(:last-child) { margin-right: .5em !important; }
+}
+
+@media (min-width: 1440px) {
+    .menus>span:not(:first-child),
+    .menus>a:not(:first-child) { margin-left: .5em !important; }
+    .menus>span:not(:last-child),
+    .menus>a:not(:last-child) { margin-right: .5em !important; }
+    .i-cart { display: none; }
+    .nav-mobile .links a:hover { color: #333 !important; }
+    .mobile-menu-pills .nav-pills .nav-link.active { color: #00a4e3 !important; font-weight: bold; }
+}
+/* END From Main Site */
+
+
+/* Extended */
+.admin-bar .nav-main { top: 32px; }
+.admin-bar.searching .hover-search { top: 132px; }
+
+.popover .selection.selection-menu a.highlight { color: #FFF; }
+.nav-mobile .links a.highlight { color: #00A4E3; }
+/* END Extended */

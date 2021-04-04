@@ -1,6 +1,7 @@
 /.vscode
 *.log
 .htaccess
+error_log
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
