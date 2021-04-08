@@ -9,4 +9,5 @@
      require_once(THEME_FUNCTIONS_PATH.'/admin.php');
      require_once(THEME_FUNCTIONS_PATH.'/theme-init.php');
      require_once(THEME_FUNCTIONS_PATH.'/theme-options.php');
+     require_once(THEME_FUNCTIONS_PATH.'/theme-custom-meta-box.php');
 ?>

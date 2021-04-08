@@ -65,4 +65,10 @@
         }
     }
     if (function_exists('fullbanner_body_class')) add_filter('body_class', 'fullbanner_body_class');
+
+    // Move Yoast to bottom
+    function yoasttobottom() {
+        return 'low';
+    }
+    add_filter('wpseo_metabox_prio', 'yoasttobottom');
 ?>

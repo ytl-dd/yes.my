@@ -2,12 +2,17 @@
 
 <?php 
     if ( have_posts() ) {
-
-        // Load posts loop.
-        while ( have_posts() ) {
+        while ( have_posts() ) :
             the_post();
+            $custom_code_css    = get_post_meta($post->ID, 'yesmy_custom_css', true);
+            $custom_code_js     = get_post_meta($post->ID, 'yesmy_custom_js', true);
+    
+            if ($custom_code_css) echo $custom_code_css;
+    
             the_content();
-        }
+    
+            if ($custom_code_js) echo $custom_code_css;
+        endwhile;
     }
 ?>
 
