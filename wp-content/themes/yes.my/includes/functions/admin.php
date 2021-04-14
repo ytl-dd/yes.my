@@ -71,4 +71,42 @@
         return 'low';
     }
     add_filter('wpseo_metabox_prio', 'yoasttobottom');
+
+
+    /**
+     * Function yesmy_language_switcher()
+     * Function to get the languages from WPML and return the custom switcher
+     */
+    if (!function_exists('yesmy_language_switcher')) {
+        function yesmy_language_switcher ($classes = []) {
+            $languages  = icl_get_languages('skip_missing=0&orderby=custom&order=asc');
+            $langs      = '';
+            $active_lang= '';
+            if (1 < count($languages)) {
+                foreach ($languages as $language) {
+                    switch ($language['code']) {
+                        case 'ms' : 
+                            $language_name  = 'BM';
+                            break;
+                        case 'zh-hans' : 
+                            $language_name  = '中文';
+                            break;
+                        default : 
+                            $language_name  = 'EN';
+                    }
+                    $langs  .= '<a href="'.$language['url'].'" language='.$language['code'].'>'.$language_name.'</a>';
+
+                    ($language['active']) ? $active_lang = $language_name : '';
+                }
+            }
+            $exp_class  = join(' ', $classes);
+            $html       = " <span class='dropmenu btn-language $exp_class' aria-lable='Language Switcher'>
+                                <a role='button' tabindex='0' aria-label='Language Switcher' data-original-title='' title=''>$active_lang</a>
+                                <span class='selection selection-menu'>
+                                    $langs
+                                </span>
+                            </span>";
+            return $html;
+        }
+    }
 ?>

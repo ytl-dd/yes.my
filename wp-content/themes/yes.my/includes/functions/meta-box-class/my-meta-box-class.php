@@ -786,7 +786,7 @@ class AT_Meta_Box {
       echo "<input class='at-color-iris".(isset($field['class'])? " {$field['class']}": "")."' type='text' name='{$field['id']}' id='{$field['id']}' value='{$meta}' size='8' />";  
     }else{
       echo "<input class='at-color".(isset($field['class'])? " {$field['class']}": "")."' type='text' name='{$field['id']}' id='{$field['id']}' value='{$meta}' size='8' />";
-      echo "<input type='button' class='at-color-select button' rel='{$field['id']}' value='" . __( 'Select a color' ,'apc') . "'/>";
+      echo "<input type='button' class='at-color-select button' rel='{$field['id']}' value='" . __( 'Select a color' ,'mmb') . "'/>";
       echo "<div style='display:none' class='at-color-picker' rel='{$field['id']}'></div>";
     }
     $this->show_field_end($field, $meta);

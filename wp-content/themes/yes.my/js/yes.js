@@ -1,7 +1,7 @@
 /* 
     JavaScript Name : Yes.my
     Created on      : March     30, 2021, 06:44:07 PM
-    Last edited on  : April     02, 2021, 02:43:23 AM
+    Last edited on  : April     14, 2021, 02:43:23 AM
     Author          : AL Latif Mohamad [YTL]
     Description     : Inline JavaScripts & Extended scripts
 */
@@ -161,8 +161,24 @@ $(document).ready(function() {
         }
     }
     /** END From Footer */
+
+    $(".plans_content").hide();
+    $(".plans_").click(function(){
+        $(".plans_content").toggle();
+    });
 });
 /* END From Main Site */
 
 /* Extended */
+$(document).ready(function () {
+    $('ul.mobile-menus li.menu-item-has-children > a').on('click', function () {
+        $(this).closest('li').find('ul.sub-menu').toggleClass('show');
+    })
+
+    var highlightWords  = ['Kasi Up'];
+    $('ul.sub-menu a').html(function(_, html) {
+        var reg = new RegExp('(' + highlightWords.join('|') + ')','gi');
+        return html.replace(reg, '<span class="kasicolor">$1</span>', html)
+    })
+})
 /* END Extended */

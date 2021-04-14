@@ -45,8 +45,8 @@
                                     array(
                                         'theme_location'    => 'primary', 
                                         'container'         => false, 
-                                        'items_wrap'        => '%3$s', 
-                                        'walker'            => new Custom_Walker
+                                        'items_wrap'        => '<ul class="mobile-menus menu-site">%3$s</ul>', 
+                                        // 'walker'            => new Custom_Walker
                                     )
                                 );
                             endif; 
@@ -131,14 +131,7 @@
                                         );
                                     endif; 
                                 ?>
-                                <span class="dropmenu btn-language" aria-label="Menu" style="">
-                                    <a role="button" tabindex="0" aria-label="Menu" data-original-title="" title="">EN</a>
-                                    <span class="selection selection-menu">
-                                        <a href="javascript:void(0);" language="">EN</a>
-                                        <a href="javascript:void(0);" language="ms">BM</a>
-                                        <a href="javascript:void(0);" language="zh-hans">中文</a>
-                                    </span>
-                                </span>
+                                <?php echo yesmy_language_switcher(); ?>
                                 <span class="menus menu-shop">
                                     <a href="https://www.yes.my/support/store-locator" class="i-locator">
                                         <svg class="ia ia-pin">
@@ -170,12 +163,26 @@
                                             array(
                                                 'theme_location'    => 'primary', 
                                                 'container'         => false, 
-                                                'items_wrap'        => '<span class="menus menu-site">%3$s</span>', 
-                                                'walker'            => new Custom_Walker
+                                                'items_wrap'        => '<ul class="menus menu-site">%3$s</ul>', 
+                                                // 'walker'            => new Custom_Walker
                                             )
                                         );
                                     endif; 
                                 ?>
+                                <!-- <div class="dropdown1 text-white font-weight-bold" href="/kasiup/" style="width: auto; font-weight: 600; color: white">
+                                    <span class="menus menu-site">PLANS </span>
+
+                                    <div class="dropdown-content">
+                                        <span class="menus menu-site">
+                                            <a href="/4g-lte-prepaid/"><span class="kasicolor">Kasi Up</span><span class="linkt"> Prepaid</span></a>
+                                            <a href="/4g-lte-postpaid/"><span class="kasicolor">Kasi Up</span><span class="linkt"> Postpaid</span></a>
+                                            <a href="/4g-broadband/"><span class="kasicolor">Kasi Up</span><span class="linkt"> Broadband</span></a>
+                                            <a href="/kasiup/"><span class="kasicolor">Kasi Up</span><span class="linkt"> Refer &amp; Earn</span></a>
+                                            <a href="/kasiupB40/"><span class="kasicolor">Kasi Up</span><span class="linkt"> B40</span></a>
+                                        </span>
+                                    </div>
+                                    <span class="menus menu-site"> </span>
+                                </div> -->
                                 <span class="menus menu-user">
                                     <a class="hidemobile" tabindex="0" role="button" id="toggleSearch">
                                         <svg class="ia ia-search">
@@ -202,14 +209,7 @@
                                             endif; 
                                         ?>
                                     </span>
-                                    <span class="dropmenu btn-language d-lg-none" aria-label="Menu" style="">
-                                        <a role="button" tabindex="0" aria-label="Menu" data-original-title="" title="">EN</a>
-                                        <span class="selection selection-menu">
-                                            <a href="javascript:void(0);" language="">EN</a>
-                                            <a href="javascript:void(0);" language="ms">BM</a>
-                                            <a href="javascript:void(0);" language="zh-hans">中文</a>
-                                        </span>
-                                    </span>
+                                    <?php echo yesmy_language_switcher(['d-lg-none']); ?>
                                     <span class="dropmenu btn-sidemenu" aria-label="Menu" data-original-title="" title="">
                                         <a role="button" tabindex="0" aria-label="Menu" data-original-title="" title="">
                                             <svg class="ia ia-burger">
