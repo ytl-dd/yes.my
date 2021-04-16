@@ -49,6 +49,7 @@
 .nav-site ul.menus { font-size: 0; margin: 0; padding: 0; }
 ul.menus li { display: inline-block; font-size: 16px; font-weight: 700; letter-spacing: 0.8px; line-height: 30px; list-style-type: none; position: relative; }
 ul.menus li a { color: #FFF; display: inline-block; padding: 10px; }
+ul.menus li:focus, ul.menus li:active, ul.menus li a:focus, ul.menus li a:active { border: 0; box-shadow: none; outline: none; -moz-outline-style: none; }
 
 ul.menus ul.sub-menu { background-color: #FFF; border-radius: 20px; color: #000; flex-direction: column; align-items: flex-start; margin: 0; min-width: 240px; opacity: 0; padding: 26px; position: absolute; top: 35px; visibility: hidden; transition: visibility 0s, opacity 0.6s linear; }
 ul.menus ul.sub-menu li {}
