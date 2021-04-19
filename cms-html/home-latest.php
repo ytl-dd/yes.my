@@ -81,7 +81,7 @@
             <div class="position-relative d-flex"><a href="https://appstore.yes.my/ywos"><img alt=""
                         class="img-fluid" data-entity-type="" data-entity-uuid=""
                         src="wp-content/themes/yes.my/images/getitnw.png" /></a>
-                <a href="https://www.yes.my/kasiup"><img alt="" class="img-fluid" data-entity-type=""
+                <a href="/kasiup"><img alt="" class="img-fluid" data-entity-type=""
                         data-entity-uuid="" src="wp-content/themes/yes.my/images/learnmore.png" /></a></div>
         </div>
     </div>
@@ -96,7 +96,7 @@
         data-entity-type="file" data-entity-uuid=""
         data-src="wp-content/themes/yes.my/images/homae_en_bnr__b40_sm.jpeg" src="wp-content/themes/yes.my/images/homae_en_bnr__b40_sm.jpeg" />
     <div class="bnr-body w-100">
-        <div class="bnrbtn position-absolute"><a href="https://www.yes.my/kasiupB40" onclick="Lead();" style="display: block; background: #cf5397; height: 50px; border-radius: 40px; line-height: 50px; color: white; font-size: 22px; font-weight: 900; line-height: 55px;">REGISTER NOW</a></div>
+        <div class="bnrbtn position-absolute"><a href="/kasiupB40" onclick="Lead();" style="display: block; background: #cf5397; height: 50px; border-radius: 40px; line-height: 50px; color: white; font-size: 22px; font-weight: 900; line-height: 55px;">REGISTER NOW</a></div>
     </div>
 </section>
 
@@ -158,7 +158,7 @@
                         <a href="https://appstore.yes.my/ywos"><img alt="" class="img-fluid yesimin" data-entity-type="" data-entity-uuid="" src="wp-content/themes/yes.my/images/yesimin.png" /></a>
                     </div>
                     <div>
-                        <a href="https://www.yes.my/4g-lte-prepaid"><img alt="" class="img-fluid showmemore" data-entity-type="" data-entity-uuid="" src="wp-content/themes/yes.my/images/showmemore.png" /></a>
+                        <a href="/4g-lte-prepaid"><img alt="" class="img-fluid showmemore" data-entity-type="" data-entity-uuid="" src="wp-content/themes/yes.my/images/showmemore.png" /></a>
                     </div>
                 </div>
             </div>
@@ -188,19 +188,19 @@
                         data-entity-uuid="4632ba1b-cd37-49d2-af8c-293148797973" height="810"
                         transform="translate(0 -155)" width="1920"
                         xlink:href="wp-content/themes/yes.my/images/footer-image_en-big.png"></image> <a
-                        href="https://www.yes.my/bestarinet">
+                        href="/bestarinet">
                         <image height="64" transform="translate(987 500)" width="375"
                             xlink:href="wp-content/themes/yes.my/images/footer-image2.png">
                         </image>
-                    </a> <a href="https://www.yes.my/support/coverage?">
+                    </a> <a href="/support/coverage?">
                         <image height="64" transform="translate(572 500)" width="375"
                             xlink:href="wp-content/themes/yes.my/images/footer-image3.png">
                         </image>
-                    </a> <a href="https://www.yes.my/terragraph">
+                    </a> <a href="/terragraph">
                         <image height="64" transform="translate(987 227)" width="375"
                             xlink:href="wp-content/themes/yes.my/images/footer-image4.png">
                         </image>
-                    </a> <a href="https://www.yes.my/learn">
+                    </a> <a href="/learn">
                         <image height="64" transform="translate(572 227)" width="375"
                             xlink:href="wp-content/themes/yes.my/images/footer-image5.png">
                         </image>
@@ -211,19 +211,19 @@
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image data-entity-type="file" data-entity-uuid="d7114365-3540-42c7-b3fe-615b5a254c32" height="1094"
                 width="1242" xlink:href="wp-content/themes/yes.my/images/home_mobile_footer-en-image_en.jpg">
-            </image> <a href="https://www.yes.my/terragraph">
+            </image> <a href="/terragraph">
                 <image height="75" transform="translate(655 540)" width="457"
                     xlink:href="wp-content/themes/yes.my/images/home_mobile_footer-en-image2.png">
                 </image>
-            </a> <a href="https://www.yes.my/learn">
+            </a> <a href="/learn">
                 <image height="75" transform="translate(146 540)" width="457"
                     xlink:href="wp-content/themes/yes.my/images/home_mobile_footer-en-image3.png">
                 </image>
-            </a> <a href="https://www.yes.my/support/coverage?">
+            </a> <a href="/support/coverage?">
                 <image height="75" transform="translate(146 875)" width="457"
                     xlink:href="wp-content/themes/yes.my/images/home_mobile_footer-en-image4.png">
                 </image>
-            </a> <a href="https://www.yes.my/bestarinet">
+            </a> <a href="/bestarinet">
                 <image height="75" transform="translate(655 875)" width="457"
                     xlink:href="wp-content/themes/yes.my/images/home_mobile_footer-en-image5.png">
                 </image>
