@@ -18,7 +18,7 @@ get_header();
     
             the_content();
     
-            if ($custom_code_js) echo $custom_code_css;
+            if ($custom_code_js) echo $custom_code_js;
         endwhile;
     }
 ?>
