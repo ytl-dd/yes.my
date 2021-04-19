@@ -4,6 +4,7 @@
 error_log
 sitemap.xml
 sitemap.xml.gz
+wp-admin/error_log
 wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
