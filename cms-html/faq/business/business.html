@@ -1,0 +1,460 @@
+<style type="text/css">
+    .dropdown .dropdown-menu {
+        z-index: 9999 !important;
+    }
+    
+    table.faqgeneralstyle td {
+        padding: 14px 8px;
+        line-height: 1.2;
+        font-size: 16.5px;
+    }
+    
+    table.faqgeneralstyle td.titletop {
+        padding: 8px;
+    }
+    
+    .listtextfortablenote {
+        font-size: 14px;
+    }
+    
+    .accordion-faq ol {
+        padding-left: 15px;
+    }
+    
+    @media(max-width: 768px) {
+        .accordion-faq ol {
+            padding-left: 0;
+        }
+    }
+    /*accrodion css update on mobile*/
+    
+    .accordion-inner .card-body {
+        padding: 0 0 0 50px;
+    }
+    
+    .accordion-faq ol li+li {
+        margin-top: 25px;
+    }
+    
+    .accordion-faq ol li ul li+li {
+        margin-top: 10px;
+    }
+    
+    @media(max-width: 768px) {
+        .accordion-inner .card-body {
+            padding-left: 2.55rem;
+        }
+        .accordion-faq ol li {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+        .accordion-faq .card-header button {
+            padding: 18px 50px 18px 20px;
+        }
+        .accordion-faq .card-header button:after {
+            width: 21px;
+            height: 21px;
+            background-size: 21px auto;
+            right: 15px;
+            top: 30%;
+        }
+        .accordion-faq .card-body .card-header button {
+            padding: 16px 25px 16px 36px;
+            font-size: 16px !important;
+            line-height: 1.2;
+        }
+        .accordion-faq .card-body .card-header button:after {
+            top: 13px;
+            left: 5px;
+        }
+    }
+</style>
+<section class="dblock flexbox" id="main-content">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col">&nbsp;
+                    <p class="shoutout brand center-text lg" style="margin:0 auto;">Frequently Asked <b>Questions.</b></p>
+                    <br /> &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">&nbsp;
+                    <div style="max-width:570px;margin:0 auto;">
+                        <p class="shoutout-note xs">Question Categories</p>
+
+                        <div class="dropdown"><button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" id="ddState" type="button"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Business</b></button>
+
+                            <div aria-labelledby="ddState" class="dropdown-menu"><a class="dropdown-item" href="/faq/about-yes-4g"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>about Yes 4G</b></a> <a class="dropdown-item" href="/faq/postpaid-faq"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Postpaid Plan</b></a>                                <a class="dropdown-item" href="/faq/postpaid-data-add-ons-faq"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Postpaid Data Add-Ons</b></a>
+                                <a class="dropdown-item" href="/faq/prepaid-faq"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Prepaid Plan</b></a>
+                                <a class="dropdown-item" href="/faq/prepaid-data-add-ons-faq"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Prepaid Data Add-Ons</b></a>
+                                <a class="dropdown-item" href="/faq/roaming"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Roaming &amp; IDD</b></a> <a class="dropdown-item" href="/faq/switch-to-yes"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Switch to Yes</b></a>                                <a class="dropdown-item" href="/faq/yesonlinestore"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Online Store</b></a> <a class="dropdown-item" href="/faq/care"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Care</b></a>                                <a class="dropdown-item" href="/faq/devices"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Devices</b></a> <a class="dropdown-item" href="/faq/refer-and-earn"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Refer and Earn</b></a>                                <a class="dropdown-item" href="/faq/databack"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Databack</b></a> <a class="dropdown-item" href="/faq/kasi-up-shopee-promo"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Kasi Up x Shopee RM1</b></a>
+                                <a class="dropdown-item" href="/faq/learn-from-home"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Learn From Home Initiative</b></a>
+                                <a class="dropdown-item" href="/faq/campaign"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Campaign</b></a> <a class="dropdown-item" href="/faq/business3"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Business</b></a></div>
+                            <input id="state" name="state" type="hidden" /></div>
+                    </div>
+                    <br /> &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="accordion accordion-faq" id="afaq">
+                        <div class="card">
+                            <div class="card-header" id="afaq-1">
+                                <h5 class="mb-0"><button aria-controls="afaq-c1" aria-expanded="false" class="btn btn-link collapsed" data-target="#afaq-c1" data-toggle="collapse" type="button">General</button></h5>
+                            </div>
+
+                            <div aria-labelledby="afaq-i1" class="collapse" data-parent="#afaq" id="afaq-c1">
+                                <div class="card-body">
+                                    <div class="accordion accordion-inner" id="afaq-c1-a">
+                                        <div class="card">
+                                            <div class="card-header" id="dia">
+                                                <h5 class="mb-0"><button aria-controls="afaq-c1-c1" aria-expanded="false" class="btn btn-link collapsed" data-target="#afaq-c1-c1" data-toggle="collapse" type="button">YES DIA (Dedicated Internet Access)</button></h5>
+                                            </div>
+
+                                            <div aria-labelledby="dia" class="collapse" data-parent="#afaq-c1" id="afaq-c1-c1">
+                                                <div class="card-body">
+                                                    <ol>
+                                                        <li>What is YES DIA?<br />
+                                                            <span class="desc">YES DIA is a service that provides dedicated Internet access just for you, from your location to the local Internet Gateway. This ensures that you will always have the subscribed bandwidth for your business's mission critical applications.</span></li>
+                                                        <li>What is the difference between YES DIA and a normal broadband service?<br />
+                                                            <span class="desc">With normal broadband services, your Internet connectivity is shared by other customers in the same area. Hence, you may not receive the actual bandwidth that you subscribed to. With YES DIA, you will always have the bandwidth that you are subscribed to as it is reserved for your usage, with assured availability of 99.5%. </span></li>
+                                                        <li>Is there any contention ratio for YES DIA?<br />
+                                                            <span class="desc">No. Since the Internet connection is dedicated to you, you are guaranteed the bandwidth subscribed as only you alone will be using the allocated bandwidth.</span></li>
+                                                        <li>Can YES provide and manage my CPE at my location?<br />
+                                                            <span class="desc">Yes. For your peace of mind, we can refer you to our trusted partner who can help you manage your CPE. </span></li>
+                                                        <li>Can I upgrade/downgrade the bandwidth during the commitment period?<br />
+                                                            <span class="desc">Yes. During the commitment period, you are allowed to upgrade the bandwidth at any time.<br />
+        However, you are not allowed to downgrade the bandwidth during the commitment period. You can only do so after the completion of the commitment period.</span></li>
+                                                        <li>Will there be any penalty if I choose to terminate the service before the end of the commitment period?<br />
+                                                            <span class="desc">Yes. There will be a penalty charge if you terminate the service before the end of the commitment period. You will be penalised with the remaining monthly recurring charges. </span></li>
+                                                        <li>What are the available payment options for the service?<br />
+                                                            <span class="desc">Below are the accepted payment methods for the subscribed service. We will keep you updated if there are new payment options in the future.<br />
+        a) Cheque<br />
+        b) Bank Transfer </span></li>
+                                                        <li>What are the available billing cycles for the service?<br />
+                                                            <span class="desc">Below are the available billing cycles for the subscribed service: </span>
+                                                            <ol style="padding-left: 25px" type="a">
+                                                                <li><span class="desc">Monthly</span></li>
+                                                                <li><span class="desc">Quarterly</span></li>
+                                                                <li><span class="desc">Half yearly</span></li>
+                                                                <li><span class="desc">Yearly</span></li>
+                                                            </ol>
+                                                            <span class="desc"> </span></li>
+                                                        <li>Are there any equipment provided by YES for this service?<br />
+                                                            <span class="desc">Yes, we will provide the following equipment as part of the YES DIA service. These equipment will be maintained and owned by YES.<br />
+        <strong>High Frequency Microwave:</strong><br />
+        1x Antenna, 1x Bracket / Pole, 1x Microwave IDU, 1x UPE, Cabling, 1x Backup Battery, 1x Rectifier<br />
+        <strong>Point-to-Point Microwave:</strong><br />
+        1x Antenna, 1x Bracket , 1x UPE, Cabling<br />
+        <strong>Fibre Backhaul:</strong><br />
+        1x Fibre Router, 1x UPE, Fibre to the UPE </span></li>
+                                                        <li>Who should I contact if there are connectivity issues with my service?<br />
+                                                            <span class="desc">You may contact your Account Manager during office hours. Alternatively, you can contact our 24x7 Support Desk at +6018-3330033 to resolve your issue. </span></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Card -->
+
+                                        <div class="card">
+                                            <div class="card-header" id="broadband">
+                                                <h5 class="mb-0"><button aria-controls="afaq-c1-c3" aria-expanded="false" class="btn btn-link collapsed" data-target="#afaq-c1-c3" data-toggle="collapse" type="button">YES Broadband</button></h5>
+                                            </div>
+
+                                            <div aria-labelledby="broadband" class="collapse" data-parent="#afaq-c1" id="afaq-c1-c3">
+                                                <div class="card-body">
+                                                    <ol>
+                                                        <li>How can YES Broadband benefit me?<br />
+                                                            <span class="desc">With the wide coverage area of YES Broadband, you can be assured that you will enjoy high broadband connectivity in your area even if it is not currently supported by any other Internet Service Provider. </span></li>
+                                                        <li>How can I check if my location is within the coverage area?<br />
+                                                            <span class="desc">You can check our extensive coverage area at <a href="/support/coverage">http://www.yes.my/support/coverage</a>. </span></li>
+                                                        <li>Can I change my YES Broadband Plan during the commitment period?<br />
+                                                            <span class="desc">Yes. During the commitment period, you are allowed to upgrade the plan that you are on to a higher one.<br />
+        However, you are currently not allowed to downgrade your plan. This service will be available in the future. </span></li>
+                                                        <li>Is there Voice Service bundled together with YES Broadband?<br />
+                                                            <span class="desc">No,&nbsp;YES Broadband does not come with Voice Service. If you need both Internet and Voice Service, please refer to our <strong>YES Converged Service</strong> product line for more information. </span></li>
+                                                        <li>Will there be any penalty if I choose to terminate the service before the end of the commitment period?<br />
+                                                            <span class="desc">Yes. There will be a penalty charge if you terminate the service before the end of the commitment period. You will be penalised with the remaining monthly recurring charges. </span></li>
+                                                        <li>What are the available payment options for the service?<br />
+                                                            <span class="desc">Below are the accepted payment methods for the subscribed service: </span>
+                                                            <ol style="padding-left: 25px" type="a">
+                                                                <li><span class="desc">Auto Teller Machine (selected banks)</span></li>
+                                                                <li><span class="desc">Cash Deposit Machine (selected banks)</span></li>
+                                                                <li><span class="desc">Online Banking (selected banks)</span></li>
+                                                                <li><span class="desc">Credit Card</span></li>
+                                                                <li><span class="desc">Over the Counter (YES Store/Kiosk, Exclusive Retail Partner)</span></li>
+                                                            </ol>
+                                                            <span class="desc"> </span></li>
+                                                        <li>What is the billing cycle for the service?<br />
+                                                            <span class="desc">The billing cycle is Monthly.</span> <span class="desc"> </span></li>
+                                                        <li>How long is the warranty period for the equipment?<br />
+                                                            <span class="desc">As long as you are contracted to us, the Zoom XL provided will be maintained by YES, as it is owned by YES. </span></li>
+                                                        <li>Who should I contact if there are connectivity issues with my service?<br />
+                                                            <span class="desc">You can contact our Support Desk during office hours at +6018-3330033 to resolve your issue. </span></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Card -->
+
+                                        <div class="card">
+                                            <div class="card-header" id="dll">
+                                                <h5 class="mb-0"><button aria-controls="afaq-c1-c4" aria-expanded="false" class="btn btn-link collapsed" data-target="#afaq-c1-c4" data-toggle="collapse" type="button">YES DLL (Dedicated Leased Line)</button></h5>
+                                            </div>
+
+                                            <div aria-labelledby="dll" class="collapse" data-parent="#afaq-c1" id="afaq-c1-c4">
+                                                <div class="card-body">
+                                                    <ol>
+                                                        <li>What is YES DLL?<br />
+                                                            <span class="desc">YES DLL is a dedicated private network that establishes a dedicated bandwidth connection across all your premises (2 or more), ensuring the secure transfer of data across your offices without the risk of being accessed/hacked by others. </span></li>
+                                                        <li>What is the difference between YES DLL and YES 4G-VPN?<br />
+                                                            <span class="desc">In general terms, YES DLL and YES 4G-VPN belong to the same product family, as both of them allow customers to have their own private network for secure data transmission.<br />
+        <br />
+        The only difference is that YES DLL provides customers with a dedicated bandwidth connection across all their premises using either Microwave or Fibre Backhaul, whereas YES 4G-VPN provides customers a best effort bandwidth connection across all their premises using wireless 4G. </span></li>
+                                                        <li>Will there be any contention ratio for the data transmission between my premises?<br />
+                                                            <span class="desc">No. Since the link is dedicated to your business, you will be guaranteed the bandwidth subscribed across all your premises. </span></li>
+                                                        <li>What is the Service Level Assurance that YES is providing?<br />
+                                                            <span class="desc">We are committed to providing SLA of 99.5% availability, subject to T&amp;C. This translates to unavailability of approximately 1d, 19h, 44m, 49s per year. </span></li>
+                                                        <li>Can YES provide and manage my CPE at my premises?<br />
+                                                            <span class="desc">Yes. For your peace of mind, we can refer you to our trusted partner who can help you manage your CPE. </span></li>
+                                                        <li>How secure is YES DLL?<br />
+                                                            <span class="desc">YES DLL is inherently secure as it operates as closed loop connection without sharing the connection with other customers. </span></li>
+                                                        <li>Can I upgrade/downgrade the bandwidth during the commitment period?<br />
+                                                            <span class="desc">Yes. During the commitment period, you are allowed to upgrade the bandwidth at anytime.<br />
+        However, you are not allowed to downgrade the bandwidth during the commitment period. You can only do so after the completion of the commitment period.</span></li>
+                                                        <li>Will there be any penalty if I choose to terminate the service before the end of the commitment period?<br />
+                                                            <span class="desc">Yes. There will be a penalty charge if you terminate the service before the end of the commitment period. You will be penalised with the remaining monthly recurring charges. </span></li>
+                                                        <li>What are the available payment options for DLL YES?<br />
+                                                            <span class="desc">Below are the accepted payment methods for the subscribed service. We will keep you updated if there are new payment options in the future. </span>
+                                                            <ol style="padding-left: 25px;" type="a">
+                                                                <li><span class="desc">Cheque</span></li>
+                                                                <li><span class="desc">Bank Transfer</span></li>
+                                                            </ol>
+                                                            <span class="desc"> </span></li>
+                                                        <li>What are the available billing cycles for the service?<br />
+                                                            <span class="desc">Below are the available billing cycles for the subscribed service: </span>
+                                                            <ol 25px="" style="padding-left:" type="a">
+                                                                <li><span class="desc">Monthly</span></li>
+                                                                <li><span class="desc">Quarterly</span></li>
+                                                                <li><span class="desc">Half yearly</span></li>
+                                                                <li><span class="desc">Yearly</span></li>
+                                                            </ol>
+                                                            <span class="desc"> </span></li>
+                                                        <li>Are there any equipment provided by YES for this service?<br />
+                                                            <span class="desc">Yes, we will provide the following equipment as part of the YES DLL service for each premise. These equipment will be maintained and owned by YES.<br />
+        <strong>High Frequency Microwave:</strong><br />
+        1x Antenna, 1x Bracket / Pole, 1x Microwave IDU, 1x UPE, Cabling, 1x Backup Battery, 1x Rectifier<br />
+        <strong>Point to Point Microwave:</strong><br />
+        1x Antenna, 1x Bracket , 1x UPE, Cabling<br />
+        <strong>Fibre Backhaul:</strong><br />
+        1x Fibre Router, 1x UPE, Fibre to the UPE </span></li>
+                                                        <li>Who should I contact if there are connectivity issues on my network?<br />
+                                                            <span class="desc">You may contact your Account Manager during office hours. Alternatively, you can contact our 24x7 Support Desk at +6018-3330033 to resolve your issue. </span></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Card -->
+
+                                        <div class="card">
+                                            <div class="card-header" id="4g-vpn">
+                                                <h5 class="mb-0"><button aria-controls="afaq-c1-c5" aria-expanded="false" class="btn btn-link collapsed" data-target="#afaq-c1-c5" data-toggle="collapse" type="button">YES 4G-VPN</button></h5>
+                                            </div>
+
+                                            <div aria-labelledby="4g-vpn" class="collapse" data-parent="#afaq-c1" id="afaq-c1-c5">
+                                                <div class="card-body">
+                                                    <ol>
+                                                        <li>What is YES 4G-VPN?<br />
+                                                            <span class="desc">YES 4G-VPN is a dedicated private network that establishes a best effort bandwidth connection across all your premises (2 or more), allowing you to securely transfer data across your offices without the risk of being accessed/hacked by others. </span></li>
+                                                        <li>What is the difference between YES 4G-VPN and YES DLL?<br />
+                                                            <span class="desc">In general terms, YES 4G-VPN and YES DLL (Dedicated Leased Line) belong to the same product family, as both of them allow customer to have their own private network for secure data transmission.<br />
+        The only difference is that YES 4G-VPN provides customers with a best effort bandwidth connection across all their premises using wireless 4G, whereas YES DLL provides customers with a dedicated bandwidth connection across all their premises using either Microwave or Fibre Backhaul. </span></li>
+                                                        <li>Will there be any contention ratio for the data transmission between all my premises?<br />
+                                                            <span class="desc">No. Since the link is dedicated to your business, you will be guaranteed the bandwidth subscribed across all your premises. </span></li>
+                                                        <li>What is the Service Level Assurance that YES is providing?<br />
+                                                            <span class="desc">The service is provided on a best effort basis. </span></li>
+                                                        <li>Can YES provide and manage my CPE at all my premises?<br />
+                                                            <span class="desc">Yes. For your peace of mind, we can refer you to our trusted partner who can help you manage your CPE. </span></li>
+                                                        <li>How secure is YES 4G-VPN?<br />
+                                                            <span class="desc">YES 4G-VPN is inherently secure as it operates as a closed loop connection without sharing the connection with other customers. </span></li>
+                                                        <li>Can I upgrade/downgrade the bandwidth during the commitment period?<br />
+                                                            <span class="desc">Yes. During the commitment period, you are allowed to upgrade the bandwidth at anytime.<br />
+        However, you are not allowed to downgrade the bandwidth during the commitment period. You can only do so after the completion of the commitment period. </span></li>
+                                                        <li>Will there be any penalty if I choose to terminate the service before the end of the commitment period?<br />
+                                                            <span class="desc">Yes. There will be a penalty charge if you terminate the service before the end of the commitment period. You will be penalised with the remaining monthly recurring charge. </span></li>
+                                                        <li>What are the available payment options for the service?<br />
+                                                            <span class="desc">Below are the accepted payment methods for the subscribed service. We will keep you updated if there are new payment options in the future. </span>
+                                                            <ol style="padding-left: 25px;" type="a">
+                                                                <li><span class="desc">Cheque</span></li>
+                                                                <li><span class="desc">Bank Transfer</span></li>
+                                                            </ol>
+                                                            <span class="desc"> </span></li>
+                                                        <li>What are the available billing cycles for the service?<br />
+                                                            <span class="desc">Below are the available billing cycles for the subscribed service: </span>
+                                                            <ol 25px="" style="padding-left:" type="a">
+                                                                <li><span class="desc">Monthly</span></li>
+                                                                <li><span class="desc">Quarterly</span></li>
+                                                                <li><span class="desc">Half yearly</span></li>
+                                                                <li><span class="desc">Yearly</span></li>
+                                                            </ol>
+                                                            <span class="desc"> </span></li>
+                                                        <li>Are there any equipment provided by YES for this service?<br />
+                                                            <span class="desc">Yes, we will provide the following equipment as part of the YES 4G-VPN service for each premise. These equipment will be maintained and owned by YES.<br />
+        <strong>Wireless 4G:</strong><br />
+        1x Zoom XL, Cabling </span></li>
+                                                        <li>Who should I contact if there are connectivity issues on my network?<br />
+                                                            <span class="desc">You may contact your Account Manager during office hours. Alternatively, you can contact our 24x7 Support Desk at +6018-3330033 to resolve your issue. </span></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Card -->
+
+                                        <div class="card">
+                                            <div class="card-header" id="SIPconnect">
+                                                <h5 class="mb-0"><button aria-controls="afaq-c1-c6" aria-expanded="false" class="btn btn-link collapsed" data-target="#afaq-c1-c6" data-toggle="collapse" type="button">YES SIPconnect</button></h5>
+                                            </div>
+
+                                            <div aria-labelledby="SIPconnect" class="collapse" data-parent="#afaq-c1" id="afaq-c1-c6">
+                                                <div class="card-body">
+                                                    <ol>
+                                                        <li>What is YES SIPconnect?<br />
+                                                            <span class="desc">Yes SIPconnect is a carrier-grade IP telephony service that provides quality voice communication, delivered over data connections instead of traditional copper PSTN exchange. </span></li>
+                                                        <li>What equipment do I need before subscribing to YES SIPconnect?<br />
+                                                            <span class="desc">You will need a Media Gateway and PABX equipment. </span></li>
+                                                        <li>Does YES support number porting (re-using my current business number)?<br />
+                                                            <span class="desc">Unfortunately, we do not currently support number porting. </span></li>
+                                                        <li>Can I keep my current YES SIPconnect number if I relocate my office?<br />
+                                                            <span class="desc">Yes. There will be no change in your number should you relocate your office. Just contact our Support Desk to update us with the necessary details. </span></li>
+                                                        <li>Can I add additional Channels/Numbers on top of the subscribed package?<br />
+                                                            <span class="desc">Should you find that the provided Channels are insufficient for your business needs, you can upgrade to a higher package. If you are subscribed to our highest package and still require additional Channels, do contact your friendly Account Manager to submit your request. We will provide the necessary support to accommodate your request.<br />
+        As for additional Numbers, you can purchase a block of 10 Numbers at an additional RM 50 per month to meet your business needs. </span></li>
+                                                        <li>Can YES provide and manage my CPE for YES SIPconnect?<br />
+                                                            <span class="desc">Yes. For your peace of mind, we can refer you to our trusted partner who can help you manage your CPE. </span></li>
+                                                        <li>Can I upgrade/downgrade the package during the commitment period?<br />
+                                                            <span class="desc">Yes. During the commitment period, you are allowed to upgrade the plan that you have to a higher one.<br />
+        However, you are currently not allowed to downgrade the plan at this time. This service will be available in the future. </span></li>
+                                                        <li>Will there be any penalty if I choose to terminate the service before the end of the commitment period?<br />
+                                                            <span class="desc">Yes. There will be a penalty charge if you terminate the service before the end of the commitment period. You will be penalised with the remaining monthly recurring charge of the subscribed packages. </span></li>
+                                                        <li>What are the available payment options for the service?<br />
+                                                            <span class="desc">Below are the accepted payment methods for the subscribed service. We will keep you updated if there are new payment options in the future. </span>
+                                                            <ol style="padding-left: 25px;" type="a">
+                                                                <li><span class="desc">Cheque</span></li>
+                                                                <li><span class="desc">Bank Transfer</span></li>
+                                                            </ol>
+                                                            <span class="desc"> </span></li>
+                                                        <li>What is the billing cycle for the service?<br />
+                                                            <span class="desc">The billing for YES SIP connect is done Monthly.</span> <span class="desc"> </span></li>
+                                                        <li>Are there any equipment provided by YES for this service?<br />
+                                                            <span class="desc">If your local IP PBX equipment is compatible with our service, there will be no equipment provided by us.<br />
+        However, if your local IP PBX is not compatible, we will provide you with Media Gateway equipment. This equipment will be owned and maintained by us. </span></li>
+                                                        <li>Who should I contact if there are connectivity issues on my network?<br />
+                                                            <span class="desc">You may contact your Account Manager during office hours. Alternatively, you can contact our 24x7 Support Desk at +6018-3330033 to resolve your issue. </span></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Card -->
+
+                                        <div class="card">
+                                            <div class="card-header" id="general-cloud-pbx">
+                                                <h5 class="mb-0"><button aria-controls="afaq-c1-c7" aria-expanded="false" class="btn btn-link collapsed" data-target="#afaq-c1-c7" data-toggle="collapse" type="button">YES Cloud PBX</button></h5>
+                                            </div>
+
+                                            <div aria-labelledby="general-cloud-pbx" class="collapse" data-parent="#afaq-c1" id="afaq-c1-c7">
+                                                <div class="card-body">
+                                                    <ol>
+                                                        <li>What is YES Cloud PBX?<br />
+                                                            <span class="desc">YES Cloud PBX is a cloud-based suite of business telephony service that allows you to enjoy sophisticated telephone features such as Call Hunting, Call Forwarding, Call Transfer, Extension Dialing, and much more, all without the need of investing in local IP PBX equipment. </span></li>
+                                                        <li>What equipment do I need before subscribing to YES Cloud PBX?<br />
+                                                            <span class="desc">You will need to have an IP Telephone or an Analogue Telephone Adapter (ATA) for Analogue Telephony. </span></li>
+                                                        <li>Does YES support number porting (re-using my current business number)?<br />
+                                                            <span class="desc">Unfortunately, we do not currently support number porting. </span></li>
+                                                        <li>Can I keep my current YES Cloud PBX number if I relocate my office?<br />
+                                                            <span class="desc">Yes. There will be no change in your number should you relocate your office. Just contact our Support Desk to update us with the necessary details. </span></li>
+                                                        <li>Can I add additional Channels/Numbers on top of the subscribed package?<br />
+                                                            <span class="desc">Should you find that the provided Channels are insufficient for your business needs, you can upgrade to a higher package. If you are subscribed to our highest package and still require additional Channels, do contact your friendly Account Manager to submit your request. We will provide the necessary support to accommodate your request.<br />
+        As for additional Numbers, you can purchase a block of 10 Numbers at an additional RM 50 per month to meet your business needs. </span></li>
+                                                        <li>Can I upgrade/downgrade the package during the commitment period?<br />
+                                                            <span class="desc">Yes. During the commitment period, you are allowed to upgrade the plan that you have to a higher one.<br />
+        However, you are currently not allowed to downgrade the plan at this time. This service will be available in the future. </span></li>
+                                                        <li>Can YES provide and manage my CPE for YES Cloud PBX?<br />
+                                                            <span class="desc">Yes. For your peace of mind, we can refer you to our trusted partner who can help you manage your CPE. </span></li>
+                                                        <li>Will there be any penalty if I choose to terminate the service before the end of the commitment period?<br />
+                                                            <span class="desc">Yes. There will be a penalty charge if you terminate the service before the end of the commitment period. You will be penalised with the remaining monthly recurring charge of the subscribed packages. </span></li>
+                                                        <li>What are the available payment options for the service?<br />
+                                                            <span class="desc">Below are the accepted payment methods for the subscribed service. We will keep you updated if there are new payment options in the future. </span>
+                                                            <ol style="padding-left: 25px;" type="a">
+                                                                <li><span class="desc">Cheque</span></li>
+                                                                <li><span class="desc">Bank Transfer</span></li>
+                                                            </ol>
+                                                            <span class="desc"> </span></li>
+                                                        <li>What is the billing cycle for YES Cloud PBX?<br />
+                                                            <span class="desc">The billing cycle for YES Cloud PBX is Monthly.</span> <span class="desc"> </span></li>
+                                                        <li>Are there any equipment provided by YES for this service?<br />
+                                                            <span class="desc">No, there will be no equipment provided by us. </span></li>
+                                                        <li>Who should I contact if there are connectivity issues on my network?<br />
+                                                            <span class="desc">You can contact our Support Desk during office hours at +6018-3330033 to resolve your issue. </span></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Card -->
+
+                                        <div class="card">
+                                            <div class="card-header" id="converged">
+                                                <h5 class="mb-0"><button aria-controls="afaq-c1-c8" aria-expanded="false" class="btn btn-link collapsed" data-target="#afaq-c1-c8" data-toggle="collapse" type="button">YES Converged Service</button></h5>
+                                            </div>
+
+                                            <div aria-labelledby="converged" class="collapse" data-parent="#afaq-c1" id="afaq-c1-c8">
+                                                <div class="card-body">
+                                                    <ol>
+                                                        <li>How can YES Business Mobility / YES SoHo benefit me?<br />
+                                                            <span class="desc">With the wide coverage area of our service, you can be assured that you will stay connected to both Internet and Voice connectivity wherever you are. </span></li>
+                                                        <li>How can I check if my area is within the coverage area?<br />
+                                                            <span class="desc">You can check our extensive coverage area at:- <a href="/support/coverage/support/coverage">http://www.yes.my/support/coverage</a> </span></li>
+                                                        <li>Can I change my YES Business Mobility / YES SoHo Plan during the commitment period?<br />
+                                                            <span class="desc">Yes, during the commitment period, you are allow to upgrade the plan that you have to a higher one. However, you are not allow to downgrade the plan at this time. This service will be available in the future. </span></li>
+                                                        <li>Is there any tonnage/data quota for the service?<br />
+                                                            <span class="desc">To ensure fair usage for all YES’s customer, we do enforced a cap on the monthly data usage. Refer to Pricing Table for more details. </span></li>
+                                                        <li>What happen if I’ve reached my monthly allocated data quota?<br />
+                                                            <span class="desc">You can purchase our SuperBooster Add-On to increase your data quota for your plan. Otherwise, your bandwidth speed will be throttled down. </span></li>
+                                                        <li>Is there any penalty, if I choose to terminate the service before the end of the commitment period?<br />
+                                                            <span class="desc">Yes, there will be penalty charge if you terminate before the end of the commitment period. You will be penalized with the remaining term of the monthly recurring charge. </span></li>
+                                                        <li>What is the payment method for the service?<br />
+                                                            <span class="desc">Below is the acceptable payment method for the subscribed service. </span>
+                                                            <ol style="padding-left: 25px;" type="a">
+                                                                <li><span class="desc">Auto Teller Machine (selected banks)</span></li>
+                                                                <li><span class="desc">Cash Deposit Machine (selected banks)</span></li>
+                                                                <li><span class="desc">Online Banking (selected banks)</span></li>
+                                                                <li><span class="desc">Credit Card</span></li>
+                                                                <li><span class="desc">Over the Counter (YES Store/Kiosk, Exclusive Retail Partner)</span></li>
+                                                            </ol>
+                                                            <span class="desc"> </span></li>
+                                                        <li>What is the bill cycle for YES Converged Service?<br />
+                                                            <span class="desc">The bill cycle for YES Converged Service is Monthly.</span> <span class="desc"> </span></li>
+                                                        <li>Is there any equipment provided by YES for this service?<br />
+                                                            <span class="desc">Yes, depending on the plan selected, Refer to Pricing Table for more details. </span></li>
+                                                        <li>What is the warranty period for the equipment?<br />
+                                                            <span class="desc">Standard 1 year warranty applies. </span></li>
+                                                        <li>Who should I contact, if there is connectivity issue on my service?<br />
+                                                            <span class="desc">You can contact our Support Desk during office hours at +6018-3330033 to resolve your issue. </span></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Card -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

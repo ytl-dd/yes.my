@@ -1,0 +1,655 @@
+<style type="text/css">
+    .dropdown .dropdown-menu {
+        z-index: 9999 !important;
+    }
+    
+    table.faqgeneralstyle td {
+        padding: 14px 8px;
+        line-height: 1.2;
+        font-size: 16.5px;
+    }
+    
+    table.faqgeneralstyle td.titletop {
+        padding: 8px;
+    }
+    
+    .listtextfortablenote {
+        font-size: 14px;
+    }
+    
+    .accordion-faq ol {
+        padding-left: 15px;
+    }
+    
+    @media(max-width: 768px) {
+        .accordion-faq ol {
+            padding-left: 0;
+        }
+    }
+    /*accrodion css update on mobile*/
+    
+    .accordion-inner .card-body {
+        padding: 0 0 0 50px;
+    }
+    
+    .accordion-faq ol li+li {
+        margin-top: 25px;
+    }
+    
+    .accordion-faq ol li ul li+li {
+        margin-top: 10px;
+    }
+    
+    @media(max-width: 768px) {
+        .accordion-inner .card-body {
+            padding-left: 2.55rem;
+        }
+        .accordion-faq ol li {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+        .accordion-faq .card-header button {
+            padding: 18px 50px 18px 20px;
+        }
+        .accordion-faq .card-header button:after {
+            width: 21px;
+            height: 21px;
+            background-size: 21px auto;
+            right: 15px;
+            top: 30%;
+        }
+        .accordion-faq .card-body .card-header button {
+            padding: 16px 25px 16px 36px;
+            font-size: 16px !important;
+            line-height: 1.2;
+        }
+        .accordion-faq .card-body .card-header button:after {
+            top: 13px;
+            left: 5px;
+        }
+    }
+</style>
+<section class="dblock flexbox" id="main-content">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col">&nbsp;
+                    <p class="shoutout brand center-text lg" style="margin:0 auto;">Frequently Asked <b>Questions.</b></p>
+                    <br /> &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">&nbsp;
+                    <div style="max-width:570px;margin:0 auto;">
+                        <p class="shoutout-note xs">Question Categories</p>
+
+                        <div class="dropdown"><button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" id="ddState" type="button"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Refer and Earn</b></button>
+
+                            <div aria-labelledby="ddState" class="dropdown-menu"><a class="dropdown-item" href="/faq/about-yes-4g"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>about Yes 4G</b></a> <a class="dropdown-item" href="/faq/postpaid-faq"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Postpaid Plan</b></a>                                <a class="dropdown-item" href="/faq/postpaid-data-add-ons-faq"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Postpaid Data Add-Ons</b></a>
+                                <a class="dropdown-item" href="/faq/prepaid-faq"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Prepaid Plan</b></a>
+                                <a class="dropdown-item" href="/faq/prepaid-data-add-ons-faq"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Prepaid Data Add-Ons</b></a>
+                                <a class="dropdown-item" href="/faq/roaming"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Roaming &amp; IDD</b></a> <a class="dropdown-item" href="/faq/switch-to-yes"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Switch to Yes</b></a>                                <a class="dropdown-item" href="/faq/yesonlinestore"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Online Store</b></a> <a class="dropdown-item" href="/faq/care"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Care</b></a>                                <a class="dropdown-item" href="/faq/devices"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Devices</b></a> <a class="dropdown-item" href="/faq/refer-and-earn"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Refer and Earn</b></a>                                <a class="dropdown-item" href="/faq/databack"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Databack</b></a> <a class="dropdown-item" href="/faq/kasi-up-shopee-promo"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Kasi Up x Shopee RM1</b></a>
+                                <a class="dropdown-item" href="/faq/learn-from-home"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Learn From Home Initiative</b></a>
+                                <a class="dropdown-item" href="/faq/campaign"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Campaign</b></a> <a class="dropdown-item" href="/faq/business3"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use></svg>&nbsp;<b>Business</b></a></div>
+                            <input id="state" name="state" type="hidden" /></div>
+                    </div>
+                    <br /> &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="accordion accordion-faq" id="afaq">
+                        <div class="card">
+                            <div class="card-header" id="general"><button aria-controls="afaq-KASIUP2021" aria-expanded="false" class="btn btn-link collapsed" data-target="#afaq-KASIUP2021" data-toggle="collapse" tabindex="-1" type="button">YES KASI UP REFER &amp; EARN PROGRAMME</button></div>
+
+                            <div aria-labelledby="general" class="collapse" data-parent="#afaq" id="afaq-KASIUP2021">
+                                <div class="card-body">
+                                    <ol>
+                                        <li>What is YES Kasi Up Refer &amp; Earn Programme?<br />
+                                            <span class="desc">Under the YES Kasi Up Refer &amp; Earn Programme, a YES Postpaid or Prepaid Subscriber can earn cash rewards if their referral code is used to buy any YES Postpaid or Prepaid plans.</span><br
+                                            />
+                                            <br />
+                                            <span class="desc">Terms and conditions <a href="/tnc/ongoing-campaigns-tnc">apply</a></span><br /> &nbsp;
+                                        </li>
+                                        <!-- &nbsp;&nbsp;&nbsp; -->
+                                        <li>What are the YES Kasi Up Refer &amp; Earn Service Plans?<br />
+                                            <span class="desc">The Kasi Up Plans consists of the follows:<br />
+        (a) Kasi Up Postpaid 49;<br />
+        (b) Kasi Up Postpaid 49 (with contract);<br />
+        (c) Kasi Up Postpaid 30 Phone Bundle (with contract); and<br />
+        (d) Kasi Up Prepaid 15. </span><br />
+                                            <br />
+                                            <span class="desc">The specific service offerings under each of the Kasi Up Plans are stated below:<br />
+        a. YES Kasi Up Postpaid Service Plans </span>
+                                            <div style="width: 100%; overflow: auto;">
+                                                <table border="1" cellpadding="3" cellspacing="1" style="min-width: 480px;" width="100%">
+                                                    <tbody>
+                                                        <tr bgcolor="#0faef1" style="font-weight: bold">
+                                                            <td align="center" style="width: 268px;" width="60%">Postpaid Service Plan Name</td>
+                                                            <td align="center" style="width: 306px;" width="20%">Kasi Up Postpaid 49</td>
+                                                            <td align="center" style="width: 268px;" width="60%">Kasi Up Postpaid 49 (with contract)</td>
+                                                            <td align="center" style="width: 306px;" width="20%">Kasi Up Postpaid 30 Phone Bundle (with contract)</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Price</td>
+                                                            <td align="center" style="width: 306px;">RM49</td>
+                                                            <td align="center" style="width: 306px;">RM49</td>
+                                                            <td align="center" style="width: 306px;">RM30</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Data</td>
+                                                            <td align="center" style="width: 306px;">100GB</td>
+                                                            <td align="center" style="width: 306px;">100GB</td>
+                                                            <td align="center" style="width: 306px;">20GB</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Contract</td>
+                                                            <td align="center" style="width: 306px;">-</td>
+                                                            <td align="center" style="width: 306px;">24 months</td>
+                                                            <td align="center" style="width: 306px;">24 months</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Plan Advance Payment</td>
+                                                            <td align="center" style="width: 306px;">RM49 (Rebated in the first 2 months)</td>
+                                                            <td align="center" style="width: 306px;">-</td>
+                                                            <td align="center" style="width: 306px;">RM180 (Rebated after the end of the Contract Period)</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Plan Deposit</td>
+                                                            <td align="center" style="width: 306px;">-</td>
+                                                            <td align="center" style="width: 306px;">RM49 (Refunded upon termination of the Service account)</td>
+                                                            <td align="center" style="width: 306px;">-</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">On-Net Services of voice calls and SMS*</td>
+                                                            <td align="center" style="width: 306px;">Unlimited</td>
+                                                            <td align="center" style="width: 306px;">Unlimited</td>
+                                                            <td align="center" style="width: 306px;">Unlimited</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Off-Net Services of voice calls*</td>
+                                                            <td align="center" style="width: 306px;">Unlimited</td>
+                                                            <td align="center" style="width: 306px;">Unlimited</td>
+                                                            <td align="center" style="width: 306px;">At the rate of RM 0.09 per min subject to charging block for every 30 seconds</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Off-Net SMS</td>
+                                                            <td align="center" style="width: 306px;">RM 0.09 per SMS</td>
+                                                            <td align="center" style="width: 306px;">RM 0.09 per SMS</td>
+                                                            <td align="center" style="width: 306px;">RM 0.09 per SMS</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Special Offer</td>
+                                                            <td align="center" style="width: 306px;">Port in customers under the MNP Promotion will be entitled to a rebate of RM5 of the Commitment Fee Cycle for a consecutive period of 12 months from the SIM Card activation date**</td>
+                                                            <td align="center" style="width: 306px;">First 6 months of Commitment Fee is WAIVED***</td>
+                                                            <td align="center" style="width: 306px;">-</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <span class="desc">&nbsp;&nbsp;&nbsp;b. YES Kasi Up Prepaid Service Plan</span>
+
+                                            <div style="width: 100%; overflow: scroll;">
+                                                <table border="1" cellpadding="3" cellspacing="1" width="100%">
+                                                    <tbody>
+                                                        <tr bgcolor="#0faef1" style="font-weight: bold">
+                                                            <td align="center" style="width: 268px;" width="60%">Plan</td>
+                                                            <td align="center" style="width: 306px;" width="20%">Kasi Up Prepaid 15</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Price</td>
+                                                            <td align="center" style="width: 306px;">RM15</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Data</td>
+                                                            <td align="center" style="width: 306px;">10GB</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Validity</td>
+                                                            <td align="center" style="width: 306px;">30 days from the SIM activation date</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Onnet Calls and SMS</td>
+                                                            <td align="center" style="width: 306px;">unlimited</td>
+                                                        </tr>
+                                                        <tr style="font-weight:normal !important">
+                                                            <td align="center" style="width: 268px;">Offnet Calls and SMS</td>
+                                                            <td align="center" style="width: 306px;">9 sen/sms</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                        <!--  -->
+                                        <li>How do I find my Referral Code?<br />
+                                            <span class="desc">Your referral code is your YES number. If someone else uses your referral code during their purchase of any YES Postpaid or Prepaid plan, you will receive cash reward upon their activation.</span><br
+                                            /> &nbsp;
+                                        </li>
+                                        <!--  -->
+                                        <li>Will I be completely excluded from participating in the YES Kasi Up Refer &amp; Earn Programme if I have subscribed to any of the Excluded Service Plans?<br />
+                                            <span class="desc">You can participate in the YES Kasi Up Refer &amp; Earn Programme as long as you have subscribed to a Postpaid Service Plan and/or Prepaid Service Plan, in addition to the Excluded Service Plans. Just share the Referral Code of such Postpaid Service Plan or Prepaid Service Plan you have subscribed to.</span><br
+                                            /> &nbsp;
+                                        </li>
+                                        <!--  -->
+                                        <li>As a Referrer, how do I share my Referral Code?<br />
+                                            <span class="desc">You may share your Referral Code via the Refer Now button on the MyYES app.<br />
+        • log-in to MyYES app;<br />
+        • click on the “Earn Reward when you refer Friends” banner<br />
+        • click on the tab “REFER NOW”<br />
+        • select the social media platform which you intend to use as a medium to share the Referral Code</span><br /> &nbsp;
+                                        </li>
+                                        <!-- &nbsp;&nbsp;&nbsp; -->
+                                        <!--  -->
+                                        <!--  -->
+                                        <li>Can I use my own Referral Code to subscribe to any of the Kasi Up Plans?<br />
+                                            <span class="desc">No, you cannot use your own Referral Code to subscribe to any of the Kasi Up Plans under this YES Kasi Up Refer &amp; Earn Programme.<br />
+        &nbsp;</span></li>
+                                        <li>What is the Kasi Up Cash Reward?&nbsp;<br />
+                                            <span class="desc">The Kasi Up Cash Reward is dependent on the type of plan that is purchased using your Referral Code</span>
+                                            <div style="width: 100%; overflow: scroll;">
+                                                <table align="center" border="1" cellpadding="0" cellspacing="0" class="thirty-telephone" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td rowspan="2" style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>No</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center" rowspan="2" style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>R&amp;R Plan </strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center " colspan="1" style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc">&nbsp;</span></span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center" colspan="10" style="background-color:#CDECFA"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>Cash Reward Earned Period</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>Total amount to be earned</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>Upon Activation</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>mth 1 (30 daqys)*</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>mth 2 (60 days)*</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>mth 3 (90 days)*</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>mth 4 (120 days)*</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>mth 5 (150 days)*</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>mth 6 (180 days)*</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>mth 7 (210 days)*</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>mth 8 (240 days)*</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td style="background-color:#0faef1"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>mth 9 (270 days)*</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">1</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>Kasi Up Postpaid 49(without contract)</strong></span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 50</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 20</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 10</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 10</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 10</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">2</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>Kasi Up Postpaid 49 (with contract)</strong> </span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 50</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 20</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 10</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 10</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 10</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">3</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>Kasi Up Postpaid 30 Phone Bundle (with contract)</strong> </span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 15</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 15</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">4</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc"><strong>Kasi Up Prepaid 15</strong> </span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 5</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">RM 5</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                            <td align="center"><span class="desc"><span class="desc"><span class="desc"><span class="desc">-</span></span>
+                                                                </span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">*Terms and Conditions apply.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>Are there any limitations in the number of people I can refer under the YES Kasi Up Refer &amp; Earn Programme?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">No, there are no limitations. You can earn as much cash as you can by referring as many people as you can.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>Can I transfer or assign my Referral Code to any other person(s)?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">No, you cannot transfer or assign your Referral Code to any other person.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>When can I redeem the Kasi Up Cash Reward?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">You can redeem the Kasi Up Cash Reward once it is reflected in your wallet. Please note that you may:<br />
+        (a) Apply for only one (1) cash withdrawal; and<br />
+        (b) A minimum of RM50 to a maximum sum of RM5,000.00 only per day.<br />
+        In addition, you may perform cash outs not exceeding RM20,000.00 per month.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>Will I be able to redeem the Kasi Up Cash Reward in the In Wallet once my Service account is terminated?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">No, you will not be able to redeem the Kasi Up Cash Reward in the In Wallet once your Service account is terminated. Any unredeemed Kasi Up Cash Reward in the In Wallet will be surrendered to the Registrar of Unclaimed Money under the Accountant-General’s Department.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>What can I do with the Kasi Up Cash Reward in my In Wallet?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">You can:<br />
+        (a) Cash out<br />
+        (b) Pay your bill<br />
+        (c) Purchase Prepaid Reloads<br />
+        (d) Purchase any Data Add-Ons, except of Data Roaming Add-Ons</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>How do I cash out the Kasi Up Cash Rewards that I have earned?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">1. Download the MyYES app and log on;<br />
+        2. Click on the YES Kasi Up Refer &amp; Earn banner;<br />
+        3. Click on the tab “Redeem”;<br />
+        4. Choose the Cash Out Option;<br />
+        5. Key in your bank details, personal details and the amount you intend to cash out;<br />
+        6. Click on the button “Request TAC”;<br />
+        7. Key in the 6-digit TAC number sent by way of SMS to your registered phone number; and<br />
+        8. Click on the tab “submit”.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>How can I use the Kasi Up Cash Rewards to perform Bill payments?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">1. Download the MyYES app and log on;<br />
+        2. Click on the YES Kasi Up Refer &amp; Earn banner;<br />
+        3. Click on the tab “Redeem”;<br />
+        4. Click on the tab “Choose Bill Payment”;<br />
+        5. Click on the tab “Pay Outstanding Amount”;<br />
+        6. Click on the tab “Payment Type My Rewards”; and<br />
+        7. Click on the tab “Pay Now”.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>How can I use the Kasi up Cash Reward to purchase Prepaid Reloads?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">1. Download the MyYES app and log on;<br />
+        2. Click on the YES Kasi Up Refer &amp; Earn banner;<br />
+        3. Click on the tab “Redeem”;<br />
+        4. Click on the tab “Reload Option”;<br />
+        5. Click on the tab “Type of Reload Amount”;<br />
+        6. Click on the tab “Payment Type My Rewards”; and<br />
+        7. Click on the tab “Pay Now”.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>How can I use the Kasi Up Cash Reward to purchase Data Add-Ons?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">1. Download the MyYES app and log on;<br />
+        2. Click on the YES Kasi Up Refer &amp; Earn banner;<br />
+        3. Click on the tab “Redeem”;<br />
+        4. Click on the tab “Buy Add-Ons”;<br />
+        5. Click on the tab “Type of Add-On”;<br />
+        6. Click on the tab “Payment Type My Rewards”; and<br />
+        7. Click on the tab “Pay Now”.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>Can I use the Kasi Up Cash Reward in the In Wallet towards Bill payment, to purchase Prepaid Reloads and/or purchase Data Add-Ons if my Service account is barred or suspended?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">You may still use the Kasi Up Cash Reward in the In Wallet towards Bill payments, to purchase Prepaid Reloads or to purchase Data Add-Ons even though your Service account is barred or suspended. You cannot perform cash out of the Kasi Up Cash Reward if your Service account is barred or suspended.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>Is there any expiry date on the Kasi Up Cash Rewards in the In Wallet?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">No, there is no expiry date on the Kasi Up Cash Reward in the In Wallet.</span></span>
+                                            </span>
+                                            </span>
+                                            </span><br /> &nbsp;
+                                        </li>
+                                        <li>How long does it take for the Kasi Up Cash Reward cash out payment to be deposited into my bank account?<br />
+                                            <span class="desc"><span class="desc"><span class="desc"><span class="desc"><span class="desc">It depends on the GIRO policy of each bank. Please check with your respective banks should you require any clarification</span></span>
+                                            </span>
+                                            </span>
+                                            </span>.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
