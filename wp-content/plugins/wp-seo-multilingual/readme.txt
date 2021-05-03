@@ -1,2 +1,2 @@
-=== Yoast SEO Multilingual ===
-Stable tag: 1.3.0
+=== WPML SEO ===
+Stable tag: 2.0.0

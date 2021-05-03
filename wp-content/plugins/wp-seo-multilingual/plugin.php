@@ -1,24 +1,25 @@
 <?php
 /**
- * Plugin Name: Yoast SEO Multilingual
+ * Plugin Name: WPML SEO
  * Plugin URI: https://wpml.org/
- * Description: Compatibility layer for WordPress SEO and WPML | <a href="https://wpml.org/documentation/plugins-compatibility/using-wordpress-seo-with-wpml/">Documentation</a>
+ * Description: Multilingual support for popular SEO plugins
  * Author: OnTheGoSystems
  * Author URI: http://www.onthegosystems.com/
- * Version: 1.3.0
+ * Version: 2.0.0
  * Plugin Slug: wp-seo-multilingual
  *
  * @package wpml/wpseo
  */
 
-use WPML\WPSEO\Loaders;
+use WPML\WPSEO\Loaders as YoastSEOLoaders;
+use WPML\WPSEO\RankMathSEO\Loaders as RankMathSEOLoaders;
 
 // Check if we are already active.
 if ( defined( 'WPSEOML_VERSION' ) ) {
 	return;
 }
 
-define( 'WPSEOML_VERSION', '1.3.0' );
+define( 'WPSEOML_VERSION', '2.0.0' );
 define( 'WPSEOML_PLUGIN_PATH', dirname( __FILE__ ) );
 
 /**
@@ -60,12 +61,14 @@ if ( apply_filters( 'wpml_setting', false, 'setup_complete' ) ) {
  * Initialize plugin when WPML has loaded.
  */
 function wpml_wpseo_init() {
-	// Dont load if Yoast SEO is not active.
-	if ( ! defined( 'WPSEO_VERSION' ) ) {
-		return;
+	if ( defined( 'WPSEO_VERSION' ) ) {
+		$actions_filters_loader = new WPML_Action_Filter_Loader();
+		$actions_filters_loader->load( YoastSEOLoaders::get( WPSEO_VERSION ) );
 	}
 
-	$actions_filters_loader = new WPML_Action_Filter_Loader();
-	$actions_filters_loader->load( Loaders::get( WPSEO_VERSION ) );
+	if ( defined( 'RANK_MATH_VERSION' ) ) {
+		$actions_filters_loader = new WPML_Action_Filter_Loader();
+		$actions_filters_loader->load( RankMathSEOLoaders::get() );
+	}
 }
 add_action( 'wpml_loaded', 'wpml_wpseo_init' );

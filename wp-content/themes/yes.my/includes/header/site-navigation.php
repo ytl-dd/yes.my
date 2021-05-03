@@ -1,11 +1,21 @@
+        <?php 
+            $lang           = get_bloginfo("language");
+            $sl_permalink   = get_permalink(STORE_LOCATOR_POST_ID_EN);
+            if ($lang == 'ms-MY') {
+                $sl_permalink   = get_permalink(STORE_LOCATOR_POST_ID_BM);
+            } else if ($lang == 'zh-CN') {
+                $sl_permalink   = get_permalink(STORE_LOCATOR_POST_ID_CH);
+            }
+        ?>
+
         <nav class="nav-mobile">
             <div class="mobile-shop">
-                <a tabindex="-1" aria-label="Site Logo" href="https://www.yes.my/" class="site-logo" style="margin-right:10px;">
+                <a tabindex="-1" aria-label="Site Logo" href="<?= get_home_url(); ?>" class="site-logo" style="margin-right:10px;">
                     <svg class="ia ia-yes">
                         <use xlink:href="#ia-yes"></use>
                     </svg>
                 </a>
-                <a tabindex="-1" title="<?= esc_html_e('Store Locator', 'yes.my'); ?>" href="https://www.yes.my/support/store-locator" class="btn-locator">
+                <a tabindex="-1" title="<?= esc_html_e('Store Locator', 'yes.my'); ?>" href="<?= $sl_permalink ?>" class="btn-locator">
                     <svg class="ia ia-pin">
                         <use xlink:href="#ia-pin"></use>
                     </svg>
@@ -22,7 +32,7 @@
                     </svg>
                 </a>
             </div>
-            <form id="mysearch2" method="get" action="https://www.yes.my/search/google-search">
+            <form id="mysearch2" method="get" action="<?= get_home_url(); ?>/search">
                 <input id="sToken2" name="sToken" type="hidden" value="nyUkgDUBlM+cq0WYJTSuTlkx7AEJ5Yoz">
                 <button type="submit" title="<?= esc_html_e('Search', 'yes.my'); ?>" class="but-trigger-search" style="background:none;border:none;">
                     <svg class="ia ia-search">
@@ -133,7 +143,7 @@
                                 ?>
                                 <?php echo yesmy_language_switcher(); ?>
                                 <span class="menus menu-shop">
-                                    <a href="https://www.yes.my/support/store-locator" class="i-locator">
+                                    <a href="<?= $sl_permalink ?>" class="i-locator">
                                         <svg class="ia ia-pin">
                                             <use xlink:href="#ia-pin"></use>
                                         </svg>
@@ -241,7 +251,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <form id="mysearch" method="get" action="<?= get_site_url(); ?>/search">
+                        <form id="mysearch" method="get" action="<?= get_home_url(); ?>/search">
                             <!-- <input id="sToken" name="sToken" type="hidden" value="nyUkgDUBlM+cq0WYJTSuTlkx7AEJ5Yoz" /> -->
                             <button type="submit" class="but-trigger-search" title="<?= esc_html_e('Search', 'yes.my'); ?>">
                                 <svg class="ia ia-search">

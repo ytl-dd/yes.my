@@ -2,10 +2,12 @@
 
 namespace WPML\WPSEO\Presentation;
 
+use WPML\FP\Logic;
+use WPML\FP\Maybe;
 use WPML\FP\Obj;
-use WPML\WPSEO\Meta\SocialHooks;
 use WPML\WPSEO\Utils;
 use Yoast\WP\SEO\Presentations\Indexable_Presentation;
+use function WPML\FP\pipe;
 
 class Hooks implements \IWPML_Frontend_Action {
 
@@ -133,12 +135,12 @@ class Hooks implements \IWPML_Frontend_Action {
 
 				$indexable->breadcrumb_title = $getDefaultLabel( $indexable );
 				$indexable->breadcrumb_title = $getYoastLabel( $indexable );
-				$indexable->permalink        = get_post_type_archive_link( $indexable->object_sub_type );
+				$indexable->permalink        = self::getPostTypeArchiveLink( $indexable->object_sub_type, $indexable->permalink );
 			}
 			if ( 'term' === $indexable->object_type ) {
 				$term                        = apply_filters( 'wpml_object_id', $indexable->object_id, $indexable->object_sub_type, true );
-				$indexable->permalink        = get_term_link( $term );
-				$indexable->breadcrumb_title = get_term( $term )->name;
+				$indexable->permalink        = self::getTermLink( $term, $indexable->permalink );
+				$indexable->breadcrumb_title = Obj::prop( 'name', get_term( $term ) ) ?: $indexable->breadcrumb_title;
 			} else {
 				$indexable->permalink = apply_filters( 'wpml_permalink', $indexable->permalink );
 			}
@@ -155,16 +157,52 @@ class Hooks implements \IWPML_Frontend_Action {
 	 * @return Indexable_Presention
 	 */
 	public function translatePermalinks( $presentation ) {
-		$presentation = clone $presentation;
+		$newLink      = null;
+		$originalLink = Obj::path( [ 'model', 'permalink' ], $presentation );
+		$objectType   = Obj::path( [ 'model', 'object_type' ], $presentation );
 
-		if ( 'post' === $presentation->model->object_type ) {
-			$presentation->model->permalink = get_permalink( $presentation->model->object_id );
-		} elseif ( 'term' === $presentation->model->object_type ) {
-			$presentation->model->permalink = get_term_link( $presentation->model->object_id );
-		} elseif ( 'post-type-archive' === $presentation->model->object_type ) {
-			$presentation->model->permalink = get_post_type_archive_link( $presentation->model->object_sub_type );
+		if ( 'post' === $objectType ) {
+			$newLink = self::getPermalink( $presentation->model->object_id, $originalLink );
+		} elseif ( 'term' === $objectType ) {
+			$newLink = self::getTermLink( $presentation->model->object_id, $originalLink );
+		} elseif ( 'post-type-archive' === $objectType ) {
+			$newLink = self::getPostTypeArchiveLink( $presentation->model->object_sub_type, $originalLink );
 		}
 
-		return $presentation;
+		return Obj::assocPath( [ 'model', 'permalink' ], $newLink, $presentation );
+	}
+
+	/**
+	 * @param \WP_Post|int $post
+	 * @param string       $fallback
+	 *
+	 * @return string
+	 */
+	private static function getPermalink( $post, $fallback ) {
+		return Maybe::fromNullable( get_permalink( $post ) )
+		     ->getOrElse( $fallback );
+	}
+
+	/**
+	 * @param \WP_Term|int $term
+	 * @param string       $fallback
+	 *
+	 * @return string
+	 */
+	private static function getTermLink( $term, $fallback ) {
+		return Maybe::fromNullable( get_term_link( $term ) )
+		     ->filter( pipe( Logic::not(), 'is_wp_error' ) )
+		     ->getOrElse( $fallback );
+	}
+
+	/**
+	 * @param string $postType
+	 * @param string $fallback
+	 *
+	 * @return string
+	 */
+	private static function getPostTypeArchiveLink( $postType, $fallback ) {
+		return Maybe::fromNullable( get_post_type_archive_link( $postType ) )
+		     ->getOrElse( $fallback );
 	}
 }

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitcacdc1ebb10a39c6a9bfb686e2966bc9
+class ComposerStaticInit7b12e8a2fff78bc26cacc988c9598dc8
 {
     public static $classMap = array (
         'OTGS_Assets_Handles' => __DIR__ . '/..' . '/otgs/ui/src/php/OTGS_Assets_Handles.php',
@@ -15,6 +15,10 @@ class ComposerStaticInitcacdc1ebb10a39c6a9bfb686e2966bc9
         'WPML\\WPSEO\\Meta\\SocialHooks' => __DIR__ . '/../..' . '/classes/Meta/SocialHooks.php',
         'WPML\\WPSEO\\Presentation\\Hooks' => __DIR__ . '/../..' . '/classes/Presentation/Hooks.php',
         'WPML\\WPSEO\\PrimaryCategory\\Hooks' => __DIR__ . '/../..' . '/classes/PrimaryCategory/Hooks.php',
+        'WPML\\WPSEO\\RankMathSEO\\Compatibility\\WooCommerce\\Hooks' => __DIR__ . '/../..' . '/classes/RankMathSEO/Compatibility/WooCommerce/Hooks.php',
+        'WPML\\WPSEO\\RankMathSEO\\Loaders' => __DIR__ . '/../..' . '/classes/RankMathSEO/Loaders.php',
+        'WPML\\WPSEO\\RankMathSEO\\Sitemap\\Hooks' => __DIR__ . '/../..' . '/classes/RankMathSEO/Sitemap/Hooks.php',
+        'WPML\\WPSEO\\RankMathSEO\\Sitemap\\LangMode\\DirectoryHooks' => __DIR__ . '/../..' . '/classes/RankMathSEO/Sitemap/LangMode/DirectoryHooks.php',
         'WPML\\WPSEO\\SlugTranslation\\Hooks' => __DIR__ . '/../..' . '/classes/SlugTranslation/Hooks.php',
         'WPML\\WPSEO\\Utils' => __DIR__ . '/../..' . '/classes/Utils.php',
         'WPML_Core_Version_Check' => __DIR__ . '/..' . '/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-core-version-check.php',
@@ -32,7 +36,7 @@ class ComposerStaticInitcacdc1ebb10a39c6a9bfb686e2966bc9
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInitcacdc1ebb10a39c6a9bfb686e2966bc9::$classMap;
+            $loader->classMap = ComposerStaticInit7b12e8a2fff78bc26cacc988c9598dc8::$classMap;
 
         }, null, ClassLoader::class);
     }
