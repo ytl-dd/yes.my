@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-17 19:30:39+0000\n"
+"PO-Revision-Date: 2021-05-13 05:32:56+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,105 +27,105 @@ msgstr "Asia/Shanghai"
 msgid "Continue"
 msgstr "继续"
 
-#: wp-admin/about.php:143
+#: wp-admin/about.php:164
 msgid "<strong>Buttons block:</strong> now you can choose a vertical or a horizontal layout. And you can set the width of a button to a preset percentage."
 msgstr "<strong>按钮区块：</strong>现在您可以选择垂直或水平布局。您还可以将按钮的宽度设置为预设的百分比。"
 
-#: wp-admin/about.php:239
+#: wp-admin/about.php:260
 msgid "Now it’s simple to let iframes lazy-load. By default, WordPress will add a <code>loading=\"lazy\"</code> attribute to iframe tags when both width and height are specified."
 msgstr "现在让iframe延迟载入很简单。默认情况下，当iframe标签中宽度和高度属性值都被指定时，WordPress会向iframe标签添加一个<code>loading=\"lazy\"</code>属性。"
 
-#: wp-admin/about.php:237
+#: wp-admin/about.php:258
 msgid "In 5.7, jQuery gets more focused and less intrusive, with fewer messages in the console."
 msgstr "在WordPress 5.7中，jQuery将变得更专注，带来更小的干扰，留下更少的控制台消息。"
 
-#: wp-admin/about.php:230
+#: wp-admin/about.php:251
 msgid "The new Robots API lets you include the filter directives in the robots meta tag, and the API includes the <code>max-image-preview: large</code> directive by default. That means search engines can show bigger image previews, which can boost your traffic (unless the site is marked <em>not-public</em>)."
 msgstr "全新的Robots API允许您在Robots meta标记中包含过滤器指令，默认情况下，该API将包含<code>max-image-preview: large</code>指令。这意味着搜索引擎可以显示更大的图片预览，可以增加您网站的流量（除非网站被标记为非公开）。"
 
-#: wp-admin/about.php:173
+#: wp-admin/about.php:194
 msgid "Above, the Dashboard before and after the color update in 5.7."
 msgstr "在WordPress 5.7中，仪表盘颜色更新前后的变化如上所示。"
 
-#: wp-admin/about.php:170
+#: wp-admin/about.php:191
 msgid "Dashboard with new color scheme."
 msgstr "具有新配色方案的仪表盘。"
 
-#: wp-admin/about.php:168
+#: wp-admin/about.php:189
 msgid "Dashboard with old color scheme."
 msgstr "具有旧配色方案的仪表盘。"
 
-#: wp-admin/about.php:148
+#: wp-admin/about.php:169
 msgid "<strong>Social Icons block:</strong> now you can change the size of the icons."
 msgstr "<strong>社交图标区块：</strong>现在您可以更改图标的大小。"
 
-#: wp-admin/about.php:238
+#: wp-admin/about.php:259
 msgid "Lazy-load your iframes"
 msgstr "延迟加载您的iframe"
 
-#: wp-admin/about.php:236
+#: wp-admin/about.php:257
 msgid "For years jQuery helped make things move on the screen in ways the basic tools couldn’t—but that keeps changing, and so does jQuery."
 msgstr "多年来，jQuery帮助让事物以基本工具无法实现的方式在屏幕上移动——但此种情况一直在变更，jQuery也是如此。"
 
-#: wp-admin/about.php:235
+#: wp-admin/about.php:256
 msgid "Ongoing cleanup after update to jQuery 3.5.1"
 msgstr "更新到jQuery 3.5.1后正在进行的清理。"
 
-#: wp-admin/about.php:227
+#: wp-admin/about.php:248
 msgid "New Robots API"
 msgstr "全新Robots API"
 
-#: wp-admin/about.php:226
+#: wp-admin/about.php:247
 msgid "Starting now, switching a site from HTTP to HTTPS is a one-click move. WordPress will automatically update database URLs when you make the switch. No more hunting and guessing!"
 msgstr "从现在开始，可以一键式将站点从HTTP切换到HTTPS。当您进行切换时，WordPress会自动更新数据库的URL。再也无需寻找和猜测啦！"
 
-#: wp-admin/about.php:225
+#: wp-admin/about.php:246
 msgid "From HTTP to HTTPS in a single click"
 msgstr "从HTTP到HTTPS一键搞定"
 
 #. translators: %s: Color palette dev note link.
-#: wp-admin/about.php:204
+#: wp-admin/about.php:225
 msgid "Find the new palette in the default WordPress Dashboard color scheme, and use it when you’re building themes, plugins, or any other components. For all the details, <a href=\"%s\">check out the Color Palette dev note</a>."
 msgstr "在默认的WordPress仪表盘配色方案中找到新的调色盘，并在构建主题、插件或任何其他组件时使用。更多详细信息请<a href=\"%s\">查阅颜色调色盘开发说明</a>。"
 
-#: wp-admin/about.php:197
+#: wp-admin/about.php:218
 msgid "Half the range has a 4.5 or higher contrast ratio against black, and the other half maintains the same contrast against white."
 msgstr "范围的一半对黑色的对比度在4.5以上，另一半对白色的对比度保持不变。"
 
-#: wp-admin/about.php:190
+#: wp-admin/about.php:211
 msgid "The colors are perceptually uniform from light to dark in each range, which means they start at white and get darker by the same amount with each step."
 msgstr "在每个范围内，从亮到暗的颜色在视觉上是一致的，就是说它们从白色开始，每一步都以相同的量变暗。"
 
 #. translators: %s: WCAG information link.
-#: wp-admin/about.php:183
+#: wp-admin/about.php:204
 msgid "This new streamlined color palette collapses all the colors that used to be in the WordPress source code down to seven core colors and a range of 56 shades that meet the <a href=\"%s\">WCAG 2.0 AA recommended contrast ratio</a> against white or black."
 msgstr "这个新的精简调色盘将WordPress源代码中的所有颜色折叠成7种核心颜色和56种色调，这些颜色与白色或黑色都符合<a href=\"%s\">WCAG 2.0 AA推荐的对比度</a>。"
 
-#: wp-admin/about.php:161
+#: wp-admin/about.php:182
 msgid "A Simpler Default Color Palette"
 msgstr "更简单的默认调色盘"
 
-#: wp-admin/about.php:138
+#: wp-admin/about.php:159
 msgid "<strong>Full-height alignment:</strong> have you ever wanted to make a block, like the Cover block, fill the whole window? Now you can."
 msgstr "<strong>全高对齐：</strong>您是否想过让一个区块（如封面区块）可以填充整个窗口？现在终于可以了。"
 
-#: wp-admin/about.php:133
+#: wp-admin/about.php:154
 msgid "You can do more without writing custom code"
 msgstr "您无需编写自定义代码即可完成更多工作"
 
-#: wp-admin/about.php:119
+#: wp-admin/about.php:140
 msgid "<strong>Inserter drag-and-drop:</strong> drag blocks and block patterns from the inserter right into your post."
 msgstr "<strong>插入器拖放：</strong>可将区块和区块模式从插入器直接拖到您的文章中。"
 
-#: wp-admin/about.php:114
+#: wp-admin/about.php:135
 msgid "<strong>Reusable blocks:</strong> several enhancements make reusable blocks more stable and easier to use. And now they save automatically with the post when you click the Update button."
 msgstr "<strong>可重用区块：</strong>多项增强功能使可重用区块更稳定且易于使用。现在，当您点击“更新”按钮时，它们会与文章一起自动保存。"
 
-#: wp-admin/about.php:109
+#: wp-admin/about.php:130
 msgid "<strong>Font-size adjustment in more places:</strong> now, font-size controls are right where you need them in the List and Code blocks. No more trekking to another screen to make that single change!"
 msgstr "<strong>更多位置的字体大小调整：</strong> 现在，字体大小控件将显示于“列表”和“代码”区块中需要它们的地方，不再需要跳转到另一个界面，字体调整一步到位！"
 
-#: wp-admin/about.php:104
+#: wp-admin/about.php:125
 msgid "Now the editor is easier to use"
 msgstr "编辑器现在更易于使用"
 
@@ -136,7 +136,7 @@ msgstr "在这个新版本中，WordPress将为您带来鲜活色彩。编辑器
 #. translators: %s: The current WordPress version number.
 #: wp-admin/about.php:54
 msgid "Step into WordPress %s."
-msgstr "走进WordPress%s。"
+msgstr "走进WordPress %s。"
 
 #: wp-admin/credits.php:37 wp-admin/privacy.php:34 wp-admin/freedoms.php:40
 #: wp-admin/about.php:37
@@ -377,7 +377,7 @@ msgstr "更新站点以使用HTTPS"
 #. translators: 1: wp-config.php, 2: WP_HOME, 3: WP_SITEURL
 #: wp-admin/includes/class-wp-site-health.php:1589
 msgid "However, your WordPress Address is currently controlled by a PHP constant and therefore cannot be updated. You need to edit your %1$s and remove or update the definitions of %2$s and %3$s."
-msgstr "但是，您的WordPress地址当前由PHP常量控制，因此无法更新。您需要编辑%1$s并删除或更新%2$s和%3$s的定义。"
+msgstr "但是，您的WordPress地址当前由PHP常量控制，因此无法更新。您需要编辑%1$s并移除或更新%2$s和%3$s的定义。"
 
 #: wp-admin/includes/class-wp-site-health.php:1581
 msgid "HTTPS is already supported for your website."
@@ -502,7 +502,7 @@ msgid "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-
 msgstr "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-is-authentication-not-working"
 
 #. translators: %s: WordPress 5.7 Field Guide link.
-#: wp-admin/about.php:252
+#: wp-admin/about.php:273
 msgid "Check out the latest version of the WordPress Field Guide. It highlights developer notes for each change you may want to be aware of. <a href=\"%s\">WordPress 5.7 Field Guide.</a>"
 msgstr "查阅最新版的《WordPress详解指南》，其强调了您可能需要了解的每个更改的开发人员注释。《<a href=\"%s\">WordPress 5.7详解指南</a>》"
 
@@ -573,7 +573,7 @@ msgstr "添加新的应用程序密码"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "此功能需要创建应用程序密码，但不需要更新用户信息。"
 
-#: wp-admin/about.php:265
+#: wp-admin/about.php:286
 msgid "Go to Updates"
 msgstr "转到“更新”页面"
 
@@ -923,7 +923,7 @@ msgstr "%1$s的值比%2$s小。"
 msgid "Environment type"
 msgstr "环境类型"
 
-#: wp-admin/about.php:247
+#: wp-admin/about.php:268
 msgid "Check the Field Guide for more!"
 msgstr "请参阅详解指南以进一步了解相关信息。"
 
@@ -1794,7 +1794,7 @@ msgstr "尚无信息…"
 #. translators: 1: upload_max_filesize, 2: php.ini
 #: wp-admin/includes/file.php:820
 msgid "The uploaded file exceeds the %1$s directive in %2$s."
-msgstr "上传的文件尺寸超过%1$s文件中定义的%2$s值。"
+msgstr "上传的文件大小超过%1$s文件中定义的%2$s值。"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:221
 msgid "No comments found in Trash."
@@ -2302,7 +2302,7 @@ msgstr "向左转"
 
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:147
 msgid "All automatic updates are disabled."
-msgstr "所有自动更新都已停用。"
+msgstr "所有自动更新都已禁用。"
 
 #: wp-admin/includes/class-wp-debug-data.php:877
 msgid "Database collation"
@@ -2462,7 +2462,7 @@ msgstr "状态"
 
 #: wp-admin/includes/class-wp-debug-data.php:462
 msgid "Themes directory location"
-msgstr "Themes目录位置"
+msgstr "主题目录位置"
 
 #: wp-admin/includes/class-wp-debug-data.php:122
 msgctxt "comment status"
@@ -2612,7 +2612,7 @@ msgstr "所有形式"
 
 #: wp-admin/includes/class-wp-posts-list-table.php:507
 msgid "Filter by post format"
-msgstr "以文章形式筛选"
+msgstr "按文章形式筛选"
 
 #: wp-admin/includes/plugin.php:2487
 msgid "Go to the Plugins screen"
@@ -3579,15 +3579,15 @@ msgstr "WordPress目录位置"
 
 #: wp-admin/includes/class-wp-debug-data.php:475
 msgid "Plugins directory size"
-msgstr "Plugins目录大小"
+msgstr "插件目录大小"
 
 #: wp-admin/includes/class-wp-debug-data.php:471
 msgid "Plugins directory location"
-msgstr "Plugins目录位置"
+msgstr "插件目录位置"
 
 #: wp-admin/includes/class-wp-debug-data.php:466
 msgid "Themes directory size"
-msgstr "Themes目录大小"
+msgstr "主题目录大小"
 
 #: wp-admin/includes/class-wp-debug-data.php:1107
 #: wp-admin/includes/class-wp-debug-data.php:1193
@@ -3596,11 +3596,11 @@ msgstr "主题目录位置"
 
 #: wp-admin/includes/class-wp-debug-data.php:457
 msgid "Uploads directory size"
-msgstr "Uploads目录大小"
+msgstr "上传目录大小"
 
 #: wp-admin/includes/class-wp-debug-data.php:453
 msgid "Uploads directory location"
-msgstr "Uploads目录位置"
+msgstr "上传目录位置"
 
 #. translators: 1: The IP address WordPress.org resolves to. 2: The error
 #. returned by the lookup.
@@ -3733,7 +3733,7 @@ msgstr "强化扩展"
 
 #: wp-admin/includes/class-wp-debug-data.php:135
 msgid "Directories and Sizes"
-msgstr "目录和尺寸"
+msgstr "目录和大小"
 
 #: wp-admin/includes/class-wp-debug-data.php:106
 msgid "Is this a multisite?"
@@ -3978,7 +3978,8 @@ msgstr "未能安装"
 
 #. translators: %s: WordPress version.
 #: wp-admin/includes/update.php:302 wp-admin/install.php:238
-#: wp-admin/update-core.php:84 wp-admin/upgrade.php:80 wp-admin/about.php:91
+#: wp-admin/update-core.php:84 wp-admin/upgrade.php:80 wp-admin/about.php:86
+#: wp-admin/about.php:112
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://cn.wordpress.org/support/wordpress-version/version-%s/"
 
@@ -4340,7 +4341,7 @@ msgstr "我们有何种数据泄露处理流程"
 #. translators: Privacy policy tutorial.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:620
 msgid "In this section you should explain what measures you have taken to protect your users&#8217; data. This could include technical measures such as encryption; security measures such as two factor authentication; and measures such as staff training in data protection. If you have carried out a Privacy Impact Assessment, you can mention it here too."
-msgstr "在此章节中，您应当解释您使用了何种措施来保护用户的数据。这包括了技术手段（例如加密）、安全手段（例如双因素认证）及其他措施（例如要求职员参加数据保护培训）。若您已经完成数据保护影响评估（Privacy Impact Assessment），也可在此提及。"
+msgstr "在此章节中，您应当解释您使用了何种措施来保护用户的数据。这包括了技术手段（例如加密）、安全手段（例如双因素身份验证）及其他措施（例如要求职员参加数据保护培训）。若您已经完成数据保护影响评估（Privacy Impact Assessment），也可在此提及。"
 
 #. translators: Default privacy policy heading.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:618
@@ -5646,7 +5647,7 @@ msgstr "自定义标志"
 #: wp-admin/users.php:412 wp-admin/users.php:444
 #: wp-admin/network/site-users.php:120
 msgid "Sorry, you are not allowed to remove users."
-msgstr "抱歉，您不能删除用户。"
+msgstr "抱歉，您不能移除用户。"
 
 #: wp-admin/user-new.php:16 wp-admin/user-new.php:56
 #: wp-admin/network/user-new.php:14
@@ -6238,7 +6239,7 @@ msgstr "更新进度"
 #. translators: %s: Taxonomy term name.
 #: wp-admin/includes/class-wp-terms-list-table.php:506
 msgid "View &#8220;%s&#8221; archive"
-msgstr "查看“%s”存档"
+msgstr "查看“%s”归档"
 
 #. translators: %s: Taxonomy term name.
 #: wp-admin/includes/class-wp-terms-list-table.php:497
@@ -6377,7 +6378,7 @@ msgid "(Currently set to: %s)"
 msgstr "（当前设置为：%s）"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:366
+#: wp-admin/about.php:76 wp-admin/about.php:387
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>版本%s</strong>修正了一个安全问题。"
 
@@ -6389,15 +6390,15 @@ msgstr "https://cn.gravatar.com/"
 msgid "Profile Picture"
 msgstr "资料图片"
 
-#: wp-admin/about.php:71 wp-admin/about.php:363
+#: wp-admin/about.php:71 wp-admin/about.php:384
 msgid "Maintenance and Security Releases"
 msgstr "维护和安全更新"
 
-#: wp-admin/about.php:360
+#: wp-admin/about.php:381
 msgid "Security Releases"
 msgstr "安全更新"
 
-#: wp-admin/about.php:357
+#: wp-admin/about.php:378
 msgid "Maintenance Releases"
 msgstr "维护更新"
 
@@ -6673,11 +6674,11 @@ msgstr "警告："
 
 #: wp-admin/includes/ms.php:983
 msgid "Once you hit &#8220;Confirm Deletion&#8221;, these users will be permanently removed."
-msgstr "在您点击“确认删除”之后，这些用户将被永久删除。"
+msgstr "在您点击“确认删除”之后，这些用户将被永久移除。"
 
 #: wp-admin/includes/ms.php:981
 msgid "Once you hit &#8220;Confirm Deletion&#8221;, the user will be permanently removed."
-msgstr "在您点击“确认删除”之后，该用户将被永久删除。"
+msgstr "在您点击“确认删除”之后，该用户将被永久移除。"
 
 #: wp-admin/includes/ms.php:966
 msgid "User has no sites or content and will be deleted."
@@ -6945,7 +6946,7 @@ msgstr "抱歉，您不能编辑评论。"
 
 #: wp-admin/includes/class-custom-image-header.php:948
 msgid "The current theme does not support a flexible sized header image."
-msgstr "当前主题不支持灵活尺寸的头部图像。"
+msgstr "当前主题不支持灵活大小的头部图像。"
 
 #: wp-admin/includes/class-custom-image-header.php:776
 #: wp-admin/includes/class-custom-image-header.php:940
@@ -7208,7 +7209,7 @@ msgstr "您已指定删除下列用户："
 
 #: wp-admin/plugins.php:350
 msgid "You are about to remove the following plugins:"
-msgstr "您将要删除以下插件："
+msgstr "您将要移除以下插件："
 
 #: wp-admin/plugins.php:348
 msgid "These plugins may be active on other sites in the network."
@@ -7782,7 +7783,7 @@ msgstr "“<strong>删除</strong>”链接会带您到“删除用户”确认�
 
 #: wp-admin/users.php:56
 msgid "<strong>Remove</strong> allows you to remove a user from your site. It does not delete their content. You can also remove multiple users at once by using bulk actions."
-msgstr "点击“<strong>移除</strong>”可以将用户从您的站点删除。该操作不会删除用户之前所发布的内容。您也可以通过批量操作功能一次移除多个用户。"
+msgstr "点击“<strong>移除</strong>”可以将用户从您的站点中移除。该操作不会删除用户之前所发布的内容。您也可以通过批量操作功能一次移除多个用户。"
 
 #: wp-admin/theme-install.php:334
 msgctxt "theme"
@@ -8635,7 +8636,7 @@ msgstr "在此页您可审阅、比较和恢复修订版本："
 
 #: wp-admin/revision.php:141
 msgid "Revisions are saved copies of your post or page, which are periodically created as you update your content. The red text on the left shows the content that was removed. The green text on the right shows the content that was added."
-msgstr "修订版本是在您编修您的文章和页面时，定期创建的拷贝。左边的红字表记了删除的内容，右边的绿字表记了加入的内容。"
+msgstr "修订版本是在您编修您的文章和页面时，定期创建的拷贝。左边的红字表记了移除的内容，右边的绿字表记了加入的内容。"
 
 #: wp-admin/revision.php:140
 msgid "This screen is used for managing your content revisions."
@@ -8713,7 +8714,7 @@ msgstr "编辑菜单"
 
 #: wp-admin/nav-menus.php:632
 msgid "Delete a menu item by <strong>expanding it and clicking the Remove link</strong>"
-msgstr "要删除菜单项目，请<strong>将其展开并点击“删除”链接</strong>"
+msgstr "要删除菜单项目，请<strong>将其展开并点击“移除”链接</strong>"
 
 #: wp-admin/nav-menus.php:631
 msgid "To reorganize menu items, <strong>drag and drop items with your mouse or use your keyboard</strong>. Drag or move a menu item a little to the right to make it a submenu"
@@ -9796,7 +9797,7 @@ msgstr "未保存的更改将丢失。按“确定”以继续，按“取消”
 
 #: wp-admin/options-writing.php:34
 msgid "Post via email settings allow you to send your WordPress installation an email with the content of your post. You must set up a secret email account with POP3 access to use this, and any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret."
-msgstr "通过邮件发布设置能让您通过邮件将您文章的内容发送到WordPress站点。您必须设置一个支持POP3的秘密电子邮箱账户才能使用此功能。此信箱接收到的任何信件都将被发布，所以将此地址保密是一个好主意。"
+msgstr "通过电子邮件发布文章的设置能让您通过电子邮件将您文章的内容发送到WordPress站点。您必须设置一个支持POP3的秘密电子邮箱账户才能使用此功能。该邮箱接收到的任何邮件都将被作为文章发布，所以将此地址保密是一个好主意。"
 
 #: wp-admin/users.php:45
 msgid "You can filter the list of users by User Role using the text links above the users list to show All, Administrator, Editor, Author, Contributor, or Subscriber. The default view is to show all users. Unused User Roles are not listed."
@@ -9856,26 +9857,26 @@ msgstr "在浏览站点时显示工具栏"
 
 #. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:88 wp-admin/about.php:389
+#: wp-admin/about.php:83 wp-admin/about.php:109 wp-admin/about.php:410
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "欲了解更多，参见<a href=\"%s\">发行注记</a>。"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:76 wp-admin/about.php:383
+#: wp-admin/about.php:97 wp-admin/about.php:404
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s版本</strong>修补了安全漏洞、修正了%2$s个问题。"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:377
+#: wp-admin/about.php:398
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s版本</strong>修补了安全漏洞、修正了%2$s个问题。"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:371
+#: wp-admin/about.php:392
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>%1$s版本</strong>修复了%2$s个问题。"
@@ -9885,19 +9886,19 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "欢迎访问WordPress仪表盘！在您每次登录站点后，您都会看到本页面。您可以在这里操作WordPress的各种管理功能。点击任何页面标题上方的“帮助”选项卡可阅读相应帮助信息。"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:368
+#: wp-admin/about.php:389
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>版本%s</strong>修正了一些安全问题。"
 
-#: wp-admin/about.php:362
+#: wp-admin/about.php:383
 msgid "Maintenance and Security Release"
 msgstr "维护和安全更新"
 
-#: wp-admin/about.php:359
+#: wp-admin/about.php:380
 msgid "Security Release"
 msgstr "安全更新"
 
-#: wp-admin/about.php:356
+#: wp-admin/about.php:377
 msgid "Maintenance Release"
 msgstr "维护更新"
 
@@ -10047,7 +10048,7 @@ msgstr "如有需要，WordPress可自动在您发布新文章时通知若干网
 
 #: wp-admin/options-writing.php:33
 msgid "Post Via Email"
-msgstr "通过邮件发布"
+msgstr "通过电子邮件发布文章"
 
 #: wp-admin/options-discussion.php:24
 msgid "This screen provides many options for controlling the management and display of comments and links to your posts/pages. So many, in fact, they won&#8217;t all fit here! :) Use the documentation links to get information on what each discussion setting does."
@@ -10168,7 +10169,7 @@ msgstr "点击<strong>预览/查看</strong>，您的浏览器将跳转到前台
 
 #: wp-admin/edit.php:267
 msgid "<strong>Trash</strong> removes your post from this list and places it in the Trash, from which you can permanently delete it."
-msgstr "点击<strong>移至回收站</strong>，该文章将会从列表中删除，并自动移至回收站。在回收站中，您可永久删除它。"
+msgstr "点击<strong>移至回收站</strong>，该文章将会从列表中移除，并自动移至回收站。在回收站中，您可以将其永久删除。"
 
 #: wp-admin/edit.php:266
 msgid "<strong>Quick Edit</strong> provides inline access to the metadata of your post, allowing you to update post details without leaving this screen."
@@ -10182,11 +10183,11 @@ msgstr "点击<strong>编辑</strong>可在编辑器中编辑该文章。直接�
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "由于当前多站点功能已经开启，您可以直接通过输入用户名或电子邮箱地址的方法添加网络中的用户，然后为其指定用户角色。如需修改密码等其他信息，您需要拥有管理网络的权限，访问“管理网络”>“所有用户”，然后将鼠标放置在用户名上方，点击出现的“编辑”链接。"
 
-#: wp-admin/about.php:268
+#: wp-admin/about.php:289
 msgid "Go to Dashboard &rarr; Home"
 msgstr "转到“仪表盘” &rarr; “首页”页面"
 
-#: wp-admin/about.php:265
+#: wp-admin/about.php:286
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "转到“仪表盘” &rarr; “更新”页面"
 
@@ -10403,7 +10404,7 @@ msgstr "搜索用户"
 
 #: wp-admin/users.php:580 wp-admin/network/site-users.php:255
 msgid "User removed from this site."
-msgstr "用户已从本站点删除。"
+msgstr "用户已从本站点移除。"
 
 #: wp-admin/users.php:569 wp-admin/network/site-users.php:249
 msgid "Changed roles."
@@ -10411,7 +10412,7 @@ msgstr "角色已改变。"
 
 #: wp-admin/users.php:403 wp-admin/users.php:435
 msgid "You can&#8217;t remove users."
-msgstr "您无法删除用户。"
+msgstr "您无法移除用户。"
 
 #: wp-admin/comment.php:166 wp-admin/theme-editor.php:305
 #: wp-admin/plugins.php:342 wp-admin/plugins.php:348
@@ -10678,7 +10679,7 @@ msgstr "若您希望从更多插件中选择，请点击“安装插件”按钮
 #. translators: %s: MAX_FILE_SIZE
 #: wp-admin/includes/file.php:826
 msgid "The uploaded file exceeds the %s directive that was specified in the HTML form."
-msgstr "上传的文件尺寸超过HTML表单所定义的%s值。"
+msgstr "上传的文件大小超过HTML表单所定义的%s值。"
 
 #: wp-admin/credits.php:150
 msgid "External Libraries"
@@ -10695,7 +10696,7 @@ msgstr "可用工具"
 #: wp-admin/includes/credits.php:104
 msgctxt "Translate this to be the equivalent of English Translators in your language for the credits page Translators section"
 msgid "Translators"
-msgstr "中文翻译者"
+msgstr "简体中文翻译贡献者"
 
 #. translators: 1: URL to Plugins screen, 2: URL to Themes screen, 3:
 #. https://wordpress.org/about/license
@@ -11137,7 +11138,7 @@ msgstr "https://wordpress.org/news/feed/"
 
 #: wp-admin/includes/dashboard.php:1459
 msgid "https://wordpress.org/news/"
-msgstr "https://wordpress.org/news/"
+msgstr "https://cn.wordpress.org/news/"
 
 #: wp-admin/options-discussion.php:73
 msgid "(Signup has been disabled. Only members of this site can comment.)"
@@ -11224,7 +11225,7 @@ msgstr "您可以选择在您站点的主页上显示什么。可以是按时间
 
 #: wp-admin/options-permalink.php:53
 msgid "The Optional fields let you customize the &#8220;category&#8221; and &#8220;tag&#8221; base names that will appear in archive URLs. For example, the page listing all posts in the &#8220;Uncategorized&#8221; category could be <code>/topics/uncategorized</code> instead of <code>/category/uncategorized</code>."
-msgstr "“可选”栏允许您在文章归档的URL中加入分类名和标签名。比如，“未分类”目录的文章归档页面的地址可以是<code>/topics/uncategorized</code>（默认情况下是<code>/category/uncategorized</code>）。"
+msgstr "“可选”字段允许您在文章归档的URL中加入分类名和标签名。比如，“未分类”的文章归档页面的地址可以是<code>/topics/uncategorized</code>（默认情况下是<code>/category/uncategorized</code>）。"
 
 #. translators: 1: %category%, 2: %tag%
 #: wp-admin/options-permalink.php:41
@@ -11674,7 +11675,7 @@ msgstr "WordPress 博客"
 
 #: wp-admin/users.php:460
 msgid "Remove Users from Site"
-msgstr "从站点删除用户"
+msgstr "从站点移除用户"
 
 #: wp-admin/includes/class-wp-users-list-table.php:303
 #: wp-admin/user-edit.php:426 wp-admin/user-edit.php:428 wp-admin/users.php:119
@@ -11750,7 +11751,7 @@ msgstr "其他用户已被移除。"
 
 #: wp-admin/users.php:583
 msgid "You can't remove the current user."
-msgstr "您无法删除当前用户。"
+msgstr "您无法移除当前用户。"
 
 #: wp-admin/users.php:489
 msgid "There are no valid users selected for removal."
@@ -12013,7 +12014,7 @@ msgstr "WordPress更新"
 msgid "Edit menu item"
 msgstr "编辑菜单项"
 
-#: wp-admin/about.php:268 wp-admin/includes/network.php:148
+#: wp-admin/about.php:289 wp-admin/includes/network.php:148
 msgid "Go to Dashboard"
 msgstr "转到“仪表盘”页面"
 
@@ -12043,7 +12044,7 @@ msgstr "您确定要删除这些文件和数据吗？"
 
 #: wp-admin/plugins.php:344
 msgid "You are about to remove the following plugin:"
-msgstr "您将要删除以下插件："
+msgstr "您将要移除以下插件："
 
 #: wp-admin/plugins.php:340
 msgid "Delete Plugin"
@@ -12627,11 +12628,11 @@ msgstr "邮件服务器"
 #. translators: 1, 2, 3: Examples of random email addresses.
 #: wp-admin/options-writing.php:145
 msgid "To post to WordPress by email, you must set up a secret email account with POP3 access. Any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret. Here are three random strings you could use: %1$s, %2$s, %3$s."
-msgstr "若您想通过发送邮件的方式在WordPress上发布文章，则必须设置一个具有POP3访问权限的秘密电子邮箱。鉴于此信箱接收到的任何信件都将被发布为文章，您最好将此地址保密。以下是一些随机字符串供您使用：%1$s、%2$s、%3$s。"
+msgstr "若您想通过发送邮件的方式在WordPress上发布文章，则必须设置一个具有POP3访问权限的秘密电子邮箱。鉴于该邮箱接收到的任何信件都将被发布为文章，您最好将此地址保密。以下是一些随机字符串供您使用：%1$s、%2$s、%3$s。"
 
 #: wp-admin/options-writing.php:140
 msgid "Post via email"
-msgstr "通过邮件发布"
+msgstr "通过电子邮件发布文章"
 
 #: wp-admin/options-writing.php:112
 msgid "Default Link Category"
@@ -12915,7 +12916,7 @@ msgstr "当评论者的内容、名称、网址、电邮、IP或浏览器用户�
 #. translators: %s: Number of links.
 #: wp-admin/options-discussion.php:194
 msgid "Hold a comment in the queue if it contains %s or more links. (A common characteristic of comment spam is a large number of hyperlinks.)"
-msgstr "当某条评论包含超过%s个超链接时，将其放入等待审队列（垃圾评论通常含有许多超链接）。"
+msgstr "当某条评论包含超过%s个超链接时，将其放入待审队列（垃圾评论通常含有许多超链接）。"
 
 #: wp-admin/options-discussion.php:188 wp-admin/options-discussion.php:189
 msgid "Comment Moderation"
@@ -13272,7 +13273,7 @@ msgstr "升级无法完成，因为WordPress %1$s需要PHP %2$s或更高版本�
 #. translators: %s: Theme name.
 #: wp-admin/includes/theme.php:83
 msgid "Could not fully remove the theme %s."
-msgstr "无法完全删除主题%s。"
+msgstr "无法完全移除主题%s。"
 
 #: wp-admin/includes/theme.php:72 wp-admin/includes/class-wp-upgrader.php:155
 msgid "Unable to locate WordPress theme directory."
@@ -14387,7 +14388,7 @@ msgstr "将此评论移至回收站"
 #: wp-admin/includes/dashboard.php:727
 msgctxt "verb"
 msgid "Spam"
-msgstr "垃圾评论"
+msgstr "标记为垃圾"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:730
 #: wp-admin/includes/dashboard.php:725
@@ -14882,7 +14883,7 @@ msgstr "清空回收站"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:418
 msgid "Empty Spam"
-msgstr "清空垃圾评论"
+msgstr "清空垃圾"
 
 #: wp-admin/includes/class-wp-links-list-table.php:121
 #: wp-admin/includes/class-wp-media-list-table.php:209

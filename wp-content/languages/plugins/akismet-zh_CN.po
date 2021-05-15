@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Akismet Spam Protection - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-02 08:21:18+0000\n"
+"PO-Revision-Date: 2021-05-04 02:30:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -100,7 +100,7 @@ msgstr "此站点使用Akismet来减少垃圾评论。<a href=\"%s\" target=\"_b
 
 #: class.akismet-admin.php:87
 msgid "We collect information about visitors who comment on Sites that use our Akismet anti-spam service. The information we collect depends on how the User sets up Akismet for the Site, but typically includes the commenter's IP address, user agent, referrer, and Site URL (along with other information directly provided by the commenter such as their name, username, email address, and the comment itself)."
-msgstr "我们收集关于在使用我们的Akismet反垃圾评论服务的站点处评论的访客的信息。我们收集的信息取决于用户如何为站点设置Akismet，但通常包括了评论者的IP地址、user agent、referrer及站点URL（和其他由评论者直接提供的信息如姓名、用户名、电子邮件地址和评论本文）。"
+msgstr "我们收集关于在使用我们的Akismet反垃圾评论服务的站点处评论的访客的信息。我们收集的信息取决于用户如何为站点设置Akismet，但通常包括了评论者的IP地址、user agent、referrer及站点URL（和其他由评论者直接提供的信息如姓名、用户名、电子邮箱地址和评论内容）。"
 
 #: class.akismet.php:250
 msgid "Comment discarded."
@@ -712,7 +712,7 @@ msgstr[0] "<a href=\"%1$s\">Akismet</a>为您的站点阻挡了<a href=\"%2$s\">
 #: class.akismet-admin.php:345
 msgctxt "comments"
 msgid "Spam"
-msgstr "垃圾"
+msgstr "评论垃圾"
 
 #: class.akismet-admin.php:275
 msgid "Cheatin&#8217; uh?"

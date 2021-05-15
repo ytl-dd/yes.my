@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-16 02:37:02+0000\n"
+"PO-Revision-Date: 2021-05-07 11:22:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1463,7 +1463,7 @@ msgstr "抱歉，您不能禁用此插件。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:525
 msgid "Cannot delete an active plugin. Please deactivate it first."
-msgstr "无法删除启用的插件。 请先停用它。"
+msgstr "无法删除已启用的插件。 请先将其禁用。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:490
 #: wp-admin/includes/ajax-actions.php:4547 wp-admin/plugins.php:268
@@ -4341,11 +4341,11 @@ msgstr "克罗地亚语"
 
 #: wp-includes/script-loader.php:976
 msgid "Chinese (Traditional)"
-msgstr "繁体中文"
+msgstr "中文(（繁体）"
 
 #: wp-includes/script-loader.php:975
 msgid "Chinese (Simplified)"
-msgstr "简体中文"
+msgstr "中文（简体）"
 
 #: wp-includes/script-loader.php:974
 msgid "Chinese"
@@ -4791,7 +4791,7 @@ msgstr "修改未被保存，因此没有可以回收的内容。"
 
 #: wp-includes/class-wp-customize-manager.php:3136
 msgid "There was an authentication problem. Please reload and try again."
-msgstr "认证出现问题，请刷新并重试。"
+msgstr "身份验证出现问题，请刷新并重试。"
 
 #. translators: %s: Number of invalid settings.
 #: wp-includes/script-loader.php:1197 wp-includes/script-loader.php:1199
@@ -5164,12 +5164,12 @@ msgstr "设置为特色图像"
 #: wp-includes/post.php:1749
 msgctxt "page"
 msgid "Remove featured image"
-msgstr "取消特色图像"
+msgstr "移除特色图像"
 
 #: wp-includes/post.php:1749
 msgctxt "post"
 msgid "Remove featured image"
-msgstr "取消特色图像"
+msgstr "移除特色图像"
 
 #: wp-includes/post.php:1748
 msgctxt "page"
@@ -5653,7 +5653,7 @@ msgstr "抱歉，您不能依此参数排序用户。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:196
 msgid "Sorry, you are not allowed to filter users by role."
-msgstr "抱歉，您不能依角色筛选用户。"
+msgstr "抱歉，您无法按角色筛选用户。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3683
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:934
@@ -5978,7 +5978,7 @@ msgstr "将结果集限制为有一个或多个状态的文章。"
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:651
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:866
 msgid "Comment field exceeds maximum length allowed."
-msgstr "评论字段超过了允许的最大尺寸。"
+msgstr "评论字段超过了允许的最大长度。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:323
 msgid "Taxonomies associated with post type."
@@ -7128,17 +7128,17 @@ msgstr "页眉视频"
 #. translators: 1: .mp4, 2: Header height in pixels.
 #: wp-includes/class-wp-customize-manager.php:5314
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a height of %2$s pixels."
-msgstr "以%1$s上传您的视频来减低文件尺寸并获得最佳结果。您的主题推荐使用%2$s的视频高度。"
+msgstr "以%1$s上传您的视频来优化文件大小并获得最佳结果。您的主题推荐使用%2$s的视频高度。"
 
 #. translators: 1: .mp4, 2: Header width in pixels.
 #: wp-includes/class-wp-customize-manager.php:5307
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a width of %2$s pixels."
-msgstr "以%1$s上传您的视频来减低文件尺寸并获得最佳结果。您的主题推荐使用%2$s的视频宽度。"
+msgstr "以%1$s上传您的视频来优化文件大小并获得最佳结果。您的主题推荐使用%2$s的视频宽度。"
 
 #. translators: 1: .mp4, 2: Header size in pixels.
 #: wp-includes/class-wp-customize-manager.php:5300
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
-msgstr "以%1$s上传您的视频来减低文件尺寸并获得最佳结果。您的主题推荐使用%2$s的视频尺寸。"
+msgstr "以%1$s上传您的视频来优化文件大小并获得最佳结果。您的主题推荐使用%2$s的视频尺寸。"
 
 #: wp-includes/class-wp-customize-manager.php:5293
 msgid "If you add a video, the image will be used as a fallback while the video loads."
@@ -8543,11 +8543,11 @@ msgstr "关闭重排模式"
 #: wp-includes/customize/class-wp-customize-nav-menu-control.php:55
 #: wp-includes/class-wp-customize-nav-menus.php:534
 msgid "Reorder menu items"
-msgstr "重排目录项"
+msgstr "重排菜单项"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-control.php:52
 msgid "Add or remove menu items"
-msgstr "添加或删除目录项"
+msgstr "添加或移除菜单项"
 
 #. translators: Do not translate USERNAME, ADMIN_EMAIL, NEW_EMAIL, EMAIL,
 #. SITENAME, SITEURL: those are placeholders.
@@ -11848,7 +11848,7 @@ msgstr "&#8211;"
 
 #: wp-includes/class-wp-admin-bar.php:140
 msgid "The menu ID should not be empty."
-msgstr "目录ID不能为空。"
+msgstr "菜单ID不能为空。"
 
 #: wp-includes/admin-bar.php:134 wp-includes/admin-bar.php:153
 msgid "About WordPress"
@@ -12603,7 +12603,7 @@ msgstr "您请求的站点未被正确安装。请联系系统管理员。"
 
 #: wp-includes/nav-menu.php:425
 msgid "The given object ID is not that of a menu item."
-msgstr "给出的对象ID不是一个目录项目的ID。"
+msgstr "给出的对象ID不是菜单项的ID。"
 
 #: wp-includes/formatting.php:4787
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
@@ -13127,7 +13127,7 @@ msgstr "没有发现新邮件。"
 
 #: wp-mail.php:42
 msgid "Slow down cowboy, no need to check for new mails so often!"
-msgstr "慢点伙计，不需要这么频繁地检查新邮件的！"
+msgstr "请放慢检查频率，不需要这么频繁地检查新邮件的！"
 
 #: wp-login.php:1249
 msgid "User registration is currently not allowed."
@@ -13571,7 +13571,7 @@ msgstr "新注册用户：%s"
 
 #: wp-includes/ms-functions.php:1207
 msgid "That username is already activated."
-msgstr "该用户名已完成激活。"
+msgstr "该用户名已激活。"
 
 #: wp-includes/ms-functions.php:1191
 msgid "Could not create user"
@@ -15144,7 +15144,7 @@ msgstr "添加"
 
 #: wp-includes/taxonomy.php:606
 msgid "Add or remove tags"
-msgstr "添加或删除标签"
+msgstr "添加或移除标签"
 
 #: wp-login.php:602 wp-includes/script-loader.php:1117
 #: wp-includes/media.php:4366 wp-includes/js/dist/editor.js:8867
@@ -15228,7 +15228,7 @@ msgstr "尺寸"
 #: wp-admin/includes/class-custom-background.php:600
 #: wp-admin/includes/media.php:1171 wp-admin/edit-form-blocks.php:241
 msgid "Full Size"
-msgstr "完整尺寸"
+msgstr "全尺寸"
 
 #: wp-includes/media-template.php:855 wp-includes/media-template.php:935
 #: wp-includes/media-template.php:1126 wp-includes/media.php:4009

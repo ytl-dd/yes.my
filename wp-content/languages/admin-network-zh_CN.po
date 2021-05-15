@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-22 04:56:16+0000\n"
+"PO-Revision-Date: 2021-05-07 12:43:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -612,7 +612,7 @@ msgstr "是，删除这些主题"
 
 #: wp-admin/network/themes.php:142
 msgid "You are about to remove the following themes:"
-msgstr "您将要删除以下主题："
+msgstr "您将要移除以下主题："
 
 #: wp-admin/network/themes.php:141
 msgid "These themes may be active on other sites in the network."
@@ -751,7 +751,7 @@ msgstr "用户已创建。"
 
 #: wp-admin/network/site-users.php:258
 msgid "Select a user to remove."
-msgstr "选择要删除的用户。"
+msgstr "选择要移除的用户。"
 
 #: wp-admin/network/site-users.php:252
 msgid "Select a user to change role."
@@ -808,7 +808,7 @@ msgstr "您确定要删除这些主题吗？"
 
 #: wp-admin/network/themes.php:138
 msgid "You are about to remove the following theme:"
-msgstr "您将要删除这个主题："
+msgstr "您将要移除以下主题："
 
 #: wp-admin/network/themes.php:137
 msgid "This theme may be active on other sites in the network."
@@ -1069,7 +1069,7 @@ msgstr "站点ID是内部使用的，不会在站点前台显示给用户或访�
 
 #: wp-admin/network/sites.php:35
 msgid "Deactivate, Archive, and Spam which lead to confirmation screens. These actions can be reversed later."
-msgstr "点击“停用”、“存档”或“垃圾站点”链接，则自动跳转至相应的确认页面。这些操作是可逆的。"
+msgstr "点击“禁用”、“存档”或“垃圾站点”链接，则自动跳转至相应的确认页面。这些操作是可逆的。"
 
 #: wp-admin/network/sites.php:32
 msgid "Hovering over each site reveals seven options (three for the primary site):"
@@ -1141,7 +1141,7 @@ msgstr "新站点设置是对于未来注册的站点的默认值。包含“欢
 
 #: wp-admin/network/settings.php:52
 msgid "Registration settings can disable/enable public signups. If you let others sign up for a site, install spam plugins. Spaces, not commas, should separate names banned as sites for this network."
-msgstr "注册选项可控制公众注册。如果您允许其他人注册，建议您安装防垃圾内容（spam）的插件。您可以指定一些不允许作为站点名称的词语，用空格隔开（请注意不是逗号）。"
+msgstr "注册选项可以启用/禁用公开注册。如果您允许其他人注册站点，建议您安装防垃圾内容（spam）的插件。您可以指定一些不允许作为站点名称的词语，用空格隔开（请注意不是逗号）。"
 
 #: wp-admin/network/settings.php:50
 msgid "This screen sets and changes options for the network as a whole. The first site is the main site in the network and network options are pulled from that original site&#8217;s options."
