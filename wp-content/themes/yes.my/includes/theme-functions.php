@@ -10,4 +10,6 @@
      require_once(THEME_FUNCTIONS_PATH.'/theme-init.php');
      require_once(THEME_FUNCTIONS_PATH.'/theme-options.php');
      require_once(THEME_FUNCTIONS_PATH.'/theme-custom-meta-box.php');
+     require_once(THEME_FUNCTIONS_PATH.'/theme-custom-post-types.php');
+     require_once(THEME_FUNCTIONS_PATH.'/theme-custom-templates.php');
 ?>

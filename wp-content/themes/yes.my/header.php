@@ -70,7 +70,7 @@
     <body <?php body_class(); ?> id="main-body">
         <?php wp_body_open(); ?>
 
-        <?php get_template_part('includes/header/site-navigation'); ?>
+        <?php get_template_part('templates/header/site-navigation'); ?>
 
         <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
             <div class="region region-content">

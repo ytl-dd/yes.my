@@ -109,4 +109,13 @@
             return $html;
         }
     }
+
+    if (!function_exists('register_thumbnail_image_field')) {
+        function register_thumbnail_image_field() {
+            add_theme_support('post-thumbnails');
+            add_image_size('supported-device-thumbnail', 100, 190);
+        }
+
+        add_action('init', 'register_thumbnail_image_field');
+    }
 ?>

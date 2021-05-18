@@ -12,7 +12,6 @@ get_header();
         $content    = get_the_content();
 
         if (trim($content) == '') {
-            $request_url    = $wp->request;
             $faq_post_id    = REDIRECT_FAQ_EN;
             $lang           = get_bloginfo("language");
 

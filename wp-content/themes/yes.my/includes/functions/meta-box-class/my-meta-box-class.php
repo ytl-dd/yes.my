@@ -375,12 +375,20 @@ class AT_Meta_Box {
     $class = '';
       if ($field['sortable'])  
         $class = " repeater-sortable";
+        echo '<script>
+                function removeBlock(el) {
+                    if (jQuery(el).parent().hasClass("re-control"))
+                        jQuery(el).parent().parent().remove();
+                    else
+                        jQuery(el).parent().remove();
+                }
+            </script>';
     echo "<div class='at-repeat".$class."' id='{$field['id']}'>";
     
     $c = 0;
     $meta = get_post_meta($post->ID,$field['id'],true);
     
-      if (count($meta) > 0 && is_array($meta) ){
+      if (is_array($meta) ){
          foreach ($meta as $me){
            //for labling toggles
            $mmm =  isset($me[$field['fields'][0]['id']])? $me[$field['fields'][0]['id']]: "";
@@ -456,7 +464,7 @@ class AT_Meta_Box {
     if ($field['inline']){
       echo '</tr>';
     } 
-    echo '</table><img src="'.$plugin_path.'/images/remove.png" alt="'.__('Remove','mmb').'" title="'.__('Remove','mmb').'" id="remove-'.$field['id'].'"></div>';
+    echo '</table><img src="'.$plugin_path.'/images/remove.png" alt="'.__('Remove','mmb').'" title="'.__('Remove','mmb').'" id="remove-'.$field['id'].'" onClick="removeBlock(this)"></div>';
     $counter = 'countadd_'.$field['id'];
     $js_code = ob_get_clean ();
     $js_code = str_replace("\n","",$js_code);
@@ -465,18 +473,19 @@ class AT_Meta_Box {
     $js_code = str_replace("CurrentCounter","' + ".$counter." + '",$js_code);
     echo '<script>
         jQuery(document).ready(function() {
-          var '.$counter.' = '.$c.';
-          jQuery("#add-'.$field['id'].'").live(\'click\', function() {
-            '.$counter.' = '.$counter.' + 1;
-            jQuery(this).before(\''.$js_code.'\');            
-            update_repeater_fields();
-          });
-              jQuery("#remove-'.$field['id'].'").live(\'click\', function() {
-                  if (jQuery(this).parent().hasClass("re-control"))
-                    jQuery(this).parent().parent().remove();
-                  else
-                    jQuery(this).parent().remove();
-              });
+            var '.$counter.' = '.$c.';
+            jQuery("#add-'.$field['id'].'").on(\'click\', function() {
+                '.$counter.' = '.$counter.' + 1;
+                jQuery(this).before(\''.$js_code.'\');            
+                update_repeater_fields();
+
+                jQuery("#remove-'.$field['id'].'").on(\'click\', function() {
+                    if (jQuery(this).parent().hasClass("re-control"))
+                        jQuery(this).parent().parent().remove();
+                    else
+                        jQuery(this).parent().remove();
+                });
+            });
           });
         </script>';
     echo '<br/><style>
@@ -490,6 +499,13 @@ class AT_Meta_Box {
 .at-inline .at-text{width: 70px;}
 .at-inline .at-textarea{width: 100px; height: 75px;}
 .at-repater-block{background-color: #FFFFFF;border: 1px solid;margin: 2px; min-height: 50px}
+
+.at-repater-block { border-color: #DDD; margin-bottom: 15px; padding: 15px; }
+.at-repater-block:last-of-child { margin-bottom: 2px; }
+.at-repater-block .repeater-table { border-collapse: collapse; width: 100%; }
+.at-repeat:after, .at-repater-block:after { clear: both; content: ""; display: block; }
+.at-repater-block img { float: right; }
+.at-repeat img { cursor: pointer; margin: 20px 0 0; }
 </style>';
     $this->show_field_end($field, $meta);
   }
@@ -786,7 +802,7 @@ class AT_Meta_Box {
       echo "<input class='at-color-iris".(isset($field['class'])? " {$field['class']}": "")."' type='text' name='{$field['id']}' id='{$field['id']}' value='{$meta}' size='8' />";  
     }else{
       echo "<input class='at-color".(isset($field['class'])? " {$field['class']}": "")."' type='text' name='{$field['id']}' id='{$field['id']}' value='{$meta}' size='8' />";
-      echo "<input type='button' class='at-color-select button' rel='{$field['id']}' value='" . __( 'Select a color' ,'mmb') . "'/>";
+      echo "<input type='button' class='at-color-select button' rel='{$field['id']}' value='" . __( 'Select a color' ,'apc') . "'/>";
       echo "<div style='display:none' class='at-color-picker' rel='{$field['id']}'></div>";
     }
     $this->show_field_end($field, $meta);
@@ -1328,7 +1344,7 @@ class AT_Meta_Box {
    *   @param $repeater bool  is this a field inside a repeatr? true|false(default) 
    */
   public function addCode($id,$args,$repeater=false){
-    $new_field = array('type' => 'code','id'=> $id,'std' => '','desc' => '','style' =>'','name' => 'Code Editor Field','syntax' => 'php','theme' => 'default');
+    $new_field = array('type' => 'code','id'=> $id,'std' => '','desc' => '','style' =>'','name' => 'Code Editor Field','syntax' => 'php','theme' => 'defualt');
     $new_field = array_merge($new_field, $args);
     if(false === $repeater){
       $this->_fields[] = $new_field;
