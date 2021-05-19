@@ -114,7 +114,7 @@
 
                 register_taxonomy("$slug-category", array($slug), $args);
 
-                $this->reg_default_taxonomy($arr_tax_args);
+                // $this->reg_default_taxonomy($arr_tax_args);
             }
 
             public function reg_default_taxonomy($arr_tax_args = []) 
@@ -167,7 +167,7 @@
 
                 register_taxonomy("$slug-tag", array($slug), $args);
 
-                $this->reg_default_tag_terms($arr_tag_args);
+                // $this->reg_default_tag_terms($arr_tag_args);
             }
 
             public function reg_default_tag_terms($arr_tags_args = []) 

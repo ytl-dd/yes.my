@@ -8,61 +8,328 @@
 
 
 /* From Main Site */
-.node__content { margin-top: 0 !important; }
-.block .content { margin-top: 0 !important; }
 
-.dropdown1 { position: relative; display: inline-block; font-weight: 900; color: white; }
-.dropdown-content { position: absolute; background-color: #fff; min-width: 240px; border-radius: 20px; padding: 16px 16px; z-index: 1; color: 000; text-align: left; flex-direction: column; align-items: flex-start; visibility: hidden; opacity: 0; transition: visibility 0s, opacity 0.6s linear; top: 20px; }
-.dropdown-content .linkt, .dropdown-content .linkt:hover{ color: #000 !important; }
-.dropdown-content > a { color: #000 !important; padding: 0; margin: 0 !important; }
-.dropdown1 > .menus.menu-site{ color: white; font-weight: 600; padding: 0; margin: 0 !important; }
-.dropdown1 > .dropdown-content > .menus.menu-site > a{ color: #000 !important; padding: 0; margin: 0 !important; }
-.kasicolor{ color: #00a4e3 !important; }
-.dropdown1:hover .dropdown-content { display: flex; visibility: visible; opacity: 1; }
+.node__content {
+    margin-top: 0 !important;
+}
+
+.block .content {
+    margin-top: 0 !important;
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+    font-weight: 900;
+    color: white;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    min-width: 240px;
+    border-radius: 20px;
+    padding: 16px 16px;
+    z-index: 1;
+    color: 000;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.6s linear;
+    top: 20px;
+}
+
+.dropdown-content .linkt,
+.dropdown-content .linkt:hover {
+    color: #000 !important;
+}
+
+.dropdown-content>a {
+    color: #000 !important;
+    padding: 0;
+    margin: 0 !important;
+}
+
+.dropdown1>.menus.menu-site {
+    color: white;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 !important;
+}
+
+.dropdown1>.dropdown-content>.menus.menu-site>a {
+    color: #000 !important;
+    padding: 0;
+    margin: 0 !important;
+}
+
+.kasicolor {
+    color: #00a4e3 !important;
+}
+
+.dropdown1:hover .dropdown-content {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
 
 @media (min-width: 1025px) {
     .menus>span:not(:first-child),
-    .menus>a:not(:first-child) { margin-left: .5em !important; }
+    .menus>a:not(:first-child) {
+        margin-left: .5em !important;
+    }
     .menus>span:not(:last-child),
-    .menus>a:not(:last-child) { margin-right: .5em !important; }
+    .menus>a:not(:last-child) {
+        margin-right: .5em !important;
+    }
 }
 
 @media (min-width: 1440px) {
     .menus>span:not(:first-child),
-    .menus>a:not(:first-child) { margin-left: .5em !important; }
+    .menus>a:not(:first-child) {
+        margin-left: .5em !important;
+    }
     .menus>span:not(:last-child),
-    .menus>a:not(:last-child) { margin-right: .5em !important; }
-    .i-cart { display: none; }
-    .nav-mobile .links a:hover { color: #333 !important; }
-    .mobile-menu-pills .nav-pills .nav-link.active { color: #00a4e3 !important; font-weight: bold; }
+    .menus>a:not(:last-child) {
+        margin-right: .5em !important;
+    }
+    .i-cart {
+        display: none;
+    }
+    .nav-mobile .links a:hover {
+        color: #333 !important;
+    }
+    .mobile-menu-pills .nav-pills .nav-link.active {
+        color: #00a4e3 !important;
+        font-weight: bold;
+    }
 }
+
+
 /* END From Main Site */
 
 
 /* Extended */
-.admin-bar .nav-main { top: 32px; }
-.admin-bar.searching .hover-search { top: 132px; }
 
-.popover .selection.selection-menu a.highlight { color: #FFF; }
-.nav-mobile .links a.highlight { color: #00A4E3; }
+.admin-bar .nav-main {
+    top: 32px;
+}
 
-.nav-site ul.menus { font-size: 0; margin: 0; padding: 0; }
-ul.menus li { display: inline-block; font-size: 16px; font-weight: 700; letter-spacing: 0.8px; line-height: 30px; list-style-type: none; position: relative; }
-ul.menus li a { color: #FFF; display: inline-block; padding: 10px; }
-ul.menus li:focus, ul.menus li:active, ul.menus li a:focus, ul.menus li a:active { border: 0; box-shadow: none; outline: none; -moz-outline-style: none; }
+.admin-bar.searching .hover-search {
+    top: 132px;
+}
 
-ul.menus ul.sub-menu { background-color: #FFF; border-radius: 20px; color: #000; flex-direction: column; align-items: flex-start; margin: 0; min-width: 240px; opacity: 0; padding: 26px; position: absolute; top: 35px; visibility: hidden; transition: visibility 0s, opacity 0.6s linear; }
+.popover .selection.selection-menu a.highlight {
+    color: #FFF;
+}
+
+.nav-mobile .links a.highlight {
+    color: #00A4E3;
+}
+
+.nav-site ul.menus {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menus li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 30px;
+    list-style-type: none;
+    position: relative;
+}
+
+ul.menus li a {
+    color: #FFF;
+    display: inline-block;
+    padding: 10px;
+}
+
+ul.menus li:focus,
+ul.menus li:active,
+ul.menus li a:focus,
+ul.menus li a:active {
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    -moz-outline-style: none;
+}
+
+ul.menus ul.sub-menu {
+    background-color: #FFF;
+    border-radius: 20px;
+    color: #000;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    min-width: 240px;
+    opacity: 0;
+    padding: 26px;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.6s linear;
+}
+
 ul.menus ul.sub-menu li {}
-ul.menus ul.sub-menu li a { color: #000; padding: 0; }
 
-ul.menus li:hover ul.sub-menu { display: flex; opacity: 1; visibility: visible; }
+ul.menus ul.sub-menu li a {
+    color: #000;
+    padding: 0;
+}
 
-ul.mobile-menus { margin: 0; padding: 0; }
-ul.mobile-menus li { list-style-type: none; margin: 0; padding: 0; }
+ul.menus li:hover ul.sub-menu {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul.mobile-menus {
+    margin: 0;
+    padding: 0;
+}
+
+ul.mobile-menus li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 ul.mobile-menus li a {}
 
-ul.mobile-menus ul.sub-menu { display: none; margin: 0 0 0 1.5rem; padding: 0; }
-ul.mobile-menus ul.sub-menu.show { display: block; }
+ul.mobile-menus ul.sub-menu {
+    display: none;
+    margin: 0 0 0 1.5rem;
+    padding: 0;
+}
+
+ul.mobile-menus ul.sub-menu.show {
+    display: block;
+}
+
 ul.mobile-menus ul.sub-menu li {}
+
 ul.mobile-menus ul.sub-menu li a {}
+
+.row-roaming {
+    font-size: 18px;
+}
+
+.row-roaming p {
+    font-size: 1em;
+}
+
+.row-roaming h3 {
+    border-bottom: 4px solid #666;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 18px;
+}
+
+.row-roaming svg {
+    margin-left: .5em;
+    width: 28px;
+}
+
+.row-roaming hr {
+    position: relative;
+    border: none;
+    margin: 0px -15px 0px 0px;
+    padding: 30px 0px 30px 3px;
+    overflow: hidden;
+}
+
+.row-roaming hr:after {
+    content: "....................................................................................................................................";
+    letter-spacing: 15px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.row-roaming-step {
+    justify-content: center;
+}
+
+.row-roaming-step p {
+    font-size: 16px;
+}
+
+.row-idd {
+    font-size: 18px;
+}
+
+.row-idd p {
+    font-size: 18px;
+}
+
+.row-idd hr {
+    border: none;
+    border-bottom: 4px solid #666;
+    background: none;
+    padding-bottom: 1em;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.row-idd .header p {
+    font-size: 16px;
+}
+
+.row-idd .header p {
+    line-height: 1.5px;
+}
+
+.row-idd .header .sub {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hyperset {
+    font-size: 80px;
+    line-height: 1;
+}
+
+.row-roaming .snote {
+    color: #666;
+    font-size: 0.73rem;
+}
+
+.ctitle {
+    font-size: 14px;
+    line-height: 1.5;
+    /* color: rgb(70, 68, 68); */
+    color: #999;
+}
+
+#roaming-table .shoutout.hyperset b[data-name="planDayRateAmt"] {
+    float: left;
+}
+
+@media (max-width: 768px) {
+    .row-roaming-step>div {
+        text-align: center !important;
+    }
+    .row-roaming-step p {
+        margin: 0 auto;
+    }
+    .row-roaming h3 {
+        padding-bottom: .5em;
+        margin-bottom: .5em;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    #roaming-table .shoutout.hyperset b[data-name="planDayRateAmt"] {
+        float: none;
+    }
+}
+
+
 /* END Extended */

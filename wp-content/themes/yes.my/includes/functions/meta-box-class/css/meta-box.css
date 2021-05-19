@@ -62,7 +62,8 @@
 
 #wpcontent select.at-select {
     height: 30px !important;
-    padding: 5px;
+    /* padding: 5px; */
+    padding: 0 5px;
     display: block;
     min-width: 200px;
 }
@@ -188,4 +189,20 @@
 
 .simplePanelImagePreview img {
     max-width: 100%;
+}
+
+
+/* Overwrite */
+
+.at-label label sup {
+    color: #FE0003;
+}
+
+.postbox .at-field input.at-text,
+.postbox .at-field .at-textarea {
+    border-color: #BBB;
+}
+
+.postbox .at-field input.at-text {
+    min-width: 300px;
 }

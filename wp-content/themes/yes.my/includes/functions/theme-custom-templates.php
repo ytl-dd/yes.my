@@ -4,6 +4,11 @@
             global $post;
             
             switch ($post->ID) {
+                case 73 : 
+                case 407 : 
+                case 411 : 
+                    if (file_exists(get_template_directory().'/page-roaming-idd.php')) $page_template = get_template_directory().'/page-roaming-idd.php';
+                    break;
                 case 77 : 
                 case 821 :
                 case 823 : 

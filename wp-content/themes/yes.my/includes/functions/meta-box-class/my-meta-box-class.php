@@ -423,21 +423,27 @@ class AT_Meta_Box {
         if ($field['sortable'])
           echo '<span class="re-control"><img src="'.$plugin_path.'/images/move.png" alt="sort" title="sort" class="at_re_sort_handle" /></span>';
 
+        // echo'
+        // <span class="re-control at-re-toggle"><img src="'.$plugin_path.'/images/edit.png" alt="Edit" title="Edit"/></span> 
+        // <span class="re-control"><img src="'.$plugin_path.'/images/remove.png" alt="'.__('Remove','mmb').'" title="'.__('Remove','mmb').'" id="remove-'.$field['id'].'"></span>
+        // <span class="re-control-clear"></span></div>';
         echo'
-        <span class="re-control at-re-toggle"><img src="'.$plugin_path.'/images/edit.png" alt="Edit" title="Edit"/></span> 
-        <span class="re-control"><img src="'.$plugin_path.'/images/remove.png" alt="'.__('Remove','mmb').'" title="'.__('Remove','mmb').'" id="remove-'.$field['id'].'"></span>
+        <span class="re-control at-re-toggle"><a href="javascript:void(0)" class="button button-large btn-edit">Edit Block</a></span> 
+        <span class="re-control"><a href="javascript:void(0)" class="button btn-remove" id="remove-'.$field['id'].'" onClick="removeBlock(this)">- Remove Block</a></span>
         <span class="re-control-clear"></span></div>';
         $c = $c + 1;
         }
       }
 
-    echo '<img src="';
-    if ($this->_Local_images){
-      echo $plugin_path.'/images/add.png';
-    }else{
-      echo 'http://i.imgur.com/w5Tuc.png';
-    }
-    echo '" alt="'.__('Add','mmb').'" title="'.__('Add','mmb').'" id="add-'.$field['id'].'"><br/></div>';
+    // echo '<img src="';
+    // if ($this->_Local_images){
+    //   echo $plugin_path.'/images/add.png';
+    // }else{
+    //   echo 'http://i.imgur.com/w5Tuc.png';
+    // }
+    // echo '" alt="'.__('Add','mmb').'" title="'.__('Add','mmb').'" id="add-'.$field['id'].'"><br/></div>';
+    // echo '<img src="';
+    echo '<a href="javascript:void(0)" class="button button-primary button-large" id="add-'.$field['id'].'">+ Add Block</a><br /></div>';
     
     //create all fields once more for js function and catch with object buffer
     ob_start();
@@ -464,7 +470,8 @@ class AT_Meta_Box {
     if ($field['inline']){
       echo '</tr>';
     } 
-    echo '</table><img src="'.$plugin_path.'/images/remove.png" alt="'.__('Remove','mmb').'" title="'.__('Remove','mmb').'" id="remove-'.$field['id'].'" onClick="removeBlock(this)"></div>';
+    // echo '</table><img src="'.$plugin_path.'/images/remove.png" alt="'.__('Remove','mmb').'" title="'.__('Remove','mmb').'" id="remove-'.$field['id'].'" onClick="removeBlock(this)"></div>';
+    echo '</table><span class="re-control"><a href="javascript:void(0)" class="button btn-remove" id="remove-'.$field['id'].'" onClick="removeBlock(this)">- Remove Block</a></span> </div>';
     $counter = 'countadd_'.$field['id'];
     $js_code = ob_get_clean ();
     $js_code = str_replace("\n","",$js_code);

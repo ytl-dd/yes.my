@@ -1,24 +1,26 @@
-<section class="dblock flexbox light" id="searchRoaming"
-    style="background-image:url('/wp-content/themes/yes.my/images/yes2018/Group 2709.jpg');">
+<?php 
+    $data   = [
+        'data_roaming'          => $args['data_roaming'], 
+        'data_roaming_dropdown' => $args['data_roaming_dropdown'], 
+        'data_idd'              => $args['data_idd'] 
+    ];
+?>
+
+<section class="dblock flexbox light" id="searchRoaming" style="background-image:url('/wp-content/themes/yes.my/images/yes2018/Group 2709.jpg');">
     <div class="fullscreen centerize">
         <div class="container">
             <div class="row">
                 <div class="col" style="max-width:700px;">
-                    <p class="shoutout lg" style="line-height:1.3;">Travelling?<br />
-                        Stay close to home with <b>YesRoam.</b></p>
-
-                    <p class="shoutout-note"><b>Roam freely</b> anywhere with our Partnering Operators.</p>
+                    <p class="shoutout lg" style="line-height:1.3;">Melancong? <br />Rasakan kedekatan dengan rumah bersama <b>YesRoam.</b></p>
+                    <p class="shoutout-note"><b>Berjuang secara bebas di mana saja dengan Rakan Kongsi Pengendali kami</b></p>
                     &nbsp;
 
                     <div class="row">
                         <div class="col-12 col-md-8">
                             <div class="form-group">
-                                <div class="dropdown"><button class="btn dropdown-toggle" data-toggle="dropdown"
-                                        type="button">Try “Australia“</button>
-
-                                    <div class="dropdown-menu">
-                                        <!--%roaming-country-fragment%-->
-                                    </div>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" data-toggle="dropdown" type="button">Cuba “Australia“</button>
+                                    <?php get_template_part('templates/roaming-idd/dropdown-roaming', '', ['data_roaming_dropdown' => $args['data_roaming_dropdown']]); ?>
                                     <input name="roamingSelect" type="hidden" />
                                 </div>
 
@@ -28,18 +30,22 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-4"><button class="btn btn-primary" data-button="openRoaming"
-                                type="button">Check roaming rates</button></div>
+                        <div class="col-12 col-md-4"><button class="btn btn-primary" data-button="openRoaming" type="button">Semak Kadar Roaming</button></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="bottom centerize"><span class="link-group"><a class="btn-scroll-down" href="#main-content"><svg
-                    class="ia ia-below">
+    <div class="bottom centerize">
+        <span class="link-group">
+            <a class="btn-scroll-down" href="#main-content">
+                <svg class="ia ia-below">
                     <use xlink:href="/ia-defs.svg#ia-below"></use>
-                </svg></a></span></div>
+                </svg>
+            </a>
+        </span>
+    </div>
 </section>
 
 <div id="main-content" style="font-size:0;">&nbsp;</div>
@@ -50,8 +56,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">&nbsp;
-                        <p class="shoutout lg brand center-text">Enjoy roaming in <b class="accent"
-                                data-name="countryName">Australia</b> with our Partnering Operators.</p>
+                        <p class="shoutout lg brand center-text">Enjoy roaming in <b class="accent" data-name="countryName">Australia</b> with our Partnering Operators.</p>
                         &nbsp;
 
                         <div class="row row-roaming">
@@ -72,10 +77,12 @@
                                     <div class="col-12 col-lg-3">
                                         <h3>Roaming Operator</h3>
 
-                                        <p class="brand"><b data-name="telcoName">Telstra</b><svg class="ia ia-4g-lte32"
-                                                data-name="telcoIs4g">
+                                        <p class="brand">
+                                            <b data-name="telcoName">Telstra</b>
+                                            <svg class="ia ia-4g-lte32" data-name="telcoIs4g">
                                                 <use xlink:href="/ia-defs.svg#ia-4g-lte32"></use>
-                                            </svg></p>
+                                            </svg>
+                                        </p>
                                     </div>
 
                                     <div class="col-12 col-lg-3">
@@ -83,8 +90,10 @@
 
                                         <p><b class="brand">RM</b></p>
 
-                                        <p class="shoutout hyperset lg brand"><b data-name="planDayRateAmt">38</b><span
-                                                class="subset" data-name="planDayRateSubset">/Day</span></p>
+                                        <p class="shoutout hyperset lg brand">
+                                            <b data-name="planDayRateAmt">38</b>
+                                            <span class="subset" data-name="planDayRateSubset">/Day</span>
+                                        </p>
 
                                         <p class="brand" data-name="planDayRateQuota">Up to 500MB Data</p>
 
@@ -100,75 +109,47 @@
                                             </div>
 
                                             <div class="col-6 col-lg-6">
-                                                <p class="ctitle" data-name="planCallWithinCountryTxt">Call Within
-                                                    Australia</p>
+                                                <p class="ctitle" data-name="planCallWithinCountryTxt">Call Within Australia</p>
 
-                                                <p class="brand"><b data-name="planCallWithinCountryRate">RM3.00
-                                                        /Min</b></p>
+                                                <p class="brand">
+                                                    <b data-name="planCallWithinCountryRate">RM3.00 /Min</b>
+                                                </p>
                                             </div>
 
                                             <div class="col-6 col-lg-6">
                                                 <p class="ctitle">Call To Other Countries</p>
 
-                                                <p class="brand"><b data-name="planCallToOtherCountriesRate">RM25.00
-                                                        /Min</b></p>
+                                                <p class="brand">
+                                                    <b data-name="planCallToOtherCountriesRate">RM25.00 /Min</b>
+                                                </p>
                                             </div>
 
                                             <div class="col-6 col-lg-6">
                                                 <p class="ctitle">Call To Malaysia</p>
 
-                                                <p class="brand"><b data-name="planCallToMalaysiRate">RM5.90 /Min</b>
+                                                <p class="brand">
+                                                    <b data-name="planCallToMalaysiRate">RM5.90 /Min</b>
                                                 </p>
                                             </div>
 
                                             <div class="col-6 col-lg-6">
                                                 <p class="ctitle">Receiving Calls</p>
 
-                                                <p class="brand"><b data-name="planReceivingCallRate">RM3.50 /Min</b>
+                                                <p class="brand">
+                                                    <b data-name="planReceivingCallRate">RM3.50 /Min</b>
                                                 </p>
                                             </div>
 
                                             <div class="col-6 col-lg-6">
                                                 <p class="ctitle">SMS</p>
 
-                                                <p class="brand"><b data-name="planSmsRate">RM1.50 /SMS</b></p>
+                                                <p class="brand">
+                                                    <b data-name="planSmsRate">RM1.50 /SMS</b>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!--<hr/>
-                                    <div class="row">
-                                        <div class="col-12 col-lg-3">
-                                        <p><b>Other Partnered<br/>Networks</b></p>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <p><b data-name="planOtherNetworkRate">RM1.00/MB</b></p><br/>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="row innerpad">
-                                                <div class="col-6 col-lg-6">
-                                                    <p class="ctitle" data-name="planOtherCallWithinCountryTxt">Call Within Australia</p>
-                                                    <p><b data-name="planOtherCallWithinCountryRate">RM3.90 /Min</b></p><br/>
-                                                </div>
-                                                <div class="col-6 col-lg-6">
-                                                    <p class="ctitle">Call To Other Countries</p>
-                                                    <p><b data-name="planOtherCallToOtherCountriesRate">RM25.00 /Min</b></p><br/>
-                                                </div>
-                                                <div class="col-6 col-lg-6">
-                                                    <p class="ctitle">Call To Malaysia</p>
-                                                    <p><b data-name="planOtherCallToMalaysiaRate">RM5.90 /Min</b></p><br/>
-                                                </div>
-                                                <div class="col-6 col-lg-6">
-                                                    <p class="ctitle">Receiving Calls</p>
-                                                    <p><b data-name="planOtherReceivingRate">RM3.50 /Min</b></p><br/>
-                                                </div>
-                                                <div class="col-6 col-lg-6">
-                                                    <p class="ctitle">SMS</p>
-                                                    <p><b data-name="planOtherSmsRate">RM1.50 /SMS</b></p><br/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>-->
                             </div>
                         </div>
                     </div>
@@ -199,34 +180,33 @@
                         <div class="bullet-row">
                             <div class="row row-roaming-step">
                                 <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="icon"><span class="lg-icon bg"><img alt="selfcare"
-                                                data-entity-type="file"
-                                                data-entity-uuid="addef58c-9bb4-4173-be57-30a2955c5860"
-                                                src="/wp-content/themes/yes.my/images/yes2018/yes-selfcare.png" /></span>
+                                    <div class="icon">
+                                        <span class="lg-icon bg">
+                                            <img alt="selfcare" data-entity-type="file" data-entity-uuid="addef58c-9bb4-4173-be57-30a2955c5860" src="/wp-content/themes/yes.my/images/yes2018/yes-selfcare.png" />
+                                        </span>
                                     </div>
                                     &nbsp;
 
-                                    <p class="grey" style="max-width:245px;">Activate International Roaming service via
-                                        Selfcare</p>
+                                    <p class="grey" style="max-width:245px;">Activate International Roaming service via Selfcare</p>
                                 </div>
 
                                 <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="icon"><span class="lg-icon bg"><img alt="credit-limit"
-                                                data-entity-type="file"
-                                                data-entity-uuid="01c4d375-8309-45a3-8de3-56d73f584e68"
-                                                src="/wp-content/themes/yes.my/images/yes2018/credit-limit.png" /></span>
+                                    <div class="icon">
+                                        <span class="lg-icon bg">
+                                            <img alt="credit-limit" data-entity-type="file" data-entity-uuid="01c4d375-8309-45a3-8de3-56d73f584e68" src="/wp-content/themes/yes.my/images/yes2018/credit-limit.png" />
+                                        </span>
                                     </div>
                                     &nbsp; &nbsp;
 
-                                    <p class="grey" style="max-width:245px;">Increase your credit limit via Selfcare to
-                                        avoid any service distruption.</p>
+                                    <p class="grey" style="max-width:245px;">Increase your credit limit via Selfcare to avoid any service distruption.</p>
                                 </div>
 
                                 <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="icon"><span class="lg-icon bg"><img alt="deactivate"
-                                                data-entity-type="file"
-                                                data-entity-uuid="d0d74b4e-79ec-4688-8389-3af42e08c108"
-                                                src="/wp-content/themes/yes.my/images/yes2018/deactivate.png" /></span></div>
+                                    <div class="icon">
+                                        <span class="lg-icon bg">
+                                            <img alt="deactivate" data-entity-type="file" data-entity-uuid="d0d74b4e-79ec-4688-8389-3af42e08c108" src="/wp-content/themes/yes.my/images/yes2018/deactivate.png" />
+                                        </span>
+                                    </div>
                                     &nbsp;
 
                                     <p class="grey" style="max-width:245px;">Turn off your Data Roaming &amp; Mobile
@@ -235,9 +215,11 @@
                                 </div>
 
                                 <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="icon"><span class="lg-icon bg"><img alt="bills" data-entity-type="file"
-                                                data-entity-uuid="9875ebe7-0c42-466f-928d-61d4d3146839"
-                                                src="/wp-content/themes/yes.my/images/yes2018/bills.png" /></span></div>
+                                    <div class="icon">
+                                        <span class="lg-icon bg">
+                                            <img alt="bills" data-entity-type="file" data-entity-uuid="9875ebe7-0c42-466f-928d-61d4d3146839" src="/wp-content/themes/yes.my/images/yes2018/bills.png" />
+                                        </span>
+                                    </div>
                                     &nbsp;
 
                                     <p class="grey" style="max-width:245px;">Settle all outstanding bills.</p>
@@ -261,9 +243,13 @@
                         <div class="bullet-row">
                             <div class="row row-roaming-step">
                                 <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="icon"><span class="lg-icon bg"><svg class="ia ia-cog">
+                                    <div class="icon">
+                                        <span class="lg-icon bg">
+                                            <svg class="ia ia-cog">
                                                 <use xlink:href="/ia-defs.svg#ia-cog"></use>
-                                            </svg></span></div>
+                                            </svg>
+                                        </span>
+                                    </div>
                                     &nbsp;
 
                                     <p style="font-size:14px;">Step 1:</p>
@@ -275,9 +261,13 @@
                                 </div>
 
                                 <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="icon"><span class="lg-icon bg"><svg class="ia ia-roaming">
+                                    <div class="icon">
+                                        <span class="lg-icon bg">
+                                            <svg class="ia ia-roaming">
                                                 <use xlink:href="/ia-defs.svg#ia-roaming"></use>
-                                            </svg></span></div>
+                                            </svg>
+                                        </span>
+                                    </div>
                                     &nbsp;
 
                                     <p style="font-size:14px;">Step 2:</p>
@@ -285,27 +275,20 @@
                                     <p><b>Click Network Operators.</b></p>
                                     &nbsp;
 
-                                    <p class="grey" style="max-width:245px;">Wait for 1 to 2 minutes for the list of
-                                        networks to show up.<br />
-                                        <br />
+                                    <p class="grey" style="max-width:245px;">
+                                        Wait for 1 to 2 minutes for the list of networks to show up.<br /><br />
                                         Select our preferred roaming operator to connect.
                                     </p>
                                 </div>
-                                <!--<div class="col-12 col-md-6 col-xl-3">
-                                        <div class="icon"><span class="lg-icon bg"><svg class="ia ia-phone-roaming32"><use xlink:href="/ia-defs.svg#ia-phone-roaming32"></use></svg></span></div>
-                                        <br/><p style="font-size:14px;">Step 3:</p>
-                                        <p><b>Click Access Point Name.</b></p><br/>
-                                        <p class="grey" style="max-width:245px;">Select “Add” to fill in the details:<br/>
-                                        Name: <b>yesnet</b><br/>
-                                        APN: <b>yesnet</b><br/>
-                                        Then save and restart your device.<br/><br/>
-                                        *Skip this step if your APN is automatically selected to ‘yesnet’.</p>
-                                    </div>-->
 
                                 <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="icon"><span class="lg-icon bg"><svg class="ia ia-link">
+                                    <div class="icon">
+                                        <span class="lg-icon bg">
+                                            <svg class="ia ia-link">
                                                 <use xlink:href="/ia-defs.svg#ia-link"></use>
-                                            </svg></span></div>
+                                            </svg>
+                                        </span>
+                                    </div>
                                     &nbsp;
 
                                     <p style="font-size:14px;">Step 3:</p>
@@ -313,9 +296,8 @@
                                     <p><b>Go to Mobile Network.</b></p>
                                     &nbsp;
 
-                                    <p class="grey" style="max-width:245px;">Turn on your Data Roaming &amp; Mobile Data
-                                        in your phone setting if you wish to use data service while abroad.<br />
-                                        <br />
+                                    <p class="grey" style="max-width:245px;">
+                                        Turn on your Data Roaming &amp; Mobile Data in your phone setting if you wish to use data service while abroad.<br /> <br />
                                         On some Android phones, you may need to select your SIM to turn on Data Roaming.
                                     </p>
                                 </div>
@@ -324,14 +306,13 @@
 
                         <div class="row">
                             <div class="col-12 center-text" style="font-size:12px;">&nbsp;
-                                <p style="max-width:770px;margin:0 auto;"><b>Tip:</b> For Partnering Operators who do
-                                    not have 4G LTE roaming service, kindly select the mobile network mode to 2G/3G in
-                                    your phone setting to avoid any connection or compatibility issue.</p>
+                                <p style="max-width:770px;margin:0 auto;"><b>Tip:</b> For Partnering Operators who do not have 4G LTE roaming service, kindly select the mobile network mode to 2G/3G in your phone setting to avoid any connection or compatibility issue.</p>
                                 <br />
-                                <a href="/faq/roaming"><b><u class="accent">Have problems connecting? Click
-                                            here.</u></b></a><br />
-                                <br />
-                                <br />
+                                <a href="/faq/roaming">
+                                    <b>
+                                        <u class="accent">Have problems connecting? Click here.</u>
+                                    </b>
+                                </a><br /><br /><br />
                                 <button class="btn btn-expand" data-button="closeRoaming" type="button">Close</button>
                             </div>
                         </div>
@@ -347,92 +328,91 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p class="shoutout lg brand center-text" style="max-width:1000px;margin:0 auto;"><b>RM38/day</b>, up
-                        to <b>500MB</b> at these <b>24 countries</b>.</p>
+                    <p class="shoutout lg brand center-text" style="max-width:1000px;margin:0 auto;"><b>RM38/hari</b>, sehingga <b>500MB</b> di <b>24 negara ini</b>.</p>
                     &nbsp;
 
                     <div class="carousel-roaming">
                         <div>
                             <div class="row row-roaming-country">
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/australia.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/australia.png" />
                                     <p><b>Australia</b></p>
 
                                     <p>Telstra</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/austria.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/austria.png" />
                                     <p><b>Austria</b></p>
 
                                     <p>Hutchison - 3 (Drei)</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/bangladesh.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/bangladesh.png" />
                                     <p><b>Bangladesh</b></p>
 
                                     <p>GrameenPhone</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/brunei.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/brunei.png" />
                                     <p><b>Brunei Darussalam</b></p>
 
                                     <p>DSTCom</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/cambodia.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/cambodia.png" />
                                     <p><b>Cambodia</b></p>
 
                                     <p>Viettel - Metfone</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/canada.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/canada.png" />
                                     <p><b>Canada</b></p>
 
                                     <p>Rogers Communications</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/china.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/china.png" />
                                     <p><b>China</b></p>
 
                                     <p>China Mobile</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/denmark.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/denmark.png" />
                                     <p><b>Denmark</b></p>
 
                                     <p>H3G (3)</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/hong-kong.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/hong-kong.png" />
                                     <p><b>Hong Kong</b></p>
 
                                     <p>Hutchison (3)</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/india.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/india.png" />
                                     <p><b>India</b></p>
 
                                     <p>Vodafone</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/indonesia.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/indonesia.png" />
                                     <p><b>Indonesia</b></p>
 
                                     <p>PT Indosat Tbk</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/south-korea.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/south-korea.png" />
                                     <p><b>Republic of Korea</b></p>
 
                                     <p>SK Telecom (SKT)</p>
@@ -442,85 +422,85 @@
 
                         <div>
                             <div class="row row-roaming-country">
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/macau.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/macau.png" />
                                     <p><b>Macau</b></p>
 
                                     <p>Hutchison (3)</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/maynmar.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/maynmar.png" />
                                     <p><b>Myanmar</b></p>
 
                                     <p>Telenor</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/philippines.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/philippines.png" />
                                     <p><b>Philippines</b></p>
 
                                     <p>Smart</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/qatar.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/qatar.png" />
                                     <p><b>Qatar</b></p>
 
                                     <p>Ooredoo / Qtel</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/saudi.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/saudi.png" />
                                     <p><b>Saudi Arabia</b></p>
 
                                     <p>Zain SA</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/singapore.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/singapore.png" />
                                     <p><b>Singapore</b></p>
 
                                     <p>StarHub</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/sweden.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/sweden.png" />
                                     <p><b>Sweden</b></p>
 
                                     <p>H3G Access AB (3)</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/taiwan.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/taiwan.png" />
                                     <p><b>Taiwan</b></p>
 
                                     <p>APTG</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/thailand.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/thailand.png" />
                                     <p><b>Thailand</b></p>
 
                                     <p>True Move</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/uk.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/uk.png" />
                                     <p><b>United Kingdom</b></p>
 
                                     <p>Hutchison (3)</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/us.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/us.png" />
                                     <p><b>United States</b></p>
 
                                     <p>T-Mobile</p>
                                 </div>
 
-                                <div class="col-6 col-md-4 col-lg-3"><img alt="" data-entity-type="" data-entity-uuid=""
-                                        src="/wp-content/themes/yes.my/images/yes2018/country/vietnam.png" />
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/yes2018/country/vietnam.png" />
                                     <p><b>Vietnam</b></p>
 
                                     <p>Vietnamobile</p>
@@ -539,21 +519,18 @@
         <div class="container">
             <div class="row">
                 <div class="col" style="max-width:887px;">
-                    <p class="shoutout lg" style="line-height:1.3;">From Malaysia to <b>anywhere in the world.</b></p>
+                    <p class="shoutout lg" style="line-height:1.3;">Dari Malaysia ke <b>mana-mana di dunia.</b></p>
                     &nbsp;
 
-                    <p class="shoutout-note">Here are affordable IDD rates you’ll like.</p>
+                    <p class="shoutout-note">Berikut adalah kadar IDD berharga patutan anda akan gemari.</p>
                     &nbsp;
 
                     <div class="row">
                         <div class="col-12 col-md-8">
                             <div class="form-group">
-                                <div class="dropdown"><button class="btn dropdown-toggle" data-toggle="dropdown"
-                                        type="button">Try “Cambodia”</button>
-
-                                    <div class="dropdown-menu">
-                                        <!--%country-fragment%-->
-                                    </div>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" data-toggle="dropdown" type="button">Cuba “Cambodia”</button>
+                                    <?php get_template_part('templates/roaming-idd/dropdown-idd', '', ['data_idd' => $args['data_idd']]); ?>
                                     <input name="iddSelect" type="hidden" />
                                 </div>
 
@@ -563,8 +540,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-4"><button class="btn btn-primary" data-button="openIdd"
-                                type="button">Check IDD rates</button></div>
+                        <div class="col-12 col-md-4"><button class="btn btn-primary" data-button="openIdd" type="button">Semak kadar IDD</button></div>
                     </div>
                 </div>
             </div>
@@ -578,8 +554,7 @@
             <div class="container">
                 <div class="row row-idd">
                     <div class="col-12">&nbsp;
-                        <p class="shoutout lg brand center-text"><b>Affordable</b> IDD rates just the way you like it.
-                        </p>
+                        <p class="shoutout lg brand center-text"><b>Affordable</b> IDD rates just the way you like it.</p>
                         &nbsp;
 
                         <div class="row">
@@ -604,7 +579,7 @@
 
                             <div class="col-12 col-lg-7">
                                 <div class="row header">
-                                    <div class="col-5">&nbsp;</div>
+                                    <div class="col-5"></div>
 
                                     <div class="col-6" style="text-align:center">
                                         <p class="sub">Call Rate (RM/Min)</p>
@@ -710,100 +685,3 @@
         </div>
     </section>
 </fieldset>
-
-
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        JUI.carousel('.carousel-roaming');
-        JUI.carousel4x('.carousel-salespitch');
-        JUI.carousel5x('.carousel-subscription-5x');
-
-        //modify in javascript way because revamp.yes.my is on and off
-
-        $("[data-button=openRoaming]").off('click').click(function(){
-            if($("[name=roamingSelect]").val()){
-                var cid = $("[name=roamingSelect]").val();
-                var sel = jsonRoaming[cid];
-
-                $("[data-name=countryName]").html(jsonRoamingCountry[cid]);
-
-                $roamingTable.empty();
-
-                for(var i=0;i<sel.length;i++){
-                    var cur = sel[i];
-                    $newTpl = $roamingTemplate.clone();
-
-                    if(i>0){
-                        $roamingTable.append("<hr/>");
-                    }
-
-                    $("[data-name=telcoName]", $newTpl).html(cur["operatorName"]);
-
-                    if(cur["is4g"] == "0"){
-                        $("[data-name=telcoIs4g]", $newTpl).remove();
-                    }
-                    $("[data-name=planDayRateAmt]", $newTpl).html(cur["roamingRate"].replace(".00", "").replace("RM", ""));
-                    $("[data-name=planDayRateSubset]", $newTpl).html(cur["roamingType"]);
-                    $("[data-name=planDayRateQuota]", $newTpl).html(cur["quota"]);
-
-                    var disclaimer = cur["quotaDisclaimer"];
-
-                    if(!disclaimer && cur["quota"]){
-                        disclaimer = "Once the quota is finished, the data speed will be reduced until your day pass expires without additional cost.";
-                    }
-                    $("[data-name=planDayRateTnc]", $newTpl).html(disclaimer);
-
-
-                    $("[data-name=planCallWithinCountryTxt]", $newTpl).html("Call Within " + jsonRoamingCountry[cid]);
-                    $("[data-name=planCallWithinCountryRate]", $newTpl).html(cur["callRate"]);
-                    $("[data-name=planCallToOtherCountriesRate]", $newTpl).html(cur["callToOther"]);
-                    $("[data-name=planCallToMalaysiRate]", $newTpl).html(cur["callToMalaysia"]);
-                    $("[data-name=planReceivingCallRate]", $newTpl).html(cur["receivingCallRate"]);
-                    $("[data-name=planSmsRate]", $newTpl).html(cur["smsRate"]);
-
-                    $roamingTable.append($newTpl.show());
-                }
-
-
-
-                $("[data-fieldset=roaming]").show();
-                $(document).scrollTop($("[data-fieldset=roaming]").offset().top);
-            }
-        });
-
-        $("[data-button=closeRoaming]").off('click').click(function(){
-            $("[data-fieldset=roaming]").animate({
-                height: '0px'
-            }, 350, function(){
-                $(this).css("height","").hide();
-            });
-            $(document).scrollTop($("#searchRoaming").offset().top);
-        });
-        $("[data-button=openIdd]").off('click').click(function(){
-            if($("[name=iddSelect]").val()){
-                var sel = jsonIdd[$("[name=iddSelect]").val()];
-
-                $("[data-name=iddName]").html(sel["postpaid"]["country"] + " (" + sel["postpaid"]["countryCode"] + ")");
-                $("[data-name=iddPostpaidFixed]").html(sel["postpaid"]["callRateFixed"]);
-                $("[data-name=iddPostpaidMobile]").html(sel["postpaid"]["callRateMobile"]);
-                $("[data-name=iddPostpaidSms]").html(sel["postpaid"]["smsRate"]);
-                $("[data-name=iddPrepaidFixed]").html(sel["prepaid"]["callRateFixed"]);
-                $("[data-name=iddPrepaidMobile]").html(sel["prepaid"]["callRateMobile"]);
-                $("[data-name=iddPrepaidSms]").html(""+sel["prepaid"]["smsRate"]);
-
-
-                $("[data-fieldset=idd]").show();
-                $(document).scrollTop($("[data-fieldset=idd]").offset().top);
-            }
-        });
-        $("[data-button=closeIdd]").off('click').click(function(){
-            $("[data-fieldset=idd]").animate({
-                height: '0px'
-            }, 350, function(){
-                $(this).css("height","").hide();
-            });x
-            $(document).scrollTop($("#searchIdd").offset().top);
-        });
-    });
-</script>

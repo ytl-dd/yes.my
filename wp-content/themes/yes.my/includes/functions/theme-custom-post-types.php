@@ -45,30 +45,6 @@
                     'tag_names'     => null 
                 ], 
                 [
-                    'name'          => 'Yes.my Openings', 
-                    'singular_name' => 'Openings', 
-                    'slug'          => 'openings', 
-                    'menu_icon'     => 'dashicons-groups', 
-                    'supports'      => ['title'], 
-                    'reg_taxonomy'  => ['Customer Centre', 'Data Centre Management', 'IT', 'IT Infrastructure Operations', 'Interaction Centre', 'Training Team'], 
-                    'reg_tags'      => ['Central Region', 'Johor', 'Kedah', 'Kelantan', 'Kuala Lumpur', 'Kuantan', 'Melaka', 'Negeri Sembilan', 'Pahang', 'Penang', 'Perak', 'Perlis', 'Sabah', 'Sarawak', 'Selangor', 'Sentul Office', 'Terengganu'], 
-                    'rewrite'       => 'opening-category', 
-                    'category_names'=> ['plural' => 'Divisions', 'singular' => 'Division'], 
-                    'tag_names'     => ['plural' => 'Locations', 'singular' => 'Location'] 
-                ], 
-                [
-                    'name'          => 'IDD Rates', 
-                    'singular_name' => 'IDD Rate', 
-                    'slug'          => 'idd-rates', 
-                    'menu_icon'     => 'dashicons-airplane', 
-                    'supports'      => ['title', 'editor', 'thumbnail'], 
-                    'reg_taxonomy'  => ['Uncategorized'], 
-                    'reg_tags'      => null, 
-                    'rewrite'       => 'rates-category', 
-                    'category_names'=> ['plural' => 'Locations', 'singular' => 'Location'], 
-                    'tag_names'     => null 
-                ], 
-                [
                     'name'          => 'Deals', 
                     'singular_name' => 'Deal', 
                     'slug'          => 'deals', 
@@ -81,6 +57,30 @@
                     'tag_names'     => ['plural' => 'Regions', 'singular' => 'Region'] 
                 ], 
                 [
+                    'name'          => 'Roaming Rates', 
+                    'singular_name' => 'Roaming Rate', 
+                    'slug'          => 'roaming-rates', 
+                    'menu_icon'     => 'dashicons-airplane', 
+                    'supports'      => ['title'], 
+                    'reg_taxonomy'  => null, 
+                    'reg_tags'      => null, 
+                    'rewrite'       => null, 
+                    'category_names'=> null, 
+                    'tag_names'     => null 
+                ], 
+                [
+                    'name'          => 'IDD Rates', 
+                    'singular_name' => 'IDD Rate', 
+                    'slug'          => 'idd-rates', 
+                    'menu_icon'     => 'dashicons-phone', 
+                    'supports'      => ['title'], 
+                    'reg_taxonomy'  => null, 
+                    'reg_tags'      => null, 
+                    'rewrite'       => null, 
+                    'category_names'=> null, 
+                    'tag_names'     => null 
+                ], 
+                [
                     'name'          => 'Supported Devices', 
                     'singular_name' => 'Supported Device', 
                     'slug'          => 'supported-device', 
@@ -91,6 +91,18 @@
                     'rewrite'       => 'rates-category', 
                     'category_names'=> ['plural' => 'Brands', 'singular' => 'Brand'], 
                     'tag_names'     => ['plural' => 'Supports', 'singular' => 'Support'] 
+                ], 
+                [
+                    'name'          => 'Yes.my Openings', 
+                    'singular_name' => 'Openings', 
+                    'slug'          => 'openings', 
+                    'menu_icon'     => 'dashicons-groups', 
+                    'supports'      => ['title'], 
+                    'reg_taxonomy'  => ['Customer Centre', 'Data Centre Management', 'IT', 'IT Infrastructure Operations', 'Interaction Centre', 'Training Team'], 
+                    'reg_tags'      => ['Central Region', 'Johor', 'Kedah', 'Kelantan', 'Kuala Lumpur', 'Kuantan', 'Melaka', 'Negeri Sembilan', 'Pahang', 'Penang', 'Perak', 'Perlis', 'Sabah', 'Sarawak', 'Selangor', 'Sentul Office', 'Terengganu'], 
+                    'rewrite'       => 'opening-category', 
+                    'category_names'=> ['plural' => 'Divisions', 'singular' => 'Division'], 
+                    'tag_names'     => ['plural' => 'Locations', 'singular' => 'Location'] 
                 ] 
             ];
 
