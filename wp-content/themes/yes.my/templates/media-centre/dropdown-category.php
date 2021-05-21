@@ -5,7 +5,7 @@
 
         <?php 
             $args   = [
-                // 'hide_empty'=> false, 
+                'hide_empty'=> false, 
                 'taxonomy'  => 'media-centre-category', 
                 'orderby'   => 'name', 
                 'order'     => 'ASC' 

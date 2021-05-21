@@ -1,11 +1,3 @@
-<?php 
-    $data   = [
-        'data_roaming'          => $args['data_roaming'], 
-        'data_roaming_dropdown' => $args['data_roaming_dropdown'], 
-        'data_idd'              => $args['data_idd'] 
-    ];
-?>
-
 <section class="dblock flexbox light" id="searchRoaming" style="background-image:url('/wp-content/themes/yes.my/images/yes2018/Group 2709.jpg');">
     <div class="fullscreen centerize">
         <div class="container">
@@ -20,7 +12,7 @@
                             <div class="form-group">
                                 <div class="dropdown">
                                     <button class="btn dropdown-toggle" data-toggle="dropdown" type="button">Cuba “Australia“</button>
-                                    <?php get_template_part('templates/roaming-idd/dropdown-roaming', '', ['data_roaming_dropdown' => $args['data_roaming_dropdown']]); ?>
+                                    <?php get_template_part('templates/roaming-idd/dropdown-roaming', '', ['data_roaming' => $args['data_roaming']]); ?>
                                     <input name="roamingSelect" type="hidden" />
                                 </div>
 

@@ -12,9 +12,7 @@
     <div class="flexible">
         <div class="container container-filter">
             <div class="row">
-                <div class="filter-overlay" id="filter-overlay">
-                    <?php get_template_part('templates/deals/filter'); ?>
-                </div>
+                <?php get_template_part('templates/deals/filter'); ?>
 
                 <div class="col">
                     <div class="row">

@@ -91,9 +91,10 @@
             $("#filter-overlay").css({'z-index': 1000}).addClass("show");
         });
         $("#btn-overlay-hide").click(function(){
-            $("#filter-overlay").removeClass("show").delay(350).queue(function(){
-                $(this).css({'z-index': -1});
-            });
+            $("#filter-overlay").removeClass("show");
+            setTimeout(function () {
+                $("#filter-overlay").css({ 'z-index': -1 });
+            }, 350);
         });
     });
 </script>

@@ -196,7 +196,7 @@
                 </div>
             </div>
 
-            <!-- <?php get_template_part('templates/career/form'); ?> -->
+            <?php get_template_part('templates/career/form'); ?>
         </div>
     </div>
 </section>

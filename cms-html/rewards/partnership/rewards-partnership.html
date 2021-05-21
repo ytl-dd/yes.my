@@ -1,0 +1,889 @@
+<style type="text/css">
+    @charset "utf-8";
+    /* CSS Document */
+    
+    .rewards-sect {}
+    
+    .rewards-sect .ver-web {}
+    
+    .rewards-sect .ver-mobile {
+        display: none;
+    }
+    /*---content header---*/
+    
+    .rewards-sect .content-header-sect {}
+    
+    .rewards-sect .content-header-sect img {
+        width: 100%;
+        height: auto;
+        border: 0px none;
+    }
+    
+    .rewards-sect .content-header-sect .bnr-web {
+        height: 520px;
+        background: center no-repeat;
+        background-size: cover;
+    }
+    
+    .rewards-sect .content-header-sect .bnr-mobile {
+        display: none;
+    }
+    /*---content body---*/
+    
+    .rewards-sect .content-body-sect {
+        background: url(/images/backgrounds/stroke-bg.jpg) center repeat-y;
+        background-color: #0faef1;
+    }
+    
+    .rewards-sect .content-body-sect .inner-ctnt-hdr {
+        background-color: #f6f6f6;
+        padding: 55px 40px 30px;
+    }
+    
+    .rewards-sect .content-body-sect .inner-ctnt-hdr .sect-title {
+        margin-bottom: 1em;
+        font-family: 'vagrounded_btregular', Arial, Helvetica, sans-serif;
+        color: #0faef2;
+        font-size: 28px;
+    }
+    
+    .rewards-sect .content-body-sect .inner-ctnt-hdr .sect-title.sub {
+        font-size: 24px;
+    }
+    
+    .rewards-sect .content-body-sect .inner-ctnt-hdr .sect-desc {
+        margin-bottom: 2em;
+        font-family: 'robotolight', Arial, Helvetica, sans-serif;
+        color: #565656;
+        font-size: 14px;
+    }
+    /*---overview---*/
+    
+    .rewards-overview-list {
+        display: inline-block;
+        margin-bottom: 7%;
+        font-size: 1.15em;
+    }
+    
+    .rewards-overview-list:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+    
+    .rewards-overview-list .rewards-overview-box {
+        width: 23%;
+        margin: 0 .5%;
+        display: inline-block;
+        vertical-align: top;
+        background: center top no-repeat;
+        padding-top: 90px;
+        color: #565656;
+    }
+    
+    .rewards-overview-list .rewards-overview-box.offer {
+        background-image: url(/images/icons/icon-rewards-offer.png);
+    }
+    
+    .rewards-overview-list .rewards-overview-box.bonus {
+        background-image: url(/images/icons/icon-rewards-bonus.png);
+    }
+    
+    .rewards-overview-list .rewards-overview-box.gift {
+        background-image: url(/images/icons/icon-rewards-gift.png);
+    }
+    
+    .rewards-overview-list .rewards-overview-box.invite {
+        background-image: url(/images/icons/icon-rewards-invite.png);
+    }
+    
+    .rewards-overview-list .rewards-overview-box .title {
+        font-size: 1.2em;
+        font-family: 'robotobold', Arial, Helvetica, sans-serif;
+        margin: 10px 0;
+    }
+    
+    .rewards-overview-list .rewards-overview-box.offer .title {
+        color: #ec1067;
+    }
+    
+    .rewards-overview-list .rewards-overview-box.bonus .title {
+        color: #f05920;
+    }
+    
+    .rewards-overview-list .rewards-overview-box.gift .title {
+        color: #60bb46;
+    }
+    
+    .rewards-overview-list .rewards-overview-box.invite .title {
+        color: #00a3e5;
+    }
+    /*---listing---*/
+    
+    .rewards-sect.rewards-listing .content-body-sect .inner-ctnt-hdr {
+        background-color: transparent;
+        padding: 0px;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr {
+        background-color: #f6f6f6;
+        width: 60%;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr .rewards-filter-pnl {
+        width: 50%;
+        padding: 15px 20px;
+        border-left: 1px solid #ccc;
+        position: relative;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr .rewards-filter-pnl .title {
+        width: 70px;
+        font-family: 'vagrounded_ltregular', Arial, Helvetica, sans-serif;
+        color: #585858;
+        font-size: 14px;
+        float: left;
+        line-height: 25px;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr .rewards-filter-pnl .theSelector {
+        width: calc(100% - 75px);
+        width: -webkit-calc(100% - 75px);
+        float: right;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr .rewards-filter-pnl .customDropdownHolder {
+        background-color: transparent;
+        width: 100%;
+        height: 25px;
+        padding: 0px;
+        border: 0px none;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        position: static;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr .rewards-filter-pnl .customDropdownHolder:after {
+        display: none;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr .rewards-filter-pnl .customDropdownHolder .customDropdown {
+        width: 100%;
+        height: 100%;
+        -webkit-appearance: menulist-button;
+        font-family: 'vagrounded_ltregular', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr .rewards-filter-pnl .customDropdownHolder .texter {
+        height: 25px;
+        padding-right: 15px;
+        font-family: 'vagrounded_ltregular', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #3bc7f1;
+        line-height: 25px;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .rewards-sect .rewards-opt-panel-hdr .rewards-filter-pnl .customDropdownHolder .texter:after {
+        background: url(/images/arrows/dd-arr-sort.png) center no-repeat;
+        width: 10px;
+        height: 25px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    
+    .rewards-sect .rewards-list-hdr {
+        background-color: #f6f6f6;
+        padding: 25px;
+        position: relative;
+        box-sizing: content-box;
+        ;
+    }
+    
+    .rewards-sect .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .3;
+        z-index: 1;
+        display: none;
+    }
+    
+    .rewards-sect .rewards-list-hdr .rewards-panel {
+        margin-right: -1%;
+    }
+    
+    .rewards-sect .rewards-box {
+        width: 24%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        float: left;
+        background: #ebebeb;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .rewards-sect .rewards-box.active {
+        z-index: 3;
+    }
+    
+    .rewards-sect .rewards-box .image-logo {
+        width: 100%;
+        height: 0;
+        padding-bottom: 50.644%;
+        background: center no-repeat #fff;
+        background-size: 70% auto;
+    }
+    
+    .rewards-sect .rewards-box .text {
+        height: 3.5em;
+        padding: 20px;
+        box-sizing: initial;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .rewards-sect .rewards-box .text:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2.5em;
+        content: '';
+        background: rgba(235, 235, 235, 0);
+        background: -moz-linear-gradient(top, rgba(235, 235, 235, 0) 0%, rgba(235, 235, 235, 1) 80%, rgba(235, 235, 235, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(235, 235, 235, 0)), color-stop(80%, rgba(235, 235, 235, 1)), color-stop(100%, rgba(235, 235, 235, 1)));
+        background: -webkit-linear-gradient(top, rgba(235, 235, 235, 0) 0%, rgba(235, 235, 235, 1) 80%, rgba(235, 235, 235, 1) 100%);
+        background: -o-linear-gradient(top, rgba(235, 235, 235, 0) 0%, rgba(235, 235, 235, 1) 80%, rgba(235, 235, 235, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(235, 235, 235, 0) 0%, rgba(235, 235, 235, 1) 80%, rgba(235, 235, 235, 1) 100%);
+        background: linear-gradient(to bottom, rgba(235, 235, 235, 0) 0%, rgba(235, 235, 235, 1) 80%, rgba(235, 235, 235, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ebebeb', GradientType=0);
+    }
+    
+    .rewards-sect .rewards-box .link {
+        height: 40px;
+        border-top: 1px solid #ccc;
+        background: url(/images/arrows/pdct-dtls-opt-dd-arr.png) center no-repeat;
+    }
+    
+    .rewards-sect .rewards-box .reward-details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 50.644%;
+        width: 412%;
+        background: #fff;
+        display: none;
+        cursor: auto;
+        padding-bottom: 40px;
+    }
+    
+    .rewards-sect .rewards-box.active .reward-details {
+        display: block;
+    }
+    
+    .rewards-sect .rewards-box:nth-child(4n+1) .reward-details {
+        left: 0;
+    }
+    
+    .rewards-sect .rewards-box:nth-child(4n+2) .reward-details {
+        left: -104%;
+    }
+    
+    .rewards-sect .rewards-box:nth-child(4n+3) .reward-details {
+        left: -208%;
+    }
+    
+    .rewards-sect .rewards-box:nth-child(4n+4) .reward-details {
+        left: -312%;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .close-detail {
+        width: 100%;
+        height: 40px;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: url(/images/arrows/pdct-dtls-opt-dd-arr-reverse.png) center no-repeat #fff;
+        font-size: 0;
+        border-top: 1px solid #ccc
+    }
+    
+    .rewards-sect .rewards-box .reward-details-dropdown {
+        width: 50%;
+        padding: 30px;
+    }
+    
+    .rewards-sect .rewards-box .reward-details-group {
+        display: none;
+    }
+    
+    .rewards-sect .rewards-box .reward-details-group.is-active {
+        display: block;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .image {
+        width: 50%;
+        background: center no-repeat #fff;
+        background-size: cover;
+        height: 0;
+        padding-bottom: 30%;
+        float: left;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .right-panel {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 30px;
+        font-family: 'robotomedium', Arial, Helvetica, sans-serif;
+        float: right;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .detail-title {
+        margin-bottom: 1em;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .main-text {
+        font-size: 1.4em;
+        color: #0faef2;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .detail-list {
+        font-size: 1.1em;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .detail-list>div {
+        padding: 5px 5px 5px 35px;
+        background-position: left 2px;
+        background-repeat: no-repeat;
+        margin-bottom: .5em;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .calendar-text {
+        background-image: url(/images/icons/icon-rewards-calendar.png);
+    }
+    
+    .rewards-sect .rewards-box .reward-details .promocode-text {
+        background-image: url(/images/icons/icon-rewards-promo-code.png);
+    }
+    
+    .rewards-sect .rewards-box .reward-details .present-app-text {
+        background-image: url(/images/icons/icon-rewards-app.png);
+    }
+    
+    .rewards-sect .rewards-box .reward-details .call-text {
+        background-image: url(/images/icons/icon-rewards-call.png);
+    }
+    
+    .rewards-sect .rewards-box .reward-details .email-text {
+        background-image: url(/images/icons/icon-rewards-email.png);
+    }
+    
+    .rewards-sect .rewards-box .reward-details .sms-text {
+        background-image: url(/images/icons/icon-rewards-sms.png);
+    }
+    
+    .rewards-sect .rewards-box .reward-details .website-text {
+        background-image: url(/images/icons/icon-rewards-website.png);
+    }
+    
+    .rewards-sect .rewards-box .reward-details .outlet {
+        padding: 0 30px 30px;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .outlet-title {
+        padding: 5px 5px 5px 35px;
+        background: url(/images/icons/icon-career-location.png) left 2px no-repeat;
+        margin-bottom: .5em;
+        font-family: 'robotomedium', Arial, Helvetica, sans-serif;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .outlet-list {}
+    
+    .rewards-sect .rewards-box .reward-details .outlet-name {}
+    
+    .rewards-sect .rewards-box .reward-details .outlet-address {}
+    
+    .rewards-sect .rewards-box .reward-details .outlet-tel {
+        padding: 0 5px;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .outlet-fax {}
+    
+    .rewards-sect .rewards-box .reward-details .outlet-fax:before {
+        content: '| ';
+        color: #0faef2;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .shop-now {
+        padding: 5px 5px 5px 45px;
+        margin: 0 30px 30px;
+        display: inline-block;
+        background: url(/images/icons/icon-cart-2.png) left center no-repeat;
+        color: inherit;
+        font-family: 'robotomedium', Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .terms {
+        padding: 0 100px 30px 30px;
+        font-size: 0.9em;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .terms-title {
+        margin-bottom: .5em;
+        font-family: 'robotomedium', Arial, Helvetica, sans-serif;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .terms-content {}
+    
+    .rewards-sect .rewards-box .reward-details .terms ul {}
+    
+    .rewards-sect .rewards-box .reward-details .terms ul li {}
+    
+    .rewards-sect .rewards-box .reward-details .terms a {
+        color: #0faef2;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .print-button {
+        display: inline-block;
+        color: #0faef2;
+        text-transform: uppercase;
+        white-space: nowrap;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 60px;
+        width: 70px;
+        position: absolute;
+        bottom: 50px;
+        right: 25px;
+        background: url(/images/icons/icon-printer.png) center top no-repeat;
+        font-family: 'robotomedium', Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .reward-details-group~.print-button {
+        display: none;
+    }
+    
+    .rewards-sect .rewards-box .reward-details .reward-details-group.is-active~.print-button {
+        display: block;
+    }
+    /*---form---*/
+    
+    .rewards-sect .form-panel .textarea {
+        height: 170px;
+    }
+    
+    .rewards-sect .form-panel .count-txt {
+        font-family: 'robotolight', Arial, Helvetica, sans-serif;
+        color: #565656;
+        font-size: 11px;
+    }
+    
+    .rewards-sect .captcha-panel-hdr {
+        margin: 25px 0px;
+        text-align: center;
+    }
+    
+    .rewards-sect .captcha-panel-hdr .captcha-panel {
+        width: 316px;
+        height: 127px;
+        display: inline-block;
+    }
+    
+    .rewards-sect .but-hdr {
+        text-align: center;
+    }
+    
+    .rewards-sect .but-hdr .but-mode {
+        width: 235px;
+        padding: 15px;
+    }
+    /*---media queries----*/
+    
+    @media only screen and (max-width:1280px) {
+        .rewards-sect .content-header-sect .bnr-web {
+            height: auto;
+            padding-top: 40%;
+        }
+    }
+    
+    @media only screen and (max-width:1024px) {
+        .rewards-sect .rewards-opt-panel-hdr {
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    
+    @media only screen and (max-width:768px) {
+        .rewards-sect .content-header-sect .bnr-web {
+            display: none;
+        }
+        .rewards-sect .content-header-sect .bnr-mobile {
+            display: block;
+        }
+        .rewards-sect .ver-web {
+            display: none;
+        }
+        .rewards-sect .ver-mobile {
+            display: block;
+        }
+        /*---*/
+        .rewards-sect .content-body-sect {
+            padding-bottom: 0px;
+        }
+        .rewards-sect .content-body-sect .inner-ctnt-hdr {
+            padding: 15px 10px 30px;
+        }
+        .rewards-sect .content-body-sect .inner-ctnt-hdr .sect-title {
+            font-size: 18px;
+        }
+        .rewards-sect .content-body-sect .inner-ctnt-hdr .sect-title.sub {
+            margin-bottom: 2em;
+            font-size: 16px;
+        }
+        .rewards-sect .content-body-sect .inner-ctnt-hdr .sect-desc {
+            font-size: 12px;
+        }
+        .rewards-overview-list {
+            font-size: 1em;
+        }
+        .rewards-overview-list .rewards-overview-box {
+            width: 45%;
+            margin: 0 1% 3%;
+        }
+        .rewards-sect .rewards-box {
+            width: 32.333%;
+        }
+        .rewards-sect .rewards-box .reward-details {
+            width: 306.5%;
+        }
+        .rewards-sect .rewards-box:nth-child(3n+1) .reward-details {
+            left: 0;
+        }
+        .rewards-sect .rewards-box:nth-child(3n+2) .reward-details {
+            left: -103.5%;
+        }
+        .rewards-sect .rewards-box:nth-child(3n+3) .reward-details {
+            left: -206.5%;
+        }
+        .rewards-sect .rewards-box .reward-details-dropdown {
+            width: 100%;
+        }
+        .rewards-sect .rewards-box .reward-details .image {
+            width: 100%;
+            padding-bottom: 61%;
+            float: none;
+        }
+        .rewards-sect .rewards-box .reward-details .right-panel {
+            width: 100%;
+            float: none;
+        }
+        /*---form---*/
+        .rewards-sect .form-hdr .form-panel.wHalf {
+            width: 100%;
+        }
+        .rewards-sect .form-hdr .but-hdr .but-mode {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width:640px) {
+        .rewards-sect .rewards-opt-panel-hdr .rewards-filter-pnl {
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .rewards-sect .rewards-opt-panel-hdr {
+            border-bottom: 0;
+        }
+    }
+    
+    @media only screen and (max-width:590px) {
+        body.details-on {
+            overflow: hidden;
+        }
+        body.details-on .content-sect {
+            z-index: 5;
+        }
+        .rewards-sect .rewards-box {
+            width: 48%;
+        }
+        .rewards-sect .rewards-box .reward-details {
+            position: fixed;
+            top: 0;
+            left: 0 !important;
+            margin-top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            padding-bottom: 0;
+            z-index: 99;
+        }
+        .rewards-sect .rewards-box .reward-details .close-detail {
+            width: 30px;
+            height: 30px;
+            right: 0;
+            bottom: auto;
+            top: 0;
+            position: absolute;
+            background: #fff;
+            text-align: center;
+            line-height: 27px;
+            font-size: 2em;
+            color: #0faef2;
+            text-decoration: none;
+            border: 0;
+        }
+        .rewards-sect .rewards-box .reward-details .main-text {
+            font-size: 1.2em;
+        }
+        .rewards-sect .rewards-box .reward-details .detail-list {
+            font-size: 1em;
+        }
+        .rewards-sect .rewards-box .reward-details .outlet {
+            font-size: .9em;
+        }
+        .rewards-sect .rewards-box .reward-details .terms {
+            padding: 0 30px 30px;
+        }
+        .rewards-sect .rewards-box .reward-details .print-button,
+        .rewards-sect .rewards-box .reward-details .reward-details-group.is-active~.print-button {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width:450px) {
+        .rewards-sect .rewards-box {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    
+    @media print and (max-width:8.27in) {
+        html {
+            width: 8.27in;
+        }
+        body {
+            font-size: 9pt;
+        }
+        .main-hdr {
+            background: #fff;
+        }
+        .header-sect,
+        .footer-sect,
+        .content-header-sect,
+        .rewards-opt-panel-hdr,
+        .overlay {
+            display: none;
+        }
+        .wrapper {
+            width: 100%;
+            margin: 0;
+        }
+        .content-sect {
+            padding: 0;
+        }
+        .content-body-sect .inner-ctnt-hdr {
+            position: static;
+        }
+        .rewards-sect .rewards-list-hdr {
+            padding: 0;
+        }
+        .rewards-sect .rewards-list-hdr .rewards-panel {
+            margin: 0;
+        }
+        .rewards-sect .rewards-list-hdr,
+        .rewards-sect .content-body-sect {
+            background: #fff;
+        }
+        .rewards-sect .rewards-box,
+        .rewards-sect .rewards-box .text,
+        .rewards-sect .rewards-box .link,
+        .rewards-sect .rewards-box .reward-details .close-detail,
+        .rewards-sect .rewards-box .reward-details .print-button {
+            display: none;
+        }
+        .rewards-sect .rewards-box.active {
+            display: block;
+            width: 100%;
+            background: #fff;
+        }
+        .rewards-sect .rewards-box.active .image-logo {
+            width: 20%;
+            padding-bottom: 8%;
+            border: 1px solid #ccc;
+        }
+        .rewards-sect .rewards-box.active .reward-details {
+            position: static;
+            margin: 20px 0 0 0;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            width: 100%;
+            height: auto;
+            padding: 20px 0 0;
+        }
+        .rewards-sect .rewards-box.active .reward-details .image {
+            width: 20%;
+            padding-bottom: 8%;
+            float: right;
+        }
+        .rewards-sect .rewards-box .reward-details .right-panel {
+            width: 80%;
+            float: left;
+            padding: 0 30px 30px 0;
+        }
+        .rewards-sect .rewards-box .reward-details .outlet {
+            padding: 0 0 30px;
+        }
+        .rewards-sect .rewards-box .reward-details .terms {
+            padding: 0;
+        }
+    }
+</style>
+
+
+<section class="dblock flexbox" id="main-content">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="shoutout brand lg center-text"><b>Partnership</b> Opportunity.</p>
+
+                    <p class="shoutout-note grey center-text">Keen to become a Yes Rewards Partner? Just fill up the form so our team can contact you.</p>
+                    &nbsp;
+
+                    <form action="/rewards/partnership" class="form-std nopadding" id="rewardsForm" method="POST"><input id="token" name="token" type="hidden" value="sby75s1ZUgbjLiwQPbdQOjf4IdGRmbIB" />
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group"><label for="companyName">Company Name</label> <input class="form-control" id="companyName" name="companyName" placeholder="Yes YTL" type="text" />
+                                    <ul class="error-msg">
+                                        <li type="empty">Please state down your company name.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group"><label for="contactPerson">Contact Person</label> <input class="form-control" id="contactPerson" name="contactPerson" placeholder="YES MAN" type="text" />
+                                    <ul class="error-msg">
+                                        <li type="empty">Please state down contact person.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group"><label for="mobileNo">Mobile Number</label> <input class="form-control" id="mobileNo" name="mobileNo" placeholder="+6012 345 6789" type="text" />
+                                    <ul class="error-msg">
+                                        <li type="empty">Please state down your mobile number.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group"><label for="email">Email Address</label> <input class="form-control" id="email" name="email" placeholder="YES.YTL@YES.COM.MY" type="email" />
+                                    <ul class="error-msg">
+                                        <li type="empty">Please insert your email address.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group"><label for="natureOfBusiness">Nature of Business</label>
+
+                                    <div class="dropdown"><button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" id="ddPage" type="button">Nature of business</button>
+
+                                        <div aria-labelledby="ddPage" class="dropdown-menu"><button class="dropdown-item" data-value="Travel &amp; Accommodation" type="button">Travel &amp; Accommodation</button><button class="dropdown-item" data-value="Retail Products &amp; Services" type="button">Retail Products &amp; Services</button>
+                                            <button class="dropdown-item" data-value="Health &amp; Beauty" type="button">Health &amp; Beauty</button><button class="dropdown-item" data-value="Food &amp; Beverage" type="button">Food &amp; Beverage</button>
+                                            <button class="dropdown-item" data-value="Fashion &amp; Accessories" type="button">Fashion &amp; Accessories</button>
+                                            <button class="dropdown-item" data-value="Lifestyle &amp; Adventure" type="button">Lifestyle &amp; Adventure</button><button class="dropdown-item" data-value="Entertainment &amp; Theme Park" type="button">Entertainment &amp; Theme Park</button>
+                                            <button class="dropdown-item" data-value="Others" type="button">Others</button>
+                                        </div>
+                                        <input id="natureOfBusiness" name="natureOfBusiness" type="hidden" /></div>
+
+                                    <ul class="error-msg">
+                                        <li type="empty">Please select your business.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group"><label for="comment">Comment</label><textarea class="form-control" id="comment" name="comment" placeholder="LET US KNOW" rows="5"></textarea>
+
+                                    <ul class="error-msg">
+                                        <li type="empty">Please state down your comment.</li>
+                                    </ul>
+
+                                    <div class="g-recaptcha" data-sitekey="6LdbrJcUAAAAALBkzMZZCgcGNaNJ1m9ASLojtYLa">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <input name="recaptchaV3" type="hidden" value="" /><input name="agreeTncPrivacy" type="hidden" value="00" /><button class="btn btn-primary" name="Submit" type="button" value="submit">Proceed</button><br /> &nbsp;
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Ldeo4MUAAAAAByuRz7MoXYBXGzmqHyhHhHY-Baa"></script>
+<script>
+    var onloadCallback = function() {
+        $("[name=agreeTncPrivacy]").remove();
+    };
+    $(document).ready(function() {
+        $('[name=Submit]').click(function() {
+            if (validateForm()) {
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6Ldeo4MUAAAAAByuRz7MoXYBXGzmqHyhHhHY-Baa', {
+                        action: 'submit'
+                    }).then(function(token) {
+                        $('<input name="g-recaptcha-response" type="hidden" value="' + token + '"/>').appendTo("#rewardsForm");
+                        $("#rewardsForm").submit();
+                    });
+                });
+            }
+        });
+
+        $("[data-type=number]").keydown(function(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        })
+    });
+
+    /* Validate Form */
+    function validateForm() {
+        var valid = true;
+
+        if (!validateInputBlank("#companyName")) valid = false;
+        if (!validateInputBlank("#contactPerson")) valid = false;
+        if (!validateInputBlank("#mobileNo")) valid = false;
+        if (!validateInputEmail("#email")) valid = false;
+        if (!validateInputBlank("#natureOfBusiness")) valid = false;
+        if (!validateInputBlank("#comment")) valid = false;
+
+        return valid;
+    }
+</script>

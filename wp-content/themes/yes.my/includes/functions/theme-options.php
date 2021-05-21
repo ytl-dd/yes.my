@@ -141,6 +141,22 @@
             }
 
             public function setSections() {
+
+                Redux::setSection($this->opt_name, array(
+                    'title'     => __('Authentications', 'yes.my'), 
+                    'desc'      => __('Authentication Keys', 'yes.my'), 
+                    'icon'      => 'el el-link', 
+                    'fields'    => array(
+                        array(
+                            'id'        => 'opt_auth_key_recaptcha', 
+                            'type'      => 'text', 
+                            'title'     => __('Re-Captcha Authentication Key', 'yes.my'), 
+                            'subtitle'  => __('Key for Re-Captcha Authentication Site Ownership', 'yes.my'), 
+                            'default'   => '' 
+                        ) 
+                    )
+                ));
+
                 Redux::setSection($this->opt_name, array(
                     'title'     => __('Footer Fields', 'yes.my'), 
                     'desc'      => __('Footer Components', 'yes.my'), 
@@ -152,12 +168,42 @@
                             'title'     => __('Contact Us', 'yes.my'), 
                             'subtitle'  => __('HTML content for this field', 'yes.my'), 
                             'desc'      => __('Text area in footer top left (beside Sitemap navigations)', 'yes.my'), 
-                            'default'   => '<p style="font-size: 18px; font-weight: bold;">Got a question?</p><p><a href="https://www.yes.my/faq/customer-service"><span class="footer-contact"><b>Contact Us</b></span></a></p>'
+                            'default'   => '<p style="font-size: 18px; font-weight: bold;">Got a question?</p><p><a href="/faq/customer-service"><span class="footer-contact"><b>Contact Us</b></span></a></p>'
+                        ), 
+                        array(
+                            'id'        => 'opt_footer_top_left_bm', 
+                            'type'      => 'editor', 
+                            'title'     => __('Contact Us BM', 'yes.my'), 
+                            'subtitle'  => __('HTML content for this field', 'yes.my'), 
+                            'desc'      => __('Text area in footer top left (beside Sitemap navigations)', 'yes.my'), 
+                            'default'   => '<p style="font-size: 18px; font-weight: bold;">Ada sebarang pertanyaan?</p><p><a href="/ms/faq/customer-service"><span class="footer-contact"><b>Hubungi Kami</b></span></a></p>'
+                        ), 
+                        array(
+                            'id'        => 'opt_footer_top_left_ch', 
+                            'type'      => 'editor', 
+                            'title'     => __('Contact Us CH', 'yes.my'), 
+                            'subtitle'  => __('HTML content for this field', 'yes.my'), 
+                            'desc'      => __('Text area in footer top left (beside Sitemap navigations)', 'yes.my'), 
+                            'default'   => '<p style="font-size: 18px; font-weight: bold;">有任何疑问?</p><p><a href="/zh-hans/faq/customer-service"><span class="footer-contact"><b>联系我们</b></span></a></p>'
                         ), 
                         array(
                             'id'        => 'opt_footer_get_app', 
                             'type'      => 'editor', 
                             'title'     => __('Get App', 'yes.my'), 
+                            'subtitle'  => __('HTML content for this field', 'yes.my'), 
+                            'desc'      => __('Text area in footer where normally put the Get the MyYes App HTML', 'yes.my') 
+                        ), 
+                        array(
+                            'id'        => 'opt_footer_get_app_bm', 
+                            'type'      => 'editor', 
+                            'title'     => __('Get App BM', 'yes.my'), 
+                            'subtitle'  => __('HTML content for this field', 'yes.my'), 
+                            'desc'      => __('Text area in footer where normally put the Get the MyYes App HTML', 'yes.my') 
+                        ), 
+                        array(
+                            'id'        => 'opt_footer_get_app_ch', 
+                            'type'      => 'editor', 
+                            'title'     => __('Get App CH', 'yes.my'), 
                             'subtitle'  => __('HTML content for this field', 'yes.my'), 
                             'desc'      => __('Text area in footer where normally put the Get the MyYes App HTML', 'yes.my') 
                         ), 

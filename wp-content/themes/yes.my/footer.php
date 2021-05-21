@@ -12,7 +12,20 @@
                 <div class="row">
                     <div class="col-12 col-xl-5" style="position: relative;">
                         <div class="footer-contactus">
-                            <?php if (!empty($yesmy_opt['opt_footer_top_left'])) echo $yesmy_opt['opt_footer_top_left']; ?>
+                            <?php 
+                                $lang = get_bloginfo('language');
+                                $opt_id_contact = 'opt_footer_top_left';
+                                $opt_id_get_app = 'opt_footer_get_app';
+                                if ($lang == 'ms-MY') {
+                                    $opt_id_contact = 'opt_footer_top_left_bm';
+                                    $opt_id_get_app = 'opt_footer_get_app_bm';
+                                } else if ($lang == 'zh-CN') {
+                                    $opt_id_contact = 'opt_footer_top_left_ch';
+                                    $opt_id_get_app = 'opt_footer_get_app_ch';
+                                }
+
+                                if (!empty($yesmy_opt[$opt_id_contact])) echo $yesmy_opt[$opt_id_contact];
+                            ?>
                         </div>
                     </div>
                     <div class="col-xl-7" style="position: relative;">
@@ -66,7 +79,7 @@
                     <div class="col">
                         <div class="footer-social">
                             <div class="getapps">
-                                <?php if (!empty($yesmy_opt['opt_footer_get_app'])) echo $yesmy_opt['opt_footer_get_app']; ?>
+                                <?php if (!empty($yesmy_opt[$opt_id_get_app])) echo $yesmy_opt[$opt_id_get_app]; ?>
                             </div>
                             <div class="social">
                                 <?php if (!empty($yesmy_opt['opt_footer_social_links'])) echo $yesmy_opt['opt_footer_social_links']; ?>

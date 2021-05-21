@@ -1,0 +1,941 @@
+<style type="text/css">
+    .none01 {
+        display: none
+    }
+    
+    main {
+        color: #ffffff
+    }
+    
+    .yes-font {
+        font-size: 115%;
+        font-weight: bold
+    }
+    
+    .text-white {
+        color: #ffffff
+    }
+    
+    .text-blue {
+        color: #00A1E0
+    }
+    
+    .lock-ps {
+        position: relative
+    }
+    
+    @media (min-width:992px) {
+        .lock-ps .content {
+            width: 100%;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    #sec-01 .cp-01 {
+        font-size: 40px
+    }
+    
+    .btn-01 {
+        display: inline-block;
+        font-size: 20px;
+        width: 100%;
+        background-color: #0038B3;
+        color: #ffffff !important;
+        border-radius: 50px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer
+    }
+    
+    .btn-01:hover {
+        background-color: #033093;
+    }
+    
+    .btn-01:active {
+        background-color: #012677;
+    }
+    
+    .btn-01.pink {
+        background-color: #F00086
+    }
+    
+    .btn-01.pink:hover {
+        background-color: #d00174
+    }
+    
+    .btn-01.pink:active {
+        background-color: #a2025b
+    }
+    
+    .btn-01.tuntut {
+        width: 280px;
+        letter-spacing: 2px
+    }
+    
+    .img-01 {
+        max-width: 300px
+    }
+    
+    .img-02 {
+        max-width: 850px
+    }
+    
+    .sec-content {
+        background-image: url(/wp-content/themes/yes.my/images/prihatin/bg-02.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: #2db1e1;
+        padding-top: 50px
+    }
+    
+    @media (max-width:1600px) {
+        #sec-01 .cp-01 {
+            font-size: 30px
+        }
+        #sec-01 .btn-ar {
+            max-width: 900px
+        }
+        .img-01 {
+            max-width: 230px
+        }
+        .img-02 {
+            max-width: 550px
+        }
+        .arrow-down-img {
+            width: 30px
+        }
+        .btn-01.tuntut {
+            font-size: 16px;
+            width: 230px
+        }
+    }
+    
+    @media (max-width:991px) {
+        #sec-01 {
+            background-image: url(/wp-content/themes/yes.my/images/prihatin/bg-01-m.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-color: #00a1e1;
+            padding: 70px 0 0px
+        }
+        #sec-01 .btn-ar {
+            max-width: 310px
+        }
+        #sec-01 .btn-01 {
+            font-size: 14px;
+            padding: 10px 15px
+        }
+        #sec-01 .cp-01 {
+            font-size: 20px
+        }
+        .sec-content {
+            background-image: url(/wp-content/themes/yes.my/images/prihatin/bg-02-m.jpg), url(/wp-content/themes/yes.my/images/prihatin/bg-m_01.jpg), url(/wp-content/themes/yes.my/images/prihatin/bg-m_03.jpg), url(/wp-content/themes/yes.my/images/prihatin/bg-m_05.jpg), url(/wp-content/themes/yes.my/images/prihatin/bg-m_07.jpg), url(/wp-content/themes/yes.my/images/prihatin/bg-m_08.jpg), url(/wp-content/themes/yes.my/images/prihatin/bg-m_10.jpg), url(/wp-content/themes/yes.my/images/prihatin/bg-m_12.jpg), url(/wp-content/themes/yes.my/images/prihatin/bg-m_15.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center top, center top 10%, center top 20%, center top 30%, center top 40%, center top 50%, center top 60%, center top 70%, center top 80%;
+            background-color: #2db1e1;
+        }
+    }
+    
+    .acd-pd {
+        padding-top: 120px
+    }
+    
+    .acd-pd .cp-01 {
+        font-size: 25px
+    }
+    
+    .acd-pd .cp-02 {
+        font-size: 35px
+    }
+    
+    .acd-pd .cp-03 {
+        font-size: 20px
+    }
+    
+    .acd-pd .tag {
+        background-color: #ffffff;
+        border-radius: 15px;
+        padding: 10px;
+        color: #00A1E0;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.2
+    }
+    
+    .acd-pd .tag.xs {
+        padding: 10px 5px;
+        font-size: 14px
+    }
+    
+    @media (max-width:991px) {
+        .acd-pd {
+            padding-top: 70px;
+            text-align: center
+        }
+        .acd-pd .phone {
+            max-width: 300px;
+            margin: 0 auto
+        }
+        .acd-pd .ico-ar {
+            max-width: 300px;
+            margin: 0 auto
+        }
+        .acd-pd .cp-01 {
+            font-size: 20px;
+            margin-top: -30px
+        }
+        .acd-pd .cp-02 {
+            font-size: 30px
+        }
+        .acd-pd .cp-03 {
+            font-size: 18px
+        }
+    }
+    
+    #table-list .tag {
+        max-width: 300px
+    }
+    
+    #table-list .table-ar {
+        background-color: #ffffff;
+        padding: 20px 15px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 0 #0038B3;
+    }
+    
+    #table-list .table-ar.pink {
+        box-shadow: 10px 10px 0 #F00086;
+    }
+    
+    .table-ar table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 2px solid #0038B3;
+        color: #0038B3;
+        font-size: 18px
+    }
+    
+    .table-ar.pink table {
+        color: #F00086
+    }
+    
+    .table-ar th,
+    .table-ar td {
+        text-align: left;
+        padding: 10px 20px;
+        border: 2px solid #0038B3
+    }
+    
+    .table-ar.pink th,
+    .table-ar.pink td {
+        border: 2px solid #F00086
+    }
+    
+    .table-ar td:first-child {
+        width: 150px
+    }
+    
+    .table-ar .cp-01 {
+        font-size: 27px;
+        font-weight: bold
+    }
+    
+    .table-ar .cp-02 {
+        font-size: 22px;
+        font-weight: 800
+    }
+    
+    .table-ar .cp-03 {
+        font-size: 16px;
+        font-weight: 800
+    }
+    
+    .main-ttl {
+        font-size: 35px
+    }
+    
+    .table-ar .table-icon {
+        width: 50px
+    }
+    
+    @media (max-width:991px) {
+        .main-ttl {
+            font-size: 25px
+        }
+        .table-ar {
+            max-width: 350px;
+            margin: 0 auto
+        }
+        .table-ar table {
+            font-size: 14px
+        }
+        .table-ar td:first-child {
+            width: 90px;
+            padding: 10px 5px
+        }
+        .table-ar th,
+        .table-ar td {
+            padding: 10px;
+        }
+        #table-list .tag {
+            max-width: 250px
+        }
+        .table-ar .cp-01 {
+            font-size: 20px;
+        }
+        .table-ar .cp-02 {
+            font-size: 16px;
+            line-height: 1.2
+        }
+        .table-ar .cp-03 {
+            font-size: 14px;
+        }
+        .table-ar .table-tick {
+            width: 20px
+        }
+    }
+    
+    @media (max-width:320px) {
+        .table-ar .cp-02 {
+            width: 80px
+        }
+        .table-ar .table-icon {
+            width: 30px
+        }
+    }
+    
+    .video-ar {
+        background-color: #ffffff;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+        color: #04A6E1
+    }
+    
+    .video-ar .cp-01 {
+        font-size: 18px;
+        font-weight: bold
+    }
+    
+    .video-ar .cp-02 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1
+    }
+    
+    @media (max-width:991px) {
+        .video-ar {
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 25px 25px;
+        }
+        .video-ar .cp-02 {
+            font-size: 22px;
+        }
+    }
+    
+    .ft {
+        padding-bottom: 150px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-image: url(/wp-content/themes/yes.my/images/prihatin/bg-03.jpg);
+        background-color: #2db1e1;
+    }
+    
+    .ft .xs {
+        font-size: 14px
+    }
+    
+    .ft .pns {
+        font-size: 20px;
+        position: relative
+    }
+    
+    .ft .pns .text {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        padding: 0 20px
+    }
+    
+    .ft .pns .line {
+        height: 1px;
+        width: 40%;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        display: block
+    }
+    
+    .ft .pns .line2 {
+        height: 1px;
+        width: 40%;
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        display: block
+    }
+    
+    @media (max-width:991px) {
+        .ft .pns {
+            font-size: 16px
+        }
+        .ft .pns .line2,
+        .ft .pns .line {
+            width: 25%
+        }
+        .ft {
+            padding-bottom: 50px;
+            background-image: url(/wp-content/themes/yes.my/images/prihatin/bg-m-ft.jpg);
+        }
+    }
+    
+    .filterDiv {
+        display: none;
+    }
+    
+    .filterDiv.show {
+        display: block;
+    }
+    
+    .tab-lock {
+        position: relative;
+        width: 100%;
+    }
+    
+    .tab-lock .click-ar {
+        position: absolute;
+        width: 33.3%;
+        height: 15%;
+        top: 0;
+        cursor: pointer
+    }
+    
+    .tab-lock .click-ar.one {
+        left: 0;
+    }
+    
+    .tab-lock .click-ar.two {
+        left: 33.3%;
+    }
+    
+    .tab-lock .click-ar.three {
+        left: 66.6%;
+    }
+    
+    @media (max-width:991px) {
+        .tab-lock .click-ar {
+            height: 6%
+        }
+        .tab-lock.ekyc .click-ar {
+            height: 4%
+        }
+        .tab-lock {
+            max-width: 410px;
+            margin: 0 auto
+        }
+    }
+</style>
+
+
+
+<h1 style="display:none;">Yes Prihatin - Register Now</h1>
+
+<div style="display:none"><img alt="preload-img" data-entity-type="file" data-entity-uuid="cf6425da-5c58-417b-bca6-f10b43a41524" src="/wp-content/themes/yes.my/images/prihatin/cara-03-bm-v2.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="edd4df5c-217e-4d4e-b10c-d8d63595e5f7"
+        src="/wp-content/themes/yes.my/images/prihatin/arrow-down.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="b2e09d48-8e9a-434e-a93a-c5f27c470dad" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-ekyc-bm.jpg" /><img alt="preload-img"
+        data-entity-type="file" data-entity-uuid="2fcf2f72-d620-4151-a4f0-2774da26b834" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-tuntut-bm.jpg" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="4917d179-90c2-40b6-b801-7d24947ce807"
+        src="/wp-content/themes/yes.my/images/prihatin/vt-cara-daftar-bm.jpg" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="9480f28d-d575-40e2-acb8-0b209434c3a1" src="/wp-content/themes/yes.my/images/prihatin/video-thumbnail.png" /><img
+        alt="preload-img" data-entity-type="file" data-entity-uuid="a90eb5e4-186c-4f86-95c2-a1448c8b013c" src="/wp-content/themes/yes.my/images/prihatin/partner-m.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="599a45db-cbff-4632-b6e6-e1d3f6950476"
+        src="/wp-content/themes/yes.my/images/prihatin/table-keluarga-tag-bm.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="8a29571e-2b3a-4c18-967a-dc5a7b982a81" src="/wp-content/themes/yes.my/images/prihatin/table-individu-tag-bm.png"
+    /><img alt="preload-img" data-entity-type="file" data-entity-uuid="e953b4bd-8dc3-4f22-8553-0798756e97d7" src="/wp-content/themes/yes.my/images/prihatin/phone-2-bm.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="2485ab98-e325-4ab0-96a8-7b5682243cdf"
+        src="/wp-content/themes/yes.my/images/prihatin/phone-1-bm.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="338a456c-625b-46c2-b6de-351ac48efffa" src="/wp-content/themes/yes.my/images/prihatin/icon-bauchar.png" /><img alt="preload-img"
+        data-entity-type="file" data-entity-uuid="bab7e07f-a779-4355-a803-7355492ebaaa" src="/wp-content/themes/yes.my/images/prihatin/icon-tick.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="c71ef691-15fb-46a6-b59a-b7f978e3c120"
+        src="/wp-content/themes/yes.my/images/prihatin/partner.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="310d4cff-907b-413a-8bda-6105e8884b38" src="/wp-content/themes/yes.my/images/prihatin/icon-Telefon-Pintar.png" /><img alt="preload-img"
+        data-entity-type="file" data-entity-uuid="2b7fe85f-36ed-440a-acc1-7347fe3c2fab" src="/wp-content/themes/yes.my/images/prihatin/icon-Data-Percuma.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="1d76274a-a256-4055-b2ce-ae5f47e6fa66"
+        src="/wp-content/themes/yes.my/images/prihatin/icon-Data-Percuma-15gb.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="67875a5c-ff8a-425a-9e42-dd8af36324d4" src="/wp-content/themes/yes.my/images/prihatin/icon-apps.png" /><img
+        alt="preload-img" data-entity-type="file" data-entity-uuid="93aaf4de-7537-44c3-b78a-369146f2b6ec" src="/wp-content/themes/yes.my/images/prihatin/good-news-b40-bm.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="5084c0c5-36b6-4f8e-9aad-ae0fc88a4bea"
+        src="/wp-content/themes/yes.my/images/prihatin/comunity.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="880e94e7-fb0e-411d-a0a7-8306ea724932" src="/wp-content/themes/yes.my/images/prihatin/cara-03-eng-m-v2.png" /><img alt="preload-img"
+        data-entity-type="file" data-entity-uuid="33a789df-fba5-428b-84fb-6c7cced13bb0" src="/wp-content/themes/yes.my/images/prihatin/cara-03-bm.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="9af162e8-6d8a-4ac5-be6b-3afd0d74c7c9"
+        src="/wp-content/themes/yes.my/images/prihatin/cara-02-eng-m.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="1f85c1e8-804a-409f-a297-f784d98a6bee" src="/wp-content/themes/yes.my/images/prihatin/cara-02-bm.png" /><img alt="preload-img"
+        data-entity-type="file" data-entity-uuid="c0e50f3c-b3e3-4db1-9fb0-c12e88b63eb8" src="/wp-content/themes/yes.my/images/prihatin/cara-01-eng-m.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="93064fe2-2926-4df8-b7c9-dfb929eb122c"
+        src="/wp-content/themes/yes.my/images/prihatin/cara-01-bm.png" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="4825a3c6-ddcd-41bd-8cdf-cd70356ee99b" src="/wp-content/themes/yes.my/images/prihatin/bg-m_15.jpg" /><img alt="preload-img"
+        data-entity-type="file" data-entity-uuid="9f687606-3a4f-4b20-a150-75ecab70fb80" src="/wp-content/themes/yes.my/images/prihatin/bg-m-ft.jpg" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="2d69d6a3-8238-497b-b72e-74bf7525a87d" src="/wp-content/themes/yes.my/images/prihatin/bg-m_12.jpg"
+    /><img alt="preload-img" data-entity-type="file" data-entity-uuid="8a226fd7-bd44-4580-80b1-99c661742555" src="/wp-content/themes/yes.my/images/prihatin/bg-m_10.jpg" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="0768bd5d-1efc-43fa-97f0-7c37c7a54fe1"
+        src="/wp-content/themes/yes.my/images/prihatin/bg-m_08.jpg" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="71487fba-fe33-4946-a6fd-912dd6023a88" src="/wp-content/themes/yes.my/images/prihatin/bg-m_05.jpg" /><img alt="preload-img"
+        data-entity-type="file" data-entity-uuid="9240cbb4-d15e-48db-ac0d-75922072cdc0" src="/wp-content/themes/yes.my/images/prihatin/bg-m_07.jpg" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="3d53fe6f-10da-47d0-a4b5-c0367fbc15f8" src="/wp-content/themes/yes.my/images/prihatin/bg-m_03.jpg"
+    /><img alt="preload-img" data-entity-type="file" data-entity-uuid="c54c1c62-35d8-4479-9461-44e682465df4" src="/wp-content/themes/yes.my/images/prihatin/bg-m_01.jpg" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="6ffb77ba-e4c4-406d-9f39-7b0b789c628f"
+        src="/wp-content/themes/yes.my/images/prihatin/bg-03.jpg" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="d1e15acc-fb29-46fc-bbac-d4c4e5450595" src="/wp-content/themes/yes.my/images/prihatin/bg-02-m.jpg" /><img alt="preload-img"
+        data-entity-type="file" data-entity-uuid="7da4110e-9a26-4888-8bdc-a1230dd9416d" src="/wp-content/themes/yes.my/images/prihatin/bg-02.jpg" /><img alt="preload-img" data-entity-type="file" data-entity-uuid="b4ad40b1-5d1d-4606-8605-5211fdcedcd0" src="/wp-content/themes/yes.my/images/prihatin/bg-01-m.jpg"
+    /><img alt="preload-img" data-entity-type="file" data-entity-uuid="6aa1b8f3-eaee-4ef4-9ac0-e1c6b47edd62" src="/wp-content/themes/yes.my/images/prihatin/bg-01.jpg" /></div>
+
+<section class="d-block lock-ps text-white" id="sec-01"><img alt="" class="d-lg-block d-none" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/bg-01.jpg" width="100%" />
+    <div class="content text-center">
+        <div class="container">
+            <div class="img-01 mx-auto"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/comunity.png" width="100%" /></div>
+            &nbsp;
+
+            <div class="img-02 mx-auto"><img alt="" data-entity-type="file" data-entity-uuid="8e2e1a4b-fc5b-4209-bf57-aa2fe0c594b7" src="/wp-content/themes/yes.my/images/prihatin/good-news-b40-chi.png" width="100%" /></div>
+            &nbsp;
+
+            <div class="cp-01 text-white text-center">无需定金。 无需合约。 无需付款。</div>
+            &nbsp;
+
+            <div class="btn-ar mx-auto">
+                <div class="row">
+                    <div class="col-lg-6 col-12"><a class="btn-01" href="#keluarga"><span class="yes-font">yes</span> prihatin 补贴<b>RM300</b> | 居家学习<b>家庭</b></a></div>
+
+                    <div class="col-lg-6 col-12 mt-lg-0 mt-3"><a class="btn-01 pink" href="#individu"><span class="yes-font">yes</span> prihatin 补贴<b>RM180</b> | 居家学习<b>个人</b></a></div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <img alt="" class="arrow-down-img" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/arrow-down.png" /></div>
+    </div>
+</section>
+
+<section class="d-block sec-content text-white">
+    <div class="acd-pd" id="keluarga">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                    <div class="phone"><img alt="" data-entity-type="file" data-entity-uuid="929c67a7-4788-4246-ab5b-4a5d30628319" src="/wp-content/themes/yes.my/images/prihatin/phone-1-mand_0.png" width="100%" /></div>
+                </div>
+
+                <div class="col-lg-7 col-12">
+                    <div class="cp-01 mb-lg-3 mb-2">无需定金。 无需合约。 无需付款。</div>
+
+                    <div class="cp-02"><span class="yes-font">yes</span> 将赠送：</div>
+
+                    <div class="ico-ar">
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-lg col-6 mt-3"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-Telefon-Pintar.png" width="100%" />
+                                <div class="tag xs mt-2">免费<br /> 智能手机
+                                </div>
+                            </div>
+
+                            <div class="col-lg col-6 mt-3"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-Data-Percuma.png" width="100%" />
+                                <div class="tag xs mt-2">免费<br /> 数据
+                                </div>
+                            </div>
+
+                            <div class="col-lg col-6 mt-3"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-bauchar.png" width="100%" />
+                                <div class="tag xs mt-2">Shopee RM50<br /> 优惠劵
+                                </div>
+                            </div>
+
+                            <div class="col-lg col-6 mt-3"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-apps.png" width="100%" />
+                                <div class="tag xs mt-2">教学<br /> 应用程序
+                                </div>
+                            </div>
+
+                            <div class="col-lg col-6 mt-3"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-iqiyi-v2.png" width="100%" />
+                                <div class="tag xs mt-2">娱乐<br /> 应用程序
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cp-03 mb-4 pt-3">您可享有免费智能手机和&nbsp;<b>30 GB</b>&nbsp;数据！不仅如此，您还能获得 Shopee RM50 的现金回扣，浏览 FrogAsia 教学和爱奇艺应用程序的机会<br />
+                        <br /> 这一切都属于你！
+                        <br /> 马上浏览并选择您的 <span class="yes-font">yes</span> prihatin today!</div>
+                    <a class="btn-01 tuntut" href="https://prihatin.yes.my/" target="_blank"><b>马上兑换</b> </a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="acd-pd" id="individu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-12 d-lg-none">
+                    <div class="phone"><img alt="" data-entity-type="file" data-entity-uuid="4fb56b5d-faab-4b3a-9255-0f446dddc39c" src="/wp-content/themes/yes.my/images/prihatin/phone-2-mand_0.png" width="100%" /></div>
+                </div>
+
+                <div class="col-lg-7 col-12">
+                    <div class="cp-01 mb-lg-3 mb-2">无需定金。 无需合约。 无需付款。</div>
+
+                    <div class="cp-02"><span class="yes-font">yes</span> 将赠送：</div>
+
+                    <div class="ico-ar">
+                        <div class="row justify-content-lg-start justify-content-center mb-4">
+                            <div class="col-lg-3 col-6 mt-3"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-Telefon-Pintar.png" width="100%" />
+                                <div class="tag mt-2">免费<br /> 智能手机
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mt-3"><img alt="" data-entity-type="file" data-entity-uuid="1d76274a-a256-4055-b2ce-ae5f47e6fa66" src="/wp-content/themes/yes.my/images/prihatin/icon-Data-Percuma-15gb.png" width="100%" />
+                                <div class="tag mt-2">免费<br /> 数据
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mt-3"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-bauchar.png" width="100%" />
+                                <div class="tag mt-2">Shopee RM50<br /> 优惠劵
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mt-3"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-iqiyi-v2.png" width="100%" />
+                                <div class="tag mt-2">娱乐<br /> 应用程序
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cp-03 mb-4 pt-3">马上享有免费 <b>15 GB</b> 数据，Shopee RM50 的现金回扣和 浏览爱奇艺应用程序的机会！<br />
+                        <br /> 这一切都属于你！
+                        <br /> 马上浏览并选择您的 <span class="yes-font">yes</span> prihatin today!</div>
+                    <a class="btn-01 pink tuntut" href="https://prihatin.yes.my/" target="_blank"><b>马上兑换</b> </a></div>
+
+                <div class="col-lg-5 col-12 d-none d-lg-block">
+                    <div class="phone"><img alt="" data-entity-type="file" data-entity-uuid="4fb56b5d-faab-4b3a-9255-0f446dddc39c" src="/wp-content/themes/yes.my/images/prihatin/phone-2-mand_0.png" width="100%" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5 pb-5 mt-lg-0 pt-lg-0 pt-5 mt-5" id="table-list">
+        <div class="container">
+            <div class="main-ttl text-center mb-4">选择您的 <span class="yes-font">yes</span> prihatin</div>
+
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="tag mx-auto"><img alt="" data-entity-type="file" data-entity-uuid="556961b6-dfa3-4135-a57b-4aa7c2c272f5" src="/wp-content/themes/yes.my/images/prihatin/table-keluarga-tag-mand_0.png" width="100%" /></div>
+
+                    <div class="table-ar">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">价格</td>
+                                    <td>
+                                        <div class="cp-01">免费！</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">手机</td>
+                                    <td>
+                                        <div class="row align-items-center">
+                                            <div class="col-auto pr-2"><img alt="" class="table-icon" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-Telefon-Pintar.png" /></div>
+
+                                            <div class="col-auto px-0">
+                                                <div class="cp-02">免费智能手机</div>
+                                            </div>
+
+                                            <div class="col-auto pl-2 align-self-lg-start pt-lg-2"><img alt="" class="table-tick" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-tick.png" /></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">数据</td>
+                                    <td>
+                                        <div class="row align-items-center">
+                                            <div class="col-auto pr-2"><img alt="" class="table-icon" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-Data-Percuma.png" /></div>
+
+                                            <div class="col-auto col px-0">
+                                                <div class="cp-02">免费<br class="d-block d-lg-none" /> 30 GB 数据</div>
+                                            </div>
+
+                                            <div class="col-auto pl-2 align-self-lg-start pt-lg-2"><img alt="" class="table-tick" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-tick.png" /></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">特别<br /> 附送
+                                    </td>
+                                    <td>
+                                        <div class="row align-items-lg-center align-items-top">
+                                            <div class="col-6 pr-0">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-auto col-12"><img alt="" class="table-icon" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-bauchar.png" /></div>
+
+                                                    <div class="col pl-lg-0">
+                                                        <div class="cp-03 mt-lg-0 mt-2">Shopee<br /> RM50 优惠劵</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto"><img alt="" class="table-icon" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-apps.png" /></div>
+
+                                                    <div class="col pl-lg-0">
+                                                        <div class="cp-03 mt-lg-0 mt-2">教学<br /> 应用程序
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col mt-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto"><img alt="" class="table-icon" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-iqiyi-v2.png" /></div>
+
+                                                    <div class="col pl-0">
+                                                        <div class="cp-03 mt-lg-0 mt-2">娱乐<br /> 应用程序
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">有效期</td>
+                                    <td>
+                                        <div class="cp-02">12 个月</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="text-center mt-4 pt-3"><a class="btn-01 tuntut" href="https://prihatin.yes.my/" target="_blank"><b>马上兑换</b> </a></div>
+                </div>
+
+                <div class="col-lg-6 col-12 mt-lg-0 mt-5">
+                    <div class="tag mx-auto"><img alt="" data-entity-type="file" data-entity-uuid="34238f6c-6f11-49a0-bceb-22b421fb165e" src="/wp-content/themes/yes.my/images/prihatin/table-individu-tag-mand_0.png" width="100%" /></div>
+
+                    <div class="table-ar pink">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">价格</td>
+                                    <td>
+                                        <div class="cp-01">免费！</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">手机</td>
+                                    <td>
+                                        <div class="row align-items-center">
+                                            <div class="col-auto pr-2"><img alt="" class="table-icon" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-Telefon-Pintar.png" /></div>
+
+                                            <div class="col-auto px-0">
+                                                <div class="cp-02">免费智能手机</div>
+                                            </div>
+
+                                            <div class="col-auto pl-2 align-self-lg-start pt-lg-2"><img alt="" class="table-tick" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-tick.png" /></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">数据</td>
+                                    <td>
+                                        <div class="row align-items-center">
+                                            <div class="col-auto pr-2"><img alt="" class="table-icon" data-entity-type="file" data-entity-uuid="1d76274a-a256-4055-b2ce-ae5f47e6fa66" src="/wp-content/themes/yes.my/images/prihatin/icon-Data-Percuma-15gb.png" /></div>
+
+                                            <div class="col-auto col px-0">
+                                                <div class="cp-02">免费<br class="d-block d-lg-none" /> 15 GB 数据</div>
+                                            </div>
+
+                                            <div class="col-auto pl-2 align-self-lg-start pt-lg-2"><img alt="" class="table-tick" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-tick.png" /></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">特别<br /> 附送
+                                    </td>
+                                    <td>
+                                        <div class="row align-items-lg-center align-items-top">
+                                            <div class="col-6 pr-0">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-auto col-12"><img alt="" class="table-icon" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-bauchar.png" /></div>
+
+                                                    <div class="col pl-lg-0">
+                                                        <div class="cp-03 mt-lg-0 mt-2">Shopee<br /> RM50 优惠劵</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto"><img alt="" class="table-icon" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-apps.png" /></div>
+
+                                                    <div class="col pl-lg-0">
+                                                        <div class="cp-03 mt-lg-0 mt-2">教学<br /> 应用程序
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col mt-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto"><img alt="" class="table-icon" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/icon-iqiyi-v2.png" /></div>
+
+                                                    <div class="col pl-0">
+                                                        <div class="cp-03 mt-lg-0 mt-2">娱乐<br /> 应用程序
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">有效期</td>
+                                    <td>
+                                        <div class="cp-02">12 个月</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="text-center mt-4 pt-3"><a class="btn-01 pink tuntut" href="https://prihatin.yes.my/" target="_blank"><b>马上兑换</b> </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5 pb-5 mt-lg-0 pt-lg-0 pt-5 mt-5">
+        <div class="container">
+            <div class="main-ttl text-center mb-4">如何获得<br />
+                <span class="yes-font">yes</span> prihatin</div>
+
+            <div class="row">
+                <div class="tab-lock filterDiv daftar show">
+                    <div class="click-ar one" onclick="filterSelection('daftar')">&nbsp;</div>
+
+                    <div class="click-ar two" onclick="filterSelection('tuntut')">&nbsp;</div>
+
+                    <div class="click-ar three" onclick="filterSelection('ekyc')">&nbsp;</div>
+                    <img alt="" class="d-none d-lg-block" data-entity-type="file" data-entity-uuid="dc679dbd-4196-4f8e-81aa-956b3c37dcd0" src="/wp-content/themes/yes.my/images/prihatin/cara-01-chi.png" width="100%" /><img alt="" class="d-block d-lg-none sharp"
+                        data-entity-type="file" data-entity-uuid="13efa6ef-b2b9-41fc-b2e9-4c71010d6bfb" src="/wp-content/themes/yes.my/images/prihatin/cara-01-chi-m.png" width="100%" /></div>
+
+                <div class="tab-lock filterDiv tuntut">
+                    <div class="click-ar one" onclick="filterSelection('daftar')">&nbsp;</div>
+
+                    <div class="click-ar two" onclick="filterSelection('tuntut')">&nbsp;</div>
+
+                    <div class="click-ar three" onclick="filterSelection('ekyc')">&nbsp;</div>
+                    <img alt="" class="d-none d-lg-block" data-entity-type="file" data-entity-uuid="c0d0549d-8b65-4ae0-a544-4033d708a803" src="/wp-content/themes/yes.my/images/prihatin/cara-02-chi.png" width="100%" /><img alt="" class="d-block d-lg-none sharp"
+                        data-entity-type="file" data-entity-uuid="b437a584-1568-4b91-920c-031cd6b02364" src="/wp-content/themes/yes.my/images/prihatin/cara-02-chi-m-v2.png" width="100%" /></div>
+
+                <div class="tab-lock filterDiv ekyc">
+                    <div class="click-ar one" onclick="filterSelection('daftar')">&nbsp;</div>
+
+                    <div class="click-ar two" onclick="filterSelection('tuntut')">&nbsp;</div>
+
+                    <div class="click-ar three" onclick="filterSelection('ekyc')">&nbsp;</div>
+                    <img alt="" class="d-none d-lg-block" data-entity-type="file" data-entity-uuid="81a37ad2-f38c-485b-88b1-c9000357c14e" src="/wp-content/themes/yes.my/images/prihatin/cara-03-chi.png" width="100%" /><img alt="" class="d-block d-lg-none sharp"
+                        data-entity-type="file" data-entity-uuid="0a7bd22b-cc12-4ec8-b4ad-8c4681540c53" src="/wp-content/themes/yes.my/images/prihatin/cara-03-chi-m.png" width="100%" /></div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="main-ttl text-center mb-4">欲知详情请观看以下影片！</div>
+
+            <div class="video-ar text-center mb-5">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <a href="https://youtu.be/eKP0G7lAFRE" target="_blank"><img alt="" data-entity-type="file" data-entity-uuid="162aecdb-1bdd-47bd-91f2-b0bbd5282fa1" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-daftar-chi_0.png" width="100%" /></a>
+
+                        <div class="cp-01 mt-2"><a href="https://youtu.be/eKP0G7lAFRE" target="_blank">如何</a></div>
+
+                        <div class="cp-02"><a href="https://youtu.be/eKP0G7lAFRE" target="_blank">注册?</a></div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mt-lg-0 mt-4">
+                        <a href="https://youtu.be/KeAdn3xt83c" target="_blank"><img alt="" data-entity-type="file" data-entity-uuid="e9879634-e2da-49ed-b08f-6cf8b7730f7d" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-tuntut-chi_0.png" width="100%" /></a>
+
+                        <div class="cp-01 mt-2"><a href="https://youtu.be/KeAdn3xt83c" target="_blank">如何</a></div>
+
+                        <div class="cp-02"><a href="https://youtu.be/KeAdn3xt83c" target="_blank">兑换?</a></div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mt-lg-0 mt-4">
+                        <a href="https://youtu.be/XPk_AUVh23c" target="_blank"><img alt="" data-entity-type="file" data-entity-uuid="492e950a-a274-42ce-aa9b-44064daca323" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-ekyc-chi_0.png" width="100%" /></a>
+
+                        <div class="cp-01 mt-2"><a href="https://youtu.be/XPk_AUVh23c" target="_blank">如何</a></div>
+
+                        <div class="cp-02"><a href="https://youtu.be/XPk_AUVh23c" target="_blank">eKYC?</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ft text-center">
+        <div class="container"><a class="btn-01 pink tuntut" href="https://prihatin.yes.my/" target="_blank"><b>马上兑换</b></a>
+
+            <div class="xs mt-2 mb-5">*须符合条规</div>
+
+            <div class="pns">
+                <div class="text">协作单位</div>
+
+                <div class="line">&nbsp;</div>
+
+                <div class="line2">&nbsp;</div>
+            </div>
+
+            <div class="partner mt-3">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-auto col-12"><img alt="" class="d-none d-lg-inline-block" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/partner.png" /> <img alt="" class="d-inline-block d-lg-none" data-entity-type="" data-entity-uuid=""
+                            src="/wp-content/themes/yes.my/images/prihatin/partner-m.png" /></div>
+
+                    <div class="col-lg-auto col-12 mt-lg-0 mt-4 pl-lg-0"><img alt="" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/partner-iqiyi-v2.png" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+    filterSelection("daftar")
+
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+            }
+        }
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    if (btnContainer) {
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    }
+</script>

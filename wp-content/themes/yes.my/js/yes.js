@@ -163,22 +163,22 @@ $(document).ready(function() {
     /** END From Footer */
 
     $(".plans_content").hide();
-    $(".plans_").click(function(){
+    $(".plans_").click(function() {
         $(".plans_content").toggle();
     });
 });
 /* END From Main Site */
 
 /* Extended */
-$(document).ready(function () {
-    $('ul.mobile-menus li.menu-item-has-children > a').on('click', function () {
+$(document).ready(function() {
+    $('ul.mobile-menus li.menu-item-has-children > a').on('click', function() {
         $(this).closest('li').find('ul.sub-menu').toggleClass('show');
     })
 
-    var highlightWords  = ['Kasi Up'];
+    var highlightWords = ['Kasi Up', 'YES'];
     $('ul.sub-menu a').html(function(_, html) {
-        var reg = new RegExp('(' + highlightWords.join('|') + ')','gi');
+        var reg = new RegExp('(' + highlightWords.join('|') + ')', 'gi');
         return html.replace(reg, '<span class="kasicolor">$1</span>', html)
     })
-})
+});
 /* END Extended */

@@ -7,7 +7,7 @@
     /**
      * Register custom post types.
      * 
-     * @link http://codex.wordpress.org/Function_Reference/register_post_type
+     * @link https://developer.wordpress.org/reference/functions/register_post_type/
      */
      
     if (!class_exists('Yesmy_custom_post_types_config')) {

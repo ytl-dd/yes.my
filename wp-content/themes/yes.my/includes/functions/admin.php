@@ -118,4 +118,18 @@
 
         add_action('init', 'register_thumbnail_image_field');
     }
+
+    if (!function_exists('add_admin_style')) {
+        function add_admin_style() {
+            wp_enqueue_style('admin-styles', get_template_directory_uri().'/css/yes-admin.css');
+        }
+        add_action('admin_enqueue_scripts', 'add_admin_style');
+    }
+
+    // if (!function_exists('replace_admin_favicon')) {
+    //     function replace_admin_favicon() {
+    //         echo '<link rel="shortcut icon" href="'.get_template_directory_uri().'/images/favicon.ico" type="image/vnd.microsoft.icon" />';
+    //     }
+    //     add_action('admin_head', 'replace_admin_favicon');
+    // }
 ?>
