@@ -5,7 +5,7 @@
  * Description: Multilingual support for popular SEO plugins
  * Author: OnTheGoSystems
  * Author URI: http://www.onthegosystems.com/
- * Version: 2.0.0
+ * Version: 2.0.1
  * Plugin Slug: wp-seo-multilingual
  *
  * @package wpml/wpseo

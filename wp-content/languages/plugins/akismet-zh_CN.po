@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Akismet Spam Protection - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-04 02:30:01+0000\n"
+"PO-Revision-Date: 2021-05-29 22:41:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -159,7 +159,7 @@ msgstr "由千百万人使用，Akismet可能是保护您的站点免受垃圾�
 #. Plugin Name of the plugin
 #: class.akismet-admin.php:112 class.akismet-admin.php:115
 msgid "Akismet Anti-Spam"
-msgstr "Akismet反垃圾评论"
+msgstr "Akismet反垃圾评论和表单提交"
 
 #: views/enter.php:9
 msgid "Connect with API key"
@@ -512,7 +512,7 @@ msgstr "保存更改"
 
 #: views/config.php:170
 msgid "Disconnect this account"
-msgstr "断开连接这个账户"
+msgstr "断开此帐户的连接"
 
 #: views/config.php:141
 msgid "Spam in the <a href=\"%1$s\">spam folder</a> older than 1 day is deleted automatically."
@@ -525,7 +525,7 @@ msgstr "注："
 
 #: views/config.php:133
 msgid "Always put spam in the Spam folder for review."
-msgstr "总是将垃圾放入垃圾目录以便审阅。"
+msgstr "总是将垃圾评论放入垃圾评论目录以便审阅。"
 
 #: views/config.php:132
 msgid "Silently discard the worst and most pervasive spam so I never see it."
@@ -533,7 +533,7 @@ msgstr "自动丢弃显而易见的广告。"
 
 #: views/config.php:131
 msgid "Akismet anti-spam strictness"
-msgstr "Akismet反垃圾评论严密度"
+msgstr "Akismet 反垃圾严密度"
 
 #: views/config.php:122
 msgid "Show the number of approved comments beside each comment author"
@@ -712,7 +712,7 @@ msgstr[0] "<a href=\"%1$s\">Akismet</a>为您的站点阻挡了<a href=\"%2$s\">
 #: class.akismet-admin.php:345
 msgctxt "comments"
 msgid "Spam"
-msgstr "评论垃圾"
+msgstr "垃圾评论"
 
 #: class.akismet-admin.php:275
 msgid "Cheatin&#8217; uh?"

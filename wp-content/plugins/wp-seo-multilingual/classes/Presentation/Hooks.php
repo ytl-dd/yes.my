@@ -169,7 +169,11 @@ class Hooks implements \IWPML_Frontend_Action {
 			$newLink = self::getPostTypeArchiveLink( $presentation->model->object_sub_type, $originalLink );
 		}
 
-		return Obj::assocPath( [ 'model', 'permalink' ], $newLink, $presentation );
+		if ( $newLink ) {
+			return Obj::assocPath( [ 'model', 'permalink' ], $newLink, $presentation );
+		}
+
+		return $presentation;
 	}
 
 	/**

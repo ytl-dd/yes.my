@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-13 05:32:56+0000\n"
+"PO-Revision-Date: 2021-06-15 12:16:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -998,7 +998,7 @@ msgstr "抱歉，您不能修改插件。"
 #. translators: 1: post_max_size, 2: upload_max_filesize
 #: wp-admin/includes/class-wp-site-health.php:2166
 msgid "The setting for %1$s is smaller than %2$s, this could cause some problems when trying to upload files."
-msgstr "%1$s 的设定值小于%2$s，尝试上传文件时可能会导致一些问题。"
+msgstr "%1$s 的设置小于 %2$s，这可能会在尝试上传文件时出现一些问题。"
 
 #. translators: 1: file_uploads, 2: 0
 #: wp-admin/includes/class-wp-site-health.php:2131
@@ -1098,7 +1098,7 @@ msgstr "该插件已安装。"
 #: wp-admin/js/updates.js:2108
 msgctxt "plugin"
 msgid "Update %s now"
-msgstr "现在更新 %s"
+msgstr "立即更新 %s"
 
 #. translators: %s: Plugin name and version.
 #. translators: %s: Importer name.
@@ -1575,7 +1575,7 @@ msgstr "当前没有可用的插件。"
 
 #: wp-admin/includes/image-edit.php:144
 msgid "Restore original image"
-msgstr "恢复原始图像"
+msgstr "恢复原始图片"
 
 #: wp-admin/includes/class-theme-installer-skin.php:377
 #: wp-admin/includes/class-plugin-installer-skin.php:342
@@ -1794,7 +1794,7 @@ msgstr "尚无信息…"
 #. translators: 1: upload_max_filesize, 2: php.ini
 #: wp-admin/includes/file.php:820
 msgid "The uploaded file exceeds the %1$s directive in %2$s."
-msgstr "上传的文件大小超过%1$s文件中定义的%2$s值。"
+msgstr "上传的文件大小超过%2$s文件中定义的%1$s值。"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:221
 msgid "No comments found in Trash."
@@ -1868,7 +1868,7 @@ msgstr "Y"
 #: wp-admin/js/dashboard.js:799 wp-admin/js/dashboard.js:801
 msgctxt "upcoming events day format"
 msgid "j"
-msgstr "j"
+msgstr "j日"
 
 #. translators: Date string for upcoming events. 1: Month, 2: Starting day, 3:
 #. Ending day, 4: Year.
@@ -2085,7 +2085,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/settings-permalinks-scre
 msgid "<a href=\"https://wordpress.org/support/article/dashboard-updates-screen/\">Documentation on Updating WordPress</a>"
 msgstr "<a href=\"https://wordpress.org/support/article/dashboard-updates-screen/\">升级WordPress文档</a>"
 
-#: wp-admin/nav-menus.php:658
+#: wp-admin/nav-menus.php:649
 msgid "<a href=\"https://wordpress.org/support/article/appearance-menus-screen/\">Documentation on Menus</a>"
 msgstr "<a href=\"https://wordpress.org/support/article/appearance-menus-screen/\">菜单文档</a>"
 
@@ -2831,7 +2831,7 @@ msgid "Great job!"
 msgstr "好样的！"
 
 #: wp-admin/credits.php:41 wp-admin/includes/ms.php:1122
-#: wp-admin/privacy.php:38 wp-admin/nav-menus.php:696
+#: wp-admin/privacy.php:38 wp-admin/nav-menus.php:687
 #: wp-admin/site-health-info.php:51 wp-admin/freedoms.php:44
 #: wp-admin/privacy-policy-guide.php:41 wp-admin/about.php:40
 #: wp-admin/site-health.php:89 wp-admin/options-privacy.php:143
@@ -3348,7 +3348,7 @@ msgstr "错误代码为%s。"
 
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:169
 msgid "When you've been able to update using the \"Update now\" button on Dashboard > Updates, we'll clear this error for future update attempts."
-msgstr "当您能在仪表盘→更新中点击“现在更新”按钮来更新时，我们将清除此错误，以便将来尝试更新。"
+msgstr "当您能在仪表盘→更新中点击“立即更新”按钮来更新时，我们将清除此错误，以便将来尝试更新。"
 
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:168
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:183
@@ -3620,7 +3620,7 @@ msgstr "与WordPress.org通讯"
 
 #: wp-admin/includes/class-wp-debug-data.php:404
 msgid "Network count"
-msgstr "网络数量"
+msgstr "站点网络数量"
 
 #: wp-admin/includes/class-wp-debug-data.php:399
 msgid "Site count"
@@ -3801,7 +3801,7 @@ msgstr "上一个主题"
 
 #: wp-admin/user-edit.php:512
 msgid "If you change this, we will send you an email at your new address to confirm it. <strong>The new address will not become active until confirmed.</strong>"
-msgstr "如果您修改该地址，我们将会向新地址发送一封邮件来确认。<strong>新的电子邮箱地址直到获得确认才会启用。</strong>"
+msgstr "如果您修改该地址，我们将会向新地址发送一封邮件来确认。<strong>新的电子邮箱地址直到获得确认才会生效。</strong>"
 
 #: wp-admin/themes.php:284
 msgid "Theme resumed."
@@ -3842,29 +3842,29 @@ msgstr "您不能更新至<a href=\"%1$s\">WordPress %2$s</a>，因其需要MySQ
 msgid "You cannot update because <a href=\"%1$s\">WordPress %2$s</a> requires PHP version %3$s or higher. You are running version %4$s."
 msgstr "您不能更新至<a href=\"%1$s\">WordPress %2$s</a>，因其需要PHP版本%3$s或更高。您正在运行版本%4$s。"
 
-#: wp-admin/nav-menus.php:932
+#: wp-admin/nav-menus.php:923
 msgid "Add menu items"
 msgstr "添加菜单项"
 
 #. translators: %s: URL to create a new menu.
-#: wp-admin/nav-menus.php:898
+#: wp-admin/nav-menus.php:889
 msgid "or <a href=\"%s\">create a new menu</a>. Don&#8217;t forget to save your changes!"
 msgstr "或<a href=\"%s\">创建新菜单</a>。不要忘了保存您的修改！"
 
-#: wp-admin/nav-menus.php:845 wp-admin/nav-menus.php:910
+#: wp-admin/nav-menus.php:836 wp-admin/nav-menus.php:901
 msgid "Click the Save Menu button to save your changes."
 msgstr "点击保存菜单按钮来保存您的修改。"
 
 #. translators: %s: URL to create a new menu.
-#: wp-admin/nav-menus.php:833
+#: wp-admin/nav-menus.php:824
 msgid "Edit your menu below, or <a href=\"%s\">create a new menu</a>. Don&#8217;t forget to save your changes!"
 msgstr "在此编辑您的菜单，或<a href=\"%s\">创建新菜单</a>。不要忘了保存您的修改！"
 
-#: wp-admin/nav-menus.php:826
+#: wp-admin/nav-menus.php:817
 msgid "Fill in the Menu Name and click the Create Menu button to create your first menu."
 msgstr "填写菜单名称并点击创建菜单按钮来创建您的第一个菜单。"
 
-#: wp-admin/nav-menus.php:825
+#: wp-admin/nav-menus.php:816
 msgid "Create your first menu below."
 msgstr "在此创建您的第一个菜单。"
 
@@ -3956,7 +3956,7 @@ msgstr "曲目%s。"
 
 #: wp-admin/includes/schema.php:1245
 msgid "My Network"
-msgstr "我的网络"
+msgstr "我的站点网络"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:687
 msgid "This plugin doesn&#8217;t work with your version of PHP."
@@ -4431,7 +4431,7 @@ msgstr "我们与谁共享您的信息"
 #. translators: Privacy policy tutorial.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:549
 msgid "By default WordPress does not collect any analytics data. However, many web hosting accounts collect some anonymous analytics data. You may also have installed a WordPress plugin that provides analytics services. In that case, add information from that plugin here."
-msgstr "WordPress默认不会收集统计数据，但是许多网络托管账户会收集匿名的统计数据。如果您安装了提供统计服务的WordPress插件，请将这些插件的信息列在此处。"
+msgstr "WordPress默认不会收集统计数据，但许多虚拟主机账户会收集匿名的统计数据。如果您安装了提供统计服务的WordPress插件，请将这些插件的信息列在此处。"
 
 #. translators: Default privacy policy heading.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:545
@@ -4446,7 +4446,7 @@ msgstr "这些站点可能会收集关于您的数据、使用cookies、嵌入�
 #. translators: Default privacy policy text.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:538
 msgid "Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website."
-msgstr "此站点上的文章可能会包含嵌入的内容（如视频、图像、文章等）。来自其他站点的嵌入内容的行为和您直接访问这些其他站点没有区别。"
+msgstr "此站点上的文章可能会包含嵌入的内容（如视频、图片、文章等）。来自其他站点的嵌入内容的行为和您直接访问这些其他站点没有区别。"
 
 #. translators: Default privacy policy heading.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:536
@@ -4471,7 +4471,7 @@ msgstr "如果您访问我们的登录页，我们会设置一个临时的cookie
 #. translators: Default privacy policy text.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:525
 msgid "If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year."
-msgstr "如果您在我们的站点上留下评论，您可以选择用cookies保存您的名字、电子邮箱地址和网站网址。这是通过让您可以不用在评论时再次填写相关内容而向您提供方便。这些cookies会保留一年。"
+msgstr "如果您在我们的站点上留下评论，您可以选择用cookies保存您的名字、电子邮箱地址和网站地址。这是通过让您可以不用在评论时再次填写相关内容而向您提供方便。这些cookies会保留一年。"
 
 #. translators: Privacy policy tutorial.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:522
@@ -5079,7 +5079,7 @@ msgstr "语法高亮"
 
 #: wp-admin/setup-config.php:418 wp-admin/setup-config.php:451
 msgid "Run the installation"
-msgstr "现在安装"
+msgstr "运行安装程序"
 
 #: wp-admin/privacy.php:69
 msgid "https://wordpress.org/about/privacy/"
@@ -5150,7 +5150,7 @@ msgstr "%s（分类别名，嵌套的子分类在URL中会显示为嵌套的文�
 #. translators: %s: Permalink structure tag.
 #: wp-admin/options-permalink.php:282
 msgid "%s (The sanitized post title (slug).)"
-msgstr "%s（清理过的文章标题（别名）。）"
+msgstr "%s（处理过的文章标题（别名）。）"
 
 #. translators: %s: Permalink structure tag.
 #: wp-admin/options-permalink.php:280
@@ -5220,11 +5220,11 @@ msgstr "<strong>设置</strong>——这个页面显示了本站点关联的所�
 #. translators: %s: URL to Network Themes screen.
 #: wp-admin/includes/ms.php:1144
 msgid "<strong>Themes</strong> &mdash; This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
-msgstr "<strong>主题</strong>——这个区域显示了并未在整个网络中启用的主题。在此启用主题将使其对本站点可用。这并不会启用主题，但会让主题在本站点的“外观”菜单中显示。要为整个网络启用主题，请查看<a href=\"%s\">网络主题</a>页面。"
+msgstr "<strong>主题</strong>——这个区域显示了并未在整个站点网络中启用的主题。在此启用主题将使其对本站点可用。这并不会启用主题，但会让主题在本站点的“外观”菜单中显示。要为整个站点网络启用主题，请查看<a href=\"%s\">站点网络主题</a>页面。"
 
 #: wp-admin/includes/ms.php:1141
 msgid "<strong>Users</strong> &mdash; This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
-msgstr "<strong>用户</strong>——这里显示该站点所关联的用户。您也可以修改他们的角色、重置密码或将他们从站点移除。从站点中移除用户并不会将用户从网络中移除。"
+msgstr "<strong>用户</strong>——这里显示该站点所关联的用户。您也可以修改他们的角色、重置密码或将他们从站点移除。从站点中移除用户并不会将用户从站点网络中移除。"
 
 #: wp-admin/includes/ms.php:1140
 msgid "<strong>Info</strong> &mdash; The site URL is rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
@@ -5440,7 +5440,7 @@ msgstr "隐藏控制区"
 msgid "Expand Sidebar"
 msgstr "展开侧栏"
 
-#: wp-admin/nav-menus.php:1042
+#: wp-admin/nav-menus.php:1033
 msgid "Display location"
 msgstr "显示位置"
 
@@ -5473,11 +5473,11 @@ msgstr "（%s个评级）"
 
 #: wp-admin/includes/template.php:2325
 msgid "Current Background Image"
-msgstr "当前背景图像"
+msgstr "当前背景图片"
 
 #: wp-admin/includes/template.php:2305
 msgid "Current Header Image"
-msgstr "当前头部图像"
+msgstr "当前页眉图片"
 
 #: wp-admin/includes/plugin-install.php:338
 msgid "Search plugins..."
@@ -5530,7 +5530,7 @@ msgstr "重复"
 #: wp-admin/includes/class-custom-image-header.php:135 wp-admin/my-sites.php:52
 #: wp-admin/options-general.php:49 wp-admin/comment.php:71
 #: wp-admin/theme-editor.php:55 wp-admin/erase-personal-data.php:63
-#: wp-admin/plugin-editor.php:144 wp-admin/nav-menus.php:659
+#: wp-admin/plugin-editor.php:144 wp-admin/nav-menus.php:650
 #: wp-admin/update-core.php:972 wp-admin/options-permalink.php:62
 #: wp-admin/user-new.php:295 wp-admin/index.php:112 wp-admin/plugins.php:589
 #: wp-admin/themes.php:208 wp-admin/edit-comments.php:197 wp-admin/media.php:97
@@ -5652,7 +5652,7 @@ msgstr "抱歉，您不能移除用户。"
 #: wp-admin/user-new.php:16 wp-admin/user-new.php:56
 #: wp-admin/network/user-new.php:14
 msgid "Sorry, you are not allowed to add users to this network."
-msgstr "抱歉，您不能添加用户到此网络。"
+msgstr "抱歉，您不能将用户添加到此站点网络。"
 
 #: wp-admin/customize.php:35
 msgid "Sorry, you are not allowed to edit this changeset."
@@ -5671,7 +5671,7 @@ msgstr "抱歉，您不能更新此站点。"
 
 #: wp-admin/themes.php:395 wp-admin/themes.php:734
 msgid "New version available. <button class=\"button-link\" type=\"button\">Update now</button>"
-msgstr "有新版本可用。<button class=\"button-link\" type=\"button\">现在更新</button>"
+msgstr "有新版本可用。<button class=\"button-link\" type=\"button\">立即更新</button>"
 
 #: wp-admin/theme-install.php:161
 msgid "The Theme Installer screen requires JavaScript."
@@ -5708,7 +5708,7 @@ msgstr "抱歉，您不能修改此站点的未注册设置。"
 msgid "Sorry, you are not allowed to manage options for this site."
 msgstr "抱歉，您不能管理此站点的选项。"
 
-#: wp-admin/nav-menus.php:681 wp-admin/widgets.php:409
+#: wp-admin/nav-menus.php:672 wp-admin/widgets.php:409
 msgid "Manage with Live Preview"
 msgstr "使用实时预览管理"
 
@@ -5767,13 +5767,13 @@ msgstr "<a href=\"%1$s\">WordPress %2$s</a>现已可用！请通知站点管理�
 
 #: wp-admin/includes/update.php:313
 msgid "Please update WordPress now"
-msgstr "请现在更新WordPress"
+msgstr "请立即更新WordPress"
 
 #. translators: 1: URL to WordPress release notes, 2: New WordPress version, 3:
 #. URL to network admin, 4: Accessibility text.
 #: wp-admin/includes/update.php:309
 msgid "<a href=\"%1$s\">WordPress %2$s</a> is available! <a href=\"%3$s\" aria-label=\"%4$s\">Please update now</a>."
-msgstr "<a href=\"%1$s\">WordPress %2$s</a>现已可用！<a href=\"%3$s\" aria-label=\"%4$s\">请现在更新</a>。"
+msgstr "<a href=\"%1$s\">WordPress %2$s</a>现已可用！<a href=\"%3$s\" aria-label=\"%4$s\">请立即更新</a>。"
 
 #: wp-admin/includes/theme.php:299
 msgid "Portfolio"
@@ -6372,7 +6372,7 @@ msgid "Send User Notification"
 msgstr "发送用户通知"
 
 #. translators: %s: Menu name.
-#: wp-admin/nav-menus.php:1055
+#: wp-admin/nav-menus.php:1053
 msgctxt "menu location"
 msgid "(Currently set to: %s)"
 msgstr "（当前设置为：%s）"
@@ -6488,7 +6488,7 @@ msgstr "数据库连接成功"
 
 #: wp-admin/setup-config.php:212
 msgid "Set up your database connection"
-msgstr "设置您的数据库连接"
+msgstr "配置您的数据库连接"
 
 #: wp-admin/setup-config.php:163
 msgid "Before getting started"
@@ -6701,7 +6701,7 @@ msgstr "要如何处理%s拥有的内容？"
 #. translators: %s: User login.
 #: wp-admin/includes/ms.php:895
 msgid "Warning! User cannot be deleted. The user %s is a network administrator."
-msgstr "警告！用户不能被删除，此用户%s是网络管理员。"
+msgstr "警告！无法删除此用户，用户%s是网络管理员。"
 
 #. translators: %s: User login.
 #: wp-admin/includes/ms.php:885
@@ -6710,11 +6710,11 @@ msgstr "警告！用户%s不能被删除。"
 
 #: wp-admin/includes/ms.php:864
 msgid "You have chosen to delete the following users from all networks and sites."
-msgstr "您选择从所有网络及站点中删除以下用户。"
+msgstr "您选择从所有站点网络及站点中删除以下用户。"
 
 #: wp-admin/includes/ms.php:862
 msgid "You have chosen to delete the user from all networks and sites."
-msgstr "您选择从所有网络及站点中删除此用户。"
+msgstr "您选择从所有站点网络及站点中删除此用户。"
 
 #: wp-admin/includes/media.php:1010
 msgid "Invalid image URL."
@@ -6789,7 +6789,7 @@ msgstr "筛选项目列表"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:823
 msgid "Network Only"
-msgstr "仅网络"
+msgstr "仅站点网络"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:819
 msgid "Network Active"
@@ -6946,12 +6946,12 @@ msgstr "抱歉，您不能编辑评论。"
 
 #: wp-admin/includes/class-custom-image-header.php:948
 msgid "The current theme does not support a flexible sized header image."
-msgstr "当前主题不支持灵活大小的头部图像。"
+msgstr "当前主题不支持自适应大小的页眉图片。"
 
 #: wp-admin/includes/class-custom-image-header.php:776
 #: wp-admin/includes/class-custom-image-header.php:940
 msgid "The current theme does not support uploading a custom header image."
-msgstr "当前主题不支持上传自定义的头部图像。"
+msgstr "当前主题不支持上传自定义的页眉图片。"
 
 #: wp-admin/includes/user.php:525
 msgid "You&rsquo;re using the auto-generated password for your account. Would you like to change it?"
@@ -7048,7 +7048,7 @@ msgid "Show more details"
 msgstr "显示详情"
 
 #. translators: %s: Number of menus.
-#: wp-admin/nav-menus.php:725
+#: wp-admin/nav-menus.php:716
 msgid "Your theme supports %s menu. Select which menu appears in each location."
 msgid_plural "Your theme supports %s menus. Select which menu appears in each location."
 msgstr[0] "您的主题支持%s个菜单，请分别选择您希望在每一处出现的菜单。"
@@ -7213,7 +7213,7 @@ msgstr "您将要移除以下插件："
 
 #: wp-admin/plugins.php:348
 msgid "These plugins may be active on other sites in the network."
-msgstr "这些插件可能已在网络的其他站点中启用了。"
+msgstr "这些插件可能已经在站点网络的其他站点中启用。"
 
 #: wp-admin/plugins.php:346
 msgid "Delete Plugins"
@@ -7246,7 +7246,7 @@ msgctxt "timezone date format"
 msgid "Y-m-d H:i:s"
 msgstr "Y-m-d H:i:s"
 
-#: wp-admin/nav-menus.php:630
+#: wp-admin/nav-menus.php:621
 msgid "To add a custom link, <strong>expand the Custom Links section, enter a URL and link text, and click Add to Menu</strong>"
 msgstr "要添加自定义链接，<strong>展开自定义链接小节，输入URL和链接文本，然后点击添加到菜单</strong>"
 
@@ -7408,7 +7408,7 @@ msgstr "https://cn.wordpress.org/support"
 
 #: wp-admin/user-edit.php:703
 msgid "You are only logged in at this location."
-msgstr "执行以上操作后，仅会保留当前会话的登录状态。"
+msgstr "您目前只有当前绘画保持登录状态。"
 
 #: wp-admin/includes/plugin-install.php:402
 msgid "These suggestions are based on the plugins you and other users have installed."
@@ -7520,7 +7520,7 @@ msgstr "此预览在编辑器中不可用。"
 
 #: wp-admin/edit-form-advanced.php:296
 msgid "You can insert media files by clicking the button above the post editor and following the directions. You can align or edit images using the inline formatting toolbar available in Visual mode."
-msgstr "您可通过点击编辑器之上的按钮并遵循指引来插入媒体文件，您可以使用可视化模式中的格式化工具栏来对齐或编辑您的图像。"
+msgstr "您可通过点击编辑器之上的按钮并遵循指引来插入媒体文件，您可以使用可视化模式中的格式化工具栏来对齐或编辑您的图片。"
 
 #: wp-admin/edit-form-advanced.php:293
 msgid "<strong>Post editor</strong> &mdash; Enter the text for your post. There are two modes of editing: Visual and Text. Choose the mode by clicking on the appropriate tab."
@@ -7717,7 +7717,7 @@ msgstr "在附件页显示。"
 
 #: wp-admin/includes/image-edit.php:214
 msgid "You can edit the image while preserving the thumbnail. For example, you may wish to have a square thumbnail that displays just a section of the image."
-msgstr "您可以编辑图像，并无需影响缩略图。比如，您可能希望有一张只展示图像一部分的方形缩略图。"
+msgstr "您可以编辑图片，并无需影响缩略图。比如，您可能希望有一张只展示图片一部分的方形缩略图。"
 
 #: wp-admin/includes/image-edit.php:176
 msgid "Once you have made your selection, you can adjust it by entering the size in pixels. The minimum selection size is the thumbnail size as set in the Media settings."
@@ -7729,7 +7729,7 @@ msgstr "纵横比是宽与高之间的比值。您可以通过在修改选区时
 
 #: wp-admin/includes/image-edit.php:170
 msgid "To crop the image, click on it and drag to make your selection."
-msgstr "要裁切此图像，点击并拖动来确认您的选择。"
+msgstr "要裁切此图片，点击并拖动来确认您的选择。"
 
 #: wp-admin/includes/image-edit.php:108
 msgid "You can proportionally scale the original image. For best results, scaling should be done before you crop, flip, or rotate. Images can only be scaled down, not up."
@@ -7871,7 +7871,7 @@ msgstr "在大多数情况下，WordPress会在后台自动为您应用维护和
 
 #: wp-admin/update-core.php:936
 msgid "<strong>WordPress</strong> &mdash; Updating your WordPress installation is a simple one-click procedure: just <strong>click on the &#8220;Update now&#8221; button</strong> when you are notified that a new version is available."
-msgstr "<strong>WordPress</strong>——更新WordPress只需轻点一次鼠标：当有新版本可用时，<strong>点击“现在更新”按钮</strong>。"
+msgstr "<strong>WordPress</strong>——更新WordPress只需轻点一次鼠标：当有新版本可用时，<strong>点击“立即更新”按钮</strong>。"
 
 #: wp-admin/update-core.php:926
 msgid "If an update is available, you&#8127;ll see a notification appear in the Toolbar and navigation menu."
@@ -7989,7 +7989,7 @@ msgstr[0] "%1$s星（基于%2$s个评级）"
 
 #: wp-admin/my-sites.php:45
 msgid "This screen shows an individual user all of their sites in this network, and also allows that user to set a primary site. They can use the links under each site to visit either the front end or the dashboard for that site."
-msgstr "本页面向用户展示他们在本站点网络中拥有的全部站点。用户可以设置一个主站点。用户可以使用站点名称下方的链接来访问站点的前、后台（“仪表盘”）。"
+msgstr "本页面向用户展示他们在本站点网络中拥有的全部站点。用户可以设置一个主站点。用户可以使用站点名称下方的链接来访问站点的前端或仪表盘。"
 
 #. translators: 1: Error code, 2: Error message.
 #: wp-admin/includes/class-wp-automatic-updater.php:1382
@@ -8315,24 +8315,24 @@ msgstr "升级新版本的主题将会导致您所做的修改被覆盖。要避
 
 #: wp-admin/options-media.php:52
 msgid "The sizes listed below determine the maximum dimensions in pixels to use when adding an image to the Media Library."
-msgstr "下面列出来的尺寸决定插入媒体库内的图像之最大尺寸。以像素为单位。"
+msgstr "下面列出来的尺寸决定插入媒体库内的图片之最大尺寸。以像素为单位。"
 
 #: wp-admin/options-discussion.php:182
 msgid "Comment must be manually approved"
 msgstr "评论必须经人工批准"
 
-#: wp-admin/nav-menus.php:628
+#: wp-admin/nav-menus.php:619
 msgid "<strong>Clicking the arrow to the right of any menu item</strong> in the editor will reveal a standard group of settings. Additional settings such as link target, CSS classes, link relationships, and link descriptions can be enabled and disabled via the Screen Options tab."
 msgstr "在编辑器中<strong>点击任一菜单项目标题右侧的箭头</strong>会显示一组标准设置。附加设置（如链接目标、CSS类、链接关系和链接描述等）可在“显示选项”页中设置显示或隐藏。"
 
 #. translators: 1: URL to Widgets screen, 2 and 3: The names of the default
 #. themes.
-#: wp-admin/nav-menus.php:597
+#: wp-admin/nav-menus.php:588
 msgid "Menus can be displayed in locations defined by your theme, even used in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%1$s\">Widgets</a> screen. If your theme does not support the navigation menus feature (the default themes, %2$s and %3$s, do), you can learn about adding this support by following the Documentation link to the side."
 msgstr "菜单可在您的主题指定的位置显示，或通过<a href=\"%1$s\">小工具</a>中的“导航菜单”小工具显示在侧栏中。如果您的主题不支持导航菜单功能（默认主题%2$s和%3$s均支持），您可以查阅侧面的文档链接了解如何加入这一支持。"
 
 #. translators: %s: URL to Widgets screen.
-#: wp-admin/nav-menus.php:588
+#: wp-admin/nav-menus.php:579
 msgid "Your theme does not natively support menus, but you can use them in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%s\">Widgets</a> screen."
 msgstr "当前的主题未提供原生的菜单支持，您可以通过在<a href=\"%s\">小工具</a>添加“导航菜单”小工具来在侧栏上显示。"
 
@@ -8618,11 +8618,11 @@ msgstr "您试图从回收站恢复的项目已不存在。"
 msgid "The item you are trying to move to the Trash no longer exists."
 msgstr "您试图移动到回收站的项目已不存在。"
 
-#: wp-admin/nav-menus.php:984
+#: wp-admin/nav-menus.php:975
 msgid "Drag the items into the order you prefer. Click the arrow on the right of the item to reveal additional configuration options."
-msgstr "拖放各个项目到您喜欢的顺序，点击右侧的箭头可进行更详细的设置。"
+msgstr "将个个项目拖到您喜欢的顺序。点击项目右边的箭头可显示其他配置选项。"
 
-#: wp-admin/nav-menus.php:616
+#: wp-admin/nav-menus.php:607
 msgid "If you haven&#8217;t yet created any menus, <strong>click the &#8217;create a new menu&#8217; link</strong> to get started"
 msgstr "如果您还没有创建任何菜单，请<strong>点击“创建新菜单”链接</strong>来开始"
 
@@ -8662,105 +8662,105 @@ msgctxt "Followed by post revision info"
 msgid "From:"
 msgstr "从："
 
-#: wp-admin/nav-menus.php:799
+#: wp-admin/nav-menus.php:790
 msgctxt "menu"
 msgid "Use new menu"
 msgstr "使用新菜单"
 
-#: wp-admin/nav-menus.php:780
+#: wp-admin/nav-menus.php:771
 msgctxt "menu"
 msgid "Edit"
 msgstr "编辑"
 
-#: wp-admin/nav-menus.php:749
+#: wp-admin/nav-menus.php:740
 msgid "Select a Menu"
 msgstr "选择菜单"
 
-#: wp-admin/nav-menus.php:740
+#: wp-admin/nav-menus.php:731
 msgid "Assigned Menu"
 msgstr "已指派的菜单"
 
-#: wp-admin/nav-menus.php:739
+#: wp-admin/nav-menus.php:730
 msgid "Theme Location"
 msgstr "主题位置"
 
-#: wp-admin/nav-menus.php:708
+#: wp-admin/nav-menus.php:699
 msgid "Manage Locations"
 msgstr "管理位置"
 
-#: wp-admin/nav-menus.php:697
+#: wp-admin/nav-menus.php:688
 msgid "Edit Menus"
 msgstr "编辑菜单"
 
-#: wp-admin/nav-menus.php:645
+#: wp-admin/nav-menus.php:636
 msgid "To add a new menu instead of assigning an existing one, <strong>click the &#8217;Use new menu&#8217; link</strong>. Your new menu will be automatically assigned to that theme location"
 msgstr "要添加菜单而不是指派已存在的菜单，<strong>点击“使用新菜单”链接</strong>。您的新菜单会被自动指派到相应的主题位置"
 
-#: wp-admin/nav-menus.php:644
+#: wp-admin/nav-menus.php:635
 msgid "To edit a menu currently assigned to a theme location, <strong>click the adjacent &#8217;Edit&#8217; link</strong>"
 msgstr "要编辑已被指派到主题位置的菜单，<strong>点击相应的“编辑”链接</strong>"
 
-#: wp-admin/nav-menus.php:643
+#: wp-admin/nav-menus.php:634
 msgid "To assign menus to one or more theme locations, <strong>select a menu from each location&#8217;s drop down.</strong> When you&#8217;re finished, <strong>click Save Changes</strong>"
 msgstr "要将菜单指派到主题位置，<strong>在每个位置的下拉菜单中选择菜单</strong>。当您完成后，<strong>点击“保存修改”</strong>"
 
-#: wp-admin/nav-menus.php:642
+#: wp-admin/nav-menus.php:633
 msgid "This screen is used for globally assigning menus to locations defined by your theme."
 msgstr "在本页面调整主题中菜单的位置。"
 
-#: wp-admin/nav-menus.php:637
+#: wp-admin/nav-menus.php:628
 msgid "Editing Menus"
 msgstr "编辑菜单"
 
-#: wp-admin/nav-menus.php:632
+#: wp-admin/nav-menus.php:623
 msgid "Delete a menu item by <strong>expanding it and clicking the Remove link</strong>"
 msgstr "要删除菜单项目，请<strong>将其展开并点击“移除”链接</strong>"
 
-#: wp-admin/nav-menus.php:631
+#: wp-admin/nav-menus.php:622
 msgid "To reorganize menu items, <strong>drag and drop items with your mouse or use your keyboard</strong>. Drag or move a menu item a little to the right to make it a submenu"
 msgstr "要重排菜单项目，请<strong>用鼠标或键盘拖动项目</strong>。将项目稍稍拖到右侧可将其变为子菜单"
 
-#: wp-admin/nav-menus.php:629
+#: wp-admin/nav-menus.php:620
 msgid "Add one or several items at once by <strong>selecting the checkbox next to each item and clicking Add to Menu</strong>"
 msgstr "要添加一个或多个项目，请<strong>选择每个项目前的复选框，并点击“添加到菜单”</strong>"
 
-#: wp-admin/nav-menus.php:627
+#: wp-admin/nav-menus.php:618
 msgid "Each navigation menu may contain a mix of links to pages, categories, custom URLs or other content types. Menu links are added by selecting items from the expanding boxes in the left-hand column below."
 msgstr "每个导航菜单都可包含页面、链接、自定义URL或其他内容类型。在下方左栏中展开的框中选择项目可添加菜单链接。"
 
-#: wp-admin/nav-menus.php:622
+#: wp-admin/nav-menus.php:613
 msgid "Menu Management"
 msgstr "菜单管理"
 
-#: wp-admin/nav-menus.php:617
+#: wp-admin/nav-menus.php:608
 msgid "You can assign theme locations to individual menus by <strong>selecting the desired settings</strong> at the bottom of the menu editor. To assign menus to all theme locations at once, <strong>visit the Manage Locations tab</strong> at the top of the screen."
 msgstr "要指派单独菜单的主题位置，您可在菜单编辑器的底部<strong>选择想要的设置</strong>。要指派菜单到所有主题位置，请在顶部<strong>访问“管理位置”页</strong>。"
 
-#: wp-admin/nav-menus.php:615
+#: wp-admin/nav-menus.php:606
 msgid "To edit an existing menu, <strong>choose a menu from the drop down and click Select</strong>"
 msgstr "要编辑已存在的菜单，<strong>在下拉菜单中选择菜单并点击“选择”</strong>"
 
-#: wp-admin/nav-menus.php:614
+#: wp-admin/nav-menus.php:605
 msgid "The menu management box at the top of the screen is used to control which menu is opened in the editor below."
 msgstr "顶部的菜单管理框可用来控制在下方编辑器中打开哪个菜单。"
 
-#: wp-admin/nav-menus.php:604
+#: wp-admin/nav-menus.php:595
 msgid "Add, organize, and modify individual menu items"
 msgstr "添加、管理和修改某一菜单项"
 
-#: wp-admin/nav-menus.php:603
+#: wp-admin/nav-menus.php:594
 msgid "Create, edit, and delete menus"
 msgstr "创建、编辑和删除菜单"
 
-#: wp-admin/nav-menus.php:602 wp-admin/themes.php:132
+#: wp-admin/nav-menus.php:593 wp-admin/themes.php:132
 msgid "From this screen you can:"
 msgstr "在此界面中，您可以："
 
-#: wp-admin/nav-menus.php:594
+#: wp-admin/nav-menus.php:585
 msgid "This screen is used for managing your navigation menus."
 msgstr "此界面用于管理您的导航菜单。"
 
-#: wp-admin/nav-menus.php:451
+#: wp-admin/nav-menus.php:442
 msgid "Menu locations updated."
 msgstr "菜单位置已更新。"
 
@@ -8810,11 +8810,11 @@ msgstr "拒绝：%s"
 msgid "Capabilities"
 msgstr "机能"
 
-#: wp-admin/nav-menus.php:1017 wp-admin/network/settings.php:473
+#: wp-admin/nav-menus.php:1008 wp-admin/network/settings.php:473
 msgid "Menu Settings"
 msgstr "菜单设置"
 
-#: wp-admin/nav-menus.php:940
+#: wp-admin/nav-menus.php:931
 msgid "Menu structure"
 msgstr "菜单结构"
 
@@ -8849,14 +8849,14 @@ msgstr "您不能移动此项目到回收站。%s正在编辑。"
 msgid "%s has taken over and is currently editing."
 msgstr "%s已接管并正在编辑。"
 
-#: wp-admin/nav-menus.php:850
+#: wp-admin/nav-menus.php:841
 msgid "Select a menu to edit:"
 msgstr "选择要编辑的菜单："
 
 #. translators: %s: URL to Upgrade Network screen.
 #: wp-admin/includes/ms.php:708
 msgid "Thank you for Updating! Please visit the <a href=\"%s\">Upgrade Network</a> page to update all your sites."
-msgstr "多谢升级WordPress！请使用<a href=\"%s\">升级网络</a>页面来升级您的所有站点。"
+msgstr "感谢您升级 WordPress！请使用<a href=\"%s\">升级站点网络</a>页面来升级您的所有站点。"
 
 #: wp-admin/setup-config.php:449
 msgid "All right, sparky! You&#8217;ve made it through this part of the installation. WordPress can now communicate with your database. If you are ready, time now to&hellip;"
@@ -8866,15 +8866,15 @@ msgstr "不错。您完成了安装过程中重要的一步，WordPress现在已
 msgid "Client version"
 msgstr "客户端版本"
 
-#: wp-admin/nav-menus.php:1033
+#: wp-admin/nav-menus.php:1024
 msgid "Auto add pages"
 msgstr "自动添加页面"
 
-#: wp-admin/nav-menus.php:1002
+#: wp-admin/nav-menus.php:993
 msgid "Give your menu a name, then click Create Menu."
 msgstr "给菜单命名，然后点击“创建菜单”。"
 
-#: wp-admin/nav-menus.php:982
+#: wp-admin/nav-menus.php:973
 msgid "Edit your default menu by adding or removing items. Drag the items into the order you prefer. Click Create Menu to save your changes."
 msgstr "您可以通过加入或删除项目来编辑默认菜单，并将项目拖动到您喜欢的顺序。点击“创建菜单”按钮保存您的修改。"
 
@@ -8906,11 +8906,11 @@ msgstr "%s当前正在编辑"
 
 #: wp-admin/edit-form-advanced.php:361
 msgid "You can upload and insert media (images, audio, documents, etc.) by clicking the Add Media button. You can select from the images and files already uploaded to the Media Library, or upload new media to add to your page or post. To create an image gallery, select the images to add and click the &#8220;Create a new gallery&#8221; button."
-msgstr "您可以通过点击“添加媒体”按钮上传或插入多媒体文件（图像、音频、文档等）。您可以从已经上传到媒体库的文件中选择，并直接插入文章，或者上传新的文件，然后再插入。要创建相册，选择要添加的图像，并点击“创建新相册”按钮。"
+msgstr "您可以通过点击“添加媒体”按钮上传或插入多媒体文件（图片、音频、文档等）。您可以从已经上传到媒体库的文件中选择，并直接插入文章，或者上传新的文件，然后再插入。要创建相册，选择要添加的图片，并点击“创建新相册”按钮。"
 
 #: wp-admin/includes/image-edit.php:70
 msgid "Image rotation is not supported by your web host."
-msgstr "您的服务器不支持图像旋转功能。"
+msgstr "您的服务器不支持图片旋转功能。"
 
 #. translators: %s: URL to install the Link Manager plugin.
 #: wp-admin/includes/bookmark.php:347
@@ -8943,7 +8943,7 @@ msgstr "完成后请不要忘记点击“保存更改”按钮！"
 
 #: wp-admin/includes/class-custom-background.php:91
 msgid "To use a background image, simply upload it or choose an image that has already been uploaded to your Media Library by clicking the &#8220;Choose Image&#8221; button. You can display a single instance of your image, or tile it to fill the screen. You can have your background fixed in place, so your site content moves on top of it, or you can have it scroll with your site."
-msgstr "要使用背景图像，您需先上传，或从媒体库中已上传过的图像中选择。您可选择令其单次显示，或平铺多次以充满屏幕。您还可以使背景固定不动，站点的内容在其上滚动。也可让背景与站点内容同步滚动。"
+msgstr "要使用背景图片，您需先上传，或从媒体库中已上传过的图片中选择。您可选择令其单次显示，或平铺多次以充满屏幕。您还可以使背景固定不动，站点的内容在其上滚动。也可让背景与站点内容同步滚动。"
 
 #. translators: 1: URL to browser uploader, 2: Additional link attributes.
 #: wp-admin/includes/media.php:3021
@@ -8978,7 +8978,7 @@ msgstr "选择自定义顶部"
 
 #: wp-admin/includes/class-custom-background.php:338
 msgid "Choose a Background Image"
-msgstr "选择背景图像"
+msgstr "选择背景图片"
 
 #: wp-admin/includes/class-custom-image-header.php:127
 msgid "In the Header Text section of this page, you can choose whether to display this text or hide it. You can also choose a color for the text by clicking the Select Color button and either typing in a legitimate HTML hex value, e.g. &#8220;#ff0000&#8221; for red, or by choosing a color using the color picker."
@@ -9026,7 +9026,7 @@ msgstr "请选择一个选项。"
 
 #: wp-admin/setup-config.php:417
 msgid "After you&#8217;ve done that, click &#8220;Run the installation&#8221;."
-msgstr "在您做完这些之后，点击“现在安装”。"
+msgstr "完成这些后，请点击“运行安装程序”。"
 
 #: wp-admin/setup-config.php:214
 msgid "Below you should enter your database connection details. If you&#8217;re not sure about these, contact your host."
@@ -9218,7 +9218,7 @@ msgstr "创建一个页面与创建一篇文章非常类似，画面亦可使用
 
 #: wp-admin/includes/class-custom-image-header.php:551
 msgid "You can select an image to be shown at the top of your site by uploading from your computer or choosing from your media library. After selecting an image you will be able to crop it."
-msgstr "在这里，您可以上传新图片或从媒体库中已上传的图像中选择，以取代默认的图像。上传完成后，您将可以按喜好自己剪裁图像。"
+msgstr "在这里，您可以上传新图片或从媒体库中已上传的图片中选择，以取代默认的图片。上传完成后，您将可以按喜好自己剪裁图片。"
 
 #: wp-admin/menu-header.php:287
 msgid "Skip to main content"
@@ -9226,7 +9226,7 @@ msgstr "跳至主内容"
 
 #: wp-admin/includes/class-custom-image-header.php:109
 msgid "You can set a custom image header for your site. Simply upload the image and crop it, and the new header will go live immediately. Alternatively, you can use an image that has already been uploaded to your Media Library by clicking the &#8220;Choose Image&#8221; button."
-msgstr "您可为站点选择一个自定义顶部图像。只需上传需要的图像并进行剪裁，新顶部图像将会立即生效。或者您也可以点击“选择图像”，使用“媒体库”中原来上传过的图像。"
+msgstr "您可为站点选择一个自定义页眉图片。只需上传需要的图片并进行剪裁，新顶页眉图片将会立即生效。或者您也可以点击“选择图片”，使用“媒体库”中原来上传过的图片。"
 
 #: wp-admin/includes/class-custom-image-header.php:878
 msgid "Skip Cropping, Publish Image as Is"
@@ -9235,17 +9235,17 @@ msgstr "不剪裁以原样发布"
 #: wp-admin/includes/class-custom-background.php:339
 #: wp-admin/includes/class-custom-image-header.php:632
 msgid "Choose Image"
-msgstr "选择图像"
+msgstr "选择图片"
 
 #: wp-admin/includes/class-custom-background.php:336
 #: wp-admin/includes/class-custom-image-header.php:628
 msgid "Or choose an image from your media library:"
-msgstr "或从您的媒体库中选择图像："
+msgstr "或从您的媒体库中选择图片："
 
 #: wp-admin/includes/class-custom-background.php:326
 #: wp-admin/includes/class-custom-image-header.php:549
 msgid "Select Image"
-msgstr "选择图像"
+msgstr "选择图片"
 
 #: wp-admin/includes/class-wp-theme-install-list-table.php:394
 #: wp-admin/theme-install.php:527
@@ -9254,7 +9254,7 @@ msgstr "收起"
 
 #: wp-admin/includes/class-custom-image-header.php:112
 msgid "If you don&#8217;t want a header image to be displayed on your site at all, click the &#8220;Remove Header Image&#8221; button at the bottom of the Header Image section of this page. If you want to re-enable the header image later, you just have to select one of the other image options and click &#8220;Save Changes&#8221;."
-msgstr "如果您不想要顶部图像，点击本页下方“顶部图像”一节的“移除顶部图像”按钮。移除之后如需再次启用顶部图像功能，您只须选择一个选项，然后点击“保存更改”。"
+msgstr "如果您不想要页眉图片，点击本页下方“页眉图片”一节的“移除页眉图片”按钮。移除之后如需再次启用页眉图片功能，您只须选择一个选项，然后点击“保存更改”。"
 
 #: wp-admin/media.php:70
 msgid "You attempted to edit an item that isn&#8217;t an attachment. Please go back and try again."
@@ -9306,15 +9306,15 @@ msgstr "大多数主题的顶部文字显示的是“站点标题”和“副标
 
 #: wp-admin/includes/class-custom-image-header.php:111
 msgid "If your theme has more than one default header image, or you have uploaded more than one custom header image, you have the option of having WordPress display a randomly different image on each page of your site. Click the &#8220;Random&#8221; radio button next to the Uploaded Images or Default Images section to enable this feature."
-msgstr "如果您有多张顶部图像，您可以选择让WordPress每次随机展示其中一张图像。如需实现这种效果，勾选“已上传的图像”旁边的“随机”单选框。"
+msgstr "如果您有多张页眉图片，您可以选择让 WordPress 每次随机展示其中一张图片。如需实现这种效果，勾选“已上传的图片”旁边的“随机”单选框。"
 
 #: wp-admin/includes/class-custom-image-header.php:110
 msgid "Some themes come with additional header images bundled. If you see multiple images displayed, select the one you&#8217;d like and click the &#8220;Save Changes&#8221; button."
-msgstr "一些主题附带了更多顶部图像供您选择。若显示了多幅图像，请选择您喜爱的图像并点击“保存更改”。"
+msgstr "一些主题附带了更多的页眉图片供您选择。若显示了多幅图片，请选择您喜爱的图片并点击“保存更改”。"
 
 #: wp-admin/includes/class-custom-image-header.php:100
 msgid "You can choose from the theme&#8217;s default header images, or use one of your own. You can also customize how your Site Title and Tagline are displayed."
-msgstr "您可以从主题默认的顶部图像中选择，或使用您自己准备的顶部图像。您还可以定义“站点标题”和“副标题”的显示方式。"
+msgstr "您可以从主题默认的页眉图片中选择，或使用您自己准备的页眉图片。您还可以定义“站点标题”和“副标题”的显示方式。"
 
 #: wp-admin/includes/class-custom-image-header.php:99
 msgid "This screen is used to customize the header section of your theme."
@@ -9347,7 +9347,7 @@ msgstr "根据关键词搜索主题。"
 
 #: wp-admin/setup-config.php:198
 msgid "In all likelihood, these items were supplied to you by your Web Host. If you don&#8217;t have this information, then you will need to contact them before you can continue. If you&#8217;re all ready&hellip;"
-msgstr "绝大多数时候，您的网站服务提供商会给您这些信息。如果您没有这些信息，在继续之前您将需要联系他们。如果您准备好了…"
+msgstr "绝大多数时候，您的虚拟主机服务提供商会给您这些信息。如果您没有这些信息，在继续之前您将需要联系他们。如果您准备好了…"
 
 #: wp-admin/theme-editor.php:246
 msgid "This theme is broken."
@@ -9493,7 +9493,7 @@ msgstr "该主题需要父主题的支持。正在检查是否安装了正确的
 
 #: wp-admin/includes/class-custom-image-header.php:710
 msgid "Show header text with your image."
-msgstr "将顶部文字和图像一并显示。"
+msgstr "将页眉文本和图片一并显示。"
 
 #: wp-admin/includes/class-custom-image-header.php:119
 #: wp-admin/includes/class-custom-image-header.php:702
@@ -9510,7 +9510,7 @@ msgstr "顶部文本"
 #: wp-admin/includes/theme.php:230 wp-admin/includes/update.php:501
 #: wp-admin/includes/update.php:693
 msgid "There is a new version of %1$s available. <a href=\"%2$s\" %3$s>View version %4$s details</a> or <a href=\"%5$s\" %6$s>update now</a>."
-msgstr "%1$s有新版本可用。<a href=\"%2$s\" %3$s>查看版本%4$s详情</a>或<a href=\"%5$s\" %6$s>现在更新</a>。"
+msgstr "%1$s有新版本可用。<a href=\"%2$s\" %3$s>查看版本%4$s详情</a>或<a href=\"%5$s\" %6$s>立即更新</a>。"
 
 #. translators: %s: Plugin author.
 #: wp-admin/includes/plugin.php:214
@@ -9617,11 +9617,11 @@ msgstr "如果本来想访问其他页面，但不小心访问到本页面，下
 #. translators: 1: Site title.
 #: wp-admin/includes/ms.php:587 wp-admin/includes/ms.php:596
 msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
-msgstr "您正尝试访问“%1$s”的“仪表盘”，但您无权执行此操作。如果您确信这是我们的操作失误，请联系网络管理员。"
+msgstr "您正尝试访问“%1$s”的仪表盘，但您目前没有该站点的相应权限。如果您确定您具有“%1$s”的仪表盘访问权限，请联系网络管理员。"
 
 #: wp-admin/includes/ms.php:302
 msgid "MB (Leave blank for network default)"
-msgstr "MB（留空则使用站点网络全局默认限制）"
+msgstr "MB（留空则使用站点网络默认值）"
 
 #. translators: New admin email address notification email subject. %s: Site
 #. title.
@@ -9677,12 +9677,12 @@ msgstr "数据库主机"
 #: wp-admin/setup-config.php:228
 msgctxt "example password"
 msgid "password"
-msgstr "密码"
+msgstr "password"
 
 #: wp-admin/setup-config.php:223
 msgctxt "example username"
 msgid "username"
-msgstr "用户名"
+msgstr "username"
 
 #: wp-admin/setup-config.php:217
 msgid "Database Name"
@@ -9718,17 +9718,17 @@ msgstr "欢迎使用WordPress。在开始前，我们需要您数据库的一些
 
 #: wp-admin/setup-config.php:114
 msgid "WordPress &rsaquo; Setup Configuration File"
-msgstr "WordPress &rsaquo; 调整配置文件"
+msgstr "WordPress &rsaquo; 安装配置文件"
 
 #. translators: 1: wp-config.php, 2: install.php
 #: wp-admin/setup-config.php:76
 msgid "The file %1$s already exists one level above your WordPress installation. If you need to reset any of the configuration items in this file, please delete it first. You may try <a href=\"%2$s\">installing now</a>."
-msgstr "文件%1$s已经存在于WordPress的上级目录。如果您希望重置该文件中的任何设置项目，请先删除该文件。您可以<a href=\"%2$s\">现在安装</a>。"
+msgstr "文件%1$s已经存在于WordPress的上级目录。如果您希望重置该文件中的任何配置项目，请先删除该文件。您可以<a href=\"%2$s\">现在安装</a>。"
 
 #. translators: 1: wp-config.php, 2: install.php
 #: wp-admin/setup-config.php:63
 msgid "The file %1$s already exists. If you need to reset any of the configuration items in this file, please delete it first. You may try <a href=\"%2$s\">installing now</a>."
-msgstr "文件%1$s已经存在。如果您希望重置该文件中的任何设置项目，请先删除该文件。您可以<a href=\"%2$s\">现在安装</a>。"
+msgstr "文件%1$s已经存在。如果您希望重置该文件中的任何配置项目，请先删除该文件。您可以<a href=\"%2$s\">现在安装</a>。"
 
 #. translators: %s: wp-config-sample.php
 #: wp-admin/setup-config.php:52
@@ -9814,13 +9814,13 @@ msgstr "有一个自动保存的版本比如下显示的版本还要新。<a hre
 
 #: wp-admin/options-discussion.php:220
 msgid "An avatar is an image that follows you from weblog to weblog appearing beside your name when you comment on avatar enabled sites. Here you can enable the display of avatars for people who comment on your site."
-msgstr "头像是您在各个博客见通用的图像。在每个启用了头像功能的站点上，它将显示在您的名字旁边。在这里您可以启用您站点上的读者评论头像显示功能。"
+msgstr "头像是您在各个博客见通用的图片。在每个启用了头像功能的站点上，它将显示在您的名字旁边。在这里您可以启用您站点上的读者评论头像显示功能。"
 
 #: wp-admin/includes/class-custom-image-header.php:838
 #: wp-admin/includes/class-custom-image-header.php:981
 #: wp-admin/includes/class-custom-image-header.php:1317
 msgid "Image could not be processed. Please go back and try again."
-msgstr "无法处理图像。请返回重试。"
+msgstr "无法处理图片。请返回重试。"
 
 #: wp-admin/themes.php:262
 msgid "The active theme is broken. Reverting to the default theme."
@@ -9845,11 +9845,11 @@ msgstr "“%1$s”数据表有问题。报告的问题是：%2$s。WordPress正�
 
 #: wp-admin/user-new.php:418
 msgid "Enter the email address or username of an existing user on this network to invite them to this site. That person will be sent an email asking them to confirm the invite."
-msgstr "输入本网络中的用户的电子邮箱地址或用户名。该用户将收到邀请函。"
+msgstr "输入此站点网络中已存在用户的电子邮箱地址或用户名以邀请他们加入此站点。该用户将收到一封电子邮件，并需要他们确认该邀请。"
 
 #: wp-admin/user-new.php:414
 msgid "Enter the email address of an existing user on this network to invite them to this site. That person will be sent an email asking them to confirm the invite."
-msgstr "输入本网络中的用户的电子邮箱地址。该用户将收到邀请函。"
+msgstr "输入此站点网络中已存在用户的电子邮箱地址以邀请他们加入此站点。该用户将收到一封电子邮件，并需要他们确认该邀请。"
 
 #: wp-admin/user-edit.php:337
 msgid "Show Toolbar when viewing site"
@@ -10028,7 +10028,7 @@ msgstr "固定链接是指向您的文章、页面、分类归档和标签归档
 
 #: wp-admin/options-writing.php:23
 msgid "You can submit content in several different ways; this screen holds the settings for all of them. The top section controls the editor within the dashboard, while the rest control external publishing methods. For more information on any of these methods, use the documentation links."
-msgstr "您可以在本页面设定撰写文章的方式。顶端的几个选项是有关在WordPress仪表盘的编辑选项；剩余的项目与通过其他发布方式有关。欲了解关于其他发布方式的信息，请参考文档链接。"
+msgstr "您可以在本页面设置撰写文章的方式。顶端的几个选项是有关在WordPress仪表盘的编辑选项；剩余的项目与通过其他发布方式有关。欲了解关于其他发布方式的信息，请参考文档链接。"
 
 #: wp-admin/options-media.php:22
 msgid "Uploading Files allows you to choose the folder and path for storing your uploaded files."
@@ -10181,7 +10181,7 @@ msgstr "点击<strong>编辑</strong>可在编辑器中编辑该文章。直接�
 
 #: wp-admin/user-new.php:259
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
-msgstr "由于当前多站点功能已经开启，您可以直接通过输入用户名或电子邮箱地址的方法添加网络中的用户，然后为其指定用户角色。如需修改密码等其他信息，您需要拥有管理网络的权限，访问“管理网络”>“所有用户”，然后将鼠标放置在用户名上方，点击出现的“编辑”链接。"
+msgstr "由于当前多站点功能已经开启，您可以直接通过输入用户名或电子邮箱地址的方式将站点网络中的现有用户添加到站点中，然后为其指定用户角色。如需修改密码等其他信息，您需要拥有网络管理员的权限，访问“管理网络”>“所有用户”，然后将鼠标放置在用户名上方，点击出现的“编辑”链接。"
 
 #: wp-admin/about.php:289
 msgid "Go to Dashboard &rarr; Home"
@@ -10296,7 +10296,7 @@ msgstr "<a href=\"%1$s\" class=\"update-browser-link\">升级您的%2$s</a>，�
 #. translators: 1: Link start tag, 2: Link end tag, 3: Width, 4: Height.
 #: wp-admin/includes/media.php:3070
 msgid "Scale images to match the large size selected in %1$simage options%2$s (%3$d &times; %4$d)."
-msgstr "按照%1$s图像选项%2$s的设置，将图像剪裁到“大尺寸”（%3$d &times; %4$d）。"
+msgstr "按照%1$s图片选项%2$s的设置，将图片剪裁到“大尺寸”（%3$d &times; %4$d）。"
 
 #: wp-admin/includes/media.php:2929
 msgid "Audio, Video, or Other File"
@@ -10333,8 +10333,8 @@ msgstr "左侧的导航菜单提供了所有WordPress管理页面的链接。将
 #: wp-admin/includes/class-custom-image-header.php:97 wp-admin/my-sites.php:43
 #: wp-admin/options-general.php:41 wp-admin/comment.php:61
 #: wp-admin/theme-editor.php:27 wp-admin/erase-personal-data.php:20
-#: wp-admin/plugin-editor.php:124 wp-admin/nav-menus.php:609
-#: wp-admin/nav-menus.php:650 wp-admin/update-core.php:931
+#: wp-admin/plugin-editor.php:124 wp-admin/nav-menus.php:600
+#: wp-admin/nav-menus.php:641 wp-admin/update-core.php:931
 #: wp-admin/options-permalink.php:22 wp-admin/user-new.php:272
 #: wp-admin/index.php:42 wp-admin/plugins.php:543 wp-admin/themes.php:142
 #: wp-admin/edit-comments.php:173 wp-admin/media.php:85
@@ -10529,7 +10529,7 @@ msgstr "设置已保存。"
 #: wp-admin/includes/class-custom-image-header.php:133 wp-admin/my-sites.php:50
 #: wp-admin/options-general.php:47 wp-admin/comment.php:69
 #: wp-admin/theme-editor.php:50 wp-admin/erase-personal-data.php:61
-#: wp-admin/plugin-editor.php:141 wp-admin/nav-menus.php:657
+#: wp-admin/plugin-editor.php:141 wp-admin/nav-menus.php:648
 #: wp-admin/update-core.php:969 wp-admin/options-permalink.php:59
 #: wp-admin/user-new.php:293 wp-admin/index.php:110 wp-admin/plugins.php:586
 #: wp-admin/themes.php:205 wp-admin/edit-comments.php:193 wp-admin/media.php:95
@@ -10627,11 +10627,11 @@ msgstr "占满宽度的模板"
 
 #: wp-admin/includes/theme.php:312
 msgid "Featured Images"
-msgstr "特色图像"
+msgstr "特色图片"
 
 #: wp-admin/includes/theme.php:311
 msgid "Featured Image Header"
-msgstr "顶部特色图像"
+msgstr "页眉特色图片"
 
 #. translators: %s: Browser name and link.
 #: wp-admin/includes/dashboard.php:1631
@@ -10687,7 +10687,7 @@ msgstr "外部库"
 
 #: wp-admin/menu.php:289 wp-admin/network.php:52 wp-admin/network/menu.php:112
 msgid "Network Setup"
-msgstr "配置网络"
+msgstr "站点网络配置"
 
 #: wp-admin/menu.php:279
 msgid "Available Tools"
@@ -10774,15 +10774,15 @@ msgstr "您的自由"
 
 #: wp-admin/includes/class-custom-image-header.php:665
 msgid "You can use one of these cool headers or show a random one on each page."
-msgstr "您可现在从这些精美的顶部图像中选择，或让WordPress在每次显示页面时随机挑选。"
+msgstr "您可以从这些精美的页眉图片中选择，或让WordPress在每次显示页面时随机挑选。"
 
 #: wp-admin/includes/class-custom-image-header.php:663
 msgid "If you don&lsquo;t want to upload your own image, you can use one of these cool headers, or show a random one."
-msgstr "若您现在不想上传您自己的图像，可从这些精美的顶部图像中选择，或让WordPress在每次显示页面时随机挑选。"
+msgstr "若您现在不想上传您自己的图片，可从这些精美的页眉图片中选择，或让WordPress在每次显示页面时随机挑选。"
 
 #: wp-admin/includes/class-custom-image-header.php:649
 msgid "You can choose one of your previously uploaded headers, or show a random one."
-msgstr "您可以从上传过的顶部图像中选择，或让WordPress在每次显示页面时随机挑选。"
+msgstr "您可以从上传过的页眉图片中选择，或让WordPress在每次显示页面时随机挑选。"
 
 #: wp-admin/menu-header.php:280
 msgid "Collapse menu"
@@ -10790,11 +10790,11 @@ msgstr "收起菜单"
 
 #: wp-admin/includes/class-custom-image-header.php:647
 msgid "Uploaded Images"
-msgstr "已上传的图像"
+msgstr "已上传的图片"
 
 #: wp-admin/includes/class-custom-image-header.php:294
 msgid "<strong>Random:</strong> Show a different image on each page."
-msgstr "<strong>随机：</strong>在每个页面上显示不同的图像。"
+msgstr "<strong>随机：</strong>在每个页面上显示不同的图片。"
 
 #: wp-admin/includes/theme.php:321 wp-admin/includes/theme.php:357
 #: wp-admin/includes/class-wp-screen.php:1207 wp-admin/index.php:68
@@ -10822,7 +10822,7 @@ msgstr "您不能删除主站点正在使用的插件。"
 
 #: wp-admin/plugins.php:342
 msgid "This plugin may be active on other sites in the network."
-msgstr "这个插件可能已在网络的其他站点中启用了。"
+msgstr "此插件可能已经在站点网络的其他站点中启用。"
 
 #: wp-admin/options-writing.php:98
 msgid "Default Post Format"
@@ -10835,7 +10835,7 @@ msgstr "添加现有用户"
 
 #: wp-admin/theme-editor.php:45 wp-admin/plugin-editor.php:136
 msgid "Any edits to files from this screen will be reflected on all sites in the network."
-msgstr "在本页面对文件做出的一切更改，都将影响整个网络。"
+msgstr "从此页面对文件的任何编辑都将应用到站点网络中的所有站点。"
 
 #: wp-admin/users.php:33
 msgid "This screen lists all the existing users for your site. Each user has one of five defined roles as set by the site admin: Site Administrator, Editor, Author, Contributor, or Subscriber. Users with roles other than Administrator will see fewer options in the dashboard navigation when they are logged in, based on their role."
@@ -10904,7 +10904,7 @@ msgstr "此主题使用从父主题“%s”继承下来的模板。"
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:469
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:577
 msgid "Network Enable"
-msgstr "开放给整个站点网络使用"
+msgstr "在站点网络中启用"
 
 #: wp-admin/upgrade.php:153
 msgid "Your WordPress database has been successfully updated!"
@@ -11032,7 +11032,7 @@ msgstr "裁切图片：请点击图片，并将裁切选区调整至您希望裁
 
 #: wp-admin/media.php:88 wp-admin/edit-form-advanced.php:347
 msgid "For images only, you can click on Edit Image under the thumbnail to expand out an inline image editor with icons for cropping, rotating, or flipping the image as well as for undoing and redoing. The boxes on the right give you more options for scaling the image, for cropping it, and for cropping the thumbnail in a different way than you crop the original image. You can click on Help in those boxes to get more information."
-msgstr "对于图片，您可点击缩略图下方的“编辑图像”，之后就会弹出一个快捷图片编辑器——您可以裁切、旋转、翻转图片。您还可以撤销或重做操作。在编辑器的右侧，您可以对图片剪裁等进行更详尽的设置。您可以点击“帮助”以了解更多。"
+msgstr "对于图片，您可点击缩略图下方的“编辑图片”，之后就会弹出一个快捷图片编辑器——您可以裁切、旋转、翻转图片。您还可以撤销或重做操作。在编辑器的右侧，您可以对图片剪裁等进行更详尽的设置。您可以点击“帮助”以了解更多。"
 
 #: wp-admin/media.php:87 wp-admin/edit-form-advanced.php:346
 msgid "This screen allows you to edit fields for metadata in a file within the media library."
@@ -11066,7 +11066,7 @@ msgstr "再次检查。"
 #. translators: 1: Date, 2: Time.
 #: wp-admin/update-core.php:1011
 msgid "Last checked on %1$s at %2$s."
-msgstr "最后检查时间：%1$s%2$s。"
+msgstr "最后检查时间：%1$s %2$s。"
 
 #: wp-admin/update-core.php:992
 msgid "Please select one or more plugins to update."
@@ -11188,7 +11188,7 @@ msgstr "创建新站点"
 #. translators: 1: Image width in pixels, 2: Image height in pixels.
 #: wp-admin/includes/class-custom-image-header.php:555
 msgid "Images of exactly <strong>%1$d &times; %2$d pixels</strong> will be used as-is."
-msgstr "使用图像的<strong>%1$d &times; %2$d像素</strong>。"
+msgstr "使用图片的<strong>%1$d &times; %2$d像素</strong>。"
 
 #: wp-admin/includes/class-custom-image-header.php:875
 msgid "Crop and Publish"
@@ -11508,11 +11508,11 @@ msgstr "您可以使用分类来定义您站点的分区结构，并可以按不
 
 #: wp-admin/includes/class-custom-image-header.php:857
 msgid "You need JavaScript to choose a part of the image."
-msgstr "您需要JavaScript支持以选择图像的一部分。"
+msgstr "您需要JavaScript支持以选择图片的一部分。"
 
 #: wp-admin/includes/class-custom-image-header.php:853
 msgid "Crop Header Image"
-msgstr "剪裁顶部图像"
+msgstr "剪裁页眉图片"
 
 #: wp-admin/includes/class-custom-image-header.php:905
 msgid "Image Upload Error"
@@ -11520,27 +11520,27 @@ msgstr "图片上传发生错误"
 
 #: wp-admin/includes/class-custom-image-header.php:693
 msgid "Restore Original Header Image"
-msgstr "重设顶部图像"
+msgstr "重设页眉图片"
 
 #: wp-admin/includes/class-custom-image-header.php:692
 msgid "This will restore the original header image. You will not be able to restore any customizations."
-msgstr "这将重设顶部图像。之后，您将无法还原任何自定义元素。"
+msgstr "这将重置页眉图片。之后，您将无法还原任何自定义元素。"
 
 #: wp-admin/includes/class-custom-image-header.php:690
 msgid "Reset Image"
-msgstr "重置图像"
+msgstr "重置图片"
 
 #: wp-admin/includes/class-custom-image-header.php:680
 msgid "Remove Header Image"
-msgstr "移除顶部图像"
+msgstr "移除页眉图片"
 
 #: wp-admin/includes/class-custom-image-header.php:679
 msgid "This will remove the header image. You will not be able to restore any customizations."
-msgstr "这将移除顶部图像。之后，您将无法还原任何自定义元素。"
+msgstr "这将移除页眉图片。之后，您将无法还原任何自定义元素。"
 
 #: wp-admin/includes/class-custom-image-header.php:660
 msgid "Default Images"
-msgstr "默认图像"
+msgstr "默认图图片"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:759
 #: wp-admin/includes/dashboard.php:735
@@ -11584,7 +11584,7 @@ msgstr "您可以通过以下方法来自定义本页面："
 msgid "Search Installed Plugins"
 msgstr "搜索已安装插件"
 
-#: wp-admin/nav-menus.php:721
+#: wp-admin/nav-menus.php:712
 msgid "Your theme supports one menu. Select which menu you would like to use."
 msgstr "您的主题支持一个菜单，请选择您希望使用的菜单。"
 
@@ -11627,7 +11627,7 @@ msgstr "标记为垃圾评论"
 
 #: wp-admin/includes/class-custom-background.php:303
 msgid "Remove Background Image"
-msgstr "删除背景图像"
+msgstr "移除背景图片"
 
 #. translators: %s: Post title.
 #. translators: %s: Link to post.
@@ -11667,7 +11667,7 @@ msgstr "不是垃圾评论"
 
 #: wp-admin/includes/class-custom-background.php:318
 msgid "This will restore the original background image. You will not be able to restore any customizations."
-msgstr "这将恢复原始背景图像。您将无法还原任何自定义元素。"
+msgstr "这将恢复原始背景图图片。您将无法还原任何自定义元素。"
 
 #: wp-admin/includes/dashboard.php:1477
 msgid "WordPress Blog"
@@ -11721,7 +11721,7 @@ msgstr "无项目。"
 #. translators: %s: Asterisk symbol (*).
 #: wp-admin/includes/schema.php:1105
 msgid "To use a subdomain configuration, you must have a wildcard entry in your DNS. This usually means adding a %s hostname record pointing at your web server in your DNS configuration tool."
-msgstr "要使用子域名设定，您的DNS必须有通配记录。这通常意味着在您的DNS设定工具中加入一条主机名为%s的记录，指向您的网页服务器。"
+msgstr "要使用子域名配置，您的 DNS 中必须拥有一条通配符记录。这通常意味着要在您的 DNS 配置工具中添加一条指向您web服务器的 %s 主机名记录。"
 
 #. translators: %s: Host name.
 #: wp-admin/includes/schema.php:1094
@@ -11743,7 +11743,7 @@ msgstr "显示选项"
 #: wp-admin/includes/class-custom-background.php:299
 #: wp-admin/includes/class-custom-image-header.php:677
 msgid "Remove Image"
-msgstr "移除图像"
+msgstr "移除图片"
 
 #: wp-admin/users.php:584
 msgid "Other users have been removed."
@@ -11788,7 +11788,7 @@ msgstr "希望，请带我到个人资料编辑页面"
 
 #: wp-admin/includes/upgrade.php:96
 msgid "Your chosen password."
-msgstr "您设定的密码。"
+msgstr "您选择的密码。"
 
 #: wp-admin/post.php:287 wp-admin/upload.php:176 wp-admin/edit.php:144
 msgid "Sorry, you are not allowed to restore this item from the Trash."
@@ -11832,7 +11832,7 @@ msgstr "以下插件有可用更新，点选需要升级的插件，然后点击
 
 #: wp-admin/includes/class-custom-background.php:304
 msgid "This will remove the background image. You will not be able to restore any customizations."
-msgstr "这将移除背景图像。之后，您将无法还原任何自定义元素。"
+msgstr "这将移除背景图片。之后，您将无法还原任何自定义元素。"
 
 #. translators: %s: Network title.
 #: wp-admin/includes/class-wp-themes-list-table.php:132
@@ -11858,7 +11858,7 @@ msgstr "页面已保存。"
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:559
 #: wp-admin/js/updates.js:636
 msgid "Update Now"
-msgstr "现在更新"
+msgstr "立即更新"
 
 #. translators: %s: Plugin name.
 #. translators: %s: Plugin name and version.
@@ -11871,7 +11871,7 @@ msgstr "关于%s的更多信息"
 
 #: wp-admin/user-edit.php:440
 msgid "Grant this user super admin privileges for the Network."
-msgstr "授予这个用户整个网络的超级管理员权限。"
+msgstr "为此用户授予站点网络超级管理员权限。"
 
 #: wp-admin/user-edit.php:195
 msgid "This user has super admin privileges."
@@ -11921,7 +11921,7 @@ msgstr "CSS类（可选）"
 msgid "Link Target"
 msgstr "链接目标"
 
-#: wp-admin/nav-menus.php:966 wp-admin/nav-menus.php:1101
+#: wp-admin/nav-menus.php:957 wp-admin/nav-menus.php:1099
 msgid "Save Menu"
 msgstr "保存菜单"
 
@@ -11946,7 +11946,7 @@ msgstr "您必须提供有效的电子邮箱地址。"
 
 #: wp-admin/includes/schema.php:988 wp-admin/includes/schema.php:992
 msgid "The network already exists."
-msgstr "该网络已存在。"
+msgstr "此站点网络已经存在。"
 
 #: wp-admin/includes/schema.php:981
 msgid "You must provide a name for your network of sites."
@@ -12060,13 +12060,13 @@ msgstr "该时区目前使用夏令时制。"
 
 #: wp-admin/options-general.php:113 wp-admin/network/settings.php:164
 msgid "This address is used for admin purposes. If you change this, we will send you an email at your new address to confirm it. <strong>The new address will not become active until confirmed.</strong>"
-msgstr "这个地址将被用于管理目的。如果您修改这个地址，我们将会向新地址发送一封邮件来确认。<strong>新的邮箱地址直到获得确认才会启用。</strong>"
+msgstr "这个地址将被用于管理目的。如果您修改这个地址，我们将会向新地址发送一封邮件来确认。<strong>新的电子邮箱地址直到获得确认才会生效。</strong>"
 
 #: wp-admin/includes/nav-menu.php:518 wp-admin/includes/nav-menu.php:804
 msgid "View All"
 msgstr "查看所有"
 
-#: wp-admin/nav-menus.php:383 wp-admin/nav-menus.php:405
+#: wp-admin/nav-menus.php:374 wp-admin/nav-menus.php:396
 msgid "Please enter a valid menu name."
 msgstr "请输入有效的菜单名称。"
 
@@ -12648,7 +12648,7 @@ msgstr "让WordPress自动校正嵌套错误的XHTML代码"
 
 #: wp-admin/options-writing.php:72
 msgid "Convert emoticons like <code>:-)</code> and <code>:-P</code> to graphics on display"
-msgstr "转换如<code>:-)</code>、<code>:-P</code>等文本表情符号为图像"
+msgstr "转换如<code>:-)</code>、<code>:-P</code>等文字表情符号为图片"
 
 #: wp-admin/options-writing.php:68 wp-admin/options-writing.php:69
 msgid "Formatting"
@@ -12798,7 +12798,7 @@ msgstr "缩略图大小"
 
 #: wp-admin/options-media.php:51
 msgid "Image sizes"
-msgstr "图像大小"
+msgstr "图片大小"
 
 #: wp-admin/options-media.php:16
 msgid "Media Settings"
@@ -12911,7 +12911,7 @@ msgstr "当评论者的内容、名称、网址、电邮、IP或浏览器用户�
 
 #: wp-admin/options-discussion.php:200
 msgid "When a comment contains any of these words in its content, author name, URL, email, IP address, or browser&#8217;s user agent string, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "当评论者的内容、名称、网址、电邮、IP或浏览器用户代理字串中包含以下关键词，这则评论将被设定为<a href=\"edit-comments.php?comment_status=moderated\">待审</a>。每行输入一个词或IP地址。WordPrss也将在单词的内部进行匹配，所以“WordPress”将与关键词“press”相匹配。"
+msgstr "当评论者的内容、名称、网址、电邮、IP或浏览器用户代理字串中包含以下关键词，这则评论将被设为<a href=\"edit-comments.php?comment_status=moderated\">待审</a>。每行输入一个词或IP地址。WordPrss也将在单词的内部进行匹配，所以“WordPress”将与关键词“press”相匹配。"
 
 #. translators: %s: Number of links.
 #: wp-admin/options-discussion.php:194
@@ -13683,7 +13683,7 @@ msgstr "RSS地址"
 
 #: wp-admin/includes/meta-boxes.php:1349
 msgid "Image Address"
-msgstr "图像地址"
+msgstr "图片地址"
 
 #: wp-admin/includes/meta-boxes.php:1334
 msgid "If the link is to a person, you can specify your relationship with them using the above form. If you would like to learn more about the idea check out <a href=\"https://gmpg.org/xfn/\">XFN</a>."
@@ -13914,15 +13914,15 @@ msgstr "链接的文字，例如：“赎金要求（PDF）”"
 
 #: wp-admin/includes/media.php:2981
 msgid "Link to image"
-msgstr "链接到图像"
+msgstr "链接到图片"
 
 #: wp-admin/includes/media.php:2976
 msgid "Link Image To:"
-msgstr "将图像链接到："
+msgstr "将图片链接到："
 
 #: wp-admin/includes/media.php:2906
 msgid "Image Caption"
-msgstr "图像说明"
+msgstr "图片说明"
 
 #: wp-admin/includes/media.php:2858
 msgid "Filter &#187;"
@@ -13962,11 +13962,11 @@ msgstr "菜单排序"
 
 #: wp-admin/includes/media.php:2618
 msgid "Order images by:"
-msgstr "图像排序依据："
+msgstr "图片排序依据："
 
 #: wp-admin/includes/media.php:2608
 msgid "Image File"
-msgstr "图像文件"
+msgstr "图片文件"
 
 #: wp-admin/includes/media.php:2603
 msgid "Link thumbnails to:"
@@ -14027,7 +14027,7 @@ msgstr "文件名返回了空的标题。"
 
 #: wp-admin/includes/media.php:1476 wp-admin/includes/media.php:2957
 msgid "Alt text for the image, e.g. &#8220;The Mona Lisa&#8221;"
-msgstr "图像的替代文本，例如“蒙娜丽莎”"
+msgstr "图片的替代文字，例如“蒙娜丽莎”"
 
 #: wp-admin/includes/media.php:1254 wp-admin/includes/media.php:1415
 msgid "File URL"
@@ -14061,39 +14061,39 @@ msgstr "从计算机"
 
 #: wp-admin/includes/image-edit.php:995
 msgid "Image saved"
-msgstr "图像已保存"
+msgstr "图片已保存"
 
 #: wp-admin/includes/image-edit.php:867
 msgid "Unable to save the image."
-msgstr "未能保存图像。"
+msgstr "未能保存图片。"
 
 #: wp-admin/includes/image-edit.php:818
 msgid "Nothing to save, the image has not changed."
-msgstr "没有可供保存的内容，因此没有修改图像。"
+msgstr "无需保存，图片未被更改。"
 
 #: wp-admin/includes/image-edit.php:809
 msgid "Error while saving the scaled image. Please reload the page and try again."
-msgstr "保存缩放后的图片图像时发生错误，请刷新后再试。"
+msgstr "保存缩放后的图片时发生错误，请刷新后再试。"
 
 #: wp-admin/includes/image-edit.php:785
 msgid "Unable to create new image."
-msgstr "未能创建新图像。"
+msgstr "未能创建新图片。"
 
 #: wp-admin/includes/image-edit.php:758
 msgid "Image restored successfully."
-msgstr "图像还原成功。"
+msgstr "图片还原成功。"
 
 #: wp-admin/includes/image-edit.php:756
 msgid "Image metadata is inconsistent."
-msgstr "图像属性不正确。"
+msgstr "图片属性不正确。"
 
 #: wp-admin/includes/image-edit.php:751
 msgid "Cannot save image metadata."
-msgstr "无法保存图像属性。"
+msgstr "无法保存图片属性。"
 
 #: wp-admin/includes/image-edit.php:691
 msgid "Cannot load image metadata."
-msgstr "无法载入图像属性。"
+msgstr "无法载入图片属性。"
 
 #: wp-admin/includes/image-edit.php:239
 msgid "All sizes except thumbnail"
@@ -14101,7 +14101,7 @@ msgstr "除缩略图外所有尺寸"
 
 #: wp-admin/includes/image-edit.php:229
 msgid "All image sizes"
-msgstr "所有图像大小"
+msgstr "所有图片大小"
 
 #: wp-admin/includes/image-edit.php:225
 msgid "Apply changes to:"
@@ -14133,11 +14133,11 @@ msgstr "按比例裁切"
 
 #: wp-admin/includes/image-edit.php:166
 msgid "Image Crop"
-msgstr "图像裁切"
+msgstr "图片裁切"
 
 #: wp-admin/includes/image-edit.php:156
 msgid "Restore image"
-msgstr "还原图像"
+msgstr "还原图片"
 
 #: wp-admin/includes/image-edit.php:151
 msgid "Previously edited copies of the image will not be deleted."
@@ -14150,7 +14150,7 @@ msgstr "放弃所有变更，并恢复到原始图片。"
 #: wp-admin/includes/class-custom-background.php:313
 #: wp-admin/includes/class-custom-background.php:317
 msgid "Restore Original Image"
-msgstr "还原原始图像"
+msgstr "还原原始图片"
 
 #. translators: %s: Image width and height in pixels.
 #: wp-admin/includes/image-edit.php:115
@@ -14159,7 +14159,7 @@ msgstr "原始尺寸%s"
 
 #: wp-admin/includes/image-edit.php:105
 msgid "Scale Image"
-msgstr "拉伸图像"
+msgstr "拉伸图片"
 
 #: wp-admin/includes/image-edit.php:77
 msgid "Flip horizontal"
@@ -14171,7 +14171,7 @@ msgstr "垂直翻转"
 
 #: wp-admin/includes/image-edit.php:28 wp-admin/includes/image-edit.php:826
 msgid "Image data does not exist. Please re-upload the image."
-msgstr "图像数据不存在，请重新上传图像。"
+msgstr "图片数据不存在，请重新上传图片。"
 
 #: wp-admin/includes/file.php:2304
 msgid "Proceed"
@@ -15001,12 +15001,12 @@ msgstr "编辑“%s”"
 
 #: wp-admin/includes/class-custom-image-header.php:856
 msgid "Choose the part of the image you want to use as your header."
-msgstr "从图像中选取一部分作为您的页面顶部图像。"
+msgstr "从图片中选取一部分作为您的页眉图片。"
 
 #: wp-admin/includes/class-custom-image-header.php:838
 #: wp-admin/includes/class-custom-image-header.php:981
 msgid "Image Processing Error"
-msgstr "图像处理发生错误"
+msgstr "图片处理发生错误"
 
 #. translators: %s: Home URL.
 #: wp-admin/includes/class-custom-image-header.php:496
@@ -15018,7 +15018,7 @@ msgstr "顶部已更新。<a href=\"%s\">访问您的站点</a>来看看效果�
 msgid "Custom Header"
 msgstr "自定义顶部"
 
-#: wp-admin/includes/template.php:2481 wp-admin/nav-menus.php:808
+#: wp-admin/includes/template.php:2481 wp-admin/nav-menus.php:799
 #: wp-admin/options.php:402
 msgid "Save Changes"
 msgstr "保存更改"
@@ -15026,7 +15026,7 @@ msgstr "保存更改"
 #: wp-admin/includes/class-custom-background.php:329
 #: wp-admin/includes/class-custom-image-header.php:609
 msgid "Choose an image from your computer:"
-msgstr "从您的计算机中选择图像："
+msgstr "从您的计算机中选择图片："
 
 #. translators: %s: Home URL.
 #: wp-admin/includes/class-custom-background.php:247
