@@ -80,4 +80,4 @@
                     <div class="content">
                         <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__item">
 
-                            <main class="clearfix" <?php if (is_home()) : ?>style="overflow-x: hidden;"<?php endif; ?> role="main">
+                            <main class="clearfix" <?php if (is_home() || is_front_page()) : ?>style="overflow-x: hidden;"<?php endif; ?> role="main">
