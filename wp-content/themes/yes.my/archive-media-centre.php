@@ -88,6 +88,10 @@
     </div>
 </section>
 
+<style type="text/css">
+    body main { overflow-x: hidden; }
+</style>
+
 <script type="text/javascript">
     $(document).ready(function(){
         var cooldown = 100;

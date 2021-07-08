@@ -43,4 +43,8 @@ get_header();
     }
 ?>
 
+<style type="text/css">
+    body main { overflow-x: hidden; }
+</style>
+
 <?php get_footer(); ?>
