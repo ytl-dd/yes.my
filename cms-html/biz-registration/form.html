@@ -1,0 +1,157 @@
+<div class="form-std nopadding" id="BusinessRegistrationForm">
+    <!-- <input id="token" name="token" type="hidden" value="mCTG0tDj4fzwsXmUx58OgumgNnMuVJuM" /> -->
+    <div class="form-group">
+        <p class="subtitle"><b>Talk to us</b></p>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="companyName">Company Name</label>[text* companyName id:companyName class:form-control placeholder "Yes YTL"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="natureOfBusiness">Nature of Business</label>[text* natureOfBusiness id:natureOfBusiness class:form-control placeholder "TELCO"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="totalWorkforce">Total Workforce</label>[text* totalWorkforce id:totalWorkforce class:form-control placeholder "1000"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="personInCharge">Person in Charge</label>[text* personInCharge id:personInCharge class:form-control placeholder "YES MAN"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="mobileNo">Mobile Number</label>[text* mobileNo id:mobileNo class:form-control placeholder "+6012 345 6789"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="email">Email Address</label>[email* email id:email class:form-control placeholder "YES.YTL@YES.COM.MY"]
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p class="subtitle"><b>Address</b></p>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="street">Street</label>[text* street id:street class:form-control placeholder "LEVEL 6, TOWER 9, AVENUE 5, HORIZON 1, BANGSAR SOUTH"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="city">City</label>[text* city id:city class:form-control placeholder "KUALA LUMPUR"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="state">State</label>
+                <div class="dropdown">
+                    <button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" type="button">Wilayah Persekutuan Kuala Lumpur</button>
+                    <div class="dropdown-menu" data-targetfield="state">
+                        <button class="dropdown-item" data-value="Johor" type="button">Johor</button><button class="dropdown-item" data-value="Kedah" type="button">Kedah</button><button class="dropdown-item" data-value="Kelantan" type="button">Kelantan</button><button class="dropdown-item" data-value="Kuala Lumpur" type="button">Wilayah Persekutuan Kuala Lumpur</button><button class="dropdown-item" data-value="Labuan" type="button">Labuan</button><button class="dropdown-item" data-value="Melaka" type="button">Melaka</button><button class="dropdown-item" data-value="Negeri Sembilan" type="button">Negeri Sembilan</button><button class="dropdown-item" data-value="Pahang" type="button">Pahang</button><button class="dropdown-item" data-value="Perak" type="button">Perak</button><button class="dropdown-item" data-value="Perlis" type="button">Perlis</button><button class="dropdown-item" data-value="Pulau Pinang" type="button">Pulau Pinang</button><button class="dropdown-item" data-value="Putrajaya" type="button">Putrajaya</button><button class="dropdown-item" data-value="Sabah" type="button">Sabah</button><button class="dropdown-item" data-value="Selangor" type="button">Selangor</button><button class="dropdown-item" data-value="Terengganu" type="button">Terengganu</button>
+                    </div>
+                </div>[text* state id:state class:input-hide "Wilayah Persekutuan Kuala Lumpur"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="zipcode">Zipcode</label>[text* zipcode id:zipcode class:form-control placeholder "59200"]
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p class="subtitle"><b>Business with any local network</b></p>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="form-group custom-checkboxs-inline">
+                <label for="network" style="padding-right: 5px;">Network</label>[checkbox* telcoBusinesses id:network "MAXIS" "U MOBILE" "CELCOM" "PI" "DIGI"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="telcoBusinessesOther">Others</label>[text telcoBusinessesOther id:telcoBusinessesOther class:form-control placeholder "OTHER NETWORK"]
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p class="subtitle"><b>Enquiry</b></p>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="comment">Comment</label>[textarea* comment x5 id:comment class:form-control]
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group form-check" style="text-align: top;">
+                [checkbox* agreePrivacys id:agreePrivacys class:form-check-input "Agree"]<label class="form-check-label checkbox-agreePrivacys" for="agreePrivacys"><span class="brand"><b>I hereby declare and confirm the following:</b></span><br />
+                    In providing any personal information to you, I acknowledge that I have read, understood and accepted your Privacy Policy<br />
+                    <a class="brand" href="http://www.ytl.com/privacypolicy.asp" target="blank">(available at http://www.ytl.com/privacypolicy.asp)</a> and agree that you may collect and process personal data provided by me for the purposes set out in your Privacy Policy and consent to the transfer and disclosure of any personal data in accordance with your Privacy Policy.
+                </label>
+                <!-- <div class="g-recaptcha" data-sitekey="6LdbrJcUAAAAALBkzMZZCgcGNaNJ1m9ASLojtYLa">&nbsp;</div> -->
+            </div>
+        </div>
+    </div>
+    <!-- <input name="recaptchaV3" type="hidden" value="" /> -->
+    <!-- <input name="agreeTncPrivacy" type="hidden" value="00" /> -->
+    [submit class:btn class:btn-primary "Proceed"]
+    <br /><br /> &nbsp;
+</div>
+
+
+
+<!-- Email Copy STARTS -->
+<p>
+    From: [companyName] &lt;[email]&gt;
+    Subject: Biz Registration
+</p>
+<table cellpadding="0" cellspacing="0" style="margin: 20px 0;">
+    <thead><tr><th align="left">Field</th><th align="left">Submitted Data</th></tr></thead>
+    <tbody>
+        <tr><th align="left">Company Name</th><td><b>:</b> [companyName]</td></tr>
+        <tr><th align="left">Nature of Business</th><td><b>:</b> [natureOfBusiness]</td></tr>
+        <tr><th align="left">Total Workforce</th><td><b>:</b> [totalWorkforce]</td></tr>
+        <tr><th align="left">Person In Charge</th><td><b>:</b> [personInCharge]</td></tr>
+        <tr><th align="left">Mobile No.</th><td><b>:</b> [mobileNo]</td></tr>
+        <tr><th align="left">Email Address</th><td><b>:</b> [email]</td></tr>
+        <tr><th align="left">Street</th><td><b>:</b> [street]</td></tr>
+        <tr><th align="left">City</th><td><b>:</b> [city]</td></tr>
+        <tr><th align="left">State</th><td><b>:</b> [state]</td></tr>
+        <tr><th align="left">Zipcode</th><td><b>:</b> [zipcode]</td></tr>
+        <tr><th align="left">Network</th><td><b>:</b> [telcoBusinesses]</td></tr>
+        <tr><th align="left">Other Network</th><td><b>:</b> [telcoBusinessesOther]</td></tr>
+        <tr><th align="left">Comment</th><td><b>:</b> [comment]</td></tr>
+    </tbody>
+</table>
+<em>
+    -- <br />
+    This e-mail was sent from Rewards Partnership page on [_site_title] ([_site_url])
+</em>
+<!-- Email Copy END -->

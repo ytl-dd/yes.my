@@ -1,0 +1,76 @@
+<div class="form-std nopadding" id="rewardsForm">
+    <!-- <input id="token" name="token" type="hidden" value="sby75s1ZUgbjLiwQPbdQOjf4IdGRmbIB" /> -->
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="companyName">Company Name</label>[text* companyName id:companyName class:form-control placeholder "Yes YTL"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="contactPerson">Contact Person</label>[text* contactPerson id:contactPerson class:form-control placeholder "YES MAN"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="mobileNo">Mobile Number</label>[text* mobileNo id:mobileNo class:form-control placeholder "+6012 345 6789"]
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="form-group">
+                <label for="email">Email Address</label>[email* email id:email class:form-control placeholder "YES.YTL@YES.COM.MY"]
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-group">
+                <label for="natureOfBusiness">Nature of Business</label>
+                <div class="dropdown">
+                    <button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" id="ddPage" type="button">Nature of business</button>
+                    <div aria-labelledby="ddPage" class="dropdown-menu" data-fieldtarget="natureOfBusiness">
+                        <button class="dropdown-item" data-value="Travel &amp; Accommodation" type="button">Travel &amp; Accommodation</button><button class="dropdown-item" data-value="Retail Products &amp; Services" type="button">Retail Products &amp; Services</button><button class="dropdown-item" data-value="Health &amp; Beauty" type="button">Health &amp; Beauty</button><button class="dropdown-item" data-value="Food &amp; Beverage" type="button">Food &amp; Beverage</button><button class="dropdown-item" data-value="Fashion &amp; Accessories" type="button">Fashion &amp; Accessories</button><button class="dropdown-item" data-value="Lifestyle &amp; Adventure" type="button">Lifestyle &amp; Adventure</button><button class="dropdown-item" data-value="Entertainment &amp; Theme Park" type="button">Entertainment &amp; Theme Park</button><button class="dropdown-item" data-value="Others" type="button">Others</button>
+                    </div>[text* natureOfBusiness id:natureOfBusiness class:input-hide]
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="comment">Comment</label>[textarea* comment x7 id:comment class:form-control placeholder "LET US KNOW"]
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- <input name="recaptchaV3" type="hidden" value="" /> -->
+    <!-- <input name="agreeTncPrivacy" type="hidden" value="00" /> -->
+    [submit class:btn class:btn-primary "Proceed"]
+    <br /> &nbsp;
+</div>
+
+
+<!-- Email Copy Starts -->
+<p>
+    From: [companyName] &lt;[email]&gt;
+    Subject: Rewards Partnership
+</p>
+<table cellpadding="0" cellspacing="0" style="margin: 20px 0;">
+    <thead><tr><th align="left">Field</th><th align="left">Submitted Data</th></tr></thead>
+    <tbody>
+        <tr><th align="left">Company Name</th><td><b>:</b> [companyName]</td></tr>
+        <tr><th align="left">Contact Person</th><td><b>:</b> [contactPerson]</td></tr>
+        <tr><th align="left">Mobile No.</th><td><b>:</b> [mobileNo]</td></tr>
+        <tr><th align="left">Email Address</th><td><b>:</b> [email]</td></tr>
+        <tr><th align="left">Nature of Business</th><td><b>:</b> [natureOfBusiness]</td></tr>
+        <tr><th align="left">Comment</th><td><b>:</b> [comment]</td></tr>
+    </tbody>
+</table>
+<em>
+    -- <br />
+    This e-mail was sent from Rewards Partnership page on [_site_title] ([_site_url])
+</em>
+<!-- Email Copy Ends -->

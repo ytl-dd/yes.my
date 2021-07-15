@@ -5,185 +5,52 @@
 </style>
 
 
+<!-- Proper Content STARTS -->
+<style type="text/css">
+    .custom-checkboxs-inline .custom-control.wpcf7-list-item {
+        margin-left: 0;
+    }
+    
+    .wpcf7-form-control-wrap.agreePrivacys .wpcf7-list-item {
+        margin: 0;
+    }
+    
+    .wpcf7-form-control-wrap.agreePrivacys .wpcf7-list-item-label {
+        display: none;
+    }
+</style>
+
 <section class="dblock flexbox" id="main-content">
     <div>
         <div class="container">
             <div class="row" id="BusinessRegForm">
                 <div class="col">
-                    <form action="/biz-registration" class="form-std nopadding" id="BusinessRegistrationForm" method="POST"><input id="token" name="token" type="hidden" value="mCTG0tDj4fzwsXmUx58OgumgNnMuVJuM" />
-                        <div class="form-group">
-                            <p class="subtitle"><b>Talk to us</b></p>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="companyname">Company Name</label> <input class="form-control" id="companyName" name="companyName" placeholder="Yes YTL" required="" type="text" />
-                                    <ul class="error-msg">
-                                        <li type="empty">Please state down your company name.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="businessnature">Nature of Business</label> <input class="form-control" id="natureOfBusiness" name="natureOfBusiness" placeholder="TELCO" required="" type="text" />
-                                    <ul class="error-msg">
-                                        <li type="empty">Please state down your nature of business.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="totalworkforce">Total Workforce</label> <input class="form-control" id="totalWorkforce" name="totalWorkforce" placeholder="1000" required="" type="text" />
-                                    <ul class="error-msg">
-                                        <li type="empty">Please state down person in charge.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="personincharge">Person in Charge</label> <input class="form-control" id="personInCharge" name="personInCharge" placeholder="YES MAN" required="" type="text" />
-                                    <ul class="error-msg">
-                                        <li type="empty">Please state down your total workforce.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="mobilenumber">Mobile Number</label> <input class="form-control" id="mobileNO" name="mobileNO" placeholder="+6012 345 6789" required="" type="text" />
-                                    <ul class="error-msg">
-                                        <li type="empty">Please state down your mobile number.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="email">Email Address</label> <input class="form-control" data-validate="email" id="email" name="email" placeholder="YES.YTL@YES.COM.MY" required="" type="email" />
-                                    <ul class="error-msg">
-                                        <li type="empty">Please insert your email address.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <p class="subtitle"><b>Address</b></p>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="street">Street</label> <input class="form-control" id="address" name="address" placeholder="LEVEL 6, TOWER 9, AVENUE 5, HORIZON 1, BANGSAR SOUTH" required="" type="text" />
-                                    <ul class="error-msg">
-                                        <li type="empty">Please insert your address.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="city">City</label> <input class="form-control" id="city" name="city" placeholder="KUALA LUMPUR" required="" type="text" />
-                                    <ul class="error-msg">
-                                        <li type="empty">Please insert your city.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="state">State</label>
-
-                                    <div class="dropdown"><button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" type="button">Wilayah Persekutuan Kuala Lumpur</button>
-
-                                        <div class="dropdown-menu"><button class="dropdown-item" data-value="Johor" type="button">Johor</button><button class="dropdown-item" data-value="Kedah" type="button">Kedah</button><button class="dropdown-item" data-value="Kelantan" type="button">Kelantan</button>
-                                            <button class="dropdown-item" data-value="Kuala Lumpur" type="button">Wilayah Persekutuan Kuala Lumpur</button><button class="dropdown-item" data-value="Labuan" type="button">Labuan</button><button class="dropdown-item"
-                                                data-value="Melaka" type="button">Melaka</button>
-                                            <button class="dropdown-item" data-value="Negeri Sembilan" type="button">Negeri Sembilan</button><button class="dropdown-item" data-value="Pahang" type="button">Pahang</button><button class="dropdown-item" data-value="Perak"
-                                                type="button">Perak</button><button class="dropdown-item" data-value="Perlis" type="button">Perlis</button><button class="dropdown-item" data-value="Pulau Pinang" type="button">Pulau Pinang</button><button class="dropdown-item"
-                                                data-value="Putrajaya" type="button">Putrajaya</button>
-                                            <button class="dropdown-item" data-value="Sabah" type="button">Sabah</button><button class="dropdown-item" data-value="Selangor" type="button">Selangor</button><button class="dropdown-item" data-value="Terengganu"
-                                                type="button">Terengganu</button></div>
-                                        <input id="state" name="state" required="" type="hidden" value="Kuala Lumpur" /></div>
-
-                                    <ul class="error-msg">
-                                        <li type="empty">Please insert your state.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="zipcode">Zipcode</label> <input class="form-control" id="postcode" name="postcode" placeholder="59200" required="" type="text" />
-                                    <ul class="error-msg">
-                                        <li type="empty">Please insert your postcode.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <p class="subtitle"><b>Business with any local network</b></p>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group custom-checkboxs-inline"><label for="street">Network</label>
-
-                                    <div class="custom-control custom-checkbox checkbox-accent"><input class="custom-control-input" id="telcoBusinesses1" name="telcoBusinesses[]" type="checkbox" value="Maxis" /> <label class="custom-control-label" for="telcoBusinesses1">MAXIS</label></div>
-
-                                    <div class="custom-control custom-checkbox checkbox-accent"><input class="custom-control-input" id="telcoBusinesses2" name="telcoBusinesses[]" type="checkbox" value="U Mobile" /> <label class="custom-control-label" for="telcoBusinesses2">U MOBILE</label></div>
-
-                                    <div class="custom-control custom-checkbox checkbox-accent"><input class="custom-control-input" id="telcoBusinesses3" name="telcoBusinesses[]" type="checkbox" value="Celcom" /> <label class="custom-control-label" for="telcoBusinesses3">CELCOM</label></div>
-
-                                    <div class="custom-control custom-checkbox checkbox-accent"><input class="custom-control-input" id="telcoBusinesses4" name="telcoBusinesses[]" type="checkbox" value="P1" /> <label class="custom-control-label" for="telcoBusinesses4">P1</label></div>
-
-                                    <div class="custom-control custom-checkbox checkbox-accent"><input class="custom-control-input" id="telcoBusinesses5" name="telcoBusinesses[]" type="checkbox" value="DiGi" /> <label class="custom-control-label" for="telcoBusinesses5">DIGI</label></div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group"><label for="telcoBusinessesOther">Others</label> <input class="form-control" id="telcoBusinessesOther" name="telcoBusinesses[]" placeholder="OTHER NETWORK" type="text" /></div>
-                            </div>
-
-                            <div class="col-12">
-                                <ul class="error-msg" id="telcoErrors">
-                                    <li type="empty">Please select at least 1 telco.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <p class="subtitle"><b>Enquiry</b></p>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group"><label for="comment">Comment</label><textarea class="form-control" id="comment" name="comment" required="" rows="5"></textarea>
-
-                                    <ul class="error-msg">
-                                        <li type="empty">Please state down your comments.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group form-check" style="text-align: top;"><input class="form-check-input" id="agreePrivacys" name="agreePrivacys" required="" type="checkbox" value="agree" /> <label class="form-check-label" for="agreePrivacys"> <span class="brand"><b>I hereby declare and confirm the following:</b></span><br />
-    In providing any personal information to you, I acknowledge that I have read, understood and accepted your Privacy Policy<br />
-    <a class="brand" href="http://www.ytl.com/privacypolicy.asp" target="blank">(available at http://www.ytl.com/privacypolicy.asp)</a> and agree that you may collect and process personal data provided by me for the purposes set out in your Privacy Policy and consent to the transfer and disclosure of any personal data in accordance with your Privacy Policy. </label>
-
-                                    <ul class="error-msg" id="tncErrors">
-                                        <li type="empty">You must agree to the Terms and Conditions.</li>
-                                    </ul>
-
-                                    <div class="g-recaptcha" data-sitekey="6LdbrJcUAAAAALBkzMZZCgcGNaNJ1m9ASLojtYLa">&nbsp;</div>
-                                </div>
-                            </div>
-                        </div>
-                        <input name="recaptchaV3" type="hidden" value="" /><input name="agreeTncPrivacy" type="hidden" value="00" /><button class="btn btn-primary" name="Submit" type="button">Proceed</button><br />
-                        <br /> &nbsp;
-                    </form>
+                    [contact-form-7 id="3140" title="Biz Registration"]
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.form-std .custom-checkboxs-inline .wpcf7-list-item').each(function() {
+            var self = $(this);
+            var inputCheck = $('input[type="checkbox"]', self);
+            $(self).addClass('custom-control custom-checkbox checkbox-accent');
+            $(inputCheck).addClass('custom-control-input');
+            $('.wpcf7-list-item-label', self).addClass('custom-control-label').on('click', function() {
+                $(inputCheck).prop('checked', !inputCheck.prop('checked'));
+            });
+        });
+        $('label.checkbox-agreePrivacys').on('click', function() {
+            var checkAgree = $('input[type="checkbox"][name="agreePrivacys[]"]');
+            $(checkAgree).prop('checked', !checkAgree.prop('checked'));
+        });
+    });
+</script>
+<!-- Proper Content ENDS -->
 
 
 <script type="text/javascript">
