@@ -341,5 +341,18 @@ ul.mobile-menus ul.sub-menu li a {}
     }
 }
 
+.form-std .wpcf7-not-valid-tip {
+    font-size: 12px;
+    margin: 10px 0;
+}
+.form-std .input-hide {
+    display: none;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, 
+.wpcf7 form.unaccepted .wpcf7-response-output {
+    display: none !important;
+}
+
 
 /* END Extended */

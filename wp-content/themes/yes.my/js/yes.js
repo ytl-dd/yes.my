@@ -180,5 +180,14 @@ $(document).ready(function() {
         var reg = new RegExp('(' + highlightWords.join('|') + ')', 'gi');
         return html.replace(reg, '<span class="kasicolor">$1</span>', html)
     })
+
+    $('.form-std .dropdown-item').on('click', function () {
+        var selectedVal = $(this).attr('data-value');
+        var targetParent= $(this).closest('.dropdown');
+        var ddToggle    = $('.dropdown-toggle', targetParent);
+        var targetField = $('.dropdown-menu', targetParent).attr('data-fieldtarget');
+        $(ddToggle).html(selectedVal);
+        $('.form-std input#' + targetField).val(selectedVal);
+    });
 });
 /* END Extended */

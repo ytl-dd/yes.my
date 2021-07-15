@@ -622,3 +622,44 @@
         </div>
     </div>
 </section>
+
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Ldeo4MUAAAAAByuRz7MoXYBXGzmqHyhHhHY-Baa"></script>
+<script>
+var onloadCallback = function() {
+    $("[name=agreeTncPrivacy]").remove();
+};
+$(document).ready(function () {
+        $('[name=Submit]').click(function(){
+            if(validateForm()){
+                    grecaptcha.ready(function() {
+                grecaptcha.execute('6Ldeo4MUAAAAAByuRz7MoXYBXGzmqHyhHhHY-Baa', {action: 'submit'}).then(function(token) {
+                    $('<input name="g-recaptcha-response" type="hidden" value="'+token+'"/>').appendTo("#InnovationNetworkForm");
+                    $("#InnovationNetworkForm").submit();
+                });
+            });
+            }
+        });
+
+    $("[data-type=number]").keydown(function(evt){
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+        return true;
+    })
+});
+
+/* Validate Form */
+function validateForm() {
+    var valid = true;
+
+    if(!validateInputBlank("#name")) valid = false;
+    if(!validateInputBlank("#contactNo")) valid = false;
+    if(!validateInputEmail("#email")) valid = false;
+    if(!validateInputBlank("#mainAreaOfInterest")) valid = false;
+    if(!validateInputBlank("#contryOfOrigin")) valid = false;
+    if(!validateInputBlank("#comment")) valid = false;
+
+    return valid;
+}
+</script>
