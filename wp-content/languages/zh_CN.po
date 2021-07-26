@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-20 19:07:00+0000\n"
+"PO-Revision-Date: 2021-07-23 07:20:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -398,7 +398,7 @@ msgstr "插入诗歌，使用特殊的空白格式，或引用歌词。"
 #: wp-includes/blocks/text-columns/block.json
 msgctxt "block description"
 msgid "This block is deprecated. Please use the Columns block instead."
-msgstr "此区块已弃用。请改用“列”区块。"
+msgstr "此区块已弃用。请改用“栏目”区块。"
 
 #: wp-includes/blocks/tag-cloud/block.json
 msgctxt "block description"
@@ -972,7 +972,7 @@ msgstr "添加有文字浮层的图片或视频，适合作为页眉。"
 #: wp-includes/blocks/column/block.json
 msgctxt "block description"
 msgid "A single column within a columns block."
-msgstr "列区块中的单个列。"
+msgstr "栏目区块中的单衣列。"
 
 #: wp-includes/blocks/code/block.json
 msgctxt "block description"
@@ -1794,7 +1794,7 @@ msgstr "诗篇"
 #: wp-includes/blocks/text-columns/block.json
 msgctxt "block title"
 msgid "Text Columns (deprecated)"
-msgstr "文字列（已弃用）"
+msgstr "文本栏（已弃用）"
 
 #: wp-includes/blocks/table/block.json
 msgctxt "block title"
@@ -1899,12 +1899,12 @@ msgstr "封面"
 #: wp-includes/blocks/column/block.json
 msgctxt "block title"
 msgid "Column"
-msgstr "列"
+msgstr "单衣栏目"
 
 #: wp-includes/blocks/columns/block.json
 msgctxt "block title"
 msgid "Columns"
-msgstr "列"
+msgstr "栏目"
 
 #: wp-includes/blocks/code/block.json
 msgctxt "block title"
@@ -2758,7 +2758,7 @@ msgstr "画廊"
 #: wp-includes/block-patterns.php:40
 msgctxt "Block pattern category"
 msgid "Columns"
-msgstr "列"
+msgstr "栏目"
 
 #: wp-includes/block-patterns.php:39
 msgctxt "Block pattern category"
@@ -4762,7 +4762,7 @@ msgstr "嵌入"
 #: wp-includes/blocks/columns/block.json
 msgctxt "block description"
 msgid "Add a block that displays content in multiple columns, then add whatever content blocks you’d like."
-msgstr "添加一个可显示多列内容的区块，然后添加任何您喜欢的内容区块。"
+msgstr "添加可显示多栏内容的区块，然后在其中添加任何您喜欢的内容。"
 
 #: wp-includes/blocks/freeform/block.json
 msgctxt "block title"
@@ -11897,7 +11897,7 @@ msgstr "单元格内边距"
 
 #: wp-includes/class-wp-editor.php:1339
 msgid "Column group"
-msgstr "列组"
+msgstr "栏目组合"
 
 #: wp-includes/class-wp-editor.php:1302
 msgid "Rows"
@@ -12650,7 +12650,7 @@ msgstr "自定义URL"
 #: wp-includes/js/dist/block-library.js:29192
 #: wp-admin/includes/class-wp-screen.php:1158
 msgid "Columns"
-msgstr "列"
+msgstr "栏目"
 
 #: wp-includes/media-template.php:706
 msgid "Alt Text"
@@ -15546,7 +15546,7 @@ msgstr "离开这个页面，您所做的更改将丢失。"
 
 #: wp-includes/class-wp-editor.php:1303
 msgid "Column"
-msgstr "列"
+msgstr "单衣栏目"
 
 #: wp-includes/class-wp-editor.php:1301
 msgid "Row"

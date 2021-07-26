@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-19 12:55:11+0000\n"
+"PO-Revision-Date: 2021-07-22 13:53:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -121,9 +121,9 @@ msgid "This theme requires WordPress 5.3 or newer. You are running version %s. P
 msgstr "此主题需要WordPress 5.3或更高版本。您正在运行版本%s。请升级。"
 
 #. translators: %: Page number.
-#: image.php:46 template-parts/content/content-single.php:30
-#: template-parts/content/content-page.php:36
 #: template-parts/content/content.php:36
+#: template-parts/content/content-page.php:36
+#: template-parts/content/content-single.php:30 image.php:46
 msgid "Page %"
 msgstr "第%页"
 
@@ -210,8 +210,8 @@ msgstr "《自画像》（作者：贝尔特·莫里索）"
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "《黄水仙》（作者：贝尔特·莫里索）"
 
-#: inc/starter-content.php:43 inc/block-patterns.php:72
-#: inc/block-patterns.php:107
+#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/starter-content.php:43
 msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
 msgstr "《蜀葵》（作者：贝尔特·莫里索）"
 
@@ -306,13 +306,13 @@ msgstr "贝尔特·莫里索在19世纪末所画的美丽花园"
 msgid "&#8220;The Garden at Bougival&#8221; by Berthe Morisot"
 msgstr "《布吉瓦花园》（作者：贝尔特·莫里索）"
 
-#: inc/starter-content.php:61 inc/block-patterns.php:72
-#: inc/block-patterns.php:107
+#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/starter-content.php:61
 msgid "&#8220;Young Woman in Mauve&#8221; by Berthe Morisot"
 msgstr "《身着淡紫色衣服的年轻女子》（作者：贝尔特·莫里索）"
 
-#: inc/starter-content.php:51 inc/block-patterns.php:72
-#: inc/block-patterns.php:107
+#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/starter-content.php:51
 msgid "&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot"
 msgstr "《在布洛涅河畔》（作者：贝尔特·莫里索）"
 
@@ -355,7 +355,7 @@ msgid "View all of %s's posts."
 msgstr "查看%s的所有文章。"
 
 #. translators: %s: Author name.
-#: inc/template-tags.php:49 template-parts/post/author-bio.php:19
+#: template-parts/post/author-bio.php:19 inc/template-tags.php:49
 msgid "By %s"
 msgstr "作者：%s"
 
@@ -422,8 +422,8 @@ msgid ", "
 msgstr "、"
 
 #. translators: %s: Name of current post. Only visible to screen readers.
-#: inc/template-tags.php:92 inc/template-tags.php:135 image.php:68 image.php:93
-#: template-parts/content/content-page.php:48
+#: template-parts/content/content-page.php:48 image.php:68 image.php:93
+#: inc/template-tags.php:92 inc/template-tags.php:135
 msgid "Edit %s"
 msgstr "编辑%s"
 
@@ -550,10 +550,10 @@ msgstr "原始尺寸"
 msgid "Published %s"
 msgstr "发布日期：%s"
 
-#: comments.php:62 inc/template-tags.php:228 image.php:43
-#: template-parts/content/content-single.php:27
-#: template-parts/content/content-page.php:33
 #: template-parts/content/content.php:33
+#: template-parts/content/content-page.php:33
+#: template-parts/content/content-single.php:27 comments.php:62 image.php:43
+#: inc/template-tags.php:228
 msgid "Page"
 msgstr " "
 
@@ -565,8 +565,8 @@ msgstr "关闭"
 msgid "Menu"
 msgstr "菜单"
 
-#: inc/starter-content.php:154 functions.php:76
-#: template-parts/header/site-nav.php:13
+#: template-parts/header/site-nav.php:13 functions.php:76
+#: inc/starter-content.php:154
 msgid "Primary menu"
 msgstr "主菜单"
 
@@ -646,7 +646,7 @@ msgstr "绿色"
 msgid "Gray"
 msgstr "灰色"
 
-#: inc/block-styles.php:107 functions.php:223
+#: functions.php:223 inc/block-styles.php:107
 msgid "Dark gray"
 msgstr "深灰"
 
@@ -687,7 +687,7 @@ msgstr "超小"
 msgid "Proudly powered by %s."
 msgstr "自豪地采用%s。"
 
-#: footer.php:24 inc/starter-content.php:165 functions.php:77
+#: functions.php:77 inc/starter-content.php:165 footer.php:24
 msgid "Secondary menu"
 msgstr "次要菜单"
 
@@ -715,7 +715,7 @@ msgstr "显示站点标题和副标题"
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "看起来在这个位置找不到任何东西。您可以尝试搜索？"
 
-#: 404.php:16 template-parts/content/content-none.php:30
+#: template-parts/content/content-none.php:30 404.php:16
 msgid "Nothing here"
 msgstr "什么都没有"
 
