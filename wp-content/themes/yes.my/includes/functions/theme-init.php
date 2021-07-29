@@ -23,4 +23,12 @@
     // }
 
     // add_action( 'wp_enqueue_scripts', 'yes_enqueue_scripts' );
+
+    add_action('wp_print_scripts', function () {
+        global $post;
+        if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') ) {
+            wp_dequeue_script( 'google-recaptcha' );
+            wp_dequeue_script( 'wpcf7-recaptcha' );
+        }
+    });
 ?>
