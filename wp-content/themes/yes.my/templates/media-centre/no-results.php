@@ -20,8 +20,8 @@
     <div class="col-12 col-lg-6 <?=$theme_class?>" category="<?=$post_category?>" year="<?=$post_year?>">
         <div class="inner" <?php if ($theme_class != 'none') : ?>style="background-image: url('<?php echo ($theme_bg_image) ? $theme_bg_image['url'] : ''; ?>');"<?php endif; ?> category="Kuala Lumpur" year="2020">
             <p><?=$post_date?>, <?=$post_category?></p><br>
-            <p class="shoutout-note"><? the_title(); ?></p><br>
-            <a class="<?= ($theme_class && $theme_class != 'none') ? $theme_class : 'accent'; ?>" href="<? the_permalink(); ?>"><u><b>Read more</b></u></a>
+            <p class="shoutout-note"><?php the_title(); ?></p><br>
+            <a class="<?= ($theme_class && $theme_class != 'none') ? $theme_class : 'accent'; ?>" href="<?php the_permalink(); ?>"><u><b>Read more</b></u></a>
         </div>
     </div>
     <?php 
