@@ -26,7 +26,7 @@
 
     add_action('wp_print_scripts', function () {
         global $post;
-        if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') ) {
+        if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') && ('openings' != get_post_type()) ) {
             wp_dequeue_script( 'google-recaptcha' );
             wp_dequeue_script( 'wpcf7-recaptcha' );
         }
