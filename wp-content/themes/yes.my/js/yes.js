@@ -6,7 +6,7 @@
     Description     : Inline JavaScripts & Extended scripts
 */
 
-
+var $ = jQuery.noConflict();
 /* From Main Site */
 $(document).ready(function() {
     var $body = $("body");
