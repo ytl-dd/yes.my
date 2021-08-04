@@ -1,2 +1,2 @@
 === WPML Translation Management ===
-Stable tag: 2.10.6
+Stable tag: 2.10.7

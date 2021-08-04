@@ -199,7 +199,6 @@
                                             <use xlink:href="#ia-search"></use>
                                         </svg>
                                     </a>
-                                    <span class="seperator hidemobile"></span>
                                     <span class="dropmenu hidemobile">
                                         <a role="button" tabindex="0" data-original-title="" title="">
                                             <svg class="ia ia-contact">

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitae978ca6248827129b0bbd0dc73ad82b
+class ComposerStaticInit072276c8f14ddb8cb5c8e7262bb6185e
 {
     public static $files = array (
         'b45b351e6b6f7487d819961fef2fda77' => __DIR__ . '/..' . '/jakeasmith/http_build_url/src/http_build_url.php',
@@ -29,6 +29,7 @@ class ComposerStaticInitae978ca6248827129b0bbd0dc73ad82b
         'TranslationProxy_Service' => __DIR__ . '/../..' . '/inc/translation-proxy/translationproxy-service.class.php',
         'TranslationProxy_Translator' => __DIR__ . '/../..' . '/inc/translation-proxy/translationproxy-translator.class.php',
         'WPMLTranslationProxyApiException' => __DIR__ . '/../..' . '/classes/translation-proxy/api/class-wpml-translation-proxy-api-exception.php',
+        'WPML\\ATE\\Proxies\\Widget' => __DIR__ . '/../..' . '/classes/ATE/proxies/Widget.php',
         'WPML\\TM\\ATE\\ClonedSites\\ApiCommunication' => __DIR__ . '/../..' . '/classes/ATE/API/ClonedSites/ApiCommunication.php',
         'WPML\\TM\\ATE\\ClonedSites\\FingerprintGenerator' => __DIR__ . '/../..' . '/classes/ATE/API/ClonedSites/FingerprintGenerator.php',
         'WPML\\TM\\ATE\\ClonedSites\\Lock' => __DIR__ . '/../..' . '/classes/ATE/API/ClonedSites/Lock.php',
@@ -39,6 +40,7 @@ class ComposerStaticInitae978ca6248827129b0bbd0dc73ad82b
         'WPML\\TM\\ATE\\Download\\Process' => __DIR__ . '/../..' . '/classes/ATE/Download/Process.php',
         'WPML\\TM\\ATE\\Download\\Queue' => __DIR__ . '/../..' . '/classes/ATE/Download/Queue.php',
         'WPML\\TM\\ATE\\Download\\Result' => __DIR__ . '/../..' . '/classes/ATE/Download/Result.php',
+        'WPML\\TM\\ATE\\Factories\\Proxy' => __DIR__ . '/../..' . '/classes/API/REST/class-wpml-ate-proxy-factory.php',
         'WPML\\TM\\ATE\\Hooks\\ReturnedJobActions' => __DIR__ . '/../..' . '/classes/ATE/Hooks/ReturnedJobActions.php',
         'WPML\\TM\\ATE\\Hooks\\ReturnedJobActionsFactory' => __DIR__ . '/../..' . '/classes/ATE/Hooks/ReturnedJobActionsFactory.php',
         'WPML\\TM\\ATE\\JobRecord' => __DIR__ . '/../..' . '/classes/ATE/JobRecord.php',
@@ -49,6 +51,7 @@ class ComposerStaticInitae978ca6248827129b0bbd0dc73ad82b
         'WPML\\TM\\ATE\\Log\\Storage' => __DIR__ . '/../..' . '/classes/ATE/Log/Storage.php',
         'WPML\\TM\\ATE\\Log\\View' => __DIR__ . '/../..' . '/classes/ATE/Log/View.php',
         'WPML\\TM\\ATE\\Log\\ViewFactory' => __DIR__ . '/../..' . '/classes/ATE/Log/ViewFactory.php',
+        'WPML\\TM\\ATE\\Proxy' => __DIR__ . '/../..' . '/classes/API/REST/class-wpml-ate-proxy.php',
         'WPML\\TM\\ATE\\REST\\Download' => __DIR__ . '/../..' . '/classes/ATE/REST/Download.php',
         'WPML\\TM\\ATE\\REST\\Sync' => __DIR__ . '/../..' . '/classes/ATE/REST/Sync.php',
         'WPML\\TM\\ATE\\ReturnedJobsQueue' => __DIR__ . '/../..' . '/classes/ATE/ReturnedJobsQueue.php',
@@ -114,6 +117,7 @@ class ComposerStaticInitae978ca6248827129b0bbd0dc73ad82b
         'WPML\\TM\\TranslationProxy\\Services\\Storage' => __DIR__ . '/../..' . '/classes/translation-proxy/services/Storage.php',
         'WPML\\TM\\Troubleshooting\\ResetPreferredTranslationService' => __DIR__ . '/../..' . '/classes/troubleshooting/ResetPreferredTranslationService.php',
         'WPML\\TM\\Troubleshooting\\SynchronizeSourceIdOfATEJobs\\TriggerSynchronization' => __DIR__ . '/../..' . '/classes/troubleshooting/SynchronizeSourceIdOfATEJobs/TriggerSynchronization.php',
+        'WPML\\TM\\Upgrade\\Commands\\ATEProxyUpdateRewriteRules' => __DIR__ . '/../..' . '/classes/upgrade/commands/ATEProxyUpdateRewriteRules.php',
         'WPML\\TM\\Upgrade\\Commands\\CreateAteDownloadQueueTable' => __DIR__ . '/../..' . '/classes/upgrade/commands/CreateAteDownloadQueueTable.php',
         'WPML\\TM\\Upgrade\\Commands\\MigrateAteRepository' => __DIR__ . '/../..' . '/classes/upgrade/commands/MigrateAteRepository.php',
         'WPML\\TM\\Upgrade\\Commands\\RefreshTranslationServices' => __DIR__ . '/../..' . '/classes/upgrade/commands/RefreshTranslationServices.php',
@@ -644,7 +648,7 @@ class ComposerStaticInitae978ca6248827129b0bbd0dc73ad82b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInitae978ca6248827129b0bbd0dc73ad82b::$classMap;
+            $loader->classMap = ComposerStaticInit072276c8f14ddb8cb5c8e7262bb6185e::$classMap;
 
         }, null, ClassLoader::class);
     }
