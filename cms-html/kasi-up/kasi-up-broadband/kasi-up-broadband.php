@@ -756,7 +756,7 @@ nav.nav-mobile {
                     src="/wp-content/themes/yes.my/images/broadband-images/broadband_bm_icons_03.jpg" />
                 On-The-Go Broadband </a> <a
                 class="py-2 text-white align-items-center text-decoration-0 d-lg-flex d-none col-12 col-md-6 col-sm-8 col-lg-4 sec2-btns btn-r btn-b-w mx-3 my-3 my-md-0"
-                href="https://www.yes.my/4g-broadband/home/"
+                href="/4g-home-broadband"
                 style="font-family: 'VAG Rounded'; font-weight: 900; font-size:20px;"> <img alt="home Broadband"
                     data-entity-type="" data-entity-uuid=""
                     src="/wp-content/themes/yes.my/images/broadband-images/broadband_bm_icons_05.jpg" /> Home
@@ -770,7 +770,7 @@ nav.nav-mobile {
                                 src="https://i.ibb.co/tQcDxdd/newicon.jpg" width="50" />On-The-Go Broadband</button>
                         <div aria-labelledby="dropdownMenuButton" class="dropdownMenuButton"
                             style="height: 80px; border-radius: 10px; background-color: #fff; padding:5px 15px; width: 100%;">
-                            <a href="https://www.yes.my/4g-broadband/home/"
+                            <a href="/4g-home-broadband"
                                 style="font-family: 'VAG Rounded'; height:40px; font-weight: 900; font-size:22px;  color:#003ab0;">Home
                                 Broadband</a><br />
                             <a

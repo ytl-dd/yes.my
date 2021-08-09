@@ -141,7 +141,7 @@
                                         );
                                     endif; 
                                 ?>
-                                <?php echo yesmy_language_switcher(); ?>
+                                <?php if (function_exists('yesmy_language_switcher')) echo yesmy_language_switcher(); ?>
                                 <span class="menus menu-shop">
                                     <a href="<?= $sl_permalink ?>" class="i-locator">
                                         <svg class="ia ia-pin">
@@ -218,7 +218,7 @@
                                             endif; 
                                         ?>
                                     </span>
-                                    <?php echo yesmy_language_switcher(['d-lg-none']); ?>
+                                    <?php if (function_exists('yesmy_language_switcher')) echo yesmy_language_switcher(['d-lg-none']); ?>
                                     <span class="dropmenu btn-sidemenu" aria-label="Menu" data-original-title="" title="">
                                         <a role="button" tabindex="0" aria-label="Menu" data-original-title="" title="">
                                             <svg class="ia ia-burger">

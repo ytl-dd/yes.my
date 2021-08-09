@@ -28,6 +28,7 @@
         wp_enqueue_style('libbundle', get_template_directory_uri().'/css/lib.bundle.css');
         wp_enqueue_style('remote', get_template_directory_uri().'/css/remote.css');
         wp_enqueue_style('std', get_template_directory_uri().'/css/std.css');
+        wp_enqueue_style('slick', get_template_directory_uri().'/css/slick.css');
         // wp_enqueue_style('ckeditor', get_template_directory_uri().'/css/ckeditor.css');
         wp_enqueue_style('yescss', get_template_directory_uri().'/css/yes.css');
 
@@ -39,19 +40,42 @@
     add_action('wp_enqueue_scripts', 'yes_enqueue_scripts');
 
 
-    // add_action('wp_print_scripts', function () {
-    //     global $post;
-    //     if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') && ('openings' != get_post_type()) ) {
-    //         wp_dequeue_script( 'google-recaptcha' );
-    //         wp_dequeue_script( 'wpcf7-recaptcha' );
-    //     }
-    // });
+    add_action('wp_print_scripts', function () {
+        global $post;
+        if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') && ('openings' != get_post_type()) ) {
+            wp_dequeue_script( 'google-recaptcha' );
+            wp_dequeue_script( 'wpcf7-recaptcha' );
+        }
+    });
 
     // add_filter( 'wpcf7_recaptcha_threshold',
     //     function( $threshold ) {
-    //         $threshold = 0.0; // decrease threshold to 0.3
+    //         $threshold = 0.3;
     //         return $threshold;
     //     },
     //     10, 1
     // );
+    
+    
+    /**
+     * Function to initiate CORS for APIs
+     */
+    function initCORS($value) {
+        $origin_url = '*';
+
+        if (true === IS_PROD_ENV) {
+            $origin_url = esc_url_raw(site_url());
+        }
+
+        header( 'Access-Control-Allow-Headers: Authorization, X-WP-Nonce,Content-Type, X-Requested-With' );
+        header( 'Access-Control-Allow-Origin: '.$origin_url );
+        header( 'Access-Control-Allow-Methods: GET' );
+        header( 'Access-Control-Allow-Credentials: true' );
+        header( 'Access-Control-Expose-Headers: Link', false );
+        return $value;
+    }
+    add_action( 'rest_api_init', function () {
+        remove_filter('rest_pre_serve_request', 'rest_send_cors_headers' );
+        add_filter( 'rest_pre_server_request', 'initCORS' );
+    }, 15 );
 ?>

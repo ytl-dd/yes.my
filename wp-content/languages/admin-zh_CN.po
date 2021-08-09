@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-30 15:25:59+0000\n"
+"PO-Revision-Date: 2021-08-04 10:12:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1621,7 +1621,7 @@ msgstr "自动更新将于%s后执行。"
 #. translators: %s: Duration that WP-Cron has been overdue.
 #: wp-admin/includes/update.php:1105
 msgid "Automatic update overdue by %s. There may be a problem with WP-Cron."
-msgstr "自动更新延期至%s。WP-Cron可能发生问题。"
+msgstr "自动更新已延期 %s。WP-Cron 可能出现了问题。"
 
 #: wp-admin/includes/update.php:1095
 msgid "Automatic update not scheduled. There may be a problem with WP-Cron."

@@ -77,7 +77,7 @@
      * Function yesmy_language_switcher()
      * Function to get the languages from WPML and return the custom switcher
      */
-    if (!function_exists('yesmy_language_switcher')) {
+    if (!function_exists('yesmy_language_switcher') && function_exists('icl_get_languages')) {
         function yesmy_language_switcher ($classes = []) {
             $languages  = icl_get_languages('skip_missing=0&orderby=custom&order=asc');
             $langs      = '';
