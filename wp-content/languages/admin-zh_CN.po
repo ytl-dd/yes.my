@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-04 10:12:22+0000\n"
+"PO-Revision-Date: 2021-08-12 21:51:25+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -231,15 +231,15 @@ msgstr "在保存更改之前，您需要使文件 %1$s 可写。请参阅<a hre
 msgid "Rewrite rules:"
 msgstr "重写规则："
 
-#: wp-admin/nav-menus.php:1022
+#: wp-admin/nav-menus.php:1028
 msgid "List of menu items selected for deletion:"
 msgstr "选择要删除的菜单项列表："
 
-#: wp-admin/nav-menus.php:1020
+#: wp-admin/nav-menus.php:1026
 msgid "Remove Selected Items"
 msgstr "移除所选项目"
 
-#: wp-admin/nav-menus.php:987 wp-admin/nav-menus.php:1018
+#: wp-admin/nav-menus.php:989 wp-admin/nav-menus.php:1024
 msgid "Bulk Select"
 msgstr "批量选择"
 
@@ -2864,7 +2864,7 @@ msgstr[0] "您的站点有%d个未启用的主题。"
 
 #: wp-admin/includes/class-wp-site-health.php:470
 msgid "Inactive plugins are tempting targets for attackers. If you&#8217;re not going to use a plugin, we recommend you remove it."
-msgstr "未启用的插件是令攻击者垂涎的目标。如果您不再使用一个插件，我们推荐您移除它。"
+msgstr "未启用的插件是令攻击者垂涎的目标。如果您的站点有不再使用的插件，我们推荐您移除它。"
 
 #. translators: %d: The number of inactive plugins.
 #: wp-admin/includes/class-wp-site-health.php:463
@@ -5592,7 +5592,7 @@ msgstr "隐藏控制区"
 msgid "Expand Sidebar"
 msgstr "展开侧栏"
 
-#: wp-admin/nav-menus.php:1052
+#: wp-admin/nav-menus.php:1060
 msgid "Display location"
 msgstr "显示位置"
 
@@ -6301,7 +6301,7 @@ msgstr "评价"
 #. translators: %s: URL to "Features as Plugins" page.
 #: wp-admin/includes/plugin-install.php:407
 msgid "You are using a development version of WordPress. These feature plugins are also under development. <a href=\"%s\">Learn more</a>."
-msgstr "您正在使用开发版本的WordPress。这些功能插件同样正被开发。<a href=\"%s\">了解更多</a>."
+msgstr "您正在使用开发版本的WordPress。这些功能插件同样正被开发。<a href=\"%s\">了解更多</a>。"
 
 #: wp-admin/includes/image-edit.php:213
 msgid "Thumbnail Settings Help"
@@ -6523,7 +6523,7 @@ msgid "Send User Notification"
 msgstr "发送用户通知"
 
 #. translators: %s: Menu name.
-#: wp-admin/nav-menus.php:1072
+#: wp-admin/nav-menus.php:1080
 msgctxt "menu location"
 msgid "(Currently set to: %s)"
 msgstr "（当前设置为：%s）"
@@ -8955,7 +8955,7 @@ msgstr "拒绝：%s"
 msgid "Capabilities"
 msgstr "机能"
 
-#: wp-admin/nav-menus.php:1027 wp-admin/network/settings.php:490
+#: wp-admin/nav-menus.php:1035 wp-admin/network/settings.php:490
 msgid "Menu Settings"
 msgstr "菜单设置"
 
@@ -9011,11 +9011,11 @@ msgstr "不错。您完成了安装过程中重要的一步，WordPress现在已
 msgid "Client version"
 msgstr "客户端版本"
 
-#: wp-admin/nav-menus.php:1043
+#: wp-admin/nav-menus.php:1051
 msgid "Auto add pages"
 msgstr "自动添加页面"
 
-#: wp-admin/nav-menus.php:1001
+#: wp-admin/nav-menus.php:1005
 msgid "Give your menu a name, then click Create Menu."
 msgstr "给菜单命名，然后点击“创建菜单”。"
 
@@ -12019,7 +12019,7 @@ msgstr "CSS类（可选）"
 msgid "Link Target"
 msgstr "链接目标"
 
-#: wp-admin/nav-menus.php:961 wp-admin/nav-menus.php:1118
+#: wp-admin/nav-menus.php:961 wp-admin/nav-menus.php:1126
 msgid "Save Menu"
 msgstr "保存菜单"
 
