@@ -1,0 +1,130 @@
+<div class="form-std pt-5" id="merdekaForm">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="input-name">名字</label>
+                [text* firstname id:input-name class:form-control]
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="input-lastname">姓氏</label>
+                [text* lastname id:input-lastname class:form-control]
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="input-email">电邮</label>
+                [email* merdekaEmail id:input-email class:form-control]
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="input-emailConfirm">电邮确认</label>
+                [email* merdekaEmailConfirm id:input-emailConfirm class:form-control]
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="input-mobileNo">手机号码</label>
+                [text* mobileNo id:input-mobileNo class:form-control]
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>1. 您对电讯服务有何需求？（请选2项）</h4>
+            <div class="form-group">
+                [checkbox* telcoPreference id:input-telcoPreference use_label_element "经济实惠的数据配套" "高网速和覆盖范围" "后付配套 + 设备套组" "预付配套 + 设备套组"]
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>2. 您更希望电讯公司能提供什么？ （请选 2项）</h4>
+            <div class="form-group">
+                [checkbox* telcoMore id:input-telcoMore use_label_element "免费通话" "免费数据" "奖励与优惠" "折扣"]
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>3. 你最常使用数据做些什么？（请排名1至4）</h4>
+            <div class="form-group">
+                [checkbox* dataFor id:input-dataFor use_label_element "社交媒体（面子书、Instagram、抖音）" "工作 （电邮）" "通讯 （WhatsApp，Telegram）" "视讯" "打游戏" "网购" "娱乐（Netflix）" "YouTube" "热点连接（Hotspot）"]
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                [checkbox agree id:input-agree use_label_element "我同意接收未来从 YES 提供的营销信息。"]<span class="form-customCheck">[checkbox* accept id:input-accept use_label_element "Accept"]<label class="form-check-label input-accept" for="agreePrivacys">我接受 YES的隐私政策。 <a class="brand" href="http://www.ytl.com/privacypolicy.asp" target="blank">（链接）</a></label></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            [submit class:btn class:btn-primary "即刻登记"]
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Email Copy START -->
+<p>Dear customer,<br/><br/> Thank you for sending us your enquiries.<br/> We'll do our best to get back to you as quickly as possible.<br/><br/> Please find a copy of your enquires as per attached below.</p>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>First Name: </td>
+        <td>[firstname]</td>
+    </tr>
+    <tr>
+        <td>Last Name: </td>
+        <td>[lastname]</td>
+    </tr>
+    <tr>
+        <td>Email: </td>
+        <td>[merdekaEmail]</td>
+    </tr>
+    <tr>
+        <td>Mobile Number: </td>
+        <td>[mobileNo]</td>
+    </tr>
+    <tr>
+        <td>Telco Preference: </td>
+        <td>[telcoPreference]</td>
+    </tr>
+    <tr>
+        <td>Telco More: </td>
+        <td>[telcoMore]</td>
+    </tr>
+    <tr>
+        <td>Data For: </td>
+        <td>[dataFor]</td>
+    </tr>
+    <tr>
+        <td>Agree to receive future marketing communication from YES: </td>
+        <td>[agree]</td>
+    </tr>
+    <tr>
+        <td>Privacy policy accepted by user.</td>
+    </tr>
+</table>
+<br/>
+<p>Sincerely,<br/> Yes
+    <br/><br/> You can send us an e-mail at yescare@yes.my or call us at 018 333 0000.<br/><br/> YesCare operating hours:
+    <ul style="padding-top:0px;">
+        <li>Mondays to Fridays: 8am-10pm</li>
+        <li>Sundays & Public holidays: 9am-5pm</li>
+    </ul>
+</p>
+<!-- Email Copy END -->

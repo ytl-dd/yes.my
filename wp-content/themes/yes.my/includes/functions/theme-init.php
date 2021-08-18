@@ -78,4 +78,17 @@
         remove_filter('rest_pre_serve_request', 'rest_send_cors_headers' );
         add_filter( 'rest_pre_server_request', 'initCORS' );
     }, 15 );
+
+
+    add_filter( 'wpcf7_validate_email*', 'custom_email_confirmation_validation_filter', 20, 2 );
+    function custom_email_confirmation_validation_filter( $result, $tag ) {
+        if ( 'merdekaEmail' == $tag->name ) {
+            $your_email = isset( $_POST['merdekaEmail'] ) ? trim( $_POST['merdekaEmail'] ) : '';
+            $your_email_confirm = isset( $_POST['merdekaEmailConfirm'] ) ? trim( $_POST['merdekaEmailConfirm'] ) : '';
+            if ( $your_email != $your_email_confirm ) {
+                $result->invalidate( $tag, "Please make sure your email is the same" );
+            }
+        }
+        return $result;
+    }
 ?>

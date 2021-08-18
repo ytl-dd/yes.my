@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-02 04:39:29+0000\n"
+"PO-Revision-Date: 2021-08-16 10:29:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10596,7 +10596,7 @@ msgstr "更改"
 #: wp-includes/theme-compat/comments.php:44
 msgid "%1$s response to %2$s"
 msgid_plural "%1$s responses to %2$s"
-msgstr[0] "%1$s条回应：%2$s"
+msgstr[0] "《%2$s》 有 %1$s 条评论"
 
 #: wp-includes/theme.php:3524
 msgid "Customizer"
@@ -14437,12 +14437,12 @@ msgstr "在《%s》中有一则新trackback等待您的审核"
 #. translators: %s: Post title.
 #: wp-includes/pluggable.php:1650
 msgid "New pingback on your post \"%s\""
-msgstr "您的文章《%s》有新pingback回应"
+msgstr "您的文章《%s》有新 pingback"
 
 #. translators: %s: Post title.
 #: wp-includes/pluggable.php:1636
 msgid "New trackback on your post \"%s\""
-msgstr "您的文章《%s》有新trackback回应"
+msgstr "您的文章 《%s》 有新 trackback"
 
 #. translators: %s: Post title.
 #: wp-includes/pluggable.php:1664
@@ -14473,7 +14473,7 @@ msgstr "分类法："
 #. translators: %s: Post title.
 #: wp-includes/theme-compat/comments.php:38
 msgid "One response to %s"
-msgstr "一条回应：%s"
+msgstr "《%s》 有 1 条评论"
 
 #: wp-includes/admin-bar.php:993
 #: wp-includes/class-wp-customize-nav-menus.php:672

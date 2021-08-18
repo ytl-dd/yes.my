@@ -326,8 +326,8 @@ margin-left: 8px;
   ?>
   </select>
   <span style="<?php if(vxcf_form::post('time') != "custom"){echo "display:none";} ?>" class="crm_custom_range"> 
-  <input type="text" name="start_date" placeholder="<?php _e('From Date','contact-form-entries') ?>" value="<?php if(isset($_REQUEST['start_date'])){echo $_REQUEST['start_date'];}?>" class="vxc_date crm_input_inline" style="width: 100px">
-  <input type="text" class="vxc_date crm_input_inline" value="<?php if(isset($_REQUEST['end_date'])){echo $_REQUEST['end_date'];}?>" placeholder="<?php _e('To Date','contact-form-entries') ?>" name="end_date"  style="width: 100px">
+  <input type="text" name="start_date" placeholder="<?php _e('From Date','contact-form-entries') ?>" value="<?php if(isset($_REQUEST['start_date'])){echo $this->post('start_date');}?>" class="vxc_date crm_input_inline" style="width: 100px">
+  <input type="text" class="vxc_date crm_input_inline" value="<?php if(isset($_REQUEST['end_date'])){echo $this->post('end_date');}?>" placeholder="<?php _e('To Date','contact-form-entries') ?>" name="end_date"  style="width: 100px">
   </span>
  
   <button type="submit" title="<?php _e('Search','contact-form-entries') ?>" class="button-secondary button crm_input_inline"><i class="fa fa-search"></i> <?php _e('Search','contact-form-entries') ?></button> 
