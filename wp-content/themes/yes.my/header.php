@@ -33,12 +33,26 @@
         
         <?php wp_head(); ?>
 
-        <?php require_once('includes/svg-definitions.php'); ?>
-
         <?php $yesmy_opt = $GLOBALS['yesmy_opt']; ?>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T8K5HSR');</script>
+        <!-- End Google Tag Manager -->
+
     </head>
 
     <body <?php body_class(); ?> id="main-body">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8K5HSR"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <?php require_once('includes/svg-definitions.php'); ?>
+
         <?php wp_body_open(); ?>
 
         <?php get_template_part('templates/header/site-navigation'); ?>
