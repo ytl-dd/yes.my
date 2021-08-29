@@ -1,3 +1,6 @@
+<?php include '../header.php' ?>
+
+
 <style type="text/css">
     #m-language .modal-content {
         border: 3px solid #F00086;
@@ -908,3 +911,6 @@
         return false;
     }
 </script>
+
+
+<?php include '../footer.php' ?>

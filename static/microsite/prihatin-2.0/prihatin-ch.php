@@ -1,3 +1,6 @@
+<?php include '../header.php' ?>
+
+
 <style type="text/css">
     #m-language .modal-content {
         border: 3px solid #F00086;
@@ -530,34 +533,35 @@
                     <div class="img-01 mx-auto mb-5"><img alt="" src="/wp-content/themes/yes.my/images/prihatin/comunity.png" width="100%" /></div>
                 </div>
                 <div class="row align-items-center text-left">
-                    <div class="col-lg-6 col-12 mb-3"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/banner.png" width="100%" /></div>
+                    <div class="col-lg-6 col-12 mb-3"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/banner-ch.png" width="100%" /></div>
                     <div class="col-1 d-lg-none">&nbsp;</div>
                     <div class="col-lg-6 col-10 mb-3">
-                        <span class="bg-pink">NEW</span>
+                        <span class="bg-pink">全新</span>
                         <div class="cp-01 text-white text-left">
-                            Get more with <span class="yes-font">yes</span> : <br />
-                            <span class="span-free"><b>FREE <br />Samsung Galaxy A02 </b></span> <br />
+                            通过<span class="yes-font">yes</span>获享更多  :
+                            <span class="span-free"><b>免费 <br />Samsung Galaxy A02 </b></span> <br />
                             <span class="span-perMonth">
                                 <span class="bg-white rounded">75GB</span>
-                                Only <br />RM15/month
-                                <span class="clear">No deposit</span>
+                                每月只需 <br />
+                                RM15
+                                <span class="clear">无需预付金</span>
                             </span>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <div class="cp-01 text-white mb-5"><span class="yes-font">yes</span> prihatin | learn from home</div>
+                        <div class="cp-01 text-white mb-5"><span class="yes-font">yes</span> prihatin | 居家学习</div>
                     </div>
                 </div>
                 <div class="btn-ar mx-auto">
                     <div class="row">
                         <div class="col-lg-2"></div>
                         <div class="col-lg-4">
-                            <a href="#prepaid" class="btn-01 pink"><b>PREPAID</b></a>
+                            <a href="#prepaid" class="btn-01 pink"><b>预付配套</b></a>
                         </div>
                         <div class="col-lg-4 mt-lg-0 mt-3">
-                            <a href="#postpaid" class="btn-01"><b>POSTPAID</b></a>
+                            <a href="#postpaid" class="btn-01"><b>后付配套</b></a>
                         </div>
                         <div class="col-lg-2"></div>
                     </div>
@@ -576,47 +580,47 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4">
-                        <p class="panel-headingImg d-lg-none mb-3"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid.png" /></p>
-                        <div class="phone"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/Prepaid-Phone.png" width="100%" /></div>
+                        <p class="panel-headingImg d-lg-none mb-3"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid-ch.png" /></p>
+                        <div class="phone"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/Prepaid-Phone-ch.png" width="100%" /></div>
                     </div>
                     <div class="col-lg-8 col-pull-prepaid">
-                        <p class="panel-headingImg d-none d-lg-block"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid.png" /></p>
-                        <div class="cp-01 mb-2 mt-4 text-left-mobile">No deposit. No contract. No payment</div>
-                        <div class="cp-02 text-left-mobile"><span class="yes-font">yes</span> is providing:</div>
+                        <p class="panel-headingImg d-none d-lg-block"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid-ch.png" /></p>
+                        <div class="cp-01 mb-2 mt-4 text-left-mobile">无需预付金。 无合约。 无付款。</div>
+                        <div class="cp-02 text-left-mobile"><span class="yes-font">yes</span> 提供:</div>
                         <div class="ico-ar mb-4">
                             <div class="row justify-content-center">
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-Telefon-Pintar.png" width="100%" />
-                                    <div class="tag xs mt-2">Free <br />YES TCL L7</div>
+                                    <div class="tag xs mt-2">免费<br />YES TCL L7</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-Data-Percuma.png" width="100%" />
-                                    <div class="tag xs mt-2">Free <br />Data</div>
+                                    <div class="tag xs mt-2">免费 <br />数据</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-bauchar.png" width="100%" />
-                                    <div class="tag xs mt-2">RM50 Shopee Vouchers</div>
+                                    <div class="tag xs mt-2">RM50 Shopee <br />礼券</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-apps.png" width="100%" />
-                                    <div class="tag xs mt-2">Education <br />Application</div>
+                                    <div class="tag xs mt-2">教育 <br />应用程序</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-iqiyi-v2.png" width="100%" />
-                                    <div class="tag xs mt-2">Entertainment <br /> Application</div>
+                                    <div class="tag xs mt-2">娱乐<br />应用程序</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
-                                    <img alt="" src="/wp-content/themes/yes.my/images/prihatin/phase-2/icon-Free-Delivery.png" width="100%" />
-                                    <div class="tag xs mt-2">Free <br />Delivery</div>
+                                    <img alt="" src="/wp-content/themes/yes.my/images/prihatin/phase-2/icon-Free-Delivery-ch.png" width="100%" />
+                                    <div class="tag xs mt-2">免费<br />运送</div>
                                 </div>
                             </div>
                         </div>
                         <div class="cp-03 mb-4 pt-3 text-left-mobile">
-                            Enjoy a smartphone and <b>30 GB</b> of data for free! That's not all, you also get RM50 Shopee Cashback, access to the education app, FrogAsia and entertainment app, iQiyi. <br /><br />
-                            This is undeniably yours! <br />
-                            Browse now and register to pick your <span class="yes-font">yes</span> prihatin today!
+                            免费享有智能手机和 <b>30 GB</b> 数据! 另外，您还可获得RM 50 Shopee 现金回扣、FrogAsia 教育应用程序以及爱奇艺娱乐应用程序的使用权限。<br /><br />
+                            无需怀疑，绝对是您的! <br />
+                            立即浏览并登记选择您的 <span class="yes-font">yes</span> prihatin!
                         </div>
-                        <a class="btn-01 tuntut" href="https://prihatin.yes.my/" target="_blank" rel="noopener"><b>CLAIM NOW</b></a>
+                        <a class="btn-01 tuntut" href="https://prihatin.yes.my/" target="_blank" rel="noopener"><b>即刻索取</b></a>
                     </div>
                 </div>
             </div>
@@ -630,38 +634,38 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5">
-                        <p class="panel-headingImg d-lg-none mb-3"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid-new.png" /></p>
-                        <div class="phone"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/prepaid-dongle.png" width="100%" /></div>
+                        <p class="panel-headingImg d-lg-none mb-3"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid-new-ch.png" /></p>
+                        <div class="phone"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/prepaid-dongle-ch.png" width="100%" /></div>
                     </div>
                     <div class="col-lg-7">
-                        <p class="panel-headingImg d-none d-lg-block"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid-new.png" /></p>
-                        <div class="cp-01 mb-2 mt-4 text-left-mobile">No deposit. No contract. No payment.</div>
-                        <div class="cp-02 text-left-mobile"><span class="yes-font">yes</span> is providing:</div>
+                        <p class="panel-headingImg d-none d-lg-block"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid-new-ch.png" /></p>
+                        <div class="cp-01 mb-2 mt-4 text-left-mobile">无需预付金。 无合约。 无付款。</div>
+                        <div class="cp-02 text-left-mobile"><span class="yes-font">yes</span> 提供:</div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="ico-ar mb-4">
                                     <div class="row justify-content-center">
                                         <div class="col-lg col-6 mt-3">
                                             <img alt="" src="/wp-content/themes/yes.my/images/prihatin/phase-2/icon-free-dongle.png" width="100%" />
-                                            <div class="tag xs mt-2">Free <br />Huddle XS</div>
+                                            <div class="tag xs mt-2">免费 <br />Huddle XS</div>
                                         </div>
                                         <div class="col-lg col-6 mt-3">
                                             <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-Data-Percuma.png" width="100%" />
-                                            <div class="tag xs mt-2">Free <br />Data</div>
+                                            <div class="tag xs mt-2">免费 <br />数据</div>
                                         </div>
                                         <div class="col-lg col-6 mt-3">
                                             <img alt="" src="/wp-content/themes/yes.my/images/prihatin/phase-2/icon-Free-Delivery.png" width="100%" />
-                                            <div class="tag xs mt-2">Free <br />Delivery</div>
+                                            <div class="tag xs mt-2">免费 <br />运送</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="cp-03 mb-4 pt-3 text-left-mobile">
-                            Enjoy a <b>new dongle</b> and <b>30GB data</b> monthly, <b>FREE</b> of charge for <b>12 months</b> from the date of SIM activation. <br /><br />
-                            Pick <b>yes</b> prihatin, register today!
+                            享有全新的接收器（Dongle）与每月 <b>30GB</b> 数据，并且从 SIM 卡激活之日起的 12 个月内可免费使用。 <br /><br />
+                            选择 <b>YES</b> prihatin，立即登记！
                         </div>
-                        <a class="btn-01 tuntut" href="https://prihatin.yes.my/" target="_blank" rel="noopener"><b>CLAIM NOW</b></a>
+                        <a class="btn-01 tuntut" href="https://prihatin.yes.my/" target="_blank" rel="noopener"><b>即刻索取</b></a>
                     </div>
                 </div>
             </div>
@@ -675,46 +679,46 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 order-lg-2">
-                        <p class="panel-headingImg d-lg-none mb-3"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-postpaid-new.png" /></p>
-                        <div class="phone"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/Postpaid-Phone.png" width="100%" /></div>
+                        <p class="panel-headingImg d-lg-none mb-3"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-postpaid-new-ch.png" /></p>
+                        <div class="phone"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/Postpaid-Phone-ch.png" width="100%" /></div>
                     </div>
                     <div class="col-lg-8 order-lg-1 col-pull-postpaid">
-                        <p class="panel-headingImg d-none d-lg-block"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-postpaid-new.png" /></p>
-                        <div class="cp-02 mt-4 text-left-mobile"><span class="yes-font">yes</span> is providing:</div>
+                        <p class="panel-headingImg d-none d-lg-block"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-postpaid-new-ch.png" /></p>
+                        <div class="cp-02 mt-4 text-left-mobile"><span class="yes-font">yes</span> 提供:</div>
                         <div class="ico-ar mb-4">
                             <div class="row justify-content-center">
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-Telefon-Pintar.png" width="100%" />
-                                    <div class="tag xs mt-2">Free <br />Smartphone</div>
+                                    <div class="tag xs mt-2">免费<br />智能手机</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/phase-2/icon-Free-Data-75gb.png" width="100%" />
-                                    <div class="tag xs mt-2">Free <br />Data</div>
+                                    <div class="tag xs mt-2">免费 <br />数据</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-bauchar.png" width="100%" />
-                                    <div class="tag xs mt-2">RM50 Shopee <br />Vouchers</div>
+                                    <div class="tag xs mt-2">RM50 Shopee <br />礼券</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-apps.png" width="100%" />
-                                    <div class="tag xs mt-2">Education <br />Application</div>
+                                    <div class="tag xs mt-2">教育 <br />应用程序</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
                                     <img alt="" src="/wp-content/themes/yes.my/images/prihatin/icon-iqiyi-v2.png" width="100%" />
-                                    <div class="tag xs mt-2">Entertainment <br />Application</div>
+                                    <div class="tag xs mt-2">娱乐<br />应用程序</div>
                                 </div>
                                 <div class="col-lg col-6 mt-3">
-                                    <img alt="" src="/wp-content/themes/yes.my/images/prihatin/phase-2/icon-Free-Delivery.png" width="100%" />
-                                    <div class="tag xs mt-2">Free <br />Delivery</div>
+                                    <img alt="" src="/wp-content/themes/yes.my/images/prihatin/phase-2/icon-Free-Delivery-ch.png" width="100%" />
+                                    <div class="tag xs mt-2">免费<br />运送</div>
                                 </div>
                             </div>
                         </div>
                         <div class="cp-03 mb-4 pt-3 text-left-mobile">
-                            Enjoy <b>up to 75 GB</b> on a new Samsung Galaxy A02 smartphone that will be delivered to your home for free. <br /><br />
-                            And that's not all, you'll receive a Shopee voucher worth RM50 and access to FrogPlay education app and iQiyi entertainment app. <br /><br />
-                            <b>#JomLevelUp</b>
+                            尽享高达 <b>75 GB</b> 的全新 Samsung Galaxy A02 智能手机，而且还将免费送到您家。 <br /><br />
+                            另外，您还将收到一张价值 RM50 的 Shopee礼券，以及 FrogPlay 教育应用程序与爱奇艺娱乐应用程序的使用权限。<br /><br />
+                            <b>#赶紧升级</b>
                         </div>
-                        <a class="btn-01 tuntut" href="https://prihatin.yes.my/" target="_blank" rel="noopener"><b>CLAIM NOW</b></a>
+                        <a class="btn-01 tuntut" href="https://prihatin.yes.my/" target="_blank" rel="noopener"><b>即刻索取</b></a>
                     </div>
                 </div>
             </div>
@@ -727,19 +731,19 @@
         <div class="acd-pd mb-5 pb-5" id="table-list">
             <div class="container">
                 <div class="layer-pick pick-prepaid mb-5">
-                    <div class="main-ttl text-center mb-lg-3 mb-5">Pick your <span class="yes-font">yes</span> prihatin</div>
-                    <p class="panel-headingImg text-center mb-lg-3 mb-5"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid.png" /></p>
+                    <div class="main-ttl text-center mb-lg-3 mb-5">选择您的 <span class="yes-font">yes</span> prihatin</div>
+                    <p class="panel-headingImg text-center mb-lg-3 mb-5"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-prepaid-ch.png" /></p>
                     <div class="row">
-                        <div class="col-lg-6 mb-lg-3 mb-5"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/table-prepaid.png" width="100%" /></div>
-                        <div class="col-lg-6"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/table-prepaid-individual.png" width="100%" /></div>
+                        <div class="col-lg-6 mb-lg-3 mb-5"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/table-prepaid-ch.png" width="100%" /></div>
+                        <div class="col-lg-6"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/table-prepaid-individual-ch.png" width="100%" /></div>
                     </div>
                 </div>
                 <div class="layer-pick pick-postpaid">
-                    <div class="main-ttl text-center mb-lg-3 mb-5">Pick your <span class="yes-font">yes</span> prihatin</div>
-                    <p class="panel-headingImg text-center mb-lg-3 mb-5"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-postpaid.png" /></p>
+                    <div class="main-ttl text-center mb-lg-3 mb-5">选择您的 <span class="yes-font">yes</span> prihatin</div>
+                    <p class="panel-headingImg text-center mb-lg-3 mb-5"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/heading-postpaid-ch.png" /></p>
                     <div class="row">
-                        <div class="col-lg-6 mb-lg-3 mb-5"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/table-postpaid.png" width="100%" /></div>
-                        <div class="col-lg-6"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/table-postpaid-individual.png" width="100%" /></div>
+                        <div class="col-lg-6 mb-lg-3 mb-5"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/table-postpaid-ch.png" width="100%" /></div>
+                        <div class="col-lg-6"><img src="/wp-content/themes/yes.my/images/prihatin/phase-2/table-postpaid-individual-ch.png" width="100%" /></div>
                     </div>
                 </div>
             </div>
@@ -752,7 +756,7 @@
         <div class="acd-pd mb-5 pb-5 mt-lg-0 pt-lg-0 pt-5 mt-5" id="how">
             <div class="container">
                 <div class="main-ttl text-center mb-4">
-                    Ways to claim <br />
+                    如何获得 <br />
                     <span class="yes-font">yes</span> prihatin
                 </div>
                 <div class="row">
@@ -760,22 +764,22 @@
                         <div class="click-ar one" onclick="filterSelection('daftar')">&nbsp;</div>
                         <div class="click-ar two" onclick="filterSelection('tuntut')">&nbsp;</div>
                         <div class="click-ar three" onclick="filterSelection('ekyc')">&nbsp;</div>
-                        <img alt="" class="d-none d-lg-block" src="/wp-content/themes/yes.my/images/prihatin/cara-01-eng.png" width="100%" />
-                        <img alt="" class="d-block d-lg-none sharp" src="/wp-content/themes/yes.my/images/prihatin/cara-01-eng-m.png" width="100%" />
+                        <img alt="" class="d-none d-lg-block" src="/wp-content/themes/yes.my/images/prihatin/cara-01-chi.png" width="100%" />
+                        <img alt="" class="d-block d-lg-none sharp" src="/wp-content/themes/yes.my/images/prihatin/cara-01-chi-m.png" width="100%" />
                     </div>
                     <div class="tab-lock filterDiv tuntut">
                         <div class="click-ar one" onclick="filterSelection('daftar')">&nbsp;</div>
                         <div class="click-ar two" onclick="filterSelection('tuntut')">&nbsp;</div>
                         <div class="click-ar three" onclick="filterSelection('ekyc')">&nbsp;</div>
-                        <img alt="" class="d-none d-lg-block" src="/wp-content/themes/yes.my/images/prihatin/cara-02-eng.png" width="100%" />
-                        <img alt="" class="d-block d-lg-none sharp" src="/wp-content/themes/yes.my/images/prihatin/cara-02-eng-m.png" width="100%" />
+                        <img alt="" class="d-none d-lg-block" src="/wp-content/themes/yes.my/images/prihatin/cara-02-chi.png" width="100%" />
+                        <img alt="" class="d-block d-lg-none sharp" src="/wp-content/themes/yes.my/images/prihatin/cara-02-chi-m-v2.png" width="100%" />
                     </div>
                     <div class="tab-lock filterDiv ekyc">
                         <div class="click-ar one" onclick="filterSelection('daftar')">&nbsp;</div>
                         <div class="click-ar two" onclick="filterSelection('tuntut')">&nbsp;</div>
                         <div class="click-ar three" onclick="filterSelection('ekyc')">&nbsp;</div>
-                        <img alt="" class="d-none d-lg-block" src="/wp-content/themes/yes.my/images/prihatin/cara-03-eng-v3.png" width="100%" />
-                        <img alt="" class="d-block d-lg-none sharp" src="/wp-content/themes/yes.my/images/prihatin/cara-03-eng-m-v2.png" width="100%" />
+                        <img alt="" class="d-none d-lg-block" src="/wp-content/themes/yes.my/images/prihatin/cara-03-chi.png" width="100%" />
+                        <img alt="" class="d-block d-lg-none sharp" src="/wp-content/themes/yes.my/images/prihatin/cara-03-chi-m.png" width="100%" />
                     </div>
                 </div>
             </div>
@@ -787,23 +791,24 @@
     <section class="d-block">
         <div class="" id="learn-more">
             <div class="container">
-                <div class="main-ttl text-center mb-4">Learn more with these videos!</div>
+                <div class="main-ttl text-center mb-4">欲知详情请观看以下影片！</div>
+            
                 <div class="video-ar text-center mb-5">
                     <div class="row">
                         <div class="col-lg-4 col-12">
-                            <a href="https://youtu.be/aOCSPS44JMU" target="_blank" rel="noopener"><img alt="" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-daftar-eng.png" width="100%" /></a>
-                            <div class="cp-01 mt-2"><a href="https://youtu.be/aOCSPS44JMU" target="_blank" rel="noopener">How to</a></div>
-                            <div class="cp-02"><a href="https://youtu.be/aOCSPS44JMU" target="_blank" rel="noopener">REGISTER?</a></div>
+                            <a href="https://youtu.be/eKP0G7lAFRE" target="_blank" rel="noopener"><img alt="" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-daftar-chi_0.png" width="100%" /></a>
+                            <div class="cp-01 mt-2"><a href="https://youtu.be/eKP0G7lAFRE" target="_blank" rel="noopener">如何</a></div>
+                            <div class="cp-02"><a href="https://youtu.be/eKP0G7lAFRE" target="_blank" rel="noopener">注册?</a></div>
                         </div>
                         <div class="col-lg-4 col-12 mt-lg-0 mt-4">
-                            <a href="https://youtu.be/0-xnWje3XJc" target="_blank" rel="noopener"><img alt="" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-tuntut-eng.png" width="100%" /></a>
-                            <div class="cp-01 mt-2"><a href="https://youtu.be/0-xnWje3XJc" target="_blank" rel="noopener">How to</a></div>
-                            <div class="cp-02"><a href="https://youtu.be/0-xnWje3XJc" target="_blank" rel="noopener">CLAIM?</a></div>
+                            <a href="https://youtu.be/KeAdn3xt83c" target="_blank" rel="noopener"><img alt="" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-tuntut-chi_0.png" width="100%" /></a>
+                            <div class="cp-01 mt-2"><a href="https://youtu.be/KeAdn3xt83c" target="_blank" rel="noopener">如何</a></div>
+                            <div class="cp-02"><a href="https://youtu.be/KeAdn3xt83c" target="_blank" rel="noopener">兑换?</a></div>
                         </div>
                         <div class="col-lg-4 col-12 mt-lg-0 mt-4">
-                            <a href="https://youtu.be/PwqBZ2i03fc" target="_blank" rel="noopener"><img alt="" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-ekyc-eng.png" width="100%" /></a>
-                            <div class="cp-01 mt-2"><a href="https://youtu.be/PwqBZ2i03fc" target="_blank" rel="noopener">How to</a></div>
-                            <div class="cp-02"><a href="https://youtu.be/PwqBZ2i03fc" target="_blank" rel="noopener">eKYC?</a></div>
+                            <a href="https://youtu.be/XPk_AUVh23c" target="_blank" rel="noopener"><img alt="" src="/wp-content/themes/yes.my/images/prihatin/vt-cara-ekyc-chi_0.png" width="100%" /></a>
+                            <div class="cp-01 mt-2"><a href="https://youtu.be/XPk_AUVh23c" target="_blank" rel="noopener">如何</a></div>
+                            <div class="cp-02"><a href="https://youtu.be/XPk_AUVh23c" target="_blank" rel="noopener">eKYC?</a></div>
                         </div>
                     </div>
                 </div>
@@ -817,10 +822,10 @@
         <div class="" id="partnership">
             <div class="ft text-center">
                 <div class="container">
-                    <a class="btn-01 pink tuntut" href="https://prihatin.yes.my/" target="_blank" rel="noopener"><b>CLAIM NOW</b></a>
-                    <div class="xs mt-2 mb-5">*Terms and conditions apply</div>
+                    <a class="btn-01 pink tuntut" href="https://prihatin.yes.my/" target="_blank" rel="noopener"><b>马上兑换</b></a>
+                    <div class="xs mt-2 mb-5">*须符合条规</div>
                     <div class="pns">
-                        <div class="text">In partnership with</div>
+                        <div class="text">协作单位</div>
                         <div class="line">&nbsp;</div>
                         <div class="line2">&nbsp;</div>
                     </div>
@@ -828,9 +833,9 @@
                         <div class="row justify-content-center align-items-center">
                             <div class="col-lg-auto col-12">
                                 <img alt="" class="d-none d-lg-inline-block" src="/wp-content/themes/yes.my/images/prihatin/partner.png" />
-                                <img alt="" class="d-inline-block d-lg-none" src="/wp-content/themes/yes.my/images/prihatin/partner-m.png" />
+                                <img alt="" class="d-inline-block d-lg-none" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/prihatin/partner-m.png" />
                             </div>
-                            <div class="col-lg-auto col-12 mt-lg-0 mt-4 pl-lg-0"><img alt="" src="/wp-content/themes/yes.my/images/prihatin/partner-iqiyi-v2.png"></div>
+                            <div class="col-lg-auto col-12 mt-lg-0 mt-4 pl-lg-0"><img alt="" src="/wp-content/themes/yes.my/images/prihatin/partner-iqiyi-v2.png" /></div>
                         </div>
                     </div>
                 </div>
@@ -908,3 +913,6 @@
         return false;
     }
 </script>
+
+
+<?php include '../footer.php' ?>
