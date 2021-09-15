@@ -63,14 +63,6 @@
         list-style: none;
     }
     
-    .bnrbtn1 {
-        bottom: 90px;
-        text-align: center;
-        width: 500px !important;
-        left: calc(50% - 250px);
-        height: 50px;
-    }
-    
     .bnrbtn {
         bottom: 50px;
         text-align: center;
@@ -79,8 +71,16 @@
         height: 50px;
     }
     
+    .bnrbtn1 {
+        bottom: 50px;
+        text-align: center;
+        width: 500px !important;
+        left: calc(50% - 250px);
+        height: 50px;
+    }
+    
     .yesimin {
-        max-width: 215px;
+        max-width: 170px;
     }
     
     .showmemore {
@@ -129,17 +129,17 @@
             max-width: 200px;
             margin-top: 30px !important;
         }
-        .bnrbtn1 {
-            bottom: 50px;
-            text-align: center;
-            width: 500px !important;
-            left: calc(50% - 250px);
-        }
         .bnrbtn {
             bottom: 40px;
             text-align: center;
             width: 300px !important;
             left: calc(50% - 150px);
+        }
+        .bnrbtn1 {
+            bottom: 50px;
+            text-align: center;
+            width: 500px !important;
+            left: calc(50% - 250px);
         }
     }
     
@@ -176,7 +176,7 @@
             padding: 20px;
         }
         .yesimin {
-            max-width: 130px;
+            max-width: 100px;
         }
         .showmemore {
             max-width: 150px;
@@ -187,12 +187,6 @@
         .h1-xs {
             font-size: 16px;
         }
-        .bnrbtn1 {
-            bottom: 50px;
-            text-align: center;
-            width: 400px !important;
-            left: calc(50% - 200px);
-        }
         .bnrbtn {
             bottom: 40px;
             text-align: center;
@@ -200,63 +194,33 @@
             left: calc(50% - 150px);
             height: 60px;
         }
-    }
-    
-    @media (max-width: 460px) {
         .bnrbtn1 {
             bottom: 50px;
             text-align: center;
-            width: 360px !important;
-            left: calc(50% - 180px);
+            width: 400px !important;
+            left: calc(50% - 200px);
         }
+    }
+    
+    @media (max-width: 460px) {
         .bnrbtn {
             bottom: 10px;
+        }
+        .bnrbtn1 {
+            bottom: 10px;
             text-align: center;
-            width: 220px !important;
-            left: calc(50% - 110px);
+            width: 400px !important;
+            left: calc(50% - 200px);
         }
     }
-
-    /* LFH Extension STARTS */
-    .lfh-extension { background: #04A6E1; color: #FFF; padding: 70px 0; }
-    .lfh-extension .lfh-bg-top-right, .lfh-extension .lfh-bg-bottom-left { background-repeat: no-repeat; background-size: contain; display: block; position: absolute; z-index: 0; }
-    .lfh-extension .lfh-bg-top-right { background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-top-right.png'); top: 0; right: 0; height: 250px; width: 306px; }
-    .lfh-extension .lfh-bg-bottom-left { background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left.png'); bottom: 0; left: 0; height: 395px; width: 180px; }
-    .lfh-extension .color-pink { color: #E31C79; }
-    .lfh-extension h3 { color: #E31C79; font-size: 32px; font-weight: 700; margin: 0 0 20px; }
-    .lfh-extension h2 { font-size: 42px; font-weight: 700; margin: 0 0 20px; }
-    .lfh-extension p { color: #FFF; font-size: 22px; line-height: 28px; margin: 0 0 20px; }
-    .lfh-extension a.btn-cta { background-color: #E31C79; border-radius: 10px; color: #FFF; display: inline-block; font-size: 24px; line-height: 28px; padding: 18px 40px 15px; }
-    .lfh-extension .layer-initiative { border-top: 1px solid #FFF; margin: 20px 0 0; padding: 15px 0 0; }
-    .layer-initiative p { font-size: 16px; margin: 0 0 15px; }
-    .layer-initiative img { max-width: 60%; }
-    .lfh-extension .img-calendar { max-width: 100%; }
-
-    @media (max-width: 781px) {
-        .lfh-extension .lfh-bg-top-right { height: 170px; width: 208px; }
-        .lfh-extension .lfh-bg-bottom-left { background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left-mobile.png'); bottom: 140px; left: -8px; height: 247px; width: 66px; }
-        .lfh-extension .lfh-content { padding: 0 0 120px; position: relative; }
-        .lfh-extension p { max-width: 50%; }
-        .lfh-extension .layer-initiative p { max-width: 100%; }
-        .lfh-extension .img-calendar-mobile { max-width: 65%; position: absolute; right: -78px; top: 230px; }
-        .layer-initiative img { max-width: 90%; }
-    }
-
-    @media (max-width: 559px) {
-        .lfh-extension .lfh-content { padding-bottom: 0; }
-        .lfh-extension p { max-width: 100%; }
-        .lfh-extension a.btn-cta { display: block; text-align: center; width: 100%; }
-        .lfh-extension .img-calendar-mobile { margin: 20px 0 0; max-width: 100%; position: relative; right: auto; top: auto; }
-        .lfh-extension .layer-initiative { text-align: center; }
-    }
-    /* LFH Extension ENDS */
 </style>
 
 
 
 <div style="display:none "><img alt="&quot;bbb&quot;" data-entity-type="file" data-entity-uuid="197286ac-ebc5-45dc-8c7c-3af75ce1126f" src="/wp-content/themes/yes.my/images/home_images/bm/learnmore_bm.png"></div>
 
-<section class="position-relative d-flex align-items-start"><img alt="" class="img-fluid d-none d-lg-block" data-entity-type="file" data-entity-uuid="c51ebfea-8205-4659-a8a4-5301cb1463de" src="/wp-content/themes/yes.my/images/home_images/bm/bg_01_en-big_0.jpg" style="min-width:100vw;"> <img alt="" class="img-fluid d-block d-lg-none" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/home_images/bm/sm/home_mobile_01.jpg">
+<section class="position-relative d-flex align-items-start"><img alt="" class="img-fluid d-none d-lg-block" data-entity-type="file" data-entity-uuid="c51ebfea-8205-4659-a8a4-5301cb1463de" src="/wp-content/themes/yes.my/images/home_images/bm/bg_01_en-big_0.jpg" style="min-width:100vw;"> <img alt="" class="img-fluid d-block d-lg-none"
+        data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/home_images/bm/sm/home_mobile_01.jpg">
     <div class="bnr-body w-100">
         <div class="bnrbtn1 position-absolute">
             <div class="position-relative d-flex">
@@ -268,47 +232,19 @@
         <!--  -->
     </div>
 </section>
-
-<section class="position-relative d-flex align-items-start lfh-extension">
-    <div class="lfh-bg-top-right"></div>
-    <div class="lfh-bg-bottom-left"></div>
-    <div class="container-fluid">
-        <div class="row no-gutterss">
-            <div class="col-10 col-lg-5 offset-1">
-                <div class="lfh-content">
-                    <h3>belajar dari rumah</h3>
-                    <h2>INISIATIF BELAJAR DARI RUMAH <span class="color-pink">DILANJUTKAN SEHINGGA SEPTEMBER 2022</span></h2>
-                    <p>Teruskan pembelajaran anda di rumah mahupun di sekolah. Sila daftar lanjutan ini sebelum 16 Oktober 2021.</p>
-                    <a href="http://ytlfoundation.org/lfh-extension" target="_blank" class="btn-cta">Dapatkan Sekarang</a>
-                    <img src="/wp-content/themes/yes.my/images/lfh-extension/calendar-bm-mobile.png" alt="Lanjutan Data Percuma 7GB/bulan untuk 1 tahun!" title="Lanjutan Data Percuma 7GB/bulan untuk 1 tahun!" class="img-calendar-mobile d-lg-none" />
-                </div>
-                <div class="layer-initiative">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-5 offset-md-1 offset-lg-0">
-                            <p>Inisiatif Pendidikan</p>
-                            <img src="/wp-content/themes/yes.my/images/lfh-extension/initiative-ytl-foundation.png" alt="YTL Foundation" title="YTL Foundation" style="max-width: 50%;" />
-                        </div>
-                        <div class="col-md-5 col-xl-7 mt-4 mt-md-0">
-                            <p>Kolaborasi bersama</p>
-                            <img src="/wp-content/themes/yes.my/images/lfh-extension/initiative-yes-frogasia.png" alt="YES & frogasia" title="YES & frogasia" style="padding: 10px 0 0;" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 d-none d-lg-block">
-                <img src="/wp-content/themes/yes.my/images/lfh-extension/calendar-bm.png" alt="Lanjutan Data Percuma 7GB/bulan untuk 1 tahun!" title="Lanjutan Data Percuma 7GB/bulan untuk 1 tahun!" class="img-calendar" />
-            </div>
-        </div>
-    </div>
+    
+<section class="position-relative d-flex align-items-start prihatin">
+    <img alt="Prihatin dekstop" class="img-fluid d-none d-lg-block" data-entity-type="file" data-entity-uuid="2647d70b-43e9-4685-8aff-817cd856b53d" src="/wp-content/themes/yes.my/images/prihatin/phase-2/homebanner-bm.jpg" width="100%" />
+    <img alt="Prihatin mobile" class="img-fluid d-block d-lg-none" data-entity-type="file" data-entity-uuid="4ae9826e-fe1e-43e0-9f3f-839aefb57ddd" src="/wp-content/themes/yes.my/images/prihatin/phase-2/homebanner-bm-mobile.jpg" width="100%" />
+    <a class="d-lg-block d-none" href="https://prihatin.yes.my/" style="position: absolute; width: 20.7%; height: 9%; bottom: 4% ;left: 29.3%; transform:translate(-50%, -50%);" target="_blank"> &nbsp; </a>
+    <a class="d-lg-none d-block" href="https://prihatin.yes.my/" style="position: absolute; width: 60%; height: 8%; bottom: 16% ;left: 50%; transform:translate(-50%, -50%); " target="_blank"> &nbsp; </a>
 </section>
 
-<section class="position-relative d-flex align-items-start prihatin"><img alt="Prihatin dekstop" class="img-fluid d-none d-lg-block" data-entity-type="file" data-entity-uuid="f7750f42-5304-4915-958c-d5fa890c682d" src="/wp-content/themes/yes.my/images/home_images/bm/home-banner-prihatin-bm.jpg" width="100%"><img alt="Prihatin mobile" class="img-fluid d-block d-lg-none" data-entity-type="file" data-entity-uuid="329cdecd-75bd-4f8e-b324-8ebe68a50234" src="/wp-content/themes/yes.my/images/home_images/bm/home-banner-prihatin-bm-m.jpg" width="100%"> <a class="d-lg-block d-none" href="https://prihatin.yes.my/" style="position: absolute; width: 30%; height: 10%; bottom: 6% ;left: 50%; transform:translate(-50%, -50%); " target="_blank" rel="noopener"> &nbsp; </a> <a class="d-lg-none d-block" href="https://prihatin.yes.my/" style="position: absolute; width: 80%; height: 8%; bottom: 16% ;left: 50%; transform:translate(-50%, -50%); " target="_blank" rel="noopener"> &nbsp; </a></section>
-
 <section class="position-relative d-flex align-items-start merdeka" id="merdeka">
-    <img alt="merdeka dekstop" class="img-fluid d-none d-lg-block" src="/wp-content/themes/yes.my/images/merdeka-63/yes_Merdeka_homepage_banner_BM.jpg" width="100%">
-    <img alt="merdeka mobile" class="img-fluid d-block d-lg-none" src="/wp-content/themes/yes.my/images/merdeka-63/yes_Merdeka_homepage_banner_mobile_BM.jpg" width="100%">
-    <a class="d-lg-block d-none" href="https://appstore.yes.my/ywos/signup" style="bottom: 0%; height: 8%; left: 39.5%; position: absolute; transform: translate(-50%, -50%); width: 18.5%;" target="_blank" rel="noopener">&nbsp;</a>
-    <a class="d-lg-none d-block" href="https://appstore.yes.my/ywos/signup" style="bottom: 2%; height: 7%; left: 50%; position: absolute; transform: translate(-50%, 0); width: 57%;" target="_blank" rel="noopener">&nbsp;</a>
+    <img alt="merdeka dekstop" class="img-fluid d-none d-lg-block" src="/wp-content/themes/yes.my/images/merdeka-63/yes_Merdeka_homepage_banner_BM.jpg" width="100%" />
+    <img alt="merdeka mobile" class="img-fluid d-block d-lg-none" src="/wp-content/themes/yes.my/images/merdeka-63/yes_Merdeka_homepage_banner_mobile_BM.jpg" width="100%" />
+    <a class="d-lg-block d-none" href="https://appstore.yes.my/ywos/signup" style="bottom: 0%; height: 8%; left: 39.5%; position: absolute; transform: translate(-50%, -50%); width: 18.5%;" target="_blank">&nbsp;</a>
+    <a class="d-lg-none d-block" href="https://appstore.yes.my/ywos/signup" style="bottom: 2%; height: 7%; left: 50%; position: absolute; transform: translate(-50%, 0); width: 57%;" target="_blank">&nbsp;</a>
 </section>
 
 <section class="position-relative d-flex">
