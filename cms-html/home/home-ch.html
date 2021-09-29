@@ -250,6 +250,17 @@
         .lfh-extension .layer-initiative { text-align: center; }
     }
     /* LFH Extension ENDS */
+
+    /* Page Modal STARTS */
+    .page-modal {}
+    .page-modal .modal-dialog { max-width: 728px; }
+    .page-modal .modal-body { padding: 0; }
+    .page-modal a.btn-close { cursor: pointer; color: #FFF; font-size: 25px; left: 15px; position: absolute; top: 15px; z-index: 9999; }
+
+    @media (max-width: 559px) {
+        .page-modal a.btn-close { font-size: 20px; }
+    }
+    /* Page Modal ENDS */
 </style>
 
 
@@ -357,16 +368,41 @@
     </div>
 </section>
 
+<!-- Modal - Page Modal STARTS -->
+<div class="modal page-modal fade" id="page-modal" tabindex="-1" aria-labelledby="page-modal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a tabindex="-1" title="Close Page Popup" role="button" class="btn-close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><svg class="ia ia-close"><use xlink:href="#ia-close"></use></svg></a>
+                <div class="row g-0">
+                    <div class="col-12">
+                        <img src="/wp-content/themes/yes.my/images/prihatin/phase-2/homepage-popup-CN.png" class="img-fluid rounded" />
+                        <a href="/zh-hans/kasiupb40/" style="position: absolute; width: 30%; height: 10%; bottom: 7% ; left: 68.5%; transform:translate(-50%, -50%); " target="_blank" rel="noopener"> &nbsp; </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal - Page Modal ENDS -->
+
 
 
 <script type="text/javascript">
+    var yesLocalStorageName = 'yesSession';
+    var yesLocalStorage = JSON.parse(localStorage.getItem(yesLocalStorageName));
+    var expiryPageModal = 30; // in minute
+    var pageLoadTimestamp = Date.now();
+
     $(document).ready(function() {
         resizeCheck();
         $(window).resize(function() {
             resizeCheck();
         });
-    });
 
+        checkPageModalExpiry();
+        eventListenPageModalClose();
+    });
 
     function resizeCheck() {
         if ($(window).width() <= 991) {
@@ -391,6 +427,38 @@
             //    $(e).attr('src','');
             //});
 
+        }
+    }
+
+    function checkPageModalExpiry() {
+        var pageModal = $('#page-modal');
+
+        if ($(pageModal).length) {
+            if (yesLocalStorage !== null && typeof yesLocalStorage.pageModalCloseCN !== 'undefined') {
+                if (pageLoadTimestamp > yesLocalStorage.pageModalCloseCN) {
+                    $(pageModal).modal('show');
+                }
+            } else {
+                $(pageModal).modal('show');
+            }
+        }
+    }
+
+    function eventListenPageModalClose() {
+        var pageModal = $('#page-modal');
+        if ($(pageModal).length) {
+            $(pageModal).on('hide.bs.modal', function() {
+                var expiryLength = expiryPageModal * 60000;
+                var pageModalExpiry = Date.now() + expiryLength;
+                var getYesLocalStorage = yesLocalStorage;
+
+                if (getYesLocalStorage === null) {
+                    getYesLocalStorage = { 'pageModalCloseCN': pageModalExpiry };
+                } else {
+                    getYesLocalStorage.pageModalCloseCN = pageModalExpiry;
+                }
+                localStorage.setItem(yesLocalStorageName, JSON.stringify(getYesLocalStorage));
+            });
         }
     }
 </script>

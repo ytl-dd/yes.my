@@ -216,40 +216,160 @@
             left: calc(50% - 110px);
         }
     }
-
     /* LFH Extension STARTS */
-    .lfh-extension { background: #04A6E1; color: #FFF; padding: 70px 0; }
-    .lfh-extension .lfh-bg-top-right, .lfh-extension .lfh-bg-bottom-left { background-repeat: no-repeat; background-size: contain; display: block; position: absolute; z-index: 0; }
-    .lfh-extension .lfh-bg-top-right { background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-top-right.png'); top: 0; right: 0; height: 250px; width: 306px; }
-    .lfh-extension .lfh-bg-bottom-left { background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left.png'); bottom: 0; left: 0; height: 395px; width: 180px; }
-    .lfh-extension .color-pink { color: #E31C79; }
-    .lfh-extension h3 { color: #E31C79; font-size: 32px; font-weight: 700; margin: 0 0 20px; }
-    .lfh-extension h2 { font-size: 42px; font-weight: 700; margin: 0 0 20px; }
-    .lfh-extension p { color: #FFF; font-size: 22px; line-height: 28px; margin: 0 0 20px; }
-    .lfh-extension a.btn-cta { background-color: #E31C79; border-radius: 10px; color: #FFF; display: inline-block; font-size: 24px; line-height: 28px; padding: 18px 40px 15px; }
-    .lfh-extension .layer-initiative { border-top: 1px solid #FFF; margin: 20px 0 0; padding: 15px 0 0; }
-    .layer-initiative p { font-size: 16px; margin: 0 0 15px; }
-    .layer-initiative img { max-width: 60%; }
-    .lfh-extension .img-calendar { max-width: 100%; }
-
-    @media (max-width: 781px) {
-        .lfh-extension .lfh-bg-top-right { height: 170px; width: 208px; }
-        .lfh-extension .lfh-bg-bottom-left { background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left-mobile.png'); bottom: 140px; left: -8px; height: 247px; width: 66px; }
-        .lfh-extension .lfh-content { padding: 0 0 210px; position: relative; }
-        .lfh-extension p { max-width: 75%; }
-        .lfh-extension .layer-initiative p { max-width: 100%; }
-        .lfh-extension .img-calendar-mobile { max-width: 75%; position: absolute; right: -78px; top: 230px; }
-        .layer-initiative img { max-width: 90%; }
+    
+    .lfh-extension {
+        background: #04A6E1;
+        color: #FFF;
+        padding: 70px 0;
     }
-
+    
+    .lfh-extension .lfh-bg-top-right,
+    .lfh-extension .lfh-bg-bottom-left {
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        position: absolute;
+        z-index: 0;
+    }
+    
+    .lfh-extension .lfh-bg-top-right {
+        background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-top-right.png');
+        top: 0;
+        right: 0;
+        height: 250px;
+        width: 306px;
+    }
+    
+    .lfh-extension .lfh-bg-bottom-left {
+        background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left.png');
+        bottom: 0;
+        left: 0;
+        height: 395px;
+        width: 180px;
+    }
+    
+    .lfh-extension .color-pink {
+        color: #E31C79;
+    }
+    
+    .lfh-extension h3 {
+        color: #E31C79;
+        font-size: 32px;
+        font-weight: 700;
+        margin: 0 0 20px;
+    }
+    
+    .lfh-extension h2 {
+        font-size: 42px;
+        font-weight: 700;
+        margin: 0 0 20px;
+    }
+    
+    .lfh-extension p {
+        color: #FFF;
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0 0 20px;
+    }
+    
+    .lfh-extension a.btn-cta {
+        background-color: #E31C79;
+        border-radius: 10px;
+        color: #FFF;
+        display: inline-block;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 18px 40px 15px;
+    }
+    
+    .lfh-extension .layer-initiative {
+        border-top: 1px solid #FFF;
+        margin: 20px 0 0;
+        padding: 15px 0 0;
+    }
+    
+    .layer-initiative p {
+        font-size: 16px;
+        margin: 0 0 15px;
+    }
+    
+    .layer-initiative img {
+        max-width: 60%;
+    }
+    
+    .lfh-extension .img-calendar {
+        max-width: 100%;
+    }
+    
+    @media (max-width: 781px) {
+        .lfh-extension .lfh-bg-top-right {
+            height: 170px;
+            width: 208px;
+        }
+        .lfh-extension .lfh-bg-bottom-left {
+            background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left-mobile.png');
+            bottom: 140px;
+            left: -8px;
+            height: 247px;
+            width: 66px;
+        }
+        .lfh-extension .lfh-content {
+            padding: 0 0 210px;
+            position: relative;
+        }
+        .lfh-extension p {
+            max-width: 75%;
+        }
+        .lfh-extension .layer-initiative p {
+            max-width: 100%;
+        }
+        .lfh-extension .img-calendar-mobile {
+            max-width: 75%;
+            position: absolute;
+            right: -78px;
+            top: 230px;
+        }
+        .layer-initiative img {
+            max-width: 90%;
+        }
+    }
+    
     @media (max-width: 559px) {
-        .lfh-extension .lfh-content { padding-bottom: 0; }
-        .lfh-extension p { max-width: 100%; }
-        .lfh-extension a.btn-cta { display: block; text-align: center; width: 100%; }
-        .lfh-extension .img-calendar-mobile { margin: 20px 0 0; max-width: 100%; position: relative; right: auto; top: auto; }
-        .lfh-extension .layer-initiative { text-align: center; }
+        .lfh-extension .lfh-content {
+            padding-bottom: 0;
+        }
+        .lfh-extension p {
+            max-width: 100%;
+        }
+        .lfh-extension a.btn-cta {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        .lfh-extension .img-calendar-mobile {
+            margin: 20px 0 0;
+            max-width: 100%;
+            position: relative;
+            right: auto;
+            top: auto;
+        }
+        .lfh-extension .layer-initiative {
+            text-align: center;
+        }
     }
     /* LFH Extension ENDS */
+
+    /* Page Modal STARTS */
+    .page-modal {}
+    .page-modal .modal-dialog { max-width: 728px; }
+    .page-modal .modal-body { padding: 0; }
+    .page-modal a.btn-close { cursor: pointer; color: #FFF; font-size: 25px; left: 15px; position: absolute; top: 15px; z-index: 9999; }
+
+    @media (max-width: 559px) {
+        .page-modal a.btn-close { font-size: 20px; }
+    }
+    /* Page Modal ENDS */
 </style>
 
 
@@ -362,15 +482,41 @@
     </div>
 </section>
 
+<!-- Modal - Page Modal STARTS -->
+<div class="modal page-modal fade" id="page-modal" tabindex="-1" aria-labelledby="page-modal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a tabindex="-1" title="Close Page Popup" role="button" class="btn-close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><svg class="ia ia-close"><use xlink:href="#ia-close"></use></svg></a>
+                <div class="row g-0">
+                    <div class="col-12">
+                        <img src="/wp-content/themes/yes.my/images/prihatin/phase-2/homepage-popup.png" class="img-fluid rounded" />
+                        <a href="/kasiupb40/" style="position: absolute; width: 30%; height: 10%; bottom: 7% ; left: 68.5%; transform:translate(-50%, -50%); " target="_blank" rel="noopener"> &nbsp; </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal - Page Modal ENDS -->
+
 
 
 
 <script type="text/javascript">
+    var yesLocalStorageName = 'yesSession';
+    var yesLocalStorage = JSON.parse(localStorage.getItem(yesLocalStorageName));
+    var expiryPageModal = 30; // in minute
+    var pageLoadTimestamp = Date.now();
+
     $(document).ready(function() {
         resizeCheck();
         $(window).resize(function() {
             resizeCheck();
         });
+
+        checkPageModalExpiry();
+        eventListenPageModalClose();
     });
 
     function resizeCheck() {
@@ -394,6 +540,38 @@
             //    $(e).data('src', $(e).attr('src'));
             //    $(e).attr('src','');
             //});
+        }
+    }
+
+    function checkPageModalExpiry() {
+        var pageModal = $('#page-modal');
+
+        if ($(pageModal).length) {
+            if (yesLocalStorage !== null && typeof yesLocalStorage.pageModalClose !== 'undefined') {
+                if (pageLoadTimestamp > yesLocalStorage.pageModalClose) {
+                    $(pageModal).modal('show');
+                }
+            } else {
+                $(pageModal).modal('show');
+            }
+        }
+    }
+
+    function eventListenPageModalClose() {
+        var pageModal = $('#page-modal');
+        if ($(pageModal).length) {
+            $(pageModal).on('hide.bs.modal', function() {
+                var expiryLength = expiryPageModal * 60000;
+                var pageModalExpiry = Date.now() + expiryLength;
+                var getYesLocalStorage = yesLocalStorage;
+
+                if (getYesLocalStorage === null) {
+                    getYesLocalStorage = { 'pageModalClose': pageModalExpiry };
+                } else {
+                    getYesLocalStorage.pageModalClose = pageModalExpiry;
+                }
+                localStorage.setItem(yesLocalStorageName, JSON.stringify(getYesLocalStorage));
+            });
         }
     }
 </script>

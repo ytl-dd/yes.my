@@ -250,6 +250,17 @@
         .lfh-extension .layer-initiative { text-align: center; }
     }
     /* LFH Extension ENDS */
+
+    /* Page Modal STARTS */
+    .page-modal {}
+    .page-modal .modal-dialog { max-width: 728px; }
+    .page-modal .modal-body { padding: 0; }
+    .page-modal a.btn-close { cursor: pointer; color: #FFF; font-size: 25px; left: 15px; position: absolute; top: 15px; z-index: 9999; }
+
+    @media (max-width: 559px) {
+        .page-modal a.btn-close { font-size: 20px; }
+    }
+    /* Page Modal ENDS */
 </style>
 
 
@@ -354,13 +365,39 @@
         <!--  --><svg class="d-none d-lg-block" height="100%" viewBox="0 0 1920 674" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <clipPath id="a"> <rect fill="#fff" height="674" transform="translate(0 136)" width="1920"></rect> </clipPath> </defs> <g clip-path="url(#a)" transform="translate(0 -136)"> <g transform="translate(0 155)"> <image height="810" transform="translate(0 -155)" width="1920" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/footer-image.png"></image> <a href="/ms/bestarinet"> <image height="64" transform="translate(987 500)" width="375" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/footer-image2.png"></image> </a> <a href="/ms/support/coverage?"> <image height="64" transform="translate(572 500)" width="375" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/footer-image3.png"></image> </a> <a href="/ms/terragraph"> <image height="64" transform="translate(987 227)" width="375" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/footer-image4.png"></image> </a> <a href="/ms/learn/"> <image height="64" transform="translate(572 227)" width="375" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/footer-image5.png"></image> </a> </g> </g> </svg>        <svg class="d-block d-lg-none" height="100%" viewBox="0 0 1242 1094" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <image height="1094" width="1242" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/sm/home_mobile_footer-bm-image.png"></image> <a href="/ms/learn/"> <image height="75" transform="translate(146 540)" width="457" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/sm/home_mobile_footer-bm-image2.png"></image> </a><a href="/ms/terragraph"> <image height="75" transform="translate(655 540)" width="457" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/sm/home_mobile_footer-bm-image3.png"></image> </a> <a href="/ms/bestarinet"> <image height="75" transform="translate(655 875)" width="457" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/sm/home_mobile_footer-bm-image4.png"></image> </a> <a href="/ms/support/coverage?"> <image height="75" transform="translate(146 875)" width="457" xlink:href="/wp-content/themes/yes.my/images/home_images/bm/sm/home_mobile_footer-bm-image5.png"></image> </a> </svg></div>
 </section>
 
+<!-- Modal - Page Modal STARTS -->
+<div class="modal page-modal fade" id="page-modal" tabindex="-1" aria-labelledby="page-modal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a tabindex="-1" title="Close Page Popup" role="button" class="btn-close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><svg class="ia ia-close"><use xlink:href="#ia-close"></use></svg></a>
+                <div class="row g-0">
+                    <div class="col-12">
+                        <img src="/wp-content/themes/yes.my/images/prihatin/phase-2/homepage-popup-BM.png" class="img-fluid rounded" />
+                        <a href="/ms/kasiupb40/" style="position: absolute; width: 30%; height: 10%; bottom: 7% ; left: 68.5%; transform:translate(-50%, -50%); " target="_blank" rel="noopener"> &nbsp; </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal - Page Modal ENDS -->
+
 
 <script type="text/javascript">
+    var yesLocalStorageName = 'yesSession';
+    var yesLocalStorage = JSON.parse(localStorage.getItem(yesLocalStorageName));
+    var expiryPageModal = 30; // in minute
+    var pageLoadTimestamp = Date.now();
+
     $(document).ready(function() {
         resizeCheck();
         $(window).resize(function() {
             resizeCheck();
         });
+
+        checkPageModalExpiry();
+        eventListenPageModalClose();
     });
 
     function resizeCheck() {
@@ -384,6 +421,38 @@
             //    $(e).data('src', $(e).attr('src'));
             //    $(e).attr('src','');
             //});
+        }
+    }
+
+    function checkPageModalExpiry() {
+        var pageModal = $('#page-modal');
+
+        if ($(pageModal).length) {
+            if (yesLocalStorage !== null && typeof yesLocalStorage.pageModalCloseBM !== 'undefined') {
+                if (pageLoadTimestamp > yesLocalStorage.pageModalCloseBM) {
+                    $(pageModal).modal('show');
+                }
+            } else {
+                $(pageModal).modal('show');
+            }
+        }
+    }
+
+    function eventListenPageModalClose() {
+        var pageModal = $('#page-modal');
+        if ($(pageModal).length) {
+            $(pageModal).on('hide.bs.modal', function() {
+                var expiryLength = expiryPageModal * 60000;
+                var pageModalExpiry = Date.now() + expiryLength;
+                var getYesLocalStorage = yesLocalStorage;
+
+                if (getYesLocalStorage === null) {
+                    getYesLocalStorage = { 'pageModalCloseBM': pageModalExpiry };
+                } else {
+                    getYesLocalStorage.pageModalCloseBM = pageModalExpiry;
+                }
+                localStorage.setItem(yesLocalStorageName, JSON.stringify(getYesLocalStorage));
+            });
         }
     }
 </script>
