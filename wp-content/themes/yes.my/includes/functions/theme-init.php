@@ -91,4 +91,46 @@
         }
         return $result;
     }
+
+    // Prevent Multi Submit on all WPCF7 forms
+    add_action('wp_footer', 'prevent_cf7_multiple_emails');
+
+    function prevent_cf7_multiple_emails() { ?>
+        <script type="text/javascript">
+            var submitText = jQuery(':input.wpcf7-submit').val();
+            var ajaxLoader = jQuery('.ajax-loader');
+            var disableSubmit = false;
+            jQuery('input.wpcf7-submit[type="submit"]').click(function() {
+                jQuery(ajaxLoader).css('visibility', 'visible');
+                jQuery(':input[type="submit"]').attr('value', "Submitting...");
+                if (disableSubmit == true) {
+                    return false;
+                }
+                disableSubmit = true;
+                return true;
+            })
+
+            var wpcf7Elm = document.querySelector('.wpcf7');
+            if (jQuery(wpcf7Elm).length) {
+                wpcf7Elm.addEventListener('wpcf7mailsent', function(event) {
+                    jQuery(':input[type="submit"]').attr('value', "Submitted");
+                    disableSubmit = false;
+                    setTimeout(function() {
+                        jQuery(ajaxLoader).css('visibility', 'hidden');
+                        jQuery(':input[type="submit"]').attr('value', submitText);
+                    }, 500);
+                }, false);
+
+                wpcf7Elm.addEventListener('wpcf7invalid', function(event) {
+                    jQuery(':input[type="submit"]').attr('value', submitText);
+                    disableSubmit = false;
+                    setTimeout(function() {
+                        jQuery(ajaxLoader).css('visibility', 'hidden');
+                    }, 500);
+                }, false);
+            }
+            
+        </script>
+<?php
+    }
 ?>

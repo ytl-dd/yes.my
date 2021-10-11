@@ -216,147 +216,40 @@
             left: calc(50% - 110px);
         }
     }
+
+    .layer-hiddenContent { position: absolute; z-index: -1; left: 0px; right: 0px; top: 0px; }
+
     /* LFH Extension STARTS */
-    
-    .lfh-extension {
-        background: #04A6E1;
-        color: #FFF;
-        padding: 70px 0;
-    }
-    
-    .lfh-extension .lfh-bg-top-right,
-    .lfh-extension .lfh-bg-bottom-left {
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: block;
-        position: absolute;
-        z-index: 0;
-    }
-    
-    .lfh-extension .lfh-bg-top-right {
-        background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-top-right.png');
-        top: 0;
-        right: 0;
-        height: 250px;
-        width: 306px;
-    }
-    
-    .lfh-extension .lfh-bg-bottom-left {
-        background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left.png');
-        bottom: 0;
-        left: 0;
-        height: 395px;
-        width: 180px;
-    }
-    
-    .lfh-extension .color-pink {
-        color: #E31C79;
-    }
-    
-    .lfh-extension h3 {
-        color: #E31C79;
-        font-size: 32px;
-        font-weight: 700;
-        margin: 0 0 20px;
-    }
-    
-    .lfh-extension h2 {
-        font-size: 42px;
-        font-weight: 700;
-        margin: 0 0 20px;
-    }
-    
-    .lfh-extension p {
-        color: #FFF;
-        font-size: 22px;
-        line-height: 28px;
-        margin: 0 0 20px;
-    }
-    
-    .lfh-extension a.btn-cta {
-        background-color: #E31C79;
-        border-radius: 10px;
-        color: #FFF;
-        display: inline-block;
-        font-size: 24px;
-        line-height: 28px;
-        padding: 18px 40px 15px;
-    }
-    
-    .lfh-extension .layer-initiative {
-        border-top: 1px solid #FFF;
-        margin: 20px 0 0;
-        padding: 15px 0 0;
-    }
-    
-    .layer-initiative p {
-        font-size: 16px;
-        margin: 0 0 15px;
-    }
-    
-    .layer-initiative img {
-        max-width: 60%;
-    }
-    
-    .lfh-extension .img-calendar {
-        max-width: 100%;
-    }
-    
+    .lfh-extension { background: #04A6E1; color: #FFF; padding: 70px 0; }
+    .lfh-extension .lfh-bg-top-right, .lfh-extension .lfh-bg-bottom-left { background-repeat: no-repeat; background-size: contain; display: block; position: absolute; z-index: 0; }
+    .lfh-extension .lfh-bg-top-right { background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-top-right.png'); top: 0; right: 0; height: 250px; width: 306px; }
+    .lfh-extension .lfh-bg-bottom-left { background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left.png'); bottom: 0; left: 0; height: 395px; width: 180px; }
+    .lfh-extension .color-pink { color: #E31C79; }
+    .lfh-extension h3 { color: #E31C79; font-size: 32px; font-weight: 700; margin: 0 0 20px; }
+    .lfh-extension h2 { font-size: 42px; font-weight: 700; margin: 0 0 20px; }
+    .lfh-extension p { color: #FFF; font-size: 22px; line-height: 28px; margin: 0 0 20px; }
+    .lfh-extension a.btn-cta { background-color: #E31C79; border-radius: 10px; color: #FFF; display: inline-block; font-size: 24px; line-height: 28px; padding: 18px 40px 15px; }
+    .lfh-extension .layer-initiative { border-top: 1px solid #FFF; margin: 20px 0 0; padding: 15px 0 0; }
+    .layer-initiative p { font-size: 16px; margin: 0 0 15px; }
+    .layer-initiative img { max-width: 60%; }
+    .lfh-extension .img-calendar { max-width: 100%; }
+
     @media (max-width: 781px) {
-        .lfh-extension .lfh-bg-top-right {
-            height: 170px;
-            width: 208px;
-        }
-        .lfh-extension .lfh-bg-bottom-left {
-            background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left-mobile.png');
-            bottom: 140px;
-            left: -8px;
-            height: 247px;
-            width: 66px;
-        }
-        .lfh-extension .lfh-content {
-            padding: 0 0 210px;
-            position: relative;
-        }
-        .lfh-extension p {
-            max-width: 75%;
-        }
-        .lfh-extension .layer-initiative p {
-            max-width: 100%;
-        }
-        .lfh-extension .img-calendar-mobile {
-            max-width: 75%;
-            position: absolute;
-            right: -78px;
-            top: 230px;
-        }
-        .layer-initiative img {
-            max-width: 90%;
-        }
+        .lfh-extension .lfh-bg-top-right { height: 170px; width: 208px; }
+        .lfh-extension .lfh-bg-bottom-left { background-image: url('/wp-content/themes/yes.my/images/lfh-extension/bg-bottom-left-mobile.png'); bottom: 140px; left: -8px; height: 247px; width: 66px; }
+        .lfh-extension .lfh-content { padding: 0 0 210px; position: relative; }
+        .lfh-extension p { max-width: 75%; }
+        .lfh-extension .layer-initiative p { max-width: 100%; }
+        .lfh-extension .img-calendar-mobile { max-width: 75%; position: absolute; right: -78px; top: 230px; }
+        .layer-initiative img { max-width: 90%; }
     }
-    
+
     @media (max-width: 559px) {
-        .lfh-extension .lfh-content {
-            padding-bottom: 0;
-        }
-        .lfh-extension p {
-            max-width: 100%;
-        }
-        .lfh-extension a.btn-cta {
-            display: block;
-            text-align: center;
-            width: 100%;
-        }
-        .lfh-extension .img-calendar-mobile {
-            margin: 20px 0 0;
-            max-width: 100%;
-            position: relative;
-            right: auto;
-            top: auto;
-        }
-        .lfh-extension .layer-initiative {
-            text-align: center;
-        }
+        .lfh-extension .lfh-content { padding-bottom: 0; }
+        .lfh-extension p { max-width: 100%; }
+        .lfh-extension a.btn-cta { display: block; text-align: center; width: 100%; }
+        .lfh-extension .img-calendar-mobile { margin: 20px 0 0; max-width: 100%; position: relative; right: auto; top: auto; }
+        .lfh-extension .layer-initiative { text-align: center; }
     }
     /* LFH Extension ENDS */
 
@@ -376,8 +269,7 @@
 
 <div style="display: none"><img alt="&quot;bbb&quot;" data-entity-type="file" data-entity-uuid="05c3440c-3571-4a4a-b8bf-ce945137c47d" src="/wp-content/themes/yes.my/images/home_images/learnmore.png"></div>
 
-<section class="position-relative d-flex align-items-start"><img alt="Kasi Up Unlimited Duit Siyes Murah 4G Parling Power" class="img-fluid d-none d-lg-block" data-entity-type="file" data-entity-uuid="7159c60e-51c5-4c4a-81d9-3677cae3a49a" data-src="/wp-content/themes/yes.my/images/home_images/bg_01_en-big_1.jpg"
-        style="min-width: 100vw"> <img alt="Kasi Up Unlimited Duit Siyes Murah 4G Parling Power" class="img-fluid d-block d-lg-none" data-entity-type="file" data-entity-uuid="6dfc001e-4e43-4eab-a1d1-148f78f7fa67" data-src="https://i.ibb.co/SXnGZ7q/mainbnr-en-mb.jpg">
+<section class="position-relative d-flex align-items-start"><img alt="Kasi Up Unlimited Duit Siyes Murah 4G Parling Power" class="img-fluid d-none d-lg-block" data-entity-type="file" data-entity-uuid="7159c60e-51c5-4c4a-81d9-3677cae3a49a" data-src="/wp-content/themes/yes.my/images/home_images/bg_01_en-big_1.jpg" style="min-width: 100vw"> <img alt="Kasi Up Unlimited Duit Siyes Murah 4G Parling Power" class="img-fluid d-block d-lg-none" data-entity-type="file" data-entity-uuid="6dfc001e-4e43-4eab-a1d1-148f78f7fa67" data-src="https://i.ibb.co/SXnGZ7q/mainbnr-en-mb.jpg">
     <div class="bnr-body w-100">
         <div class="bnrbtn1 position-absolute">
             <div class="position-relative d-flex">
@@ -398,7 +290,7 @@
                     <h3>learn from home</h3>
                     <h2>LEARN FROM HOME <span class="color-pink">EXTENDS TO SEPTEMBER 2022</span></h2>
                     <p>Continue learning from home even as you go back to school. Opt-in for your extension before 16 October 2021.</p>
-                    <a href="http://ytlfoundation.org/lfh-extension" target="_blank" class="btn-cta">Extend Now</a>
+                    <a href="http://ytlfoundation.org/lfh-extension" target="_blank" class="btn-cta" rel="noopener">Extend Now</a>
                     <img src="/wp-content/themes/yes.my/images/lfh-extension/calendar-en-mobile.png" alt="Free Data Extension 7GB/month for 12 months!" title="Free Data Extension 7GB/month for 12 months!" class="img-calendar-mobile d-lg-none" />
                 </div>
                 <div class="layer-initiative">
@@ -420,6 +312,23 @@
         </div>
     </div>
 </section>
+    
+<section class="position-relative d-flex align-items-start prihatin">
+    <img alt="Prihatin dekstop" class="img-fluid d-none d-lg-block" data-entity-type="file" data-entity-uuid="2647d70b-43e9-4685-8aff-817cd856b53d" src="/wp-content/themes/yes.my/images/prihatin/phase-2/homebanner-pk15.png" width="100%" />
+    <img alt="Prihatin mobile" class="img-fluid d-block d-lg-none" data-entity-type="file" data-entity-uuid="4ae9826e-fe1e-43e0-9f3f-839aefb57ddd" src="/wp-content/themes/yes.my/images/prihatin/phase-2/homebanner-pk15-mobile.png" width="100%" />
+    <a class="d-lg-block d-none" href="https://prihatin.yes.my/" style="position: absolute; width: 25.5%; height: 9.4%; bottom: 9.4%; left: 50%; transform: translate(-50%, -50%); border-radius: 30px;" target="_blank"> &nbsp; </a>
+    <a class="d-lg-none d-block" href="https://prihatin.yes.my/" style="position: absolute; width: 59%; height: 6.9%; bottom: 4.9%; left: 50%; transform:translate(-50%, -50%); border-radius: 20px;" target="_blank"> &nbsp; </a>
+    <div class="layer-hiddenContent">
+        <h3>
+            Say YES to more benefits. <br />
+            Claim your Jaringan Prihatin subsidy with us.
+        </h3>
+        <p>
+            Already signed up for Jaringan Prihatin Programme? <br />
+            Switch over to <b>YES</b> today and enjoy great offers.
+        </p>
+    </div>
+</section>
 
 <section class="position-relative d-flex">
     <div style="position: absolute; width: 100%">
@@ -427,8 +336,7 @@
     </div>
     <svg class="d-none d-lg-block" height="100%" viewBox="0 0 1920 2051" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <image alt="Kasi Up Postpaid 49 &amp; Prepaid 15" class="d-none d-lg-block" data-entity-type="file" data-entity-uuid="987c3344-e0b7-4fc0-985b-f77c2ec3cc3d" height="2051" width="1920" xlink:href="/wp-content/themes/yes.my/images/home_images/psdsvgen-image_en-big.jpg"></image> <a href="https://appstore.yes.my/ywos 
 "> <image height="78" transform="translate(1255 1777)" width="288" xlink:href="/wp-content/themes/yes.my/images/home_images/psdsvgen-image2.png"></image> </a> <a href="https://appstore.yes.my/ywos
-"> <image height="78" transform="translate(1255 906)" width="288" xlink:href="/wp-content/themes/yes.my/images/home_images/psdsvgen-image3.png"></image> </a> </svg> <svg class="d-block d-lg-none" height="100%" viewBox="0 0 1242 3128" width="100%"
-        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <image alt="Kasi Up Postpaid 49 &amp; Prepaid 15" data-entity-type="file" data-entity-uuid="ff848844-aa9a-49d1-b115-948cfcde81cf" height="3128" width="1242" xlink:href="/wp-content/themes/yes.my/images/home_images/home_mobile_svgen-image_en_0.jpg"></image> <a href="https://appstore.yes.my/ywos"> <image height="86" transform="translate(709 2839)" width="324" xlink:href="/wp-content/themes/yes.my/images/home_images/sm/home_mobile_svgen-image2.png"></image> </a> <a href="https://appstore.yes.my/ywos"> <image height="79" transform="translate(694 1351)" width="291" xlink:href="/wp-content/themes/yes.my/images/home_images/sm/home_mobile_svgen-image3.png"></image> </a> </svg></section>
+"> <image height="78" transform="translate(1255 906)" width="288" xlink:href="/wp-content/themes/yes.my/images/home_images/psdsvgen-image3.png"></image> </a> </svg> <svg class="d-block d-lg-none" height="100%" viewBox="0 0 1242 3128" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <image alt="Kasi Up Postpaid 49 &amp; Prepaid 15" data-entity-type="file" data-entity-uuid="ff848844-aa9a-49d1-b115-948cfcde81cf" height="3128" width="1242" xlink:href="/wp-content/themes/yes.my/images/home_images/home_mobile_svgen-image_en_0.jpg"></image> <a href="https://appstore.yes.my/ywos"> <image height="86" transform="translate(709 2839)" width="324" xlink:href="/wp-content/themes/yes.my/images/home_images/sm/home_mobile_svgen-image2.png"></image> </a> <a href="https://appstore.yes.my/ywos"> <image height="79" transform="translate(694 1351)" width="291" xlink:href="/wp-content/themes/yes.my/images/home_images/sm/home_mobile_svgen-image3.png"></image> </a> </svg></section>
 
 <section class="d-flex position-relative align-items-start"><img alt="" class="img-fluid d-none d-lg-block" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/home_images/bg_04.jpg"> <img alt="" class="img-fluid d-block d-lg-none" data-entity-type="file" data-entity-uuid="" src="https://i.ibb.co/6yQd3qN/home-mobile-04-en.jpg">
     <div class="bnr-body position-absolute w-100">
@@ -476,7 +384,6 @@
         <!--  -->
     </div>
 </section>
-
 
 
 
