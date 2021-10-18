@@ -1,7 +1,7 @@
 /* 
     CSS Name        : Yes.my
     Created on      : March     30, 2021, 06:44:07 PM
-    Last edited on  : April     14, 2021, 02:43:23 AM
+    Last edited on  : October   18, 2021, 02:43:23 AM
     Author          : AL Latif Mohamad [YTL]
     Description     : Inline Stylings & Extended styles
 */
@@ -168,7 +168,7 @@ ul.menus ul.sub-menu {
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    min-width: 240px;
+    min-width: 250px;
     opacity: 0;
     padding: 26px;
     position: absolute;
