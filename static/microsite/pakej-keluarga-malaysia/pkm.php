@@ -221,15 +221,13 @@
         .layer-contentBox:last-of-type { border: 0; border-radius: 0 0 10px 10px; }
         .layer-contentBox img { max-height: 110px; }
 
-        .layer-contentBoxes.bg-blue { margin-top: 30px; }
-
         .layer-contentBoxes .layer-contentBox:after { clear: both; content: ''; display: block; }
         .layer-contentBoxes .tag-bgWhite { float: left; padding: 15px 10px 10px; }
-        .layer-contentBoxes.bg-blue .tag-bgWhite { margin: 0 15px 0 0 !important; }
+        .layer-contentBoxes.bg-blue .tag-bgWhite, .layer-contentBoxes .box-pink-3 .tag-bgWhite { margin: 0 15px 0 0 !important; }
         .layer-contentBoxes b { float: left; }
         .layer-contentBoxes b.b-margin { margin-top: 12px; }
 
-        .layer-floatEarn { font-size: 12px; line-height: 15px; height: 120px; padding: 24px 15px; width: 120px; right: -15px; top: 10px; }
+        .layer-floatEarn { font-size: 12px; line-height: 15px; height: 120px; padding: 24px 15px; width: 120px; right: -15px; top: 0px; }
         .layer-floatEarn b { float: none; }
         
         .img-headingPick { max-width: 50%; }
@@ -288,7 +286,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="cp-01 mb-4"><b><span class="mr-lg-2">• Best value for data</span> • No activation fee</b></div>
+                        <div class="cp-01 mb-4"><b><span class="mr-lg-2">• FREE 4G SMARTPHONE</span></b></div>
                     </div>
                 </div>
                 <div class="row">
@@ -301,7 +299,11 @@
                             </div>
                             <div class="layer-contentBox">
                                 <b>Samsung Galaxy A02</b>
-                                <span class="tag-bgWhite tag-mt">Only RM1</span>
+                                <span class="tag-bgWhite tag-mt">FREE</span>
+                            </div>
+                            <div class="layer-contentBox box-pink-3">
+                                <span class="tag-bgWhite tag-mb">1GB</span>
+                                <b>High Speed <br /> data a day</b>
                             </div>
                         </div>
                     </div>
@@ -309,7 +311,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="cp-03">
-                            Subscribe to <span class="yes-font">yes</span> Pakej Peranti and own the Samsung Galaxy A02 for only RM1! What's more, with 100GB data for only RM49 per month, it's the best value you can find. Enjoy higher data, better connectivity and faster speeds for the best internet experience. <br /><br />
+                            Subscribe to <span class="yes-font">yes</span> Pakej Peranti and own the Samsung Galaxy A02 for FREE! What's more, with 100GB data for only RM49 per month, it's the best value you can find. Enjoy higher data, better connectivity and faster speeds for the best internet experience. <br /><br />
                             <b>Registration period from 15 October 2021 to 15 April 2022</b>
                         </div>
                     </div>
@@ -328,7 +330,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="cp-01 mb-4"><b><span class="mr-lg-2">• Best value for data</span> • No activation fee</b></div>
+                        <div class="cp-01 mb-4"><b><span class="mr-lg-2">• BEST VALUE FOR DATA</span></b></div>
                     </div>
                 </div>
                 <div class="row">
@@ -359,6 +361,10 @@
                     <div class="col-12">
                         <div class="cp-03">
                             Subscribe to our <span class="yes-font">yes</span> Pakej Remaja to enjoy 20GB of data, now with 90 days validity to keep you online for longer. Claim 1GB daily for FREE for an extra data boost. Cover everything from your daily online learning needs, social media feeds, streaming your favorite videos and much more! <br /><br />
+                            <h4><b>Package open to:</b></h4>
+                            • Malaysian citizen with valid MyKad; <br />
+                            • Ages 12-20 years old; or <br />
+                            • Valid student card holders aged 21 and above. <br /><br />
                             <b>Registration period from 15 October 2021 to 15 April 2022</b>
                         </div>
                     </div>
