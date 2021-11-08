@@ -1,0 +1,254 @@
+<style type="text/css">
+    .textboxdisabled {
+        background: transparent;
+        border: 0;
+        height: 24px;
+        resize: none;
+        width: auto;
+        width: 100vw;
+        overflow-x: scroll;
+    }
+    
+    .disabled_txt {
+        display: flex;
+        align-items: center;
+    }
+    
+    .big_ {
+        display: flex;
+    }
+    
+    .sm_ {
+        display: none;
+    }
+    
+    @media (max-width:600px) {
+        .sm_ {
+            display: block;
+        }
+        .big_ {
+            display: none;
+        }
+    }
+</style>
+
+<style type="text/css">
+    .dropdown .dropdown-menu {
+        z-index: 9999 !important;
+    }
+    
+    table.faqgeneralstyle td {
+        padding: 14px 8px;
+        line-height: 1.2;
+        font-size: 16.5px;
+    }
+    
+    table.faqgeneralstyle td.titletop {
+        padding: 8px;
+    }
+    
+    .listtextfortablenote {
+        font-size: 14px;
+    }
+    
+    .accordion-faq ol {
+        padding-left: 15px;
+    }
+    
+    .cp-01 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    @media(max-width: 768px) {
+        .accordion-faq ol {
+            padding-left: 0;
+        }
+    }
+    /*accrodion css update on mobile*/
+    
+    .accordion-inner .card-body {
+        padding: 0 0 0 50px;
+    }
+    
+    .accordion-faq ol li+li {
+        margin-top: 25px;
+    }
+    
+    .accordion-faq ol li ul li+li {
+        margin-top: 10px;
+    }
+    
+    @media(max-width: 768px) {
+        .accordion-inner .card-body {
+            padding-left: 2.55rem;
+        }
+        .accordion-faq ol li {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+        .accordion-faq .card-header button {
+            padding: 18px 50px 18px 20px;
+        }
+        .accordion-faq .card-header button:after {
+            width: 21px;
+            height: 21px;
+            background-size: 21px auto;
+            right: 15px;
+            top: 30%;
+        }
+        .accordion-faq .card-body .card-header button {
+            padding: 16px 25px 16px 36px;
+            font-size: 16px !important;
+            line-height: 1.2;
+        }
+        .accordion-faq .card-body .card-header button:after {
+            top: 13px;
+            left: 5px;
+        }
+    }
+</style>
+
+
+<section class="dblock flexbox" id="main-content">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col">&nbsp;
+                    <p class="shoutout brand center-text lg" style="margin:0 auto;">Frequently Asked
+                        <b>Questions.</b>
+                    </p>
+                    <br> &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">&nbsp;
+                    <div style="max-width:570px;margin:0 auto;">
+                        <p class="shoutout-note xs">Question Categories</p>
+
+                        <div class="dropdown"><button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" id="ddState" type="button"><svg class="ia ia-yes">
+                                    <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                </svg>&nbsp;<b>How to Activate SIM</b></button>
+
+                            <div aria-labelledby="ddState" class="dropdown-menu">
+                                <a class="dropdown-item" href="/faq/jaringan-prihatin"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Jaringan Prihatin</b></a><a class="dropdown-item" href="/faq/about-yes-4g"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>about Yes 4G</b></a> <a class="dropdown-item" href="/faq/postpaid-faq"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Postpaid Plan</b></a>
+                                <a class="dropdown-item" href="/faq/postpaid-data-add-ons-faq"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Postpaid Data Add-Ons</b></a>
+                                <a class="dropdown-item" href="/faq/prepaid-faq"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Prepaid Plan</b></a>
+                                <a class="dropdown-item" href="/faq/prepaid-data-add-ons-faq"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Prepaid Data Add-Ons</b></a>
+                                <a class="dropdown-item" href="/faq/roaming"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Roaming &amp; IDD</b></a> <a class="dropdown-item" href="/faq/switch-to-yes"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Switch to Yes</b></a> <a class="dropdown-item" href="/faq/yesonlinestore"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Online Store</b></a> <a class="dropdown-item" href="/faq/care"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Care</b></a> <a class="dropdown-item" href="/faq/devices"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Devices</b></a> <a class="dropdown-item" href="/faq/refer-and-earn"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Refer and Earn</b></a> <a class="dropdown-item" href="/faq/databack"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Databack</b></a> <a class="dropdown-item" href="/faq/kasi-up-shopee-promo"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Kasi Up x Shopee RM1</b></a> <a class="dropdown-item" href="/faq/learn-from-home"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Learn From Home Initiative</b></a>
+                                <a class="dropdown-item" href="/faq/campaign"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Campaign / Promotion</b></a> <a class="dropdown-item" href="/faq/business3"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>Business</b></a>
+                                <a class="dropdown-item" href="/faq/MCMC-anti-scam"><svg class="ia ia-yes">
+                                        <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                    </svg>&nbsp;<b>MCMC Anti Scam</b></a>
+                            </div>
+                            <input id="state" name="state" type="hidden">
+                        </div>
+                    </div>
+                    <br> &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="accordion accordion-faq" id="afaq">
+                        <!-- card one -->
+                        <div class="card">
+                            <div class="card-header" id="general">
+                                <h5 class="mb-0"><button aria-controls="afaq-c1" aria-expanded="true" class="btn btn-link" data-target="#afaq-c1" data-toggle="collapse" type="button">How to Activate SIM</button></h5>
+                            </div>
+
+                            <div aria-labelledby="general" class="collapse show" data-parent="#afaq" id="afaq-c1">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-12 mt-lg-0 mt-4">
+                                                <p class="desc">Please follow the steps below to activate your SIM:</p><br>
+                                                <ul>
+                                                    <li><strong>Step 1</strong><br>
+                                                        <span class="desc">Download the <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a> app and open it to click on “New User”.</span>
+                                                    </li><br>
+                                                    <li><strong>Step 2</strong><br>
+                                                        <span class="desc">Click on “Activate Sim”, then “Start”.</span>
+                                                    </li><br>
+                                                    <li><strong>Step 3</strong><br>
+                                                        <span class="desc">Scan the barcode found on the back of the SIM jacket or manually input your SIM serial number.</span>
+                                                    </li><br>
+                                                    <li><strong>Step 4</strong><br>
+                                                        <span class="desc">You can either accept the assigned phone number or “Switch to Yes” by inputting your existing number and verifying it.</span>
+                                                    </li><br>
+                                                    <li><strong>Step 5</strong><br>
+                                                        <span class="desc">Complete your activation by following the steps to perform an eKYC and verify your ID.</span>
+                                                    </li><br>
+                                                    <li><strong>Step 6</strong><br>
+                                                        <span class="desc">
+                                                            A confirmation message of your activation will be sent upon completing the verification.<br><br>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <p class="desc"><strong style="font-weight:bold;">SIM replacement activation via <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a> app</strong><br></p><br>
+                                                <ul>
+                                                    <li><strong style="font-weight:bold;">Step 1</strong><br>
+                                                        <span class="desc">Log into MyYes app</span></li><br>
+                                                    <li><strong style="font-weight:bold;">Step 2</strong><br>
+                                                        <span class="desc">Choose “Activate SIM” to proceed</span></li><br>
+                                                    <li><strong style="font-weight:bold;">Step 3</strong><br>
+                                                        <span class="desc">Click on “Start”</span></li><br>
+                                                    <li><strong style="font-weight:bold;">Step 4</strong><br>
+                                                        <span class="desc">Scan the SIM Barcode or enter the serial number manually then once it is completed, SIM is activated</span></li>
+                                                </ul>
+                                                <p class="desc">
+                                                    <i>By activating our postpaid service via this mobile number, you acknowledge, accept and agree to be bound by our Postpaid Service Terms and Conditions as set out in <a href="https://www.yes.my/tnc/general-tnc/" target="_blank" rel="noopener">www.yes.my/legal</a> and you also consent to your personal data being used, processed and/or disclosed in accordance with our YTL Group Privacy Policy available at <a href="https://ytl.com/privacypolicy.asp" target="_blank" rel="noopener">https://ytl.com/privacypolicy.asp</a></i>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-3 col-12 mt-lg-0 mt-4">
+                                                <div class="cp-01 text-center">Click here to watch the video</div>
+                                                <a href="https://youtu.be/uaIs-MWkh7U" target="_blank" rel="noopener"><img src="/wp-content/uploads/2021/11/how-activate.jpg" alt="How to Activate" title="How to Activate" width="100%"></a>
+                                                <div class="cp-01 mt-2 text-center"><a href="https://youtu.be/uaIs-MWkh7U" target="_blank" rel="noopener">How To Activate Your New YES SIM</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card one -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

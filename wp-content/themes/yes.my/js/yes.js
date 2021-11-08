@@ -1,7 +1,7 @@
 /* 
     JavaScript Name : Yes.my
     Created on      : March     30, 2021, 06:44:07 PM
-    Last edited on  : April     14, 2021, 02:43:23 AM
+    Last edited on  : November  03, 2021, 02:43:23 AM
     Author          : AL Latif Mohamad [YTL]
     Description     : Inline JavaScripts & Extended scripts
 */
@@ -189,5 +189,19 @@ $(document).ready(function() {
         $(ddToggle).html(selectedVal);
         $('.form-std input#' + targetField).val(selectedVal);
     });
+    
+    var urlLocation = window.location.href;
+    if (urlLocation.indexOf('faq') > -1 && $('.dropdown').length > 0 && urlLocation.indexOf('howtoactivatesim') < 0) {
+        var linkHowToActivateSim    = '/faq/howtoactivatesim/';
+        var linkHowToActivateSimText= '<svg class="ia ia-yes"><use xlink:href="/ia-defs.svg#ia-yes"></use></svg> <b>How To Activate SIM</b>';
+        if (urlLocation.indexOf('ms') > -1) {
+            linkHowToActivateSim    = '/ms' + linkHowToActivateSim;
+            linkHowToActivateSimText= '<svg class="ia ia-yes"><use xlink:href="/ia-defs.svg#ia-yes"></use></svg> <b>Cara Untuk Mengaktifkan SIM Baru YES</b>';
+        } else if (urlLocation.indexOf('zh-hans') > -1) {
+            // linkHowToActivateSim    = '/zh-hans' + linkHowToActivateSim;
+        }
+        var appendHTML  = '<a class="dropdown-item" href="' + linkHowToActivateSim + '">' + linkHowToActivateSimText + '</a>';
+        $('div.dropdown-menu').prepend(appendHTML);
+    }
 });
 /* END Extended */
