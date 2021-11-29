@@ -151,12 +151,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-0 col-sm-8 offset-sm-2 pb-5 pb-lg-0 text-center">
-                        <img class="img-fluid mb-5" src="/wp-content/themes/yes.my/images/reload-and-win/how-to-reload-bm.png" alt="How to Reload" title="How to Reload" />
-                        <a href="https://selfcare.yes.my/myselfcare/doExpressPay.do" class="btn-01 text-white">JOM TAMBAH NILAI!</a>
+                        <img class="img-fluid" src="/wp-content/themes/yes.my/images/reload-and-win/how-to-reload-bm.png" alt="How to Reload" title="How to Reload" />
+                        <!-- <a href="https://selfcare.yes.my/myselfcare/doExpressPay.do" class="btn-01 text-white">JOM TAMBAH NILAI!</a> -->
                     </div>
                     <div class="col-lg-6 offset-lg-0 col-sm-8 offset-sm-2 pb-5 pb-lg-0 text-center">
-                        <img class="img-fluid mb-5" src="/wp-content/themes/yes.my/images/reload-and-win/how-to-buy-add-ons-bm.png" alt="How to Buy Add-Ons" title="How to Buy Add-Ons" />
-                        <a href="https://selfcare.yes.my/myselfcare/doExpressPay.do" class="btn-01 text-white">BELI SEKARANG</a>
+                        <img class="img-fluid" src="/wp-content/themes/yes.my/images/reload-and-win/how-to-buy-add-ons-bm.png" alt="How to Buy Add-Ons" title="How to Buy Add-Ons" />
+                        <!-- <a href="https://selfcare.yes.my/myselfcare/doExpressPay.do" class="btn-01 text-white">BELI SEKARANG</a> -->
                     </div>
                 </div>
             </div>

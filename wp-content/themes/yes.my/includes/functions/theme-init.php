@@ -133,4 +133,16 @@
         </script>
 <?php
     }
+
+    add_action('wp_footer', 'cf7_keep_vx_url');
+    
+    function cf7_keep_vx_url() { ?>
+        <script type="text/javascript">
+            setTimeout(function() {
+                var elementURL = $('input[name="vx_url"]');
+                $(elementURL).val(window.location.href.split('?')[0]);
+            }, 1000);
+        </script>
+<?php 
+    }
 ?>
