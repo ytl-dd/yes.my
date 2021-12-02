@@ -628,17 +628,21 @@ margin-top: 20%;
     </div>
     <!--  -->
 </section>
-
-<section class="position-relative d-flex align-items-start justify-content-center"><img alt="Broadband" class="img-fluid d-none d-md-flex" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/broadband-images/home_en_broadband_02.jpg"> <img alt="Broadband" class="img-fluid d-flex d-md-none" data-entity-type=""
+<style type="text/css">
+    @media (max-width: 576px) {
+        .section-support { background-color: #04A7E0; height: 1080px; }
+    }
+</style>
+<section class="position-relative d-flex align-items-start justify-content-center section-support"><img alt="Broadband" class="img-fluid d-none d-md-flex" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/broadband-images/home_en_broadband_02.jpg"> <img alt="Broadband" class="img-fluid d-flex d-md-none" data-entity-type=""
         data-entity-uuid="" src="/wp-content/themes/yes.my/images/broadband-images/home_en_broadband-sm_03.jpg">
     <div class="position-absolute ">
         <div class="z-index-4 position-relative content-wrapper d-flex flex-wrap  justify-content-center px-3 pt-3 px-md-0">
-            <a class="py-2 text-white align-items-center text-decoration-0 d-lg-flex d-none col-12 col-md-6 col-sm-8 col-lg-4 sec2-btns btn-r btn-b-w mx-3 my-3 my-md-0" href="/4g-broadband/" style="font-family: 'VAG Rounded'; font-weight: 900; font-size:20px;"><img alt="Broadband" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/broadband-images/home_bm_icons_03.jpg"> On-The-Go Broadband </a>
-            <a class="py-2 d-lg-flex d-none align-items-center text-decoration-0 col-lg-4 col-md-6 col-sm-8 col-12 sec2-btns btn-r bg-darkblue btn-b-b mx-3 my-3 my-lg-0" style="font-family: 'VAG Rounded'; font-weight: 900; font-size:20px; color: white !important; text-decoration: none;">
+            <a class="py-2 text-white align-items-center text-decoration-0 d-lg-flex d-nones col-12 col-md-6 col-sm-8 col-lg-4 sec2-btns btn-r btn-b-w mx-3 my-3 my-md-0" href="/4g-broadband/" style="font-family: 'VAG Rounded'; font-weight: 900; font-size:20px;"><img alt="Broadband" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/broadband-images/home_bm_icons_03.jpg"> On-The-Go Broadband </a>
+            <a class="py-2 d-lg-flex d-nones align-items-center text-decoration-0 col-lg-4 col-md-6 col-sm-8 col-12 sec2-btns btn-r bg-darkblue btn-b-b mx-3 my-3 my-lg-0" style="font-family: 'VAG Rounded'; font-weight: 900; font-size:20px; color: white !important; text-decoration: none;">
                 <img alt="Broadband" data-entity-type="" data-entity-uuid="" src="/wp-content/themes/yes.my/images/broadband-images/home_bm_icons_05.jpg"> Home Broadband
             </a>
 
-            <div class="d-lg-none d-flex row w-100 pt-3">
+            <div class="d-lg-none d-flexs row w-100 pt-3 d-none">
                 <div class="dropdown col-12 col-sm-8 col-md-6 m-auto">
                     <div><button class="btn " id="drop_toggle" style="width:100%; font-family: 'VAG Rounded'; padding-top: 5px; font-weight: 900; height: 70px;
                    color: white; background-color: transparent; font-size:20px; border:4px solid #fff; box-shadow: none;" type="button"><img alt="Broadband" data-entity-type="" data-entity-uuid="" height="55" src="/wp-content/themes/yes.my/images/broadband-images/broadband_bm_icons_05.jpg">Home
@@ -854,7 +858,7 @@ margin-top: 20%;
     </div>
 
     <div class="position-relative w-100 bg-lg" style="background-color: #eba91f;">
-        <div class="d-flex d-md-none justify-content-center flex-column align-items-center mt-4"><a class="bg-pink text-white btnborder 
+        <div class="d-flex d-md-none justify-content-center flex-column align-items-center mt-4"><br /><a class="bg-pink text-white btnborder 
             py-3 px-4 m-0 outline-none pointer text-decoration-0" href="/support/store-locator" style="font-weight: 900;
     font-family: 'VAG Rounded Std';">SIGN UP NOW</a>
 
@@ -1160,14 +1164,57 @@ margin-top: 20%;
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="/wp-content/themes/yes.my/js/slick.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
 <script type="text/javascript" src="https://alya-staging.azurewebsites.net/staging-f/yes-testing/broadband/onthego/en/testing.js"></script>
 
 <script>
     $(document).ready(function() {
+        initSlick();
+        $(window).resize(function() {
+            // history.go(0)
+            initSlick();
+        });
+        var slidermainSlick = {
+            speed: 500,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            dots: false,
+            arrows: false,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            }]
+        };
+        var slidermain1Slick = {
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            dots: false,
+            arrows: false,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            }]
+        };
+        $('#slidermain').slick(slidermainSlick);
+        $('#slidermain1').slick(slidermain1Slick);
+    });
 
+    function initSlick() {
         if ($(window).width() < 1201) {
-            $("#slidermain").addClass("carousel");
+            $("#slidermain").addClass('carousel');
         }
 
         if ($(window).width() > 1200) {
@@ -1181,43 +1228,7 @@ margin-top: 20%;
         if ($(window).width() > 1200) {
             $("#slidermain1").removeClass("carousel1");
         }
-        $(window).resize(function() {
-            // history.go(0)
-        });
-        $('.carousel').slick({
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            dots: true,
-            arrows: false,
-            responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }]
-        });
-
-        $('.carousel1').slick({
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            dots: true,
-            arrows: false,
-            responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }]
-        });
-    });
+        }
 
     $(document).ready(function() {
         $("#drop_toggle").click(function() {
