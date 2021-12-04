@@ -138,7 +138,8 @@
         ?>
         <div class="floaticon"><a href="<?php echo $reloadLink; ?>" title="Reload & Win"><img src="/wp-content/themes/yes.my/images/reload-and-win/floaticon.png" /></a></div>
         <style type="text/css">
-            .floaticon { border-radius: 100%; position: fixed; top: 85%; height: 150px; left: 80%; width: 150px; z-index: 9999; transition: all 2s ease; animation-name: movingFloatIcon; animation-delay: 2s; animation-duration: 30s; animation-iteration-count: infinite; }
+            .floaticon { border-radius: 100%; position: fixed; bottom: 20px; height: 150px; right: 20px; width: 150px; }
+            /* .floaticon { border-radius: 100%; position: fixed; top: 85%; height: 150px; left: 80%; width: 150px; z-index: 9999; transition: all 2s ease; animation-name: movingFloatIcon; animation-delay: 2s; animation-duration: 30s; animation-iteration-count: infinite; } */
             .floaticon a { display: block; border-radius: 100%; box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.6); }
             .floaticon img { height: 150px; width: 150px; }
             @keyframes movingFloatIcon {
