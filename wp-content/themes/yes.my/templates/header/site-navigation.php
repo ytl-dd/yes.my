@@ -1,19 +1,16 @@
-        <?php 
+<?php 
             $lang           = get_bloginfo("language");
-            $home_permalink = 'https://www.yes.my';
             $sl_permalink   = get_permalink(STORE_LOCATOR_POST_ID_EN);
             if ($lang == 'ms-MY') {
-                $home_permalink = 'https://www.yes.my/ms';
                 $sl_permalink   = get_permalink(STORE_LOCATOR_POST_ID_BM);
             } else if ($lang == 'zh-CN') {
-                $home_permalink = 'https://www.yes.my/zh-hans';
                 $sl_permalink   = get_permalink(STORE_LOCATOR_POST_ID_CH);
             }
         ?>
 
         <nav class="nav-mobile">
             <div class="mobile-shop">
-                <a tabindex="-1" aria-label="Site Logo" href="<?= $home_permalink; ?>" class="site-logo" style="margin-right:10px;">
+                <a tabindex="-1" aria-label="Site Logo" href="<?= get_home_url(); ?>" class="site-logo" style="margin-right:10px;">
                     <svg class="ia ia-yes">
                         <use xlink:href="#ia-yes"></use>
                     </svg>
@@ -162,7 +159,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-2 col-lg-1">
-                            <a aria-label="Site Logo" href="<?php echo $home_permalink; ?>" class="site-logo" style="line-height: 34px;padding-top: 8px;">
+                            <a aria-label="Site Logo" href="<?php echo esc_url(home_url('/')); ?>" class="site-logo" style="line-height: 34px;padding-top: 8px;">
                                 <svg class="ia ia-yes">
                                     <use xlink:href="#ia-yes"></use>
                                 </svg>

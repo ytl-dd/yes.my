@@ -168,10 +168,10 @@
                 $('[href="/"], [href="https://site.yes.my"], [href="https://site.yes.my/"]').each(function () {
                     $(this).attr('href', 'https://www.yes.my/');
                 });
-                $('[href="/ms"], [href="https://site.yes.my/ms"], [href="https://site.yes.my/ms/"]').each(function () {
+                $('[href="/ms"], [href="/ms/"], [href="https://site.yes.my/ms"], [href="https://site.yes.my/ms/"]').each(function () {
                     $(this).attr('href', 'https://www.yes.my/ms/');
                 });
-                $('[href="/zh-hans"], [href="https://site.yes.my/zh-hans"], [href="https://site.yes.my/zh-hans/"]').each(function () {
+                $('[href="/zh-hans"], [href="/zh-hans/"], [href="https://site.yes.my/zh-hans"], [href="https://site.yes.my/zh-hans/"]').each(function () {
                     $(this).attr('href', 'https://www.yes.my/zh-hans/');
                 });
                 $('[href="https://play.google.com/store/apps/details?id=my.yes.yes4g&hl=en&gl=US"], [href="https://play.google.com/store/apps/details?id=my.yes.yes4g"], [href="https://play.google.com/store/apps/details?id=my.yes.yes4g&hl=en"], [href="https://itunes.apple.com/us/app/myyes4g/id1321262375?mt=8"], [href="http://yw.my/myyes4g"]').each(function () {
