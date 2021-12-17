@@ -1,7 +1,7 @@
 /* 
     JavaScript Name : Yes.my
     Created on      : March     30, 2021, 06:44:07 PM
-    Last edited on  : November  03, 2021, 02:43:23 AM
+    Last edited on  : December  17, 2021, 02:43:23 AM
     Author          : AL Latif Mohamad [YTL]
     Description     : Inline JavaScripts & Extended scripts
 */
@@ -191,17 +191,36 @@ $(document).ready(function() {
     });
     
     var urlLocation = window.location.href;
-    if (urlLocation.indexOf('faq') > -1 && $('.dropdown').length > 0 && urlLocation.indexOf('howtoactivatesim') < 0) {
-        var linkHowToActivateSim    = '/faq/howtoactivatesim/';
-        var linkHowToActivateSimText= '<svg class="ia ia-yes"><use xlink:href="/ia-defs.svg#ia-yes"></use></svg> <b>How To Activate SIM</b>';
-        if (urlLocation.indexOf('ms') > -1) {
-            linkHowToActivateSim    = '/ms' + linkHowToActivateSim;
-            linkHowToActivateSimText= '<svg class="ia ia-yes"><use xlink:href="/ia-defs.svg#ia-yes"></use></svg> <b>Cara Untuk Mengaktifkan SIM Baru YES</b>';
-        } else if (urlLocation.indexOf('zh-hans') > -1) {
-            // linkHowToActivateSim    = '/zh-hans' + linkHowToActivateSim;
+    if (urlLocation.indexOf('faq') > -1 && $('.dropdown').length > 0) {
+        if (urlLocation.indexOf('howtoactivatesim') < 0) {
+            var linkHowToActivateSim    = '/faq/howtoactivatesim/';
+            var linkHowToActivateSimText= '<svg class="ia ia-yes"><use xlink:href="/ia-defs.svg#ia-yes"></use></svg> <b>How To Activate SIM</b>';
+            if (urlLocation.indexOf('ms') > -1) {
+                linkHowToActivateSim    = '/ms' + linkHowToActivateSim;
+                linkHowToActivateSimText= '<svg class="ia ia-yes"><use xlink:href="/ia-defs.svg#ia-yes"></use></svg> <b>Cara Untuk Mengaktifkan SIM Baru YES</b>';
+            } else if (urlLocation.indexOf('zh-hans') > -1) {
+                // linkHowToActivateSim    = '/zh-hans' + linkHowToActivateSim;
+            }
+            var appendHTML  = '<a class="dropdown-item" href="' + linkHowToActivateSim + '">' + linkHowToActivateSimText + '</a>';
+            $('div.dropdown-menu').prepend(appendHTML);
         }
-        var appendHTML  = '<a class="dropdown-item" href="' + linkHowToActivateSim + '">' + linkHowToActivateSimText + '</a>';
-        $('div.dropdown-menu').prepend(appendHTML);
+
+        if (urlLocation.indexOf('ms') < 0) {
+            if ($('.dropdown-menu a[href="/faq/about-yes-4g"').length > 1) {
+                $('.dropdown-menu a[href="/faq/about-yes-4g"')[1].remove();
+            }
+            $('.dropdown-menu a[href="/faq/about-yes-4g"').find('b').html('About Yes');
+        } else {
+            if ($('.dropdown-menu a[href="/ms/faq/about-yes-4g"').length > 1) {
+                $('.dropdown-menu a[href="/ms/faq/about-yes-4g"')[1].remove();
+            }
+            $('.dropdown-menu a[href="/ms/faq/about-yes-4g"').find('b').html('Tentang Yes');
+            
+            if ($('.dropdown-menu a[href="/ms/faq/about-yes-4g/"').length > 1) {
+                $('.dropdown-menu a[href="/ms/faq/about-yes-4g/"')[1].remove();
+            }
+            $('.dropdown-menu a[href="/ms/faq/about-yes-4g/"').find('b').html('Tentang Yes');
+        }
     }
 });
 /* END Extended */

@@ -1,7 +1,7 @@
 <section class="dblock flexbox light" style="background-image:url('/wp-content/themes/yes.my/images/yes2018/Group 2512.jpg');">
     <div class="fullscreen centerize center-text">
         <div>
-            <p class="shoutout lg">Peranti anda boleh <b>sokong 4G LTE?</b></p>
+            <p class="shoutout lg">Adakah peranti anda <b>mesra 5G?</b></p>
 
             <p class="shoutout-note">Semak di bawah!</p>
         </div>

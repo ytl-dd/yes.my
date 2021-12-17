@@ -1,7 +1,7 @@
 <section class="dblock flexbox light" style="background-image:url('/wp-content/themes/yes.my/images/yes2018/Group 2512.jpg');">
     <div class="fullscreen centerize center-text">
         <div>
-            <p class="shoutout lg">Is your device <b>4G LTE friendly?</b></p>
+            <p class="shoutout lg">Is your device <b>5G ready?</b></p>
 
             <p class="shoutout-note">Check below!</p>
         </div>
