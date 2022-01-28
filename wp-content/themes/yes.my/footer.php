@@ -158,7 +158,7 @@
             }
             @media (max-width: 769px) {
                 .floaticon { left: 70%; animation-name: movingFloatIconMobile; }
-                .floaticon, .floaticon img { height: 100px; width: 100px; }
+                .floaticon, .floaticon img { height: 100px; width: 100px; z-index: 9999999; }
             }
         </style>
         <?php endif; ?>

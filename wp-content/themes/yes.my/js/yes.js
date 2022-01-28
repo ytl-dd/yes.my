@@ -1,7 +1,7 @@
 /* 
     JavaScript Name : Yes.my
     Created on      : March     30, 2021, 06:44:07 PM
-    Last edited on  : December  17, 2021, 02:43:23 AM
+    Last edited on  : January   28, 2022, 02:43:23 AM
     Author          : AL Latif Mohamad [YTL]
     Description     : Inline JavaScripts & Extended scripts
 */
@@ -192,6 +192,7 @@ $(document).ready(function() {
     
     var urlLocation = window.location.href;
     if (urlLocation.indexOf('faq') > -1 && $('.dropdown').length > 0) {
+        var appendHTML = '';
         if (urlLocation.indexOf('howtoactivatesim') < 0) {
             var linkHowToActivateSim    = '/faq/howtoactivatesim/';
             var linkHowToActivateSimText= '<svg class="ia ia-yes"><use xlink:href="/ia-defs.svg#ia-yes"></use></svg> <b>How To Activate SIM</b>';
@@ -201,9 +202,21 @@ $(document).ready(function() {
             } else if (urlLocation.indexOf('zh-hans') > -1) {
                 // linkHowToActivateSim    = '/zh-hans' + linkHowToActivateSim;
             }
-            var appendHTML  = '<a class="dropdown-item" href="' + linkHowToActivateSim + '">' + linkHowToActivateSimText + '</a>';
-            $('div.dropdown-menu').prepend(appendHTML);
+            appendHTML  += '<a class="dropdown-item" href="' + linkHowToActivateSim + '">' + linkHowToActivateSimText + '</a>';
         }
+        if (urlLocation.indexOf('firstto5g') < 0) {
+            var linkFirstTo5G    = '/faq/firstto5g/';
+            var linkFirstTo5GText= '<svg class="ia ia-yes"><use xlink:href="/ia-defs.svg#ia-yes"></use></svg> <b>First to 5G</b>';
+            if (urlLocation.indexOf('ms') > -1) {
+                linkFirstTo5G    = '/ms' + linkFirstTo5G;
+                linkFirstTo5GText= '<svg class="ia ia-yes"><use xlink:href="/ia-defs.svg#ia-yes"></use></svg> <b>Juara 5G</b>';
+            } else if (urlLocation.indexOf('zh-hans') > -1) {
+                // linkHowToActivateSim    = '/zh-hans' + linkFirstTo5G;
+            }
+            appendHTML  += '<a class="dropdown-item" href="' + linkFirstTo5G + '">' + linkFirstTo5GText + '</a>';
+        }
+        $('div.dropdown-menu').prepend(appendHTML);
+
 
         if (urlLocation.indexOf('ms') < 0) {
             if ($('.dropdown-menu a[href="/faq/about-yes-4g"').length > 1) {
