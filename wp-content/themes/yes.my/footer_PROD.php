@@ -124,45 +124,6 @@
             </div>
         </div>
         
-        <?php 
-            global $post;
-            $post_slug  = $post->post_name;
-            if ($post_slug != 'reloadandwin') : 
-                $lang       = get_bloginfo('language');
-                $reloadLink = '/reloadandwin';
-                if ($lang == 'ms-MY') {
-                    $reloadLink = '/ms'.$reloadLink;
-                } else if ($lang == 'zh-CN') {
-                    $reloadLink = '/zh-hans'.$reloadLink;
-                }
-        ?>
-        <div class="floaticon"><a href="<?php echo $reloadLink; ?>" title="Reload & Win"><img src="/wp-content/themes/yes.my/images/reload-and-win/floaticon.png" /></a></div>
-        <style type="text/css">
-            .floaticon { border-radius: 100%; position: fixed; bottom: 20px; height: 150px; right: 20px; width: 150px; }
-            /* .floaticon { border-radius: 100%; position: fixed; top: 85%; height: 150px; left: 80%; width: 150px; z-index: 9999; transition: all 2s ease; animation-name: movingFloatIcon; animation-delay: 2s; animation-duration: 30s; animation-iteration-count: infinite; } */
-            .floaticon a { display: block; border-radius: 100%; box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.6); }
-            .floaticon img { height: 150px; width: 150px; }
-            @keyframes movingFloatIcon {
-                0% { left: 80%; top: 85%; }
-                25% { left: 7%; top: 85%; }
-                50% { left: 7%; top: 100px; }
-                75% { left: 80%; top: 100px; }
-                100% { left: 80%; top: 85%; }
-            }
-            @keyframes movingFloatIconMobile {
-                0% { left: 70%; top: 85%; }
-                25% { left: 5%; top: 85%; }
-                50% { left: 5%; top: 55px; }
-                75% { left: 70%; top: 55px; }
-                100% { left: 70%; top: 85%; }
-            }
-            @media (max-width: 769px) {
-                .floaticon { left: 70%; animation-name: movingFloatIconMobile; }
-                .floaticon, .floaticon img { height: 100px; width: 100px; z-index: 9999999; }
-            }
-        </style>
-        <?php endif; ?>
-        
         <script type="text/javascript">
             $(document).ready(function () {
                 $('[href="/"], [href="https://site.yes.my"], [href="https://site.yes.my/"]').each(function () {
