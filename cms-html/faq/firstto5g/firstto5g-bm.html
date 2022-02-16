@@ -1,0 +1,1127 @@
+<style type="text/css">
+    .textboxdisabled {
+        background: transparent;
+        border: 0;
+        height: 24px;
+        resize: none;
+        width: auto;
+        width: 100vw;
+        overflow-x: scroll;
+    }
+    
+    .disabled_txt {
+        display: flex;
+        align-items: center;
+    }
+    
+    .big_ {
+        display: flex;
+    }
+    
+    .sm_ {
+        display: none;
+    }
+    
+    .accordion-faq ol li ol li .desc {
+        font-weight: normal;
+    }
+    
+    @media (max-width:600px) {
+        .sm_ {
+            display: block;
+        }
+        .big_ {
+            display: none;
+        }
+    }
+</style>
+
+<style type="text/css">
+    .dropdown .dropdown-menu {
+        z-index: 9999 !important;
+    }
+    
+    table.faqgeneralstyle td {
+        padding: 14px 8px;
+        line-height: 1.2;
+        font-size: 16.5px;
+    }
+    
+    table.faqgeneralstyle td.titletop {
+        padding: 8px;
+    }
+    
+    .listtextfortablenote {
+        font-size: 14px;
+    }
+    
+    .accordion-faq ol {
+        padding-left: 15px;
+    }
+    
+    .cp-01 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    @media(max-width: 768px) {
+        .accordion-faq ol {
+            padding-left: 0;
+        }
+    }
+    /*accrodion css update on mobile*/
+    
+    .accordion-inner .card-body {
+        padding: 0 0 0 50px;
+    }
+    
+    .accordion-faq ol li+li {
+        margin-top: 25px;
+    }
+    
+    .accordion-faq ol li ul li+li {
+        margin-top: 10px;
+    }
+    
+    @media(max-width: 768px) {
+        .accordion-inner .card-body {
+            padding-left: 2.55rem;
+        }
+        .accordion-faq ol li {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+        .accordion-faq .card-header button {
+            padding: 18px 50px 18px 20px;
+        }
+        .accordion-faq .card-header button:after {
+            width: 21px;
+            height: 21px;
+            background-size: 21px auto;
+            right: 15px;
+            top: 30%;
+        }
+        .accordion-faq .card-body .card-header button {
+            padding: 16px 25px 16px 36px;
+            font-size: 16px !important;
+            line-height: 1.2;
+        }
+        .accordion-faq .card-body .card-header button:after {
+            top: 13px;
+            left: 5px;
+        }
+    }
+    
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .faq-img {
+            width: 100% !important;
+        }
+    }
+</style>
+<section class="dblock flexbox" id="main-content">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col">&nbsp;
+                    <p class="shoutout brand center-text lg" style="margin:0 auto;"><b>Soalan</b> Lazim
+                    </p>
+                    <br> &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">&nbsp;
+                    <div style="max-width:570px;margin:0 auto;">
+                        <p class="shoutout-note xs">Question Categories</p>
+
+                        <div class="dropdown"><button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" id="ddState" type="button"><svg class="ia ia-yes">
+                                    <use xlink:href="/ia-defs.svg#ia-yes"></use>
+                                </svg>&nbsp;<b>Juara 5G</b></button>
+
+                            <div aria-labelledby="ddState" class="dropdown-menu">
+                                <a class="dropdown-item" href="/ms/faq/about-yes-4g/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Tentang YES 4G</b></a>
+                                <a class="dropdown-item" href="/ms/faq/jaringan-prihatin"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Jaringan Prihatin</b></a>
+                                <a class="dropdown-item" href="/ms/faq/postpaid-faq/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Pelan Perkhidmatan Pascabayar YES</b></a>
+                                <a class="dropdown-item" href="/ms/faq/postpaid-data-add-ons-faq/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Data Add-On untuk Pascabayar YES </b></a>
+                                <a class="dropdown-item" href="/ms/faq/prepaid-faq/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Pelan Prabayar YES</b></a>
+                                <a class="dropdown-item" href="/ms/faq/prepaid-data-add-ons-faq/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Add-On Prabayar YES</b></a>
+                                <a class="dropdown-item" href="/ms/faq/roaming/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Roaming &amp; IDD</b></a>
+                                <a class="dropdown-item" href="/ms/faq/switch-to-yes/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Beralih kepada YES</b></a>
+                                <a class="dropdown-item" href="/ms/faq/yesonlinestore/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Kedai dalam Talian YES</b></a>
+                                <a class="dropdown-item" href="/ms/faq/care/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Care</b></a>
+                                <a class="dropdown-item" href="/ms/faq/devices/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Alat Peranti</b></a>
+                                <a class="dropdown-item" href="/ms/faq/refer-and-earn/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Refer and Earn</b></a>
+                                <a class="dropdown-item" href="/ms/faq/databack/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Databack</b></a>
+                                <a class="dropdown-item" href="/ms/faq/kasi-up-shopee-promo/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Kasi Up Shopee Promo</b></a>
+                                <a class="dropdown-item" href="/ms/faq/learn-from-home/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>INISIATIF BELAJAR DARI RUMAH</b></a>
+                                <a class="dropdown-item" href="/ms/faq/campaign/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Campaign / Promotion</b></a>
+                                <a class="dropdown-item" href="/ms/faq/business3/"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>Business</b></a>
+                                <!-- <a class="dropdown-item" href="/ms/faq/MCMC-anti-scam"><svg class="ia ia-yes"> <use xlink:href="/ia-defs.svg#ia-yes"></use> </svg>&nbsp;<b>MCMC Anti Scam</b></a> -->
+                            </div>
+                            <input id="state" name="state" type="hidden">
+                        </div>
+                    </div>
+                    <br> &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="accordion accordion-faq" id="afaq">
+                        <!-- card one -->
+                        <div class="card">
+                            <div class="card-header" id="faq-freefire-sim">
+                                <h5 class="mb-0"><button aria-controls="freefire-sim" aria-expanded="false" class="btn btn-link collapsed" data-target="#freefire-sim" data-toggle="collapse" type="button">YES FT5G Free Fire SIM Pack Plan</button></h5>
+                            </div>
+                            <div aria-labelledby="faq-freefire-sim" class="collapse" data-parent="#afaq" id="freefire-sim">
+                                <div class="card-body">
+                                    <strong style="text-decoration: underline; font-size: 18px;">Information on the Free Fire Plan</strong>
+                                    <ol>
+                                        <li>
+                                            What is the YES FT5G Free Fire SIM Pack?
+                                            <p><span class="desc">The YES FT5G Free Fire SIM Pack (<strong>“Free Fire Plan”</strong>) is a Prepaid Service Plan provided by YTL Communications Sdn Bhd (Company No.200701035605 (793634-V)) (<strong>“YTLC”</strong>) in collaboration with Garena Online Private Limited (Company No. 200908142H) (<strong>“Garena”</strong>). It is offered from its official launch date until 31 March 2022 to all Malaysians and non-Malaysians residing in Malaysia aged 12 years and above (please obtain parental consent where applicable) with a compatible 5G Smartphone. It is subject to the Free Fire Plan terms and conditions.</span></p>
+                                        </li>
+                                        <li>
+                                            Where can I apply for the Free Fire Plan?
+                                            <p><span class="desc">
+                                                You can apply for the Free Fire Plan through the YES website <a href="https://appstore.yes.my/ywos/signup" target="_blank" rel="noopener">www.yes.my</a>  from 12 February 2022 or the official launch date until 31 March 2022. An Eligible Subscriber can pre-order the Free Fire Plan via a pre-order link provided during the Garena Free Fire Online Tournament between 5 February 2022 and 11 February 2022. For those who pre-order, the SIM Pack will be processed and delivered after the official launch date, subject to eligibility.  
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            How many Free Fire SIM Pack can I apply?
+                                            <p><span class="desc">
+                                                You can apply for one (1) Free Fire SIM pack with one (1) contactable mobile number provided that the Eligible Subscriber does not have, in aggregate, more than five (5) prepaid service accounts with YES. For redemption of the Free Fire Item Code, one National Registration Identification Card (NRIC) or Passport is eligible for only one redemption.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            What do I get from this Free Fire Plan?
+                                            <p><span class="desc">
+                                                There are no charges for the initial subscription to the Free Fire Plan for Eligible Subscribers, while stocks lasts. For the first 30 days after activation of the Free Fire Plan SIM Card (“Initial Validity Period”), you will receive the following:-
+                                                </span></p>
+                                            <ol type="a">
+                                                <li style="font-weight:normal">One Free Fire Item Code (see FAQ 5 and the section on Free Fire Item Code below);</li>
+                                                <li style="font-weight:normal">30 days of Account Validity Period from date of SIM Card activation;</li>
+                                                <li style="font-weight:normal">Unlimited calls and SMS from Yes to Yes numbers (On-Net services: not all 018 numbers are Yes numbers); </li>
+                                                <li style="font-weight:normal">Unlimited 5G service until 31 March 2022 (subject to availability and compatible 5G smartphone, please read FAQs on Yes 5G network);</li>
+                                                <li style="font-weight:normal">10 GB of 4G LTE mobile data during the Initial Validity Period (where there is no 5G services – hotspot is applicable); and</li>
+                                                <li style="font-weight:normal">Free internet (there will be no mobile data consumption deducted) when you use the Garena Free Fire application on your mobile phone.*<br> * Whitelisting of mobile data utilised for Garena Free Fire Applications
+                                                    without deduction of mobile data consumption are based on a best effort basis. There may be instances that whitelisting may not be possible and mobile data consumption may be captured. This may be due
+                                                    to technical or other errors or issues such as changes or updates to the Garena Free Fire Application’s IP Addresses or any configuration or other technical requirements that have not been notified to
+                                                    YES to enable the said whitelisting. This extra free service of free internet for use of the Garena Free Fire application, is not guaranteed and it is subject to change in such instances. YES will not
+                                                    be liable for any refund or reimbursement of mobile data particularly where it cannot be determined at our end for whitelisting.
+                                                </li>
+                                            </ol>
+
+                                            <p></p>
+                                        </li>
+                                    </ol>
+                                    <strong style="text-decoration: underline; font-size: 18px;">The Free Fire Item Code</strong>
+                                    <ol start="5">
+                                        <li>
+                                            Where can I use for Free Fire Item Code and what is the Free Fire Item Code consists of?
+                                            <p><span class="desc">The Free Fire Item Code is only applicable for use in the Garena Free Fire – Illuminate application or Garena Free Fire MAX application (“Garena Free Fire”) and it is a random redemption of either one of the Legendary Gun Skin Box, Parachute Skin, or Costume Skin bundle. The Free Fire Item Code cannot be exchanged or refunded for cash. For issues or invalid Free Fire Item Code redemptions, please contact the Garena support centre.</span></p>
+                                        </li>
+                                        <li>
+                                            How many Free Fire Item Code will I receive upon successful activation of SIM Card?
+                                            <p><span class="desc">Upon successful activation of SIM Card, Eligible Subscriber will receive One (1) Free Fire Item Code per NRIC or Passport within or after 24 hours of the SIM activation date. The Free Fire Item Code is on a first-come-first-served basis, while stocks last.</span></p>
+                                        </li>
+                                        <li>
+                                            What is the validity period of the Free Fire Item Code?
+                                            <p><span class="desc">The Free Fire Item Code will be valid for redemption until 5th July 2022 and the Free Fire Item Code must be used before the expiry date. If the Free Fire Item Code is not redeemed before its expiry date, it will be forfeited.</span></p>
+                                        </li>
+                                    </ol>
+                                    <strong style="text-decoration: underline; font-size: 18px;">Use and Activation of the Free Fire Plan</strong>
+                                    <ol start="8">
+                                        <li>
+                                            I have received an email notification from YES that my application for the Free Fire SIM Pack is successful. How do I know when I will receive my Free Fire SIM Pack?
+                                            <p><span class="desc">The email notification will state a delivery tracking number. To check your delivery status, please go to <a href="https://shop.yes.my/shop/trackOrder.do" target="_blank" rel="noopener">www.yes.my/TrackOrder</a> and enter your delivery tracking number.</span></p>
+                                        </li>
+                                        <li>
+                                            I have received my free 5G-enabled SIM Card, how do I activate it to start using my free 10GB data?
+                                            <p><span class="desc">
+                                                To activate your 5G-enabled SIM Card:<br>
+                                                If you are a New User, please follow the following steps:<br>
+                                                (i) Download the <a href="https://onelink.to/6e8tqc" target="_blank" rel="noopener">MyYes</a> app<br>
+                                                (ii) On the login page, press “New User”<br>
+                                                (iii) Press “Activate SIM” button and follow the self-activation steps on the screen<br>
+                                                (iv) Once your activation is successful, you can now login to your Service account using your phone number and the password sent to your email. You can also login using the TAC method if you cannot find your password.<br><br>
+                        
+                                                If you are an Existing User, please follow the following steps:<br>
+                                                (i) Login to the <a href="https://onelink.to/6e8tqc" target="_blank" rel="noopener">MyYes</a> app<br>
+                                                (ii) Go to Quick Access, press “Activate SIM” button and follow the self-activation steps on the screen<br>
+                                                (iii) Once your activation is successful, you can now login to your Service account using your phone number and the password sent to your email. You can also login using the TAC method if you cannot find your password.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Do I need to activate the 5G-enabled SIM Card immediately upon receipt, or can I do so at a later time?
+                                            <p><span class="desc">You are required to perform a one-time activation of the 5G-enabled SIM Card within thirty (30) days from the date you receive the 5G-enabled SIM Card. Failing to do so will result in the SIM Card automatic expiration and your Service account shall be terminated accordingly. In such instance, any payment made by you, including the plan fee shall be automatically forfeited and no refund shall be made to you.</span></p>
+                                        </li>
+                                        <li>
+                                            How long will my service account remain active?
+                                            <p><span class="desc">Your Free Fire Plan service account will remain active for a period of thirty (30) days from the date of activation of your 5G-enabled SIM Card. Thereafter, to enjoy continued free internet* on the Garena Free Fire application, you will need to ensure that your account service remains active by reloading or purchasing a data add-on from the Yes Store.<br>* Whitelisting of mobile data utilised for Garena Free Fire Applications without deduction of mobile data consumption are based on a best effort basis. There 	may be instances that whitelisting may not be possible and mobile data 	consumption may be captured. This may be due to technical or other errors or 	issues such as changes or updates to the Garena Free Fire Application’s IP 	Addresses or any configuration or other technical requirements that have not 	been notified to YES to enable the said whitelisting. This extra free service of free 	internet for use of the Garena Free Fire application, is not guaranteed and it is 	subject to change in such instances. YES will not be liable for any refund or reimbursement of mobile data particularly where it cannot be determined at our end for whitelisting.  </span></p>
+                                        </li>
+                                        <li>
+                                            What happens if my Free Fire Plan account becomes inactive?
+                                            <p><span class="desc">You will still be able to receive incoming calls and SMS, access your contacts and make emergency calls. However, you will not be able to make any outgoing calls, send SMS or surf the internet. Kindly purchase a YES Reload or a data add-on for your Free Fire Plan. The minimum purchase of a Yes Reload is RM5. For more information, please refer to the Yes Reload Terms and Conditions available at Yes Reload Terms and Conditions.</span></p>
+                                        </li>
+                                        <li>
+                                            Will I enjoy the free internet* access on the Garena Free Fire application if my account validity has expired?
+                                            <p><span class="desc">No. Please ensure your account validity is active by purchasing any of the Yes Prepaid reload or data add-on to activate your services in order to enjoy the free internet access in Free Fire application.<br>* Whitelisting of mobile data utilised for Garena Free Fire Applications without deduction of 	mobile data consumption are based on a best effort basis. There may be instances that 	whitelisting may not be possible and mobile data consumption may be captured. This may 	be due to technical or other errors or issues such as changes or updates to the Garena Free 	Fire Application’s IP Addresses or any configuration or other technical requirements that 	have not been notified to YES to enable the said whitelisting. This extra free service of free 	internet for use of the Garena Free Fire application, is not guaranteed and it is subject to change in such instances. YES will not be liable for any refund or reimbursement of mobile data particularly where it cannot be determined at our end for whitelisting.  </span></p>
+                                        </li>
+                                        <li>
+                                            Does the 10GB free 4G LTE mobile data have an expiry date?
+                                            <p><span class="desc">Yes, it does. It is valid for a period of 30 days only from the date of successful activation of your 5G-enabled SIM Card. After this 30 days validity period, any unused mobile data will be automatically forfeited.</span></p>
+                                        </li>
+                                        <li>
+                                            How will I know whether I have received my free 10GB data upon activation of my YES FT5G Discover Free Fire SIM Pack?
+                                            <p><span class="desc">Please login to MyYes app, the information will be displayed on your home screen.</span></p>
+                                        </li>
+                                        <li>
+                                            Can I purchase other Prepaid Data Add-Ons before my account expires?
+                                            <p><span class="desc">Yes, you can. For more information on the Prepaid Data Add-on, please refer to our Prepaid FAQ.</span></p>
+                                        </li>
+                                    </ol>
+                                    <strong style="text-decoration: underline; font-size: 18px;">Information on use of 5G services and the Free Fire Plan</strong>
+                                    <ol start="17">
+                                        <li>
+                                            Can I change my existing Service Plan to Free Fire Plan?
+                                            <p><span class="desc">No, the Free Fire Plan is only available for new registrations.</span></p>
+                                        </li>
+                                        <li>
+                                            Will I be able to use 5G services if I am on a 4G smartphone?
+                                            <p><span class="desc">No, you will not be able to use 5G services if you are using a 4G smartphone. For more information regarding the 5G services, you may refer to FAQ under the <a href="https://site.yes.my/faq/campaign/" target="_blank" rel="noopener">First To 5G Campaign</a>.</span></p>
+                                        </li>
+                                        <li>
+                                            Where can I use 5G services on the Free Fire Plan?
+                                            <p><span class="desc">You can use the 5G services only within available coverage areas only in Kuala Lumpur, Putrajaya and Cyberjaya. The services are free until 31 March 2022 only.</span></p>
+                                        </li>
+                                        <li>
+                                            Am I allowed to choose a YES Mobile Number when I apply for the Free Fire Plan?
+                                            <p><span class="desc">Not at this point in time. A YES Mobile Number will be assigned to each SIM Card upon activation.</span></p>
+                                        </li>
+                                        <li>
+                                            Can I keep my existing mobile number on Free Fire Plan?
+                                            <p><span class="desc">Yes, you can port your existing mobile number from another telco company to the Free Fire Plan after your 5G-enabled SIM Card has been activated. However, please take note that it may take time to process porting your number over and it is subject to eligibility criteria. Please refer <a href="https://www.yes.my/keep-your-number/">https://www.yes.my/keep-your-number/</a> for more information.<br>If there are any delays to your eligibility to port your number over, the Campaign Period will not be extended for entitlement of the Free Fire Item Code. It is on a first-come-first-served basis, while stocks last and the SIM Card must be activated to be eligible for the Item Code.</span></p>
+                                        </li>
+                                        <li>
+                                            Will there be any charges imposed when I call other YES mobile numbers?
+                                            <p><span class="desc">There will be no charges imposed for domestic calls from a YES mobile number to another YES mobile number. If you are outside of Malaysia, you may subscribe to our International Roaming Service. Please refer to the International Roaming Service rates published at <a href="https://site.yes.my/faq/www.yes.my/roaming">www.yes.my/roaming</a>.</span></p>
+                                        </li>
+                                        <li>
+                                            Will there be any charges imposed when I call other networks?
+                                            <p><span class="desc">Yes, standard rates will apply. Please refer to the table below:-
+                                                </span></p>
+                                            <table align="center" border="1" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr align="center">
+                                                        <td style="background-color: rgb(15, 174, 241);" width="50%; text-align:center;"><strong>Type of Off Net Services</strong></td>
+                                                        <td style="background-color: rgb(15, 174, 241);" width="25%; text-align:center;"><strong>Rates (RM)</strong></td>
+                                                        <td style="background-color: rgb(15, 174, 241);" width="25%; text-align:center;"><strong>Charging Block<br>(in seconds)</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center;">Voice Calls</td>
+                                                        <td style="text-align:center;">RM 0.09/minute</td>
+                                                        <td style="text-align:center;">30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center;">SMS</td>
+                                                        <td style="text-align:center;">RM 0.09/SMS</td>
+                                                        <td style="text-align:center;">-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p></p>
+                                        </li>
+                                        <li>
+                                            Will there be any charges imposed on IDD Service?
+                                            <p><span class="desc">Yes, charges will be imposed. Please refer to the voice call and SMS rates in relation to IDD Service @ <a href="https://site.yes.my/faq/www.yes.my/roaming">www.yes.my/roaming</a>.</span></p>
+                                        </li>
+                                        <li>
+                                            What if I have more questions not addressed in this FAQ?
+                                            <p><span class="desc">You can send your questions to <a href="mailto:yescare@yes.my">yescare@yes.my</a>. Alternatively you can download <a href="https://onelink.to/6e8tqc" target="_blank" rel="noopener">MyYes</a> app from the Android Play Store or the Apple App Store to submit your questions via <a href="https://onelink.to/6e8tqc" target="_blank" rel="noopener">MyYes</a> app, chat with our Chatbot Sofia and YES customer advocate directly.<br><br>
+                                            
+                                            <strong style="text-decoration: underline; font-size: 18px;">Information on How to redeem the Item Code</strong><br><br>
+                                            Step 1: visit <a href="https://reward.ff.garena.com/en" target="_blank" rel="noopener">reward.ff.garena.com</a> and log into Free Fire Account<br>
+                                            <img src="/wp-content/uploads/2022/02/rr-step1.jpg" class="faq-img" alt=""><br><br>
+                                            Step 2: key in the Item Code received via <a href="https://onelink.to/6e8tqc" target="_blank" rel="noopener">MyYes</a> App Push<br>
+                                            <img src="/wp-content/uploads/2022/02/rr-step2.jpg" class="faq-img" alt=""><br><br>
+                                            Step 3: After key in the Item Code, click on “Submit”<br>
+                                            <img src="/wp-content/uploads/2022/02/rr-step3.jpg" class="faq-img" alt=""><br><br>
+                                            Step 4: Successful Page once Item Code is redeemed. The rewards will be sent in 24 hours to Free Fire account<br>
+                                            <img src="/wp-content/uploads/2022/02/rr-step4.jpg" class="faq-img" alt="">
+                                            </span></p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faq-ft5g-discover">
+                                <h5 class="mb-0"><button aria-controls="ft5g-discover" aria-expanded="false" class="btn btn-link collapsed" data-target="#ft5g-discover" data-toggle="collapse" type="button">YES FT5G Discover SIM Pack Programme</button></h5>
+                            </div>
+                            <div aria-labelledby="faq-ft5g-discover" class="collapse" data-parent="#afaq" id="ft5g-discover">
+                                <div class="card-body">
+                                    <ol>
+                                        <li>
+                                            What is the YES FT5G Discover SIM Pack?
+                                            <p><span class="desc">The YES FT5G Discover SIM Pack is a Prepaid Service Plan provided by YTL Communications Sdn Bhd (Company No.200701035605 (793634-V)) (“YTLC”). It is offered to all Malaysians and non-Malaysians residing in Malaysia aged 12 years and above with 5G Smartphone. Terms and conditions <a href="https://www.yes.my/tnc/ongoing-campaigns-tnc">apply</a>. </span></p>
+                                        </li>
+                                        <li>
+                                            Where can I apply for the YES FT5G Discover SIM Pack?
+                                            <p><span class="desc">
+                                                You can apply for the YES FT5G Discover SIM Pack through the YES website <a href="https://appstore.yes.my/ywos/signup" target="_blank" rel="noopener">www.yes.my</a> or on <a href="https://onelink.to/6e8tqc" target="_blank" rel="noopener">MyYes</a> app.  
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            How many YES FT5G Discover SIM Pack can I apply?
+                                            <p><span class="desc">
+                                                You can only apply for one (1) YES FT5G Discover SIM Pack. 
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Will I be able to use 5G services if I am on a 4G smartphone?
+                                            <p><span class="desc">
+                                                No, you will not be able to use 5G services if you are using a 4G smartphone. For more information regarding the 5G services, you may refer to FAQ under the <a href="https://site.yes.my/faq/campaign/">First To 5G Campaign</a>.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            I have received an email notification from YES that my application for the YES FT5G Discover SIM Pack is successful. How do I know when I will receive my YES FT5G Discover SIM Pack?
+                                            <p><span class="desc">
+                                                The email notification will state a delivery tracking number. To check your delivery status, please go to <a href="https://shop.yes.my/shop/trackOrder.do" target="_blank" rel="noopener">www.yes.my/TrackOrder</a> and enter your delivery tracking number.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            I have received my free 5G-enabled SIM Card, how do I activate it to start using my free 10GB data?
+                                            <p><span class="desc">
+                                                To activate your 5G-enabled SIM Card:<br>
+                                                If you are a New User, please follow the following steps:<br>
+                                                (i) Download the <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a> app<br>
+                                                (ii) On the login page, press “New User” <br>
+                                                (iii) Press “Activate SIM” button and follow the self-activation steps on the screen<br>
+                                                (iv) Once your activation is successful, you can now login to your Service account using your phone number and the password sent to your email. You can also login using the TAC method if you cannot find your password.<br><br>
+                        
+                                                If you are an Existing User,  please follow the following steps:<br>
+                                                (i) Login to the <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a> app<br>
+                                                (ii) Go to Quick Access, press “Activate SIM” button and follow the self-activation steps on the screen <br>
+                                                (iii) Once your activation is successful, you can now login to your Service account using your phone number and the password sent to your email. You can also login using the TAC method if you cannot find your password.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Am I allowed to choose a YES Mobile Number when I apply for the YES FT5G Discover SIM Pack?
+                                            <p><span class="desc">
+                                                Not at this point in time. A YES Mobile Number will be assigned to each SIM Card upon activation.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            How long will my service account remain active?
+                                            <p><span class="desc">
+                                                Your YES FT5G Discover SIM Pack service account will remain active for a period of thirty (30) days from the date of activation of your 5G-enabled SIM Card.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            What happens if my YES FT5G Discover SIM Pack account becomes inactive?
+                                            <p><span class="desc">
+                                                You will still be able to receive calls and SMS, access your contacts and make emergency calls. However, you will not be able to make any calls, send SMS or surf the internet. Kindly purchase a YES Reload for your YES FT5G Discover SIM Pack. The minimum purchase of a Yes Reload is RM5. For more information, please refer to the Yes Reload Terms and Conditions available at Yes Reload Terms and Conditions.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Does the 10GB free data have an expiry date?
+                                            <p><span class="desc">
+                                                Yes, it does. It is valid for a period of 30 days only from the date of successful activation of your 5G-enabled SIM Card. 
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            How will I know whether I have received my free 10GB data upon activation of my YES FT5G Discover SIM Pack?
+                                            <p><span class="desc">
+                                                Please login to <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a> app, the information will be displayed on your home screen.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Can I purchase other Prepaid Data Add-Ons before my account expires?
+                                            <p><span class="desc">
+                                                Yes, you can. For more information on the Prepaid Data Add-on, please refer to our Prepaid FAQ.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Do I need to activate the 5G-enabled SIM Card immediately upon receipt, or can I do so at a later time?
+                                            <p><span class="desc">
+                                                You are required to perform a one-time activation of the 5G-enabled SIM Card within thirty (30) days from the date you receive the 5G-enabled SIM Card. Failing to do so will result in the SIM Card automatic expiration and your Service account shall be terminated accordingly. In such instance, any payment made by you, including the plan fee shall be automatically forfeited and no refund shall be made to you. 
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Will there be any charges imposed when I call other YES mobile numbers?
+                                            <p><span class="desc">
+                                                There will be no charges imposed for domestic calls from a YES mobile number to another YES mobile number. If you are outside of Malaysia, you may subscribe to our International Roaming Service. Please refer to the International Roaming Service rates published at <a href="https://site.yes.my/faq/www.yes.my/roaming">www.yes.my/roaming</a>. 
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Will there be any charges imposed when I call other networks?
+                                            <p><span class="desc">
+                                                Yes, standard rates will apply. Please refer to the table below:-<br><br>
+                                                </span></p>
+                                            <table align="center" border="1" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr align="center">
+                                                        <td style="background-color: rgb(15, 174, 241);" width="50%; text-align:center;"><strong>Type of Off Net Services</strong></td>
+                                                        <td style="background-color: rgb(15, 174, 241);" width="25%; text-align:center;"><strong>Rates (RM)</strong></td>
+                                                        <td style="background-color: rgb(15, 174, 241);" width="25%; text-align:center;"><strong>Charging Block<br>(in seconds)</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center;">Voice Calls</td>
+                                                        <td style="text-align:center;">RM 0.09/minute</td>
+                                                        <td style="text-align:center;">30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center;">SMS</td>
+                                                        <td style="text-align:center;">RM 0.09/SMS</td>
+                                                        <td style="text-align:center;">-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p></p>
+                                        </li>
+                                        <li>
+                                            Will there be any charges imposed on IDD Service?
+                                            <p><span class="desc">
+                                                Yes, charges will be imposed. Please refer to the voice call and SMS rates in relation to IDD Service @ <a href="https://site.yes.my/faq/www.yes.my/roaming">www.yes.my/roaming</a>.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Can I change my existing Service Plan to YES FT5G Discover Plan?
+                                            <p><span class="desc">
+                                                No, the Free YES FT5G Discover Plan is only available for new registration.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Can I keep my existing mobile number on YES FT5G Discover Plan?
+                                            <p><span class="desc">
+                                                Yes, you can port your existing mobile number to the YES FT5G Discover Plan after your 5G-enabled SIM Card has been activated. Please refer <a href="https://www.yes.my/keep-your-number/">https://www.yes.my/keep-your-number/</a> for more information.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            What if I have more questions not addressed in this FAQ?
+                                            <p><span class="desc">
+                                                You can send your questions to <a href="mailto:yescare@yes.my">yescare@yes.my</a>.<br>Alternatively you can download <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a> app from the Android Play Store or the Apple App Store to submit your questions via <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a> app, chat with our Chatbot Sofia and YES customer advocate directly.
+                                            </span>
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faq-first-5g">
+                                <h5 class="mb-0"><button aria-controls="first-5g" aria-expanded="false" class="btn btn-link collapsed" data-target="#first-5g" data-toggle="collapse" type="button">Juara 5G</button></h5>
+                            </div>
+                            <div aria-labelledby="faq-first-5g" class="collapse" data-parent="#afaq" id="first-5g">
+                                <div class="card-body">
+                                    <ol>
+                                        <li>
+                                            Apa itu 5G?
+                                            <p><span class="desc">5G ialah  teknologi selular generasi terkini dengan  kelajuan internet terpantas, kependaman ultra rendah dan lebar jalur yang lebih besar.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Apakah perbezaan kelajuan internet diantara 4G dan 5G?
+                                            <p><span class="desc">
+                                                Dengan 5G, pelanggan  akan mendapat kadar data puncak  sehingga 100 kali lebih pantas berbanding 4G, dan 1,000 kali lebih banyak sambungan daripada rangkaian 4G dengan kependaman hampir sifar - hampir tiada kelewatan dalam proses menghantar dan menerima  maklumat antara peranti.
+                                            </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Apakah pelan FT5G YES yang ditawarkan oleh YES?
+                                            <p><span class="desc">
+                                                Pelan FT5G YES adalah siri pelan khas yang membolehkan pelanggan menikmati akses 5G tanpa had secara percuma sehingga 31 Mac 2022. Ini termasuk pelan FT5G YES Prabayar Tanpa Had, FT5G YES Pascabayar 49 dan FT5G YES Pascabayar 99 Bundle Peranti.
+                                                </span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Lokasi manakah yang dilengkapi dengan perkhidmatan 5G?
+                                            <p><span class="desc">Setakat Disember 2021, perkhidmatan 5G tersedia di beberapa lokasi khusus di Putrajaya, Cyberjaya dan Kuala Lumpur. Untuk menyemak liputan rangkaian 5G, sila rujuk <a href="https://yes.my/support/coverage/">https://site.yes.my/support/coverage/</a>.</span></p>
+                                        </li>
+                                        <li>
+                                            Sekiranya saya telah melanggan pelan Kempen YES First to 5G tetapi tidak berada dalam kawasan rangkaian 5G, adakah saya masih akan menikmati perkhidmatan 5G?
+                                            <p><span class="desc">Anda tidak akan dapat menikmati perkhidmatan 5G jika tidak berada di kawasan rangkaian 5G.  Walau bagaimanapun, anda akan terus menikmati  sambungan 4G tanpa gangguan di rangkaian YES kami.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Bagaimanakah cara untuk saya menikmati perkhidmatan 5G?
+                                            <p><span class="desc">Anda boleh melanggan mana-mana pelan yang tersedia dalam Kempen YES First to 5G tertakluk pada terma dan syarat. Sila ambil perhatian bahawa anda hanya boleh menikmati rangkaian 5G menerusi peranti yang menyokong teknologi 5G sahaja. Untuk maklumat lanjut, sila rujuk <a href="https://yes.my/supported-devices/">yes.my/supported-devices/</a></span></p>
+                                        </li>
+                                        <li>
+                                            Saya telah melanggan pelan FT5G YES Pascabayar ataupun pelan FT5G YES Prabayar. Bagaimanakah cara untuk saya mengetahui jika saya mempunyai sambungan 5G?
+                                            <p><span class="desc">Ikon 5G akan dipaparkan di skrin peranti anda apabila anda berada dalam kawasan yang diliputi perkhidmatan 5G.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Apakah yang perlu saya lakukan jika saya berada di kawasan rangkaian 5G tetapi ikon 5G di peranti saya tidak dipaparkan?
+                                            <p><span class="desc">JIka ini  berlaku, anda boleh mengemukakan soalan anda kepada <a href="mailto:yescare@yes.my">yescare@yes.my</a>. Anda juga boleh memuat turun aplikasi MyYES daripada Android Play Store ataupun Apple App Store untuk mengemukakan soalan anda di MyYES, ataupun berbual dengan Chatbot Sofia atau pegawai khidmat  pelanggan kami.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya menggunakan perkhidmatan 5G menerusi fon pintar 4G?
+                                            <p><span class="desc">Tidak. Anda tidak  dapat menggunakan perkhidmatan 5G dengan fon pintar 4G.</span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya menggunakan kad SIM 5G dengan fon pintar 4G saya?
+                                            <p><span class="desc">Tidak. Kad SIM 5G tidak boleh digunakan dengan fon pintar 4G.</span></p>
+                                        </li>
+                                        <li>
+                                            Saya berada dalam kawasan liputan 5G. Bolehkah saya memilih untuk menggunakan rangkaian 4G dan bukannya 5G?
+                                            <p><span class="desc">Tidak. Anda tidak boleh memilih jenis sambungan rangkaian kerana fon pintar anda telah diprogramkan untuk menyambungkan rangkaian terbaik yang tersedia di kawasan tersebut secara automatik. </span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya menggunakan fon pintar 5G yang dibeli di luar negara di Malaysia?
+                                            <p><span class="desc">Kami tidak dapat memberi jaminan bahawa peranti 5G yang dibeli di luar negara dapat digunakan pada rangkaian 5G Malaysia. Sebaliknya, kami menyarankan agar anda membeli  fon pintar  terus daripada YES.</span></p>
+                                        </li>
+                                        <li>
+                                            Adakah sebarang konfigurasi khusus diperlukan untuk mengaktifkan perkhidmatan 5G dengan fon pintar 5G saya?
+                                            <p><span class="desc">Tidak. Tiada konfigurasi khusus  diperlukan. Anda boleh menggunakan perkhidmatan 5G dengan fon pintar 5G selagi anda  berada dalam kawasan liputan rangkaian 5G.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya menggunakan perkhidmatan 5G dengan modem jalur lebar YES?
+                                            <p><span class="desc">Tidak. Buat masa ini, modem jalur lebar kami tidak menyokong rangkaian 5G. </span></p>
+                                        </li>
+                                    </ol>
+                                    <ol>
+                                        <strong>Pelan FT5G YES Pascabayar</strong>
+                                        <li>
+                                            Apa itu pelan FT5G YES Pascabayar?
+                                            <p><span class="desc">Pelan FT5G YES (FT5G YES Pascabayar RM49 dan FT5G YES Pascabayar RM99 Bundle Peranti) adalah pelan yang menawarkan internet 5G tanpa had percuma untuk tempoh bermula dari tarikh anda melanggan mana-mana perkhidmatan tersebut sehingga 31 Mac 2022 (tertakluk kepada terma &amp; syarat)
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Apakah jenis perkhidmatan dan kadar caj yang ditawarkan bagi setiap pelan FT5G YES Pascabayar?
+                                            <p><span class="desc">
+                                                Perkhidmatan dan kadar caj yang ditawarkan adalah seperti berikut:
+                                                </span></p>
+                                            <table align="center" border="1" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr align="center">
+                                                        <td style="background-color: rgb(15, 174, 241);" width="50%"><strong>Nama Pelan</strong></td>
+                                                        <td style="background-color: rgb(15, 174, 241);" width="25%"><strong>FT5G YES Pascabayar RM49</strong></td>
+                                                        <td style="background-color: rgb(15, 174, 241);" width="25%"><strong>FT5G YES Pascabayar RM99</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Caj Komitmen Bulanan</td>
+                                                        <td align="center">RM49<br>(RM51.94 termasuk SST)</td>
+                                                        <td align="center">RM99<br>(RM104.94 termasuk SST)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Peruntukan Kapasiti Data</td>
+                                                        <td align="center">100GB<br>(Data LTE 4G)
+
+                                                        </td>
+                                                        <td align="center">250GB<br>(Data LTE 4G)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jenis Peranti</td>
+                                                        <td align="center">–</td>
+                                                        <td align="center">Rujuk www.yes.my untuk maklumat lanjut
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tempoh Kontrak</td>
+                                                        <td align="center">–</td>
+                                                        <td align="center">24 bulan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Perkhidmatan On-Net untuk panggilan suara domestik</td>
+                                                        <td align="center">Tanpa had</td>
+                                                        <td align="center">Tanpa had</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Perkhidmatan Off-Net untuk panggilan suara domestik
+                                                        </td>
+                                                        <td align="center">Tanpa had</td>
+                                                        <td align="center">Tanpa had</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Perkhidmatan On-Net SMS domestik
+                                                        </td>
+                                                        <td align="center">Tanpa had</td>
+                                                        <td align="center">Tanpa had</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Perkhidmatan Off-Net SMS domestik
+                                                        </td>
+                                                        <td align="center">RM 0.09 setiap SMS</td>
+                                                        <td align="center">RM 0.09 setiap SMS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Harga Peranti</td>
+                                                        <td align="center">–</td>
+                                                        <td align="center">Sila rujuk www.yes.my untuk maklumat lanjut
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pelan Bayaran Pendahuluan</td>
+                                                        <td align="center">RM49<br> (Direbat dalam 2 bulan pertama)
+                                                        </td>
+                                                        <td align="center">RM99<br> (Direbat dalam 2 bulan pertama)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bayaran Pendahuluan Peranti</td>
+                                                        <td align="center">–
+                                                        </td>
+                                                        <td align="center">Sila rujuk www.yes.my untuk maklumat lanjut
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jumlah Bayaran Semasa Pendaftaran (terdiri daripada Bayaran Pendahuluan Pelan dan Peranti)
+                                                        </td>
+                                                        <td align="center">RM49<br> (RM 51.94 termasuk SST)
+
+                                                        </td>
+                                                        <td align="center">Sila rujuk www.yes.my untuk maklumat lanjut
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tawaran Istimewa</td>
+                                                        <td align="center">*Perkhidmatan 5G tanpa had sehingga 31 Mac 2022
+
+                                                        </td>
+                                                        <td align="center">*Perkhidmatan 5G tanpa had sehingga 31 Mac 2022
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <span class="desc">*dalam kawasan liputan 5G sahaja.</span>
+                                            <p></p>
+                                        </li>
+                                        <li>
+                                            Dimanakah saya boleh membeli pelan FT5G YES Pascabayar?
+                                            <p><span class="desc">Anda boleh membeli mana - mana pelan FT5G YES Pascabayar melalui laman web YES di www.yes.my, pada aplikasi MyYES, dimana-mana kedai/kiosk YES ataupun melalui pengedar YES kami.</span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya menukar talian sedia ada kepada pelan FT5G YES Pascabayar?
+                                            <p><span class="desc">
+                                                Sila hubungi pegawai khidmat pelanggan YesCare kami di <a href="mailto:YesCare@yescare@yes.my">YesCare@yescare@yes.my</a> maklumat lanjut. <br><br>
+                                                Sebagai alternatif, anda juga boleh memuat turun aplikasi MyYes daripada gedung Android Play Store ataupun Apple App Store untuk mengemukakan soalan anda di MyYES, ataupun berbual dengan Chatbot Sofia atau pegawai khidmat  pelanggan kami.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Apakah syarat umur minimum untuk melanggan pelan FT5G YES Pascabayar?
+                                            <p><span class="desc">Anda mesti berumur 18 tahun keatas untuk melanggan mana-mana pelan FT5G YES Pascabayar. </span></p>
+                                        </li>
+                                        <li>
+                                            Sebagai warga asing, bolehkah saya melanggan mana-mana pelan FT5G YES Pascabayar?
+                                            <p><span class="desc">Ya, anda layak melanggan pelan FT5G YES Pascabayar kami. Walau bagaimanapun, caj deposit sebanyak RM200 akan dikenakan  bagi setiap pelan yang anda langgani.</span></p>
+                                        </li>
+                                        <li>
+                                            Masih bolehkah saya menikmati perkhidmatan 5G sekiranya kad SIM saya diaktifkan pada 31 Mac 2022?
+                                            <p><span class="desc">Ya. Anda masih akan menikmati perkhidmatan 5G tanpa had percuma pada 31 Mac 2022 sehingga  jam 11:59pm. Perkhidmatan tanpa had akan ditamatkan selepas waktu tersebut. </span></p>
+                                        </li>
+                                        <li>
+                                            Apakah yang akan berlaku sekiranya saya tidak menggunakan peruntukan kapasiti data saya dengan sepenuhnya?
+                                            <p><span class="desc">Pada tamat tempoh setiap kitaran pengebilan, sebarang baki data internet yang tidak digunakan dalam peruntukan kitaran tersebut tidak akan dibawa ke kitaran seterusnya.</span></p>
+                                        </li>
+                                        <li>
+                                            Apakah yang akan berlaku jika saya menggunakan kesemua peruntukan kapasiti data saya sewaktu kitaran pengebilan?
+                                            <p><span class="desc">Anda masih boleh menikmati akses internet pada kelajuan terhad iaitu sehingga 128kbps sahaja. Untuk memastikan kelajuan internet anda tidak terganggu, anda boleh membeli  data tambahan melalui “Data Add-ons” Pascabayar pada aplikasi MyYes.</span></p>
+                                        </li>
+                                        <li>
+                                            Adakah saya masih layak untuk mengambil bahagian dalam program Kasi Up Rujuk &amp; Jana apabila melanggan pelan FT5G YES Pascabayar?
+                                            <p><span class="desc">Ya. Pelanggan FT5G YES Pascabayar layak untuk mengambil bahagian dalam program Kasi Up Rujuk &amp; Jana. Untuk maklumat lanjut, sila rujuk terma &amp; syarat YES Kasi Up Rujuk &amp; Jana.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Perlukah saya mengaktifkan kad SIM yang diterima dengan serta merta atau saya boleh berbuat demikian kemudian?
+                                            <p><span class="desc">
+                                                Setelah menerima kad SIM:-<br>
+(i) bagi pelan FT5G YES Pascabayar, anda dikehendaki untuk mengaktifkan kad SIM tersebut dalam tempoh 30 hari selepas penerimaan. Kegagalan mengaktifkan kad SIM tersebut akan mengakibatkan pembatalan akaun perkhidmatan secara automatik. Dalam keadaan sedemikian, yuran pelan dan sebarang bayaran terdahulu yang telah dibuat tidak akan dikembalikan 
+
+<br><br>(ii) bagi pelan FT5G YES Pascabayar RM99 Bundle Peranti, anda dikehendaki untuk mengaktifkan kad SIM tersebut dalam tempoh 7 hari selepas penerimaan. Kad SIM tersebut akan diaktifkan secara automatik selepas hari ke-7 jika anda gagal berbuat demikian.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya mendapatkan panggilan suara tanpa had percuma meskipun berada di luar Malaysia?
+                                            <p><span class="desc">Tidak. Perkhidmatan panggilan suara tanpa had percuma hanya boleh digunakan di Malaysia dan tidak boleh digunakan dalam  perkhidmatan perayauan. Sekiranya anda berada di luar Malaysia, anda boleh melanggani Perkhidmatan Perayauan Antarabangsa kami. Sila rujuk kadar Perkhidmatan Perayauan Antarabangsa kami di <a href="https://www.yes.my/roaming">https://www.yes.my/roaming</a>.</span></p>
+                                        </li>
+                                        <li>
+                                            Masih boleh saya dapat panggilan suara tanpa had percuma apabila menghubungi seseorang yang berada di luar Malaysia?
+                                            <p><span class="desc">Tidak. Panggilan suara tanpa had percuma tidak terpakai ke atas perkhidmatan IDD. Oleh itu, , anda akan dikenakan caj panggilan antarabangsa . Sila rujuk kadar yang dikenakan di https://www.yes.my/roaming.</span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya mengekalkan nombor telefon bimbit saya yang sedia ada pada pelan FT5G YES Pascabayar?
+                                            <p><span class="desc">Ya, anda boleh port-in nombor telefon  sedia ada ke pelan FT5G YES Pascabayar semasa proses pengaktifan SIM. Untuk maklumat lanjut, sila rujuk <a href="https://www.yes.my/keep-your-number/">https://www.yes.my/keep-your-number/</a>.</span></p>
+                                        </li>
+                                        <li>
+                                            Adakah sebarang caj dikenakan jika saya menamatkan pelan FT5G YES Pascabayar RM 99 sebelum tamat Tempoh Kontrak?
+                                            <p><span class="desc">Ya, anda akan dikenakan Caj Penamatan Awal (ETC) untuk baki Tempoh Kontrak dari tarikh penamatan.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Bagaimana jika saya mempunyai sebarang soalan lain yang tidak terkandung dalam Soalan Lazim ini?
+                                            <p><span class="desc">
+                                                Anda boleh mengemukakan soalan tersebut ke <a href="mailto:yescare@yes.my">yescare@yes.my</a>. <br><br>
+                                                Sebagai alternatif, anda juga boleh memuat turun aplikasi MyYes daripada gedung Android Play Store ataupun Apple App Store untuk mengemukakan soalan anda di MyYes, ataupun berbual dengan Chatbot Sofia atau pegawai khidmat pelanggan kami.
+                                            </span></p>
+                                        </li>
+
+                                    </ol>
+                                    <ol>
+                                        <strong>Pelan FT5G YES Prabayar</strong>
+                                        <li>
+                                            Apakah tawaran perkhidmatan di bawah pelan FT5G YES Prabayar?
+                                            <p><span class="desc">
+                                                Tawaran perkhidmatan dan kadar adalah seperti yang dinyatakan di bawah:
+                                                </span></p>
+                                            <table align="center" border="1" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr align="center">
+                                                        <td style="background-color: rgb(15, 174, 241);" width="50%"><strong>Nama Pelan</strong></td>
+                                                        <td style="background-color: rgb(15, 174, 241);" width="25%"><strong>Pelan FT5G YES Prabayar</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Harga</td>
+                                                        <td>RM30<br> (termasuk SST)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Data Internet</td>
+                                                        <td>Data 4G LTE tanpa had<br> (sehingga 7Mbps)
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tempoh Sah Akaun</td>
+                                                        <td>60 hari (dari tarikh pengaktifan kad SIM)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tempoh Sah Perkhidmatan</td>
+                                                        <td>30 hari (dari tarikh pengaktifan kad SIM)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hotspot</td>
+                                                        <td>9GB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Perkhidmatan On-Net untuk panggilan suara domestik</td>
+                                                        <td>Tanpa had</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Perkhidmatan Off-Net untuk panggilan suara domestik</td>
+                                                        <td>Tanpa had</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Perkhidmatan On-Net SMS domestik</td>
+                                                        <td>Tanpa had</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Perkhidmatan Off-Net SMS domestik</td>
+                                                        <td>RM 0.09 setiap SMS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tawaran Istimewa</td>
+                                                        <td>*Perkhidmatan 5G tanpa had sehingga 31 Mac 2022</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                            <span class="desc">*Dalam kawasan liputan 5G sahaja</span>
+                                        </li>
+                                        <li>
+                                            Berapa banyak pelan FT5G YES Prabayar yang boleh saya daftarkan?
+                                            <p><span class="desc">Mengikut undang-undang, seorang individu hanya boleh mendaftar sehingga lima (5) Nombor Mudah Alih Prabayar.</span></p>
+                                        </li>
+                                        <li>
+                                            Adakah saya masih akan mendapat perkhidmatan 5G jika saya mengaktifkan Kad SIM pada 31 Mac 2022?
+                                            <p><span class="desc">Ya, anda masih boleh  menikmati perkhidmatan 5G tanpa had pada 31 Mac 2022 sehingga jam 11.59pm. Perkhidmatan 5G tanpa had akan ditamatkan selepas waktu tersebut.</span></p>
+                                        </li>
+                                        <li>
+                                            Apakah yang akan berlaku apabila data hotspot internet 9GB di bawah Pelan FT5G YES Prabayar telah digunakan sepenuhnya?
+                                            <p><span class="desc">Setelah digunakan sepenuhnya, anda tidak akan dapat menggunakan hotspot untuk baki Tempoh Sah Perkhidmatan. Anda boleh membeli data hotspot tambahan “4G add-ons” menerusi aplikasi MyYes. Sila rujuk <a href="https://www.yes.my/tnc/products-services-tnc">https://www.yes.my/tnc/products-services-tnc</a>. </span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya membeli mana-mana Data Add-on Prabayar sebelum Tempoh Sah Akaun saya tamat?
+                                            <p><span class="desc">Ya, sudah tentu.</span></p>
+                                        </li>
+                                        <li>
+                                            Perlukah saya mengaktifkan kad SIM yang diterima dengan serta merta atau saya boleh berbuat demikian kemudian?
+                                            <p><span class="desc">Setelah menerima kad SIM, anda dikehendaki untuk mengaktifkan kad SIM tersebut dalam tempoh 30 hari selepas penerimaan. Kegagalan mengaktifkan kad SIM tersebut akan mengakibatkan pembatalan akaun perkhidmatan secara automatik. Dalam keadaan sedemikian, yuran pelan dan sebarang bayaran terdahulu yang telah dibuat tidak akan dikembalikan.</span></p>
+                                        </li>
+                                        <li>
+                                            Adakah saya masih mendapat panggilan suara tanpa had apabila menghubungi seseorang yang berada di luar Malaysia?
+                                            <p><span class="desc">Tidak. Panggilan suara tanpa had percuma tidak terpakai kepada perkhidmatan IDD. Oleh itu, anda akan dikenakan caj panggilan antarabangsa. Sila rujuk kadar yang dikenakan di <a href="https://www.yes.my/roaming">https://www.yes.my/roaming</a>.</span></p>
+                                        </li>
+                                        <li>
+                                            Adakah sebarang caj yang dikenakan ke atas Perkhidmatan IDD?
+                                            <p><span class="desc">Ya, caj akan dikenakan. Sila rujuk kadar panggilan suara dan SMS yang berkaitan dengan Perkhidmatan IDD <a href="www.yes.my/roaming">www.yes.my/roaming</a>.</span></p>
+                                        </li>
+                                        <li>
+                                            Dimanakah saya boleh membeli pelan FT5G YES Prabayar?
+                                            <p><span class="desc">Anda boleh membeli pelan FT5G YES Prabayar melalui laman web YES di <a href="https://clicktime.symantec.com/35wE71iVpNcYCLj19XKKc6J7VN?u=www.yes.my" target="_blank" rel="noopener">https://clicktime.symantec.com/35wE71iVpNcYCLj19XKKc6J7VN?u=www.yes.my</a>, pada aplikasi MyYes, Shopee, MyNews, dimana-mana kedai/kiosk YES ataupun melalui pengedar YES kami.</span></p>
+                                        </li>
+                                        <li>
+                                            Bagaimana jika saya mempunyai sebarang soalan lain yang tidak terkandung dalam Soalan Lazim ini?
+                                            <p><span class="desc">Anda boleh mengemukakan soalan tersebut ke <a href="mailto:yescare@yes.my">yescare@yes.my</a>.<br>
+                                                Sebagai alternatif, anda juga boleh memuat turun aplikasi MyYes daripada gedung Android Play Store ataupun Apple App Store untuk mengemukakan soalan anda di MyYes, ataupun berbual dengan Chatbot Sofia atau pegawai khidmat pelanggan kami.
+                        </span></p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faq-fiveg-device">
+                                <h5 class="mb-0"><button aria-controls="fiveg-device" aria-expanded="false" class="btn btn-link collapsed" data-target="#fiveg-device" data-toggle="collapse" type="button">5G Devices</button></h5>
+                            </div>
+                            <div aria-labelledby="faq-fiveg-device" class="collapse" data-parent="#afaq" id="fiveg-device">
+                                <div class="card-body">
+                                    <ol>
+                                        <li>
+                                            Which 5G devices are compatible with 5G service?
+                                            <p><span class="desc">Please refer to <a href="https://site.yes.my/supported-devices/">yes.my/supported-devices/</a> for device compatibility and for more information.</span></p>
+                                        </li>
+                                        <li>
+                                            Is any configuration needed to enable 5G services on your 5G smartphone?
+                                            <p><span class="desc">No, there is no specific configuration required. You can use 5G services on your 5G smartphone as long as you within the 5G network coverage area. However , to ensure 5G connectivity, please make certain that your 5G smartphone is updated to the latest software and that your phone settings has been set to “5G” as a preferred network type. </span></p>
+                                        </li>
+                                        <li>
+                                            How do I enable 5G on my VIVO phones?
+                                            <p><span class="desc">
+                                                To ensure your phone is updated to the latest software, follow the steps as listed below:<br>
+                                                i. Go to "Settings" and select "System update"<br>
+                                                ii. If there is a system update available click to update. If there is no system update available, your phone has the latest software and is therefore up to date.<br><br>
+                                                <img src="https://www.yes.my/wp-content/uploads/2022/01/5g1.jpg" alt=""> <br>
+                                                Once your system update is completed, switch your Network mode to 5G preferred. <br>
+                                                i. Go to "Settings" and select "Network &amp; internet" <br>
+                                                ii. Select "SIM card &amp; mobile network" <br>
+                                                iii. Select SIM card slot with the respective YES FT5G SIM card <br>
+                                                iv. Select "Preferred network type" <br>
+                                                v. Select "5G (preferred)/4G/3G/2G”<br><br>
+                                                <img src="https://www.yes.my/wp-content/uploads/2022/01/5g2.jpg" style="width:100%;" alt="">
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            How do I enable 5G on my NOKIA phones?
+                                            <p><span class="desc">
+                                                To ensure your phone is updated to the latest software, follow the steps as listed below:<br>
+                                                i. Go to "Settings" and select "System"<br>
+                                                ii. Select "System update"<br>
+                                                iii. If there is a system update available click to update. If there is no system update available, your phone has the latest software and is therefore up to date.<br><br>
+                                                <img src="https://www.yes.my/wp-content/uploads/2022/01/5g3.jpg" alt=""><br><br>
+                                                Once your system update is completed, switch your Network mode to 5G preferred.<br>
+                                                i. Go to "Settings" and select "Network &amp; internet"<br>
+                                                ii. Select "Mobile network"<br>
+                                                iii. Select "Preferred network type"<br>
+                                                iv. Select 5G<br><br>
+                                                <img src="https://www.yes.my/wp-content/uploads/2022/01/5g4.jpg" alt="">
+                        
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            How do I enable 5G on my OPPO phones?
+                                            <p><span class="desc">
+                                                To ensure your phone is updated to the latest software, follow the steps as listed below:<br>
+                                                i. Go to "Settings" and select "Software update"<br>
+                                                ii. If there is a system update available click to update. If there is no system update available, your phone has the latest software and is therefore up to date. <br><br>
+                                                And you are all set to experience 5G service!<br><br>
+                                                <img src="https://www.yes.my/wp-content/uploads/2022/01/5g5.jpg" alt="">
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            How do I enable 5G on my XIAOMI phones?
+                                            <p><span class="desc">
+                                                To ensure your phone is updated to the latest software, follow the steps as listed below:<br>
+                                                i. Go to "Settings" and select "About phone"<br>
+                                                ii. Select MIUI version<br>
+                                                iii. If there is a system update available click to update. If there is no system update available, your phone has the latest software and is therefore up to date.<br><br>
+                                                <img src="https://www.yes.my/wp-content/uploads/2022/01/5g6.jpg" alt=""><br><br>
+                                                Once your system update is completed, switch your Network mode to 5G preferred.<br>
+                                                i. Go to "Settings" and select "SIM cards &amp; mobile networks"<br>
+                                                ii. Select SIM card slot with the respective YES FT5G SIM card<br>
+                                                iii. Select "Preferred network type"<br>
+                                                iv. Select "Prefer 5G"<br><br>
+                                                <img src="https://www.yes.my/wp-content/uploads/2022/01/5g7.jpg" alt="">
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            How do I enable 5G on my POCO phones?
+                                            <p><span class="desc">
+                                                To ensure your phone is updated to the latest software, follow the steps as listed below:<br>
+                                                i. Go to "Settings" and select "About phone"<br>
+                                                ii. Select MIUI version<br>
+                                                iii. If there is a system update available click to update. If there is no system update available, your phone has the latest software and is therefore up to date.<br><br>
+                                                 <img src="https://www.yes.my/wp-content/uploads/2022/01/5g8.jpg" alt=""><br><br>
+                                                 Once your system update is completed, switch your Network mode to 5G preferred.<br>
+                                                i. Go to "Settings" and select "SIM cards &amp; mobile networks"<br>
+                                                ii. Select SIM card slot with the respective YES FT5G SIM card<br>
+                                                iii. Select "Preferred network type"<br>
+                                                iv. Select "Prefer 5G"<br><br>
+                                                <img src="https://www.yes.my/wp-content/uploads/2022/01/5g9.jpg" alt="">
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            How do I enable 5G on my REALME phones?
+                                            <p><span class="desc">
+                                                To ensure your phone is updated to the latest software, follow the steps as listed below:<br>
+                                                i. Go to "Settings" and select "Software update"<br>
+                                                ii. If there is a system update available click to update. If there is no system update available, your phone has the latest software and is therefore up to date. <br><br>
+                        
+                                                And you are all set to experience 5G service!<br><br>
+                                                <img src="https://www.yes.my/wp-content/uploads/2022/01/5g10.jpg" alt="">
+                                            </span></p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faq-fourg-ft5g">
+                                <h5 class="mb-0"><button aria-controls="fourg-ft5g" aria-expanded="false" class="btn btn-link collapsed" data-target="#fourg-ft5g" data-toggle="collapse" type="button">Pertukaran Pelan 4G ke Pelan FT5G</button></h5>
+                            </div>
+                            <div aria-labelledby="faq-fourg-ft5g" class="collapse" data-parent="#afaq" id="fourg-ft5g">
+                                <div class="card-body">
+                                    <ol>
+                                        <li>
+                                            Adakah saya dibenarkan untuk menukar Pelan Perkhidmatan YES Pascabayar atau Perkhidmatan Prabayar saya yang sedia ada kepada Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan Prabayar YES Prabayar FT5G?
+                                            <p><span class="desc">
+                                                Tertakluk kepada syarat  bahawa anda tidak melanggani mana-mana Pelan-pelan Yang Dikecualikan atau anda tidak terikat di bawah apa-apa kontrak, anda adalah dibenarkan untuk  menukar mana-mana Pelan Perkhidmatan Pascabayar atau Perkhidmatan Prabayar anda yang sedia ada kepada yang berikut:-
+<br>(a)	Pelan Perkhidmatan Pascabayar kepada Pelan Perkhidmatan YES Pascabayar FT5G; dan
+<br>(b)	Perkhidmatan Prabayar kepada Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan YES Prabayar FT5G.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Apakah Pelan-pelan Yang Dikecualikan?
+                                            <p><span class="desc">
+                                                Ia adalah:-<br>
+(a)	YES 4G Broadband Bundle Service Plans;<br>
+(b)	Fixed Wireless Internet Service; dan<br>
+(c)	Kasi Up Family Plan<br>
+(selepas daripada ini dirujuk secara kolektif sebagai “<strong>Pelan-pelan Yang Dikecualikan</strong>”).
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Bagaimanakah saya boleh menukar Pelan Perkhidmatan Pascabayar atau Perkhidmatan Prabayar saya yang sedia ada kepada Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan YES Prabayar FT5G?
+                                            <p><span class="desc">
+                                                Anda boleh berbuat demikian melalui mana-mana suatu saluran yang dinyatakan di bawah ini:-<br>
+                                                (a)	yes.my;<br>
+                                                (b)	YES Stores; atau<br>
+                                                (c)	Hantar e-mel kepada kami di <a href="mailto:yescare@yes.my">yescare@yes.my</a><br>
+                                                (d) Aplikasi <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a>
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya terus menggunakan Kad SIM saya yang sedia ada setelah saya berjaya bertukar kepada Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan YES Prabayar FT5G?
+                                            <p><span class="desc">Tidak, Kad SIM anda yang sedia ada adalah tidak serasi untuk digunakan dengan  Pelan Perkhidmatan YES Pascabayar FT5G dan Pelan Perkhidmatan YES Prabayar FT5G. Oleh itu, setelah anda memilih untuk bertukar kepada Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan YES Prabayar FT5G, kami akan menghantarkan Kad SIM baru kepada alamat penghantaran anda. Anda adalah dikehendaki untuk mengaktifkan Kad SIM baru tersebut sebelum anda boleh menikmati tawaran perkhidmatan yang disediakan di bawah Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan YES Prabayar FT5G. Sila rujuk kepada Terma dan Syarat Kempen YES First to 5G untuk butiran lanjut berkenaan dengan pengaktifan Kad SIM anda di <a href="https://site.yes.my/tnc/ongoing-campaigns-tnc">https://site.yes.my/tnc/ongoing-campaigns-tnc</a>.</span></p>
+                                        </li>
+                                        <li>
+                                            Bagaimanakah saya akan mengetahui samada Pelan Perkhidmatan Pascabayar atau Prabayar saya yang sedia ada ini telah ditukar dengan berjayanya kepada Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan Yes Prabayar FT5G?
+                                            <p><span class="desc">Anda akan menerima notifikasi samada melalui e-mel atau SMS setelah anda berjaya mengaktifkan SIM Kad anda.</span></p>
+                                        </li>
+                                        <li>
+                                            Bagaimanakah saya perlu mengaktifkan Kad SIM?
+                                            <p><span class="desc">
+                                                Sila ikuti langkah-langkah yang dinyatakan di bawah ini jika penuakaran pelan melalui aplikasi <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a>:-<br>
+                                                1. Log masuk ke aplikasi <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a><br> 
+                                                2. Klik "Activate SIM" di bawah Akses Pantas  dan ikuti langkah-langkah pengaktifan diri di skrin<br>
+                                                3. Sebaik pengaktifan berjaya, anda boleh log masuk ke akaun perkhidmatan melalui nombor telefon dan kata laluan. Anda juga boleh log masuk menggunakan kaedah TAC sekiranya tidak menemui kata laluan anda<br><br>
+
+                                                Sila ikuti langkah-langkah yang dinyatakan di bawah ini jika penuakaran pelan melalui <a href="https://www.yes.my">www.yes.my</a>:-<br>
+                                                1. Sila klik pada butang “Track My Parcel” dalam E-mel Konsainan;<br>
+                                                2. Masukkan Nombor Penjejakan atau Nombor Pesanan anda;<br>
+                                                3. Klik butang “Confirm Receipt” dan masukkan empat (4) nombor digit terakhir kad pengenalan/pasport dan klik pada “Submit”.<br>
+                                                4. Klik butang “How to Activate the SIM”, isikan nombor Siri SIM 5G anda dan nombor mudah alih YES kemudian klik pada “Activate”.<br>
+                                                Setelah anda menerima e-mel berkenaan dengan pengaktifan Kad SIM dan mendapati bahawa Kad SIM anda yang sedia ada tidak dihubungkan dengan rangkaian YES, anda boleh memasukkan Kad SIM 5G anda yang baru ke dalam telefon 5G yang serasi. Sila rujuk kepada <a href="http://www.yes.my/supported-devices">www.yes.my/supported-devices</a> untuk menentukan telefon bimbit pintar yang boleh menyokong Kad SIM 5G anda.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Sekiranya terdapat sebarang data internet yang tidak digunakan di dalam Pelan Perkhidmatan Pascabayar atau Perkhidmatan Prabayar saya yang sedia ada, adakah data internet yang tidak digunakan tersebut boleh dipindahkan kepada Pelan Perkhidmatan YES Pascabayar
+                                            FT5G atau Pelan Perkhidmatan YES Prabayar FT5G?
+                                            <p><span class="desc">Tidak, anda tidak boleh membawa ke hadapan sebarang baki internet data yang tidak digunakan daripada Pelan Perkhidmatan Pascabayar atau Perkhidmatan Prabayar anda yang sedia ada kepada Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan YES Prabayar FT5G. Ini bermakna, sebarang data internet di bawah Pelan Perkhidmatan Pascabayar atau Perkhidmatan Prabayar yang masih tidak digunakan akan terbatal setelah anda berjaya mengaktifan Kad SIM.</span></p>
+                                        </li>
+                                        <li>
+                                            Sekiranya saya terikat di bawah kontrak dan saya masih di dalam tempoh kontrak, adakah saya dibenarkan untuk menukar pelan perkhidmatan saya yang sedia ada?
+                                            <p><span class="desc">Tidak, anda tidak boleh berbuat demikian.</span></p>
+                                        </li>
+                                        <li>
+                                            Sekiranya saya telah menjelaskan fi komitmen di bawah Pelan Perkhidmatan Pascabayar saya yang sedia ada di dalam suatu bulan calendar tertentu, adakah fi komitmen sedemikian akan diprorata sekiranya saya menukar kepada Pelan Perkhidmatan YES Pascabayar
+                                            FT5G?
+                                            <p><span class="desc">
+                                                Fi komitmen yang telah dibayar di dalam suatu bulan calendar akan dipuratakan dan ditolak daripada bil yang dikeluarkan di dalam bulan yang berikutan selepas bulan di mana Pelan Perkhidmatan YES Pascabayar FT5G tersebut diaktifkan dengan berjayanya. Sebagai contoh:-<br>
+•	Pelanggan telah membayar fi komitmen untuk bulan Januari 2022 seperti yang dinyatakan di dalam bil yang dikeluarkan pada bulan Januari 2022 di bawah suatu Pelan Perkhidmatan Pascabayar saya yang sedia ada pada 2/1/2022;<br>
+•	Pelanggan telah meminta untuk menukar Pelan Perkhidmatan Pascabayar saya yang sedia ada kepada Pelan Perkhidmatan YES Pascabayar FT5G pada 5/1/2022; dan<br>
+•	Pelanggan telah mengaktifkan Kad SIMnya pada 8/1/2022,<br>
+di dalam keadaan sedemikian, fi komitmen untuk bulan Januari 2022 yang dibayar pada 2/1/2022 akan diproratakan dan ditolak daripada fi komitmen pada bulan Februari 2022 dan akan dinyatakan di dalam bil yang dikeluarkan pada bulan Februari 2022.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Adakah akan terdapat sebarang perubahan kepada had kredit sekiranya saya menukar Pelan Perkhidmatan Pascabayar saya yang sedia ada kepada Pelan Perkhidmatan YES Pascabayar FT5G?
+                                            <p><span class="desc">
+                                                Ya, akan ada perubahan terhadap kepada had kredit yang dinikmati oleh anda sekiranya anda menukar daripada Pelan Perkhidmatan Pascabayaranda yang sedia ada kepada Pelan Perkhidmatan YES Pascabayar FT5G. Untuk maklumat  lanjut berkenaan dengan penikmatan had kredit, sila: 
+<br>(a)	muat turun dan Log Masuk ke aplikasi <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a>;
+<br>(b)	 Klik pada tab "profil"; dan
+<br>(c)	 klik pada tab"Akaun".
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Adakah terdapat sebarang caj yang dikenakan sekiranya saya menukar Pelan Perkhidmatan Pascabayar saya yang sedia ada kepada Pelan Perkhidmatan YES Pascabayar FT5G?
+                                            <p><span class="desc">
+                                                Ya, caj akan dikenakan sekiranya anda menukar kepada Pelan Perkhidmatan YES FT5G. Caj yang terpakai adalah bergantung kepada jenis kadar tawaran di bawah Pelan Perkhidmatan FT5G yang dilanggani oleh anda. Anda boleh merujuk kepada <a href="https://www.yes.my">www.yes.my</a> untuk maklumat lanjut.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Adakah terdapat sebarang caj yang dikenakan sekiranya saya menukar Perkhidmatan Prabayar saya yang sedia ada kepada Pelan Perkhidmatan YES Prabayar FT5G?
+                                            <p><span class="desc">
+                                                Ya, caj akan dikenakan sekiranya anda menukar kepada Pelan Perkhidmatan YES Prabayar FT5G. Anda boleh merujuk kepada <a href="https://www.yes.my">www.yes.my</a> untuk maklumat lanjut.
+                                            </span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya menggunakan sebarang baki yang terkandung di dalam YES Credit dan menolaknya terhadap apa-apa caj yang terpakai yang berbayar semasa penukaran kepada Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan YES Prabayar FT5G?
+                                            <p><span class="desc">Tidak, anda tidak boleh menggunakan baki yang terkandung di dalam Yes Credit untuk menolak terhadap sebarang caj yang terpakai semasa anda menukar kepada Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan Yes Prabayar FT5G.</span></p>
+                                        </li>
+                                        <li>
+                                            Apakah yang akan berlaku kepada jumlah baki yang terkandung di dalam YES Credit setelah saya menukar Pelan Perkhidmatan Prabayar saya yang sedia ada kepada Pelan Perkhidmatan YES Pascabayar FT5G?
+                                            <p><span class="desc">Sebarang baki di dalam Yes Credit akan dipindahkan ke dalam akaun perkhidmatan pascabayar anda di bawah Pelan Perkhidmatan YES Pascabayar FT5G dan akan digunakan terhadap pembayaran fi komitmen pada bulan yang berikutan selepas bulan kalendar di mana Kad SIM anda telah diaktifkan. Butiran berkenaan dengan pengunaan Yes Credit terhadap pembayaran fi komitmen akan dinyatakan di dalam bil berikutnya selepas bulan di mana Kad SIM diaktifkan.</span></p>
+                                        </li>
+                                        <li>
+                                            Apakah yang akan berlaku kepada jumlah baki yang terkandung di dalam YES Credit setelah saya menukar Pelan Perkhidmatan Prabayar saya yang sedia ada kepada Pelan Perkhidmatan YES Prabayar FT5G?
+                                            <p><span class="desc">Sebarang baki di dalam Yes Credit akan dipindahkan ke dalam akaun perkhidmatan Prabayar baru anda di bawah Pelan Perkhidmatan YES Prabayar FT5G.</span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya membayar fi komitmen di bawah Pelan Perkhidmatan Pascabayar YES FT5G secara Auto Billing?
+                                            <p><span class="desc">Sekiranya anda hendak menjelaskan fi komitmen Pelan Perkhidmatan YES Pascabayar FT5G secara Auto Billing, anda dikehendaki memilih Auto Billing melalui <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a> app dan mengikuti langkah-langkah yang dinyatakan di dalamnya. Sebagai penjelasan, sila ambil perhatian bahawa sekiranya anda memilih pembayaran fi komitmen di bawah Pelan Perkhidmatan sedia ada anda secara Auto Billing, pilihan sedemikian akan tamat secara automatik setelah anda menukar kepada Pelan Perkhidmatan YES Pascabar FT5G.</span></p>
+                                        </li>
+                                        <li>
+                                            Bolehkah saya menukar Pelan Perkhidmatan YES Pascabayar FT5G atau Pelan Perkhidmatan Prabayar YES Prabayar FT5G saya kepada Pelan Perkhidmatan 4G YES?
+                                            <p><span class="desc">Ya, sila pastikan anda tidak terikat dengan kontrak. Setelah anda memilih untuk bertukar kepada Pelan Perkhidmatan 4G YES, kami akan menghantarkan Kad SIM baru kepada alamat penghantaran anda. Anda adalah dikehendaki untuk mengaktifkan Kad SIM baru tersebut sebelum anda boleh menikmati tawaran perkhidmatan yang disediakan di bawah Pelan Perkhidmatan 4G YES.</span></p>
+                                        </li>
+                                        <li>
+                                            Bagaimana sekiranya saya mempunyai sebarang Soalan lajut yang tidak dinyatakan di dalam soalan lazim ini?
+                                            <p><span class="desc">Anda boleh merujuk pada laman web kami untuk maklumat lanjut atau menghantarkan soalan anda ke <a href="mailto:yescare@yes.my">yescare@yes.my</a>. Secara alternatif, anda boleh memuat turun aplikasi <a href="https://play.google.com/store/apps/details?id=my.yes.yes4g&amp;hl=en&amp;gl=US" target="_blank" rel="noopener">MyYes</a> app dari Android Play atau Apple App Store untuk </span></p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
