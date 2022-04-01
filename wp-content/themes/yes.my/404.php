@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php
+
+header("HTTP/1.1 301 Moved Permanently");
+
+header("Location: https://www.yes.my/docs/faq");
+
+exit();
+
+?>
+
+<?php /* get_header(); ?>
 
 <?php 
     global $wp;
@@ -21,4 +31,4 @@
     echo $content;
 ?>
 
-<?php get_footer(); ?>
+<?php get_footer(); */ ?>
